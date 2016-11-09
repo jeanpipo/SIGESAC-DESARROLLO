@@ -1,0 +1,8 @@
+
+#johan alamo
+#buscar cadenas dentro de archivos
+#grep -r (recursivo) -n(imprimir número de linea) -i(insensible a mayúsculas y minúsculas)
+# grep . (el directorio donde va a buscar
+#grep   "permiso" es la palabra a buscar dentro de los archivos
+#egrep que aparezca la cadena "php:" o la cadena "js:" 
+grep -r -n -i "permiso"  . | egrep "php:|js:"

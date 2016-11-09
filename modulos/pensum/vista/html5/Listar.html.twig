@@ -1,0 +1,125 @@
+{% extends 'Pensum.html.twig' %}
+
+{% block headVista %}
+
+ <!-- -------------- CSS - allcp forms -------------- -->
+  
+ <link rel="stylesheet" type="text/css" href="modulos/pensum/vista/html5/ccs/alert.css">
+{% endblock %}
+
+{% block contenido %}
+
+
+    <div class="col-md-6">
+
+    		<div class="panel">
+                    <div class="panel-heading">                       
+                         <h3><i class="icon-table"></i> Lista de Pensum</h3>    
+                    </div>
+                    <div class="panel-body">
+
+  
+            <div class="box-content">
+                <div class="btn-toolbar pull-right clearfix">
+                    <div class="btn-group">
+                        <a class="btn btn-circle show-tooltip" title="Agregar Instituto" href="index.php?m_modulo=pensum&m_formato=html5&m_accion=mostrar&m_vista=Agregar"  ><i class="icon-plus"></i></a>
+                   		
+                    </div>
+                    <div class="btn-group">                
+                        <a class="btn btn-circle show-tooltip" title="Export to PDF" href="#"><i class="icon-file-text-alt"></i></a>                      
+                    </div>	                  
+                       </div>
+	 			<div class="clearfix"></div>
+	 			<div id='listarI'>			
+				
+				    	<table class="table table-advance" id="table">
+						 <thead>
+				            <tr>
+				            	<th>N°</>
+				                <th>Nombre Pesum</th>
+				                <th>Nombre Corto</th>			            
+				                <th>Modificar</th>
+				                <th>Eliminar</th>
+				            </tr>
+				        </thead>
+						  <tbody>		
+							{% set cont = 0 %}
+							{% for pensums in pensum %}									
+									<tr >
+										{% set cont = cont + 1 %}
+										<td><a href="#" onmouseover="verDetalle({{pensums.codigo}})" >{{cont}}</a></td>
+										<td><a href="#"  onmouseover="verDetalle({{pensums.codigo}})">{{pensums.nombre}}</a></td>
+										<td><a href="#"  onmouseover="verDetalle({{pensums.codigo}})">{{pensums.nom_corto}}</a></td>
+										<td>										
+											<button class="btn btn-xs btn-info" title="Modificar el Pensum" onclick="redirectEdit({{pensums.codigo}})">
+												<i class="icon-pencil"></i>
+											</button>
+										</td>	
+										<td>
+										<button class="btn  btn-xs btn-danger" title="Eliminar el Pensum" onclick="eliminarPensum({{pensums.codigo}});" >
+												<i class="icon-remove"></i>
+											</button>
+										</td>	
+
+									</tr>
+									
+							{% endfor %}
+				  		</tbody>		
+					</table>    		 
+   				 </div>
+
+		</div>
+			
+				</div>
+				
+			
+
+
+    </div>
+</div>
+		
+
+<div class="col-md-6">
+
+		<div class="panel">
+                <div class="panel-heading">                       
+                     <h3><i class="icon-puzzle-piece"></i> Detalle de Pensum</h3>    
+                </div>
+                <div class="panel-body" style="min-height: 447px;">
+
+
+	        		<div class="box-content">
+
+	        				 <div class="btn-toolbar pull-right clearfix">
+			                   
+			                    <div class="btn-group">			                  
+			                        <a class="btn btn-circle show-tooltip" title="Export to PDF" href="#"><i class="icon-file-text-alt"></i></a>                   
+			                    </div>	                  
+			       
+
+			                </div>
+
+			               
+
+			                	<div class="cuadro cuadro-negro" style="margin-top: 22px;  position: unset;"> Detalle de Pensum selecionado:                           
+	                       		 </div>
+
+	                       	<div id="detallePen" class="third">
+
+			                	
+
+			                	<div class="cuadro cuadro-amarillo"  style="margin-top: 22px;  position: unset;"> No ha selecionado ningún Pensum
+	                       		 </div>
+
+		                	</div>
+
+	        		</div>
+
+       			</div>
+        </div>	
+</div>
+
+
+<div ="pensumV"/>   	
+
+{% endblock %}

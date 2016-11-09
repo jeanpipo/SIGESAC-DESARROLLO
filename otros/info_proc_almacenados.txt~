@@ -1,0 +1,33 @@
+
+
+fecha: 11 de octubre de dos mil quince. rafael garcia. johan alamo
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+resultados de qué nivel de información se utilizará ( DEBUG, LOG, INFO, NOTICE, WARNING, and EXCEPTION, EXCEPTION)
+----------------------------------
+Log: escribe en el log del sql, y además coloca la sentencia que dio error, no escribe en consola
+
+
+info: informa por consola pero no registra en el archivo log
+
+debug: no escribe en el log ni en la consola
+
+warning: escribe en consola y en el log.
+
+notice: escribe en consola y no en el log
+
+aunque todos estos niveles de escritura se pueden configurar con las variables  log_min_messages (enum) y client_min_messages (enum)
+
+
+se concluye usar log y warning para dejar la huella en el log. (log escribe el código que produjo el error) (estas no rompe el flujo de ejecución 
+de la función)
+
+
+Exception queda reservado para errores fatales, ya que este corta la ejecuciòn de la función y esta no retorna nada
+
+visitar:    http://www.postgresql.org/docs/9.3/static/plpgsql-errors-and-messages.html
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Qué tipo de excepción se man
+ver:   http://www.postgresql.org/docs/current/static/errcodes-appendix.html

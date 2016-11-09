@@ -1,0 +1,89 @@
+/*
+
+@media print {
+
+* {
+    background: transparent none repeat scroll 0 0 !important;
+    box-shadow: none !important;
+    color: #000 !important;
+    text-shadow: none !important;
+  }
+}
+* {
+    box-sizing: border-box;
+}
+*::before, *::after {
+    box-sizing: border-box;
+}
+*/
+
+
+.cuadro {
+    border: 0 none;
+    border-radius: 3px;
+    bottom: 5%;
+    color: #ffffff;
+    font-size: 14px;
+    left: 80%;
+    padding: 15px;
+    position: fixed;
+    right: 0;
+    z-index: 2000;
+}
+
+
+
+body {
+    color: #7f828f;
+    font-family: "Lato","Open Sans",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.788;
+}
+.cuadro-negro{
+	/* background-color: #89dde7; */
+    background-color: rgb(42, 47, 67);
+}
+
+.cuadro-amarillo{
+	background-color: #FFC734;
+}
+
+
+
+.TableDiv{    
+    width: 100%;
+display: table;  
+}  
+
+.TitleDiv{  
+display: table-caption;  
+text-align: center;  
+font-weight: bold;  
+font-size: larger;  
+}  
+
+.HeadingDiv{  
+display: table-row;  
+font-weight: bold;  
+text-align: center;  
+}  
+
+.RowDiv{  
+display: table-row;  
+}  
+
+.CellDiv{  
+    border-collapse: collapse;
+border-spacing: 0px;
+display: table-cell;  
+border: solid;  
+border-width: thin;  
+padding-left: 5px;  
+padding-right: 5px;  
+
+border-style: hidden;
+border-bottom: #FFFEFD groove;
+}  
+
+

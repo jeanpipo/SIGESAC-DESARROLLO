@@ -1,0 +1,65 @@
+{% extends 'Curso.html.twig' %}
+{% block contenido %}
+<center><h2> Lista de Cursos </h2><br>
+<div class="row">
+	<div class="col-md-6">
+		Instituto:
+		<div id="divInst">
+			<select class='selectpicker' id="selInst" onchange="cargarPensums()" title='Seleccione Instituto'>
+			</select>
+		</div>
+		<br>
+
+		Pensum:
+		<div id="divPen">
+			<select class='selectpicker' id="selPen" onchange="cargarPeriodos()" data-live-search='true' data-size='auto' multiple data-max-options="1" title='Seleccione Pensum'>
+			</select>
+		</div>
+	</div>
+	<div class="col-md-6">
+		Periodo:
+		<div id="divPer">
+			<select class='selectpicker' id="selPer" data-live-search='true' data-size='auto' multiple data-max-options="1" title='Seleccione Periodo'>
+			</select>
+		</div>
+		<br>
+		Patrón:
+		<div id="divPat">
+			<input type="text" id="patron" class='form-control'  placeholder="Patrón de Búsqueda" style='width:40%;'></input>
+		</div>
+		<br>
+
+			<button class="btn btn-dark btn-sm" onclick="listarCursos()">Buscar</button>
+
+	</div>
+</div>
+
+<br>
+<div class="row">
+	<div class="col-md-12" id="divLis">
+	<div class="col-md-4">
+	{% if (login.obtenerPermiso('CursoAgregar')) %}
+		<a href="index.php?m_vista=CrearModificarCurso&m_formato=html5&m_modulo=curso&m_accion=mostrar"><button class="btn btn-success btn-xs">Agregar Curso</button></a>
+	{% endif %}
+	</div>
+		<div id="panelB" hidden class='col-md-8'>
+		{% if (login.obtenerPermiso('CursoAgregar')) %}
+			<button class="btn btn-warning btn-xs" onclick="verificarChecks('mod')">Modificar Curso</button>
+		{% endif %}
+		{% if (login.obtenerPermiso('CurEstudianteListar')) %}
+			<button class="btn btn-info btn-xs" onclick="verificarChecks('le')">Lista de Estudiantes</button>
+			<button class="btn btn-info btn-xs" onclick="verificarChecks('lepdf')">Lista de Estudiantes en PDF</button>
+		{% endif %}
+		{% if (login.obtenerPermiso('CurEstudianteModificar')) %}
+			<button class="btn btn-info btn-xs" onclick="verificarChecks('cn')">Cargar Notas</button>
+		{% endif %}
+		{% if (login.obtenerPermiso('CurEstudianteModificar')) %}
+			<button class="btn btn-info btn-xs" onclick="verificarChecks('ri')">Retirar Estudiante</button>
+		{% endif %}
+		</div>
+
+		<br><br>
+	</div>
+</div>
+
+{% endblock %}

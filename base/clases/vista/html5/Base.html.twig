@@ -1,0 +1,460 @@
+{% block base %}
+<!DOCTYPE html>
+<html lang="es">
+		<head>
+		{% block head %}
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta name="description" content="Sistema Control de Notas del IUT-FRP">
+			 <meta name="author" content="IUT-FRP">
+			<link rel="shortcut icon" href="recursos/assets/ico/favicon.ico">
+
+				<title>{% block titulo %}Sistema de Gestión Académica{% endblock %}</title>
+
+
+			{% block headBase %}
+				<!-- Bootstrap core CSS -->
+
+				<link href="recursos/select/bootstrap-select.css" rel="stylesheet">
+				<link href="recursos/date/bootstrap-datetimepicker.css" rel="stylesheet">
+				<link rel="stylesheet" href="recursos/assets/css/font-awesome.min.css">
+
+				<link rel="stylesheet" href="recursos/assets/css/main.css">
+
+
+				<script type="text/javascript">
+				   function sleep() {
+					  $('#table').DataTable();
+					}
+				</script>
+				<script src="modulos/login/vista/html5/javascript/Login.js"> </script>
+
+
+			     <!-- -------------- Datatables CSS -------------- -->
+			   <link href="recursos/flaty/data-tables/DT_bootstrap.css" rel="stylesheet">
+
+				 <!-- -------------- CSS - theme -------------- -->
+   				<link rel="stylesheet" type="text/css" href="recursos/flaty/css/theme.css">
+				<link rel="stylesheet" type="text/css" href="recursos/flaty/css/github.css">
+
+			    <link rel="stylesheet" type="text/css" href="recursos/flaty/fonts/fonts.css">
+		 <!-- -------------- CSS - theme -------------- -->
+				 <link rel="stylesheet" href="recursos/tema/jquery2.css">
+
+
+			{% endblock %}
+
+			{% block headVista %}
+			{% endblock %}
+
+
+		{% endblock %}
+
+		</head>
+
+			<body class="user-forms-inputs sb-l-o sb-r-c onload-check" style="min-height: 650px;">
+
+    		{% block body %}
+
+    		{% block menuConfig %}
+
+		{% endblock %}
+
+
+
+<div id="main">
+	{% block menuDerecho %}
+
+
+	    <!-- -------------- Header  -------------- -->
+	    <header class="navbar navbar-fixed-top bg-dark">
+	        <div class="navbar-logo-wrapper dark bg-dark">
+	            <a class="navbar-logo-text" href="dashboard1.html">
+	                <b>Gestor Academico</b>
+	            </a>
+	            <span id="sidebar_left_toggle" class="icon-resize-horizontal"></span>
+	        </div>
+	        <ul class="nav navbar-nav navbar-left">
+
+	            <li class="hidden-xs">
+	                <a class="navbar-fullscreen toggle-active" href="#">
+	                    <span class="icon-resize-full"></span>
+	                </a>
+	            </li>
+	        </ul>
+
+	        <ul class="nav navbar-nav navbar-right">
+	        
+	            <li class="dropdown dropdown-fuse">
+	                <a href="#" class="dropdown-toggle fw600" data-toggle="dropdown">
+	                    <span class="hidden-xs">
+							<div id='datUsuario'>
+							<button class="btn btn-primary btn-xs" onclick="cerrarSesion()">{{ datos[0][0] }} - Cerrar Sesión</button>
+								<img src="{{ fotoPerfil }}" alt="avatar" style='border-radius:50%;' class="mw60">
+							</div>
+						</span>
+
+
+	                </a>
+
+	            </li>
+	        </ul>
+	    </header>
+	    <!-- -------------- /Header  -------------- -->
+	      <!-- -------------- Sidebar  -------------- -->
+	    <aside id="sidebar_left" class="nano nano-light affix has-scrollbar sidebar-default">
+
+	        <!-- -------------- Sidebar Left Wrapper  -------------- -->
+	        <div class="sidebar-left-content nano-content" tabindex="0" style="margin-right: -17px;">
+
+	            <!-- -------------- Sidebar Header -------------- -->
+	            <header class="sidebar-header">
+
+	                <!-- -------------- Sidebar - Author -------------- -->
+	                <div class="sidebar-widget author-widget">
+	                    <div class="media">
+	                        <a class="media-left" href="#">
+	                            <img src="{{ fotoPerfil }}" style='border-radius:50%;' class="img-responsive">
+	                        </a>
+
+	                        <div class="media-body">
+	                            <div class="media-links">
+	                                <a href="#" class="sidebar-menu-toggle">Menu -</a> <a href="javascript:cerrarSesion()">Desconectar</a>
+	                            </div>
+	                            <div class="media-author">{{ datos[0][0] }}</div>
+	                        </div>
+	                    </div>
+	                </div>
+
+	            </header>
+	            <!-- -------------- /Sidebar Header -------------- -->
+
+	            <!-- -------------- Sidebar Menu  -------------- -->
+	            <ul class="nav sidebar-menu">
+	                <li>
+	                    <a href="index.php" class="accordion-toggle">
+	                        <span class="fa fa-dashboard"></span>
+	                        <span class="sidebar-title">SISGESAC</span>
+	                    </a>
+	                    <ul class="nav sub-nav">
+							<li>
+								<a href="index.php"><span class="glyphicon glyphicon-tags"></span>Inicio</a>
+							</li>
+	                    </ul>
+	                </li>
+	                <li class="sidebar-label pt25">Gestiones</li>
+	                <li>
+	                    <a class="accordion-toggle" href="#">
+	                        <span class="fa fa-building-o"></span>
+	                        <span class="sidebar-title">Instituto</span>
+	                        <span class="caret"></span>
+	                    </a>
+	                    <ul class="nav sub-nav">
+	                        <li>
+	                            <a href="index.php?m_modulo=instituto&m_formato=html5&m_accion=listar&m_vista=Listar">
+	                                <span class="glyphicon glyphicon-tags"></span>Búsqueda</a>
+	                        </li>
+
+	                    </ul>
+	                </li>
+
+
+	               <li>
+	                    <a class="accordion-toggle" href="#">
+	                        <span class="fa fa-book"></span>
+	                        <span class="sidebar-title">Pensum</span>
+	                        <span class="caret"></span>
+	                    </a>
+	                    <ul class="nav sub-nav">
+	                    	<li>
+	                            <a href="index.php?m_modulo=unidad&m_formato=html5&m_accion=listarUnidades&m_vista=Listar">
+	                                <span class="fa fa fa-arrows-h"></span>
+	                                Listar Unidades Curriculares
+	                            </a>
+
+	                        </li>
+	                         <li>
+	                            <a href="index.php?m_modulo=unidad&m_formato=html5&m_accion=preAgregarModif&m_vista=Agregar">
+	                                <span class="fa fa-hand-o-up"></span>
+	                                Crear Unidad Curricular
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="index.php?m_modulo=pensum&m_formato=html5&m_accion=listar&m_vista=Listar">
+	                                <span class="fa fa fa-arrows-h"></span>
+	                                Listar Pensums
+	                            </a>
+
+	                        </li>
+	                        <li>
+	                            <a href="index.php?m_modulo=pensum&m_formato=html5&m_accion=mostrar&m_vista=Agregar">
+	                                <span class="fa fa-hand-o-up"></span>
+	                                Crear Pensum
+	                            </a>
+	                        </li>
+	                    </ul>
+	                </li>
+	                
+	            {% if (login.obtenerPermiso('PersonaListar')) %}
+	                 <li>
+	                    <a class="accordion-toggle" href="#">
+	                        <span class="fa fa-group"></span>
+	                        <span class="sidebar-title">Personas</span>
+	                        <span class="caret"></span>
+	                    </a>
+	                    <ul class="nav sub-nav">
+	                        <li>
+	                        	<a href="index.php?m_accion=listar&m_modulo=persona&m_vista=Listar&m_formato=html5">
+	                                <span class="fa fa-eye"></span>Búsqueda</a>
+
+	                        </li>
+	                    {% if (login.obtenerPermiso('PersonaAgregar')) %}
+	                        <li>
+	                            <a href="index.php?m_modulo=persona&m_vista=Principal&m_formato=html5&accion=N&persona=-1">
+	                            <span class="fa fa-user"></span>Agregar</a>
+	                        </li>
+	                    {% endif %}
+	                    </ul>
+	                </li>
+	            {% endif %}
+<!--
+	                <li class="sidebar-label pt30">Académico</li>
+-->
+ 					<li>
+	                    <a class="accordion-toggle" href="#">
+	                       <span class="fa fa-pencil"></span>
+	                        <span class="sidebar-title">Académico</span>
+	                        <span class="caret"></span>
+	                    </a>
+	                    <ul class="nav sub-nav">
+	                    {% if (login.obtenerPermiso('CursoListar')) %}
+	                        <li>
+	                            <a href="index.php?m_modulo=curso&m_accion=mostrar&m_vista=ListarCursos&m_formato=html5">
+	                                <span class="fa fa-warning"></span>Lista de Cursos</a>
+	                        </li>
+	                     {% endif %}
+	                     {% if (login.obtenerPermiso('CursoAgregar')) or (login.obtenerPermiso('CursoModificar')) %}
+	                        <li>
+	                            <a href="index.php?m_modulo=curso&m_formato=html5&m_accion=mostrar&m_vista=CrearModificarCurso">
+	                                <span class="fa fa-warning"></span>Crear/Modificar Curso</a>
+	                        </li>
+	                      {% endif %}
+	                      {% if (login.obtenerPermiso('CurEstudianteAgregar')) %}
+	                        <li>
+	                            <a href="index.php?m_modulo=curso&m_formato=html5&m_accion=mostrar&m_vista=Inscripcion">
+	                                <span class="fa fa-warning"></span>Inscripción</a>
+	                        </li>
+	                       {% endif %}
+	                         <li>
+	                            <a href="index.php?m_modulo=periodo&m_accion=mostrar&m_vista=AdministrarPeriodos&m_formato=html5">
+	                                <span class="fa fa-warning"></span>Periodos</a>
+	                        </li>
+	                        {% if (login.obtenerPermiso('CurEstudianteListar')) %}
+	                         <li>
+	                            <a href="index.php?m_vista=ListarEstudiantes&m_formato=html5&m_modulo=curso&m_accion=mostrar">
+	                                <span class="fa fa-warning"></span>Lista de Estudiantes</a>
+	                        </li>
+	                        {% endif %}
+	                        {% if (login.obtenerPermiso('CurEstudianteModificar')) %}
+	                        <li>
+	                            <a href="index.php?m_modulo=curso&m_formato=html5&m_accion=mostrar&m_vista=InscribirRetirarEstudiante">
+	                                <span class="fa fa-warning"></span>Retirar Estudiante</a>
+	                        </li>
+	                        {% endif %}
+	                        {% if (login.obtenerPermiso('CurEstudianteModificar')) %}
+	                        <li>
+	                            <a href="index.php?m_vista=RetirarUnidadCurricular&m_formato=html5&m_modulo=curso&m_accion=mostrar">
+	                                <span class="fa fa-warning"></span>Retirar Unidad Curricular</a>
+	                        </li>
+	                        {% endif %}
+
+	                        
+	                        <li>
+	                            <a href="index.php?m_vista=ValidacionElectivas&m_formato=html5&m_modulo=curso&m_accion=mostrar">
+	                                <span class="fa fa-warning"></span>Validar Electivas</a>
+	                        </li>
+	                        
+
+	                        <li>
+	                            <a href="index.php?m_vista=Acreditables&m_formato=html5&m_modulo=curso&m_accion=mostrar">
+	                                <span class="fa fa-warning"></span>Actividades Acreditables</a>
+	                        </li>
+
+	                        {% if (login.obtenerPermiso('CursoListar')) %}
+	                        <li>
+	                            <a href="index.php?m_vista=CrearModificarCursoEspecial&m_formato=html5&m_modulo=curso&m_accion=mostrar">
+	                                <span class="fa fa-warning"></span>Crear/Modificar Electiva</a>
+	                        </li>
+
+	                        {% endif %}
+	                        
+	                        {% if (login.obtenerPermiso('convalidar')) %}
+	                        <li>
+	                            <a href="index.php?m_vista=Convalidaciones&m_formato=html5&m_modulo=curso&m_accion=mostrar">
+	                                <span class="fa fa-warning"></span>Convalidaciones</a>
+	                        </li>
+	                        {% endif %}
+	                    </ul>
+	                </li>
+
+					 <li class="sidebar-label pt30">Configuración</li>
+	                <li>
+	                    <a href="#">
+	                        <span class="fa fa-user"></span>
+	                        <span class="sidebar-title">Crear Usuario</span>
+	                    </a>
+	                </li>
+
+	                <li>
+	                    <a href="index.php">
+	                        <span class="fa fa-key"></span>
+	                        <span class="sidebar-title">Cambiar Contraseña</span>
+	                    </a>
+	                </li>
+
+
+
+	            </ul>
+	            <!-- -------------- /Sidebar Menu  -------------- -->
+
+	            <!-- -------------- Sidebar Hide Button -------------- -->
+	            <div class="sidebar-toggler">
+	                <a href="#">
+	                    <span class="icon-reply"></span>
+	                </a>
+	            </div>
+	            <!-- -------------- /Sidebar Hide Button -------------- -->
+
+	        </div>
+	        <!-- -------------- /Sidebar Left Wrapper  -------------- -->
+
+	    <div class="nano-pane"><div class="nano-slider" style="height: 41px; transform: translate(0px, 0px);"></div></div></aside>
+
+	     <!-- -------------- Main Wrapper -------------- -->
+	    <section id="content_wrapper">
+
+	        <!-- -------------- Topbar Menu Wrapper -------------- -->
+	        <div id="topbar-dropmenu-wrapper">
+	            <div class="topbar-menu row">
+	                <div class="col-xs-4 col-sm-2">
+	                    <a href="#" class="service-box bg-success">
+	                        <span class="fa fa-picture-o"></span>
+	                        <span class="service-title">Images</span>
+	                    </a>
+	                </div>
+	                <div class="col-xs-4 col-sm-2">
+	                    <a href="#" class="service-box bg-alert">
+	                        <span class="fa fa-envelope"></span>
+	                        <span class="service-title">Messages</span>
+	                    </a>
+	                </div>
+	                <div class="col-xs-4 col-sm-2">
+	                    <a href="#" class="service-box bg-system">
+	                        <span class="fa fa-cog"></span>
+	                        <span class="service-title">Settings</span>
+	                    </a>
+	                </div>
+	                <div class="col-xs-4 col-sm-2">
+	                    <a href="#" class="service-box bg-dark">
+	                        <span class="fa fa-user"></span>
+	                        <span class="service-title">Users</span>
+	                    </a>
+	                </div>
+	            </div>
+        </div>
+        <!-- -------------- /Topbar Menu Wrapper -------------- -->
+
+	{% endblock %}
+
+
+	<!-- ******************************** -->
+	<div class="alerts">
+
+	</div>
+
+
+	{% block contenido %}
+
+	{% endblock %}
+
+
+
+	   <!-- -------------- Content -------------- -->
+       <section id="content" class="table-layout">
+
+
+
+
+        </section>
+        <!-- -------------- /Content -------------- -->
+
+</div>
+	{% block desarrolladores %}
+
+
+
+	{% endblock %}
+
+
+	{% block JavaScriptBase %}
+				<!-- -------------- jQuery -------------- -->
+				<script src="recursos/flaty/jquery/jquery-1.11.3.min.js"></script>
+				<script src="recursos/flaty/jquery/jquery-ui.min.js"></script>
+
+				<!-- -------------- Datatables JS -------------- -->
+				<script src="recursos/flaty/data-tables/jquery.dataTables.js"></script>
+				<script src="recursos/flaty/data-tables/DT_bootstrap.js"></script>
+
+				<script src="recursos/assets/js/classie.js"></script>
+				<!--
+				<script src="recursos/assets/js/smoothscroll.js"></script>-->
+				<script src="recursos/date/moment.js"></script>
+				<script src="recursos/date/bootstrap-datetimepicker.js"></script>
+				<script src="recursos/select/bootstrap-select.js"></script>
+
+					<script src="recursos/assets/js/main.js"></script>
+				<script src="recursos/javascript/LibreriaMVC.js"></script>
+				<script src="recursos/javascript/validaciones.js"></script>
+
+				<script type="text/javascript"> {{login.obtenerPermisosJavascript('per')}} </script>
+
+				<!-- -------------- HighCharts Plugin -------------- -->
+				<script src="recursos/flaty/assets/highcharts.js"></script>
+
+				<!-- -------------- Theme Scripts -------------- -->
+				<script src="recursos/flaty/assets/utility.js"></script>
+				<script src="recursos/flaty/assets/dts.js"></script>
+				<script src="recursos/flaty/assets/main.js"></script>
+				<script src="recursos/flaty/assets/widgets_sidebar.js"></script>
+
+
+				{% block headModulo %}
+				{% endblock %}
+
+
+				<script type="text/javascript">
+				    jQuery(document).ready(function () {
+				        "use strict";
+				        // Init Theme Core
+				        Core.init();
+				        // Init Demo JS
+				        Demo.init();
+				          $('#table').DataTable();
+				    });
+
+
+
+				</script>
+
+					{% block JavaScriptInit %}
+					{% endblock %}
+
+
+	{% endblock %}
+
+	{% endblock %}
+	<div class="modal fade" id="source-modal" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">  <div class="modal-dialog modal-lg"> <div class="modal-content"> <div class="modal-header"> <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button> <h4 class="modal-title" id="myModalLabel">Source Code HTML</h4> </div> <div class="modal-body"> <div class="highlight"> <pre class=" hljs java">&lt;input type=<span class="hljs-string">"text"</span> id=<span class="hljs-string">"inputStandard"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"form-control"</span> placeholder=<span class="hljs-string">"Type Here..."</span>&gt;</pre> </div> </div> <div class="modal-footer"> <button type="button" class="btn btn-primary btn-clipboard">Highlight Source</button> </div> </div> </div> </div>
+	</body>
+
+	</html>
+{% endblock %}

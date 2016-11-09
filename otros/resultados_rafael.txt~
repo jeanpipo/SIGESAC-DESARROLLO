@@ -1,0 +1,15 @@
+
+- faltaron los comentarios de instituto
+
+
+
+Detalles pequeños que pueden proyectar errores difíciles de detectar más adelante.
+
+* faltó la clave alternativa de prelación:  cod_pensum, con_instituto, cod_uni_curricular, cod_uni_cur_prelada
+* sis.t_uni_tra_pensum.cod_trayecto puede ser null y lo colocaste como not null, este detalle es importante, porque después da errores
+        debes leer bien las correcciones, aquí probablemente asumiste que todos eran not null, y no era así.. revisa.
+* No cambiaste los comentarios que habías copiado y pegado (pero no cambiado) en la tabla sis.t_uni_tra_pensum. 
+* No colocaste la restricción not null en sis.t_uni_tra_pensum.cod_tipo y estaba indicada en las correcciones. 
+
+
+

@@ -1,0 +1,15 @@
+{% extends 'Base.html.twig' %}
+{% block headVista %}
+{% endblock %}
+{% block headModulo %}
+
+    <script src="modulos/curso/vista/html5/js/Curso.js"></script>
+    <script src="modulos/curso/vista/html5/js/UtilCurso.js"></script>
+    
+    {% if (login.obtenerPermiso('convalidar')) %}
+    	<script src="modulos/curso/vista/html5/js/Convalidar.js"></script>
+    {% endif %}
+    {% if (login.obtenerPermiso('CursoListar')) %}
+    	<script src="modulos/curso/vista/html5/js/Electiva.js"></script>
+    {% endif %}
+{% endblock %}

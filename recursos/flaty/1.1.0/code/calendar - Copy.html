@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Calendar - FLATY Admin</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <!--base css styles-->
+        <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/bootstrap/bootstrap-responsive.min.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/normalize/normalize.css">
+
+        <!--page specific css styles-->
+        <link rel="stylesheet" href="assets/jquery-ui/jquery-ui.min.css" />
+        <link rel="stylesheet" href="assets/fullcalendar/fullcalendar/fullcalendar.css" />
+
+        <!--flaty css styles-->
+        <link rel="stylesheet" href="css/flaty.css">
+        <link rel="stylesheet" href="css/flaty-responsive.css">
+
+        <link rel="shortcut icon" href="img/favicon.png">
+
+        <script src="assets/modernizr/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        
+        <!-- END Theme Setting -->
+
+        
+
+
+            <!-- BEGIN Content -->
+            <div id="main-content">
+                <!-- BEGIN Page Title -->
+                
+
+                <!-- BEGIN Main Content -->
+                <div class="row-fluid">
+                    <div class="span12">
+                        <div class="box">
+                            <div class="box-title">
+                                <h3><i class="icon-calendar"></i> Calendar</h3>
+                                <div class="box-tool">
+                                    <a data-action="collapse" href="#"><i class="icon-chevron-up"></i></a>
+                                    <a data-action="close" href="#"><i class="icon-remove"></i></a>
+                                </div>
+                            </div>
+                            <div class="box-content">
+                                <div class="row-fluid">
+                                  <div class="span3 responsive" data-tablet="span12 fix-margin" data-desktop="span8">
+                                     <!-- BEGIN DRAGGABLE EVENTS PORTLET-->
+                                     <h3 class="event-form-title">Draggable Events</h3>
+                                     <div id="external-events">
+                                        <form class="inline-form">
+                                           <p><input type="text" value="" class="span12" placeholder="Event Title..." id="event_title" /></p>
+                                           <p>
+                                             <select id="event_priority" data-placeholder="Select Label..." class="span12 chosen">
+                                               <option value="default">Default</option>
+                                               <option value="success">Normal</option>
+                                               <option value="info">Medium</option>
+                                               <option value="warning">Urgent</option>
+                                               <option value="important">Important</option>
+                                             </select>
+                                           </p>
+                                           <p><a href="javascript:;" id="event_add" class="btn btn-primary">Add Event</a></p>
+                                        </form>
+                                        <hr />
+                                        <div id="event_box"></div>
+                                        <p><label for="drop-remove"><input type="checkbox" id="drop-remove" /> Remove after drop</label></p>
+                                        <hr class="visible-phone" />
+                                     </div>
+                                     <!-- END DRAGGABLE EVENTS PORTLET-->
+                                  </div>
+                                  <div class="span9">
+                                     <div id="calendar" class="has-toolbar">aqui</div>
+                                  </div>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Main Content -->
+                
+                <footer>
+                    <p>2013 © FLATY Admin Template.</p>
+                </footer>
+
+                <a id="btn-scrollup" class="btn btn-circle btn-large" href="#"><i class="icon-chevron-up"></i></a>
+            </div>
+            <!-- END Content -->
+        </div>
+        <!-- END Container -->
+
+
+        <!--basic scripts-->
+        <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>-->
+        <script>window.jQuery || document.write('<script src="assets/jquery/jquery-1.10.1.min.js"><\/script>')</script>
+        <script src="assets/bootstrap/bootstrap.min.js"></script>
+        <script src="assets/nicescroll/jquery.nicescroll.min.js"></script>
+
+        <!--page specific plugin scripts-->
+        <script src="assets/jquery-ui/jquery-ui.min.js"></script>
+        <script src="assets/fullcalendar/fullcalendar/fullcalendar.min.js"></script>
+
+        <!--flaty scripts-->
+        <script src="js/flaty.js"></script>
+    </body>
+</html>

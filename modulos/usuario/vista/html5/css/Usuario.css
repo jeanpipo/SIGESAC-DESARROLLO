@@ -1,0 +1,42 @@
+.panel-heading{
+	 padding: 1px;
+}
+.list-group-item {
+
+    padding: 2px 15px;
+}
+#lisUsuario{
+  height: 300px; 
+  overflow: auto;
+
+}
+
+#panUsuarios{
+  border: 0px ;
+
+}
+
+.iconoModificar{
+color: #69B1DE;
+}
+.iconoModificar:hover {
+    color: #16567D;
+    font-size: 20px;
+} 
+.iconoEliminar{
+color: #DF394F;
+}
+.iconoEliminar:hover{
+color: red;
+font-size: 20px;
+}
+.usuElementos:hover{
+
+	color: #16567D;
+background-color : #000000;
+  	
+}
+.icoAgrUsuario{
+  font-size: 30px;
+  color: #5cb85c;
+}

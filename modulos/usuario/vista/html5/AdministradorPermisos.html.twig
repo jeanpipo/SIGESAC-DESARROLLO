@@ -1,0 +1,263 @@
+{% extends 'Usuario.html.twig' %}
+
+{% block headModulo %}
+	<title>Administrador de Permisos</title>
+	<link rel="stylesheet" href="modulos/usuario/vista/html5/css/administrarPermisos.css">
+	<script src="modulos/usuario/vista/html5/javascript/administrarPermiso.js"></script>
+{%endblock%}
+
+{% block contenido %}
+</br>
+</br>
+<div class="container">
+
+	 
+	<div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12"> <center><h1>Administración de Permisos</h1></center></div>
+	<div class ="row" id="divPerUsuario"> <!--div permisos usuarios -->
+
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="divLisUsuarios"> <!--div lista de usuarios -->
+			<br>
+			<div class="row"><!--div imput de buscar -->
+				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+					<div class="input-group">
+  						<span class="input-group-addon" title="Buscar usuario y roles"><i class="icon-search"></i>
+  						</span>
+  						<input oninput="busUsuarios()" id="patronUsuariosRoles" type="text" class="form-control 1" placeholder="Buscar Usuarios y roles" id="busUsuarioRoles">
+					</div>
+					<br>
+				</div>
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+					<input class ="sinSalto"  onchange="busUsuarios()" type='checkbox'  id='checkPriRoles'><h4 class="sinSalto letrasPeque"> Primero roles</h4>
+				</div>
+
+			</div>
+
+		
+			<input type ="hidden" id="usuModificar" value="{{usuario[0].obtenerUsuario()}}">
+			<input type ="hidden" id="codUsuModificar" value="{{usuario[0].obtenerCodigo()}}">
+			<input type ="hidden" id="canPermisos" value="0">
+			<input type ="hidden" id="canIguales" value="0">
+			<input type ="hidden" id="canAgregar" value="0">
+			<input type ="hidden" id="canRevocar" value="0">
+			<div class="row" id="lisUsuarios"> <!--lista de usuarios -->
+				<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+					<div id="panelUsuarioRoles" class="panel panel-default" >
+						<div class="row">
+	  						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+	  							<div class="panel-heading">
+	  								<h3 class= "sinSalto"><center> Lista de usuarios y roles </center> </h3> 
+	  							</div>
+	  						</div>
+	  							 
+	  					</div>
+
+	  					
+						<div class="list-group">
+							<a class="list-group-item morado" id="tituloListaUsuario"> 
+								<div class="row">
+	 								<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 blanco"> #id </div>
+	 								<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 blanco"> Usuario </div>
+									<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 blanco"> Tipo </div>
+									<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 blanco"></div>
+	  							</div>
+	  						</a>
+		           		</div>
+				        
+				        	<div class="list-group" id="listaUsuRoles" >
+		           			{% for usuario in usuarios %}
+	  							{% if usuario.obtenerTipo() == 'U' %}
+    								{% set tipoUsu = 'Usuario' %}
+    								{% set class = 'usuAcciones' %}
+    								{% set idIco = 'icoUsu' %}
+    								{% set classIco = 'icoModUsuario' %}
+    							{% else %}
+    								{% set tipoUsu = 'Rol' %}
+    								{% set class = 'rolAcciones' %}
+    								{% set idIco = 'icoRol' %}
+    								{% set classIco = 'icoModRol' %}
+								{% endif %}
+
+							 	
+		  							<a id="{{usuario.obtenerTipo()}}{{usuario.obtenerCodigo()}}" class="list-group-item {{class}}"> 
+		 								<div class="row">
+		  									<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"> {{ usuario.obtenerCodigo() }} </div>
+		  									<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5"> {{ usuario.obtenerUsuario() }} </div>
+		  									<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"> {{ tipoUsu }} </div>
+		  									<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"> 
+		  										<i id="{{idIco}}{{usuario.obtenerCodigo()}}" title="Modificar permisos "class="icon-pencil {{classIco}}" onclick=" modUsuAcciones({{usuario.obtenerCodigo()}},  '{{ usuario.obtenerUsuario() }}')" ></i>
+		  									</div>
+		  								</div>
+									</a>
+								
+
+
+
+		  					{% endfor %}
+
+	  					</div>
+
+				 	</div>
+				 </div>
+
+            </div> <!--lista de usuarios -->
+
+
+
+		</div><!--div lista de usuarios -->
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="divAdmPerUsuarios"> <!--div de acciones de usuarios -->
+				<br>
+				{% if usuario != null %}
+					<div id="panelAccionesUsuarios" class="panel panel-default" >
+						<div class="list-group">
+							<a class="list-group-item verde" id="tituloModificarPermiso"> 
+								<div class="row">
+		 							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 blanco"> 
+		 								<center> <h4 class="sinSalto">Modificar Permisos</h4> </center>
+		 							</div>
+		  						</div>
+		  					</a>
+			        	</div>
+			        	<div class="row">
+			        		<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+			        		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+			        			<h4> <i class="icon-user" id="icoUserInfo" ></i> Usuario : {{ usuario[0].obtenerUsuario() }} </h4>
+
+			        		</div>
+			        		<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5"> <h4>#id: {{ usuario[0].obtenerCodigo() }}</h4> </div>
+						</div>
+
+						<br>
+						<div class="row">
+							<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 sinPadding">
+								<h5 class="azul titBold"> Clonar permisos de 
+									<i class="icon-chevron-right" id="icoUserInfo" ></i>
+									<i class="icon-chevron-right" id="icoUserInfo" ></i> 
+								</h5>
+							</div>
+
+			        		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 sinPadding">
+			        			<div class="input-group">
+
+	  								<span class="input-group-addon" title="Buscar usuario o rol a clonar">
+	  									<i> <img src='recursos/assets/ico/copiar.png' height="20px" width="20px" class='img-circle  '></i>
+	  								</span>
+	  								<input  id="busUsuarioRolesClonar" type="text" class="form-control 1" placeholder="Buscar usuario o rol a clonar" >
+								</div>
+			        		</div>
+
+			        		
+						</div>
+						<br>
+
+						<br>
+						<div class="row"><!--autobuscar de acciones -->
+							<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-7 ">
+								<div class="input-group">
+									<span class="input-group-addon" title="Buscar acciones"><i class="icon-search"></i>
+	  								</span>
+	  								<input oninput="obtPermisos('{{usuario[0].obtenerUsuario()}}',sucBusAccionesUsuarios)" id="busAccionesUsuarios" type="text" class="form-control 1" placeholder="Buscar acciones" >
+								</div>
+								
+							</div>
+							<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 ">
+								
+								<button  onclick="removerTodas()" disabled id="removerTodas" type="button" title="Remover todas las acciones "class="btn btn-danger btn-md">
+	  								 <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Remover todas
+								</button>
+							</div>
+						</div> <!--autobuscar de acciones-->
+
+						<br>
+						<div class="row"> <!--div de lista de acciones-->
+							<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 "> </div>
+
+							<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 " id="listaAccionesUsuarios"> 
+
+								<div id="listaPanelAccionesUsuarios" class="panel panel-default" > <!--div del subpaneld e la lista de acciones-->
+									<div class="list-group">
+										<a class="list-group-item azulClaro" id="tituloListaAccionesUsuarios"> 
+											<div class="row">
+		 										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 blanco"> 
+		 											<center> <h4 class="sinSalto">Lista de permisos en acciones</h4> </center>
+		 										</div>
+		  									</div>
+		  								</a>
+			        				</div>
+
+			        				<div class="list-group" id="swichesAcciones">
+										
+			        				</div>
+			        			</div> <!--div del subpaneld e la lista de acciones-->
+
+
+
+							</div>
+
+
+							<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 "> </div>
+
+
+
+
+						</div><!--div de lista de acciones-->
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+								<center>
+									<button  id='botGuaPErmisos' disabled onclick='guaPermisos()' type="button" title="Guardar Cambios" class="btn btn-info btn-xs">
+	  								 <span class="glyphicon glyphicon-floppy-disk"  aria-hidden="true"></span> Guardar Cambios
+								</button>
+								</center>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 ">
+							</div>
+							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 ">
+								<h5 id="h5canIguales" class="textoPequeno"> <i  class='icon-asterisk iconListaAcciones iconAzul sinSalto'></i> Se mantienen: <i id='conIguales' class='iconAzul textoPequeno '> </i> </h5>
+							</div>
+							<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 ">
+								<h5  id="h5canAgregadas" class="textoPequeno"> <i class='icon-asterisk iconListaAcciones iconVerde sinSalto'></i> A agregar: <i id='conAgregar' class='iconVerde textoPequeno '> </i> </h5>
+							</div>
+							<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 ">
+								<h5 id="h5canRevocadas" class="textoPequeno"> <i class='icon-asterisk iconListaAcciones iconRojo sinSalto'></i> A revocar: <i id='conRevocadas' class='iconRojo textoPequeno '> 	</i> </h5>
+							</div>
+							</div>
+						</div>
+						<br>
+			        </div> <!--div panel usuarios acciones -->
+		        
+		         {% endif %}
+
+		</div> <!--div de acciones de usuarios -->
+
+
+
+	</div><!--div permisos usuarios -->
+
+
+</div> <!--div del container -->
+
+
+
+
+{%endblock%}

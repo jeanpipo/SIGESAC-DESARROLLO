@@ -1,0 +1,154 @@
+{% extends 'Base.html.twig' %}
+
+{% block base %}
+
+<html><head>
+    <!-- -------------- Meta and Title -------------- -->
+    <meta charset="utf-8">
+    <title>SISGESAC - Sistema de Gestión Académica</title>
+    <meta name="keywords" content="SISGESAC">
+    <meta name="description" content="SISGESAC - Sistema de Gestión Académica">
+    <meta name="author" content="laslacras">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- -------------- Fonts -------------- -->
+
+
+    <!-- -------------- CSS - theme -------------- -->
+    <link rel="stylesheet" type="text/css" href="modulos/login/vista/html5/css/theme.css">
+
+    <!-- -------------- CSS - allcp forms -------------- -->
+    <link rel="stylesheet" type="text/css" href="modulos/login/vista/html5/css/forms.css">
+
+
+    <!-- -------------- IE8 HTML5 support  -------------- -->
+    <!--[if lt IE 9]>
+    <script src="modulos/login/vista/html5/javascript/html5shiv.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+<link rel="stylesheet" type="text/css" href="modulos/login/vista/html5/css/github.css"></head>
+
+<body class="utility-page sb-l-c sb-r-c onload-check" style="min-height: 21px;">
+
+<!-- -------------- Body Wrap  -------------- -->
+<div id="main" class="animated fadeIn">
+
+    <!-- -------------- Main Wrapper -------------- -->
+    <section id="content_wrapper">
+
+        <div id="canvas-wrapper">
+            <canvas id="demo-canvas" width="1511" height="741"></canvas>
+        </div>
+
+        <!-- -------------- Content -------------- -->
+        <section id="content">
+
+            <!-- -------------- Login Form -------------- -->
+            <div class="allcp-form theme-primary mw320" id="login">
+                <div class="text-center mb20">
+					<h1 style='color:#E7E7E7;text-shadow:2px 2px 2px #616161;'>SISGESAC</h1>
+	
+					<h4 style='color:#E1E1E1'>Sistema de Gestión Académica</h4>
+                </div>
+                <div class="panel mw320">
+
+                    <form method="post"  id="form-login">
+                        <div class="panel-body pn mv10">
+
+                            <div class="section">
+                                <label for="username" class="field prepend-icon">
+                                    <input type="text" name="username" id="username" class="gui-input" placeholder="Nombre de Usuario">
+                                    <label for="username" class="field-icon">
+                                        <i class="fa fa-user"></i>
+                                    </label>
+                                </label>
+                            </div>
+                            <!-- -------------- /section -------------- -->
+
+                            <div class="section">
+                                <label for="password" class="field prepend-icon">
+                                    <input type="text" name="password" id="password" class="gui-input" placeholder="Contraseña">
+                                    <label for="password" class="field-icon">
+                                        <i class="fa fa-lock"></i>
+                                    </label>
+                                </label>
+                            </div>
+                            <!-- -------------- /section -------------- -->
+
+                            <div class="section">
+                                
+                                <button type="submit" class="btn btn-bordered btn-xs btn-primary pull-right" onclick='iniciarSesion()'>Iniciar Sesión</button>
+                            </div>
+                            <!-- -------------- /section -------------- -->
+
+                        </div>
+                        <!-- -------------- /Form -------------- -->
+                    </form>
+                </div>
+                <!-- -------------- /Panel -------------- -->
+            </div>
+            <!-- -------------- /Spec Form -------------- -->
+
+        </section>
+        <!-- -------------- /Content -------------- -->
+
+    </section>
+    <!-- -------------- /Main Wrapper -------------- -->
+
+</div>
+<!-- -------------- /Body Wrap  -------------- -->
+
+<!-- -------------- Scripts -------------- -->
+
+
+
+<!-- -------------- /Scripts -------------- -->
+
+
+
+<!-- -------------- jQuery -------------- -->
+<script src="modulos/login/vista/html5/javascript/jquery-1.11.3.min.js"></script>
+<script src="modulos/login/vista/html5/javascript/jquery-ui.min.js"></script>
+
+<!-- -------------- CanvasBG JS -------------- -->
+<script src="modulos/login/vista/html5/javascript/canvasbg.js"></script>
+
+<!-- -------------- Theme Scripts -------------- -->
+<script src="modulos/login/vista/html5/javascript/Login.js"></script>
+<script src="modulos/login/vista/html5/javascript/utility.js"></script>
+<script src="modulos/login/vista/html5/javascript/demo.js"></script>
+<script src="modulos/login/vista/html5/javascript/main.js"></script>
+
+<!-- -------------- Page JS -------------- -->
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+
+        "use strict";
+
+        // Init Theme Core
+    //    Core.init();
+
+        // Init Demo JS
+   //    Demo.init();
+
+        // Init CanvasBG
+        CanvasBG.init({
+            Loc: {
+                x: window.innerWidth / 5,
+                y: window.innerHeight / 10
+            }
+        });
+
+    });
+</script>
+
+<!-- -------------- /Scripts -------------- -->
+
+
+
+
+<div class="modal fade" id="source-modal" tabindex="-1" role="dialog">  <div class="modal-dialog modal-lg"> <div class="modal-content"> <div class="modal-header"> <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button> <h4 class="modal-title" id="myModalLabel">Source Code HTML</h4> </div> <div class="modal-body"> <div class="highlight"> <pre> <code class="language-html" data-lang="html"></code> </pre> </div> </div> <div class="modal-footer"> <button type="button" class="btn btn-primary btn-clipboard">Highlight Source</button> </div> </div> </div> </div> </body></html>
+
+
+{% endblock %}

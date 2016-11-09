@@ -1,0 +1,33 @@
+{% extends 'Periodo.html5.twig' %}
+
+{% block contenido %}
+<center><h2> Administrar Periodos</h2>
+
+<div id='rowP'>
+</div>
+
+<div class="row">
+		<center><h3>Lista de Periodos</h3>
+		<br>
+		<div class="col-md-6">
+			<input type="text" id="patron" class='form-control' placeholder='Patrón de búsqueda' ></input>
+			<button class="btn btn-dark btn-xs" onclick='cargarPeriodosP()'>Buscar</button>
+		</div>
+		<br>
+		<div class="col-md-6">
+			<div>
+				<button class="btn btn-info btn-xs" onclick='agregarPeriodoD()'>Agregar Periodo</button>
+			</div>
+
+		</div>
+		<br>
+		<br>
+		<br>
+		<div class="col-md-12" id="divP">
+
+		</div>
+	</div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,142 @@
+//Función que permite ir al servidor con la acción de filtrar y extraer los usuarios a través de un patrón
+//Parámetros de entrada:funSucces: función que se ejecutará una vez traído la respuesta del servidor.
+//						patron: cadena que representa el patrón de búsqueda
+//Valor de retorno: Ninguno.
+
+function filUsuarios(funSucces,patron=null) {
+
+	if (patron ==null){
+	
+		var a=Array("m_modulo","usuario","m_accion","filtrar","patUsuario",$("#patUsuarios").val()
+			);
+	}else 
+		var a=Array("m_modulo","usuario","m_accion","filtrar","patUsuario",patron
+			);
+	ajaxMVC(a,funSucces,error);
+}
+//Función la cual se activará cada vez que haya algún cambio del valor del input de búsqueda de usuarios
+//y llamará a la función filUsuarios que traerá los usuarios para ser mostrados posteriormente en otra función
+//Parámetros de entrada: ninguno.
+//valor de retorno: ninguno.
+function busUsuarios(){
+
+	filUsuarios(mosUsuarios);
+}
+//Función que permite mostrar los iconos eliminar y modificar de los usuarios del panel de usuario cuando se le 
+//pasa el cursor sobre un usuario.
+//Parámetros de entrada: ninguno.
+//Valor de retorno: ninguno.
+function hovUsuarios(){
+	$(".usuElementos").hover(
+				function() {
+					$( "#m"+$( this).attr( "id" )).show();
+					$( "#e"+$( this).attr( "id" )).show();
+					
+				},
+				function() {
+					if (idClick!=$( this).attr("id")) {
+						$( "#m"+$( this).attr( "id" )).hide();
+						$( "#e"+$( this).attr( "id" )).hide();
+					}
+				}
+	);
+}
+//Función que permite mostrar los iconos eliminar y modificar de los usuarios del panel de usuario cuando se le 
+//se le da click sobre un usuario.
+//Parámetros de entrada: ninguno.
+//Valor de retorno: ninguno.
+function cliUsuarios(){
+	$( ".usuElementos" ).click(
+				function() {
+					ocuIcoUsuario();
+					idClick=$( this).attr("id");
+					$( "#m"+$( this).attr( "id" )).show();
+					$( "#e"+$( this).attr( "id" )).show();
+
+				}
+	);
+}
+
+//Función que permite mostrar los usuarios en el panel de la vista a través de la información enviada desde el servidor.
+//Parámetros de entrada: data: objeto que contiene la información enviada desde el servidor.
+//Valor de retorno: ninguno.
+function mosUsuarios(data){
+
+	$("#lisUsuario").remove();
+	var cadena='<div class="list-group" id="lisUsuario">';
+
+	if (data.estatus==-1){
+
+		cadena+="<a  href='#' class='list-group-item  usuElementos'>";
+		cadena+="<div class='row'>";
+  		cadena+="<div class='col-lg-12'> No se encontraron usuarios ";
+  		cadena+="</div>";
+  		cadena+="</div>"
+		cadena+="</a>";
+  		
+	}else{ 
+		var usuarios=data.usuarios;
+
+	   	for (i=0; i< usuarios.length; i++){
+	   		cadena+='<a id="'+ usuarios[i].codigo +'" class="list-group-item usuElementos">';
+		    cadena+='<div class="row">';
+		    cadena+='<div class="col-lg-2">'+usuarios[i].codigo+' </div>';
+		    cadena+='<div class="col-lg-5"> &nbsp;&nbsp;'+usuarios[i].usuario+'  </div>';
+		    cadena+='<div class="col-lg-3"> &nbsp;&nbsp;&nbsp;'+usuarios[i].tipo+' </div>';
+		    cadena+='<div class="col-lg-1">'; 
+		    cadena+='<i id="m'+usuarios[i].codigo+'" title="Modificar usuario "class="icon-pencil iconoModificar icoUsuario"  ></i> </div>';
+		    cadena+='<div class="col-lg-1">';
+		  	cadena+='<i id="e'+usuarios[i].codigo+'" title="Eliminar usuario" class="icon-remove iconoEliminar icoUsuario" ></i>	</div></div></a>';
+	    }
+	}
+	cadena+='</div>';
+   $(cadena).appendTo("#panUsuarios");
+   
+   ocuIcoUsuario();
+   cliUsuarios();
+   hovUsuarios();
+   idClick="";
+
+}
+
+
+//Función que permite ocultar los iconos eliminar y modificar de los usuarios del panel de usuario.
+//Parámetros de entrada: ninguno.
+//Valor de retorno: ninguno.
+function ocuIcoUsuario(){
+	$(".icoUsuario").hide();
+}
+//función que permite utilizar funciones cuando este cargado todo el DOM.
+$(document).ready(function() {
+	ocuIcoUsuario();
+	hovUsuarios();
+	cliUsuarios();
+});
+idClick='';
+//función que permite crear el formulario con todos los campos requeridos para la modificación y agregación de
+//usuarios.
+//Parámetros de entrada: ninguno.
+//Valor de retorno: cadena : cadena que representa el código html del formulario.
+function forUsuario(accion="a",codigo=null){
+	$("#forUsuario").remove();
+	var cadena='<div  class="panel panel-info" id="forUsuario">';
+	////////////////////Encabezado///////////////////////////////////
+	cadena+='<div class="panel-heading">';
+		cadena+='<div class="row">';
+			if (accion=="a")
+				cadena+='<center> <h5 class="titBold">Agregar usuario</h5> </center> ';
+			if (accion=="m")
+				cadena+='<center><h5 class="titBold"> modificar usuario </h5> </center>';
+		cadena+='</div>';
+	cadena+='</div>';
+	///////////////////////campos//////////////////////////////////////
+	cadena+= "<div class='list-group-item'>";
+		cadena+='<div class="row">';
+			cadena+='<div class="input-group">';
+				cadena+='<span class="input-group-addon" title="Código"><i class="icon-qrcode"></i></span>';
+				cadena+='<input type="text" disabled class="form-control 1" placeholder="Código" id="codUsuario">';
+			cadena+='</div>';
+		cadena+='</div>';
+
+
+}

@@ -1,0 +1,148 @@
+
+	{% extends 'Curso.html.twig' %}
+
+{% block contenido %}
+
+<center><h2>Convalidaciones</h2></center>
+<div class="row">
+<center>
+	<div class="col-md-6 text-left">
+		<div class="col-md-12">
+			Nombre: <input type="text" class="form-control" id="nombre" disabled></input>
+		</div>
+		<input type="hidden" value="" id="insti">
+		<div class="col-md-6">
+			Código: <input id='codigoPersona' value="" placeholder="0000" type="text" class="form-control" disabled ></input>
+		</div>
+		<div class="col-md-6">
+			Cédula: <input type="text" class="form-control" id="cedula" disabled></input>
+		</div>
+		<div class="col-md-12">
+		
+			Estudiante: <input type="text" id="estudiante" class="estudiante docente ui-autocomplete-input form-control" onclick="autoCompletarEstudiante('A'); borrarCampoUniCurricular();" autocomplete="off"></input>
+		</div>
+	</div>
+</div>
+</center>
+
+
+<div class="col-md-6 ">	
+	<fieldset class="scheduler-border-1">
+		<legend class="scheduler-border">Agregar/Modificar</legend>
+<div class="conte">
+
+	<div class="col-md-6" >
+		<div class="col-md-8 text-left espacio-input">	
+			Código<input type="text" id="codConvalidacion" class="form-control" disabled></input>
+		</div>
+
+		<div class="col-md-4 text-left"id="tipoUni">
+		
+			<div id='IdSelectTipoUni'> Tipo
+				<select class='selectpicker' id='selectTipoUni' title='tipo unidad curricular' data-live-search='true' data-size='auto' data-max-options='12' >
+					<option value='-1' >Seleccionar</option>
+				</select>					
+			</div>			
+		</div>
+	</div>
+</div>
+<div class="row">	
+<div class="col-md-12">
+	
+	<div class="col-md-5 text-left ">
+		fecha <input class="date form-group" type="text" name="fecha" id="fecha">
+	</div>	
+
+	<div class="col-md-7 text-left">	
+		Con Nota <br>
+		<div class="col-md-3 text-left menosPading ">
+			SI<input type="radio" name="nota" value="true" id="si" onclick="notaShow();"/>
+		</div>
+		<div class="col-md-3 text-left menosPading">
+			NO<input type="radio" name="nota" value="false" id="no"onclick="notaHide();" checked>
+		</div>	
+		<div class="col-md-6 text-left menosPading">				
+	 		<input id="nota" value="" type="text" class="form-control" maxlength="2" placeholder="nota">
+	 		<input type="hidden" id="notaMinima" value="">
+	 		<input type="hidden" id="notaMaxima" value="">
+	 	</div>
+	</div>	
+	
+				
+	<div class="col-md-3">
+		<div id="pensum">
+		</div>
+	</div>
+
+	<div class="col-md-3">
+	</div>
+
+	<div class="col-md-3">
+		<div id="trayecto">	
+		</div>
+	</div>
+			
+	<div class="col-md-12">		
+		Unidad Curricular: 
+		<input type="text" class="uniCurricular ui-autocomplete-input form-control" onclick="autoCompletarUniCurricular();" autocomplete="off" id="unidadCurricular"></input>
+	</div>
+
+	<div class="col-md-12">	
+		Descripción:
+		<textarea  name="obs_persona" id="descripcionText" 
+		class="form-control" maxlength="300"></textarea>
+	</div>	
+		
+	<div class="col-md-12 text-right form-inline">	
+			<div id="nuevo" class="form-group"></div>	
+			
+			<button class="btn btn-success form-group" onclick="preGuardarConvalidacion();">Guardar</button>			
+			<input type="hidden" id="codUni" value="">	
+	</div>
+		
+	</div>
+	</fieldset>
+</div>
+<div class="row">
+<div class="col-md-6 subir" id="detalle" >
+
+</div>
+	<div class="col-md-12">
+			
+		<fieldset class="scheduler-border-1">
+			<legend class="scheduler-border">Materias Convalidadas</legend>
+			<table class="table table-stdiped table-hover">
+				<div class="text-right form-inline">
+
+				<button type="button" name="nuevo_empleado" id="nuevo_empleado" class="btn btn-primary" onclick="habilitarCampos(); borrarCampos();
+"><span class="fa fa-plus" ></span></button>
+				<div id="borrar_empleado" class="form-group ">
+					<button type="button" name="borrar_empleado" class="btn btn-danger" onclick="crearConfirm('¿Estas de acuerdo en borrar esta convalidacion?',
+					'borrarConvalidacion()','Aceptar');"><span class="fa fa-times" ></span></button>
+				</div>	
+						
+			</div>
+			<table class="table table-hover" id='tablaConvalidaciones'>
+
+				<tr>
+				  <td>N°</td>
+				  <td>Codigo</td>
+				  <td>Pensum</td>
+				  <td>Trayecto</td>
+				  <td>Tipo</td>
+				  <td>Unidad Curricular</td>
+				  <td>Con nota</td>
+				  <td>Descripcion</td>
+				</tr>
+
+				<tbody id="listarConvalidaciones" >
+
+
+	       		</tbody>
+		</fieldset>
+	</div>
+</div>
+</div>
+
+
+{% endblock %}

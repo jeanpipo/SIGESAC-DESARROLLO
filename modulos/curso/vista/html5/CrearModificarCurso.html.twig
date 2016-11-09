@@ -1,0 +1,51 @@
+{% extends 'Curso.html.twig' %}
+{% block contenido %}
+<center><h2>Crear/Modificar Curso</h2></center>
+<br>
+<div class="row">
+	<div class="col-md-12">
+		<center>
+		<div class="col-md-6">
+			Instituto:
+			<div id="divInst">
+				<select class='selectpicker' id="selInst" onchange="cargarPensums()" data-live-search='true' data-size='auto' >
+				</select>
+			</div>
+			<br>
+			Pensum:
+			<div id="divPen">
+				<select class='selectpicker' id="selPen" onchange="cargarPeriodos()" data-live-search='true' data-size='auto' >
+				</select>
+			</div>
+			<br>
+			Periodo:
+			<div id="divPer">
+				<select class='selectpicker' id="selPer" onchange="cargarTrayectos()" data-live-search='true' data-size='auto'>
+				</select>
+			</div>
+		</div>
+		<div class="col-md-6">
+			Trayecto:
+			<div id="divTra">
+				<select class='selectpicker' id="selTra" onchange="cargarSeccion()" data-live-search='true' data-size='auto'>
+				</select>
+			</div>
+			<br>
+			Sección:
+			<div id="divSecT">
+				<input type='text' id='sec' maxlength='5' style='text-transform: uppercase;' onkeyup='cargarCursosPensum()' size='6'></input>
+			</div>
+		</div>
+	</div>
+</div>
+<center>
+<div class="row">
+	<center><h3>Lista de Unidades Curriculares</h3></center>
+	<div class="col-md-12">
+		<div id="divTable">
+
+		</div>
+	</div>
+</div>
+
+{% endblock %}

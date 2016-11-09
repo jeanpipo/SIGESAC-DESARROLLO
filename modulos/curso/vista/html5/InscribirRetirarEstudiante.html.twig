@@ -1,0 +1,82 @@
+{% extends 'Curso.html.twig' %}
+
+{% block contenido %}
+
+<center><h2>Inscribir/Retirar Estudiante</h2></center>
+<div class="row">
+	<div class="col-md-3"></div>
+	<div class="col-md-6">
+		<center><h3>Consulta</h3>
+		<div class="col-md-6">
+			Instituto:
+			<div id="divInst">
+				<select class='selectpicker' id="selInst" onchange="cargarPensums()" title='Seleccione Instituto'>
+				</select>
+			</div>
+
+			Pensum:
+			<div id="divPen">
+				<select class='selectpicker' id="selPen" onchange="cargarPeriodos()" data-live-search='true' data-size='auto' multiple data-max-options="1" title='Seleccione Pensum'>
+				</select>
+			</div>
+
+
+			Periodo:
+			<div id="divPer">
+				<select class='selectpicker' id="selPer" data-live-search='true' data-size='auto' multiple data-max-options="1" title='Seleccione Periodo'>
+				</select>
+			</div>
+
+		<br><br>
+		</div>
+		<div class="col-md-6">
+
+			Trayecto:
+			<div id="divTra">
+				<select class='selectpicker' id="selTra" data-live-search='true' onchange="cargarSeccion()" data-size='auto' multiple data-max-options="1" title='Seleccione Periodo'>
+				</select>
+			</div>
+
+			Sección:
+			<div id="divSec">
+				<select class='selectpicker' id="selSec" data-live-search='true' onchange="cargarUni()" data-size='auto' multiple data-max-options="1" title='Seleccione Sección'>
+				</select>
+			</div>
+
+			Unidad Curricular:
+			<div id="divUni">
+				<select class='selectpicker' id="selUni" data-live-search='true' onchange="listarEstudiantes(succListarEstudiantes,$('#selUni').val()[0])" data-size='auto'>
+				</select>
+			</div>
+
+			<br><br>
+		</div>
+</div>
+<div class="row">
+		<div class="col-md-12" hidden id="divButt">
+			<div class="col-md-7">
+				
+			</div>
+			<div class="col-md-5">
+				<button class="btn btn-success btn-xs" onclick="verificarChecks('elim')">Eliminar de la lista</button>
+				<button class="btn btn-warning btn-xs" onclick="verificarChecks('ret')">Retirar de la UC</button>
+			</div>
+		</div>
+
+	</div>
+</div>
+<br>
+<div class="row-fluid">
+	<div class="col-md-12">
+		<div id="divLis"></div>
+	</div>
+</div>
+<div class="row-fluid">
+	<div class="col-md-12">
+		<div id="divDat"></div>
+	</div>
+</div>
+
+
+
+{% endblock %}

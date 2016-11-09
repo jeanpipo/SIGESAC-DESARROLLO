@@ -1,0 +1,260 @@
+{% extends 'Base.html.twig' %}
+
+{% block headVista %}
+
+ <!-- -------------- CSS - allcp forms -------------- -->
+ <link rel="stylesheet" type="text/css" href="modulos/pensum/vista/html5/ccs/select.css">
+ <link rel="stylesheet" type="text/css" href="modulos/pensum/vista/html5/ccs/alert.css">
+
+{% endblock %}
+
+
+{% block headModulo %}
+    <script src="modulos/pensum/vista/html5/js/pensumUnidad.js"></script>
+
+{% endblock %}
+    
+
+    {% block JavaScriptInit %}
+        <script type="text/javascript">
+        jQuery(document).ready(function () {
+                         var a = ObtenerIDPensum();
+
+                            if (a != 'not'){   
+                                modificarURL(a,'uni');
+                                cargarTodasUnidadCurricular();
+                                CargarTrayectosPorPensum();
+                                cargarUnidadCurricular();
+                            }else{
+                                mostrarMensaje('URL no valido, rediccionarando a Pensum Listar ',2);
+                                window.location="index.php?m_modulo=pensum&m_formato=html5&m_accion=listar&m_vista=Listar";
+                            }
+
+                    });
+        </script>
+    {% endblock %}
+
+{% block contenido %}
+
+    <input type='hidden' name='codigoPensum' id='codigoPensum' value="">
+
+    <input type='hidden' name='codigoUniTraPen' id='codigoUniTraPen' value="">
+
+
+	<div class="mw1300 center-block">
+
+                <!-- -------------- Spec Form -------------- -->
+                <div class="allcp-form">
+                 
+                        <div class="wizard steps-bg clearfix steps-show-icons steps-tabs steps-left" id="steps-uid-0">
+                    	<div class="steps clearfix">
+                    		<li role="tab" class="last done" >
+                            	<a id="steps-uid-0-t-I" href="" >
+                                	<i class="icon-sitemap"></i> Información General
+                                </a>
+                            </li>        
+                            <li role="tab" class="last done" >
+                            	<a id="steps-uid-0-t-T"href="" >
+                                	<i class="icon-sitemap"></i>Trayectos
+                                </a>
+                            </li>
+                            <li role="tab" class="first current" >
+                            	<a id="steps-uid-0-t-U" href="" >
+                  			    	<i class="icon-hdd"></i> Unidad Curriculares 
+                  			    </a>
+                  			</li>
+                  			<li role="tab" class="last done">
+                  				<a id="steps-uid-0-t-P" href="" >             
+                                	<i class="fa fa-file-text pr5"></i> Prelaciones 
+                            	</a>
+                            </li>
+                    	</div><div class="content clearfix">
+     
+                       
+
+                    <div class="col-md-6">
+
+                            <div class="panel">
+                                    <div class="panel-heading" style="padding-bottom: 0px; padding-top: 0px;">                       
+                                         <h3><i class="icon-puzzle-piece"></i> Detalles</h3>  
+                                         
+                                    </div>
+                                    <div class="panel-body" style="min-height: 447px; padding: 0px;">
+
+
+                                        <div class="box-content">
+
+ 
+
+                                                 <div class="btn-toolbar pull-right clearfix">
+                                                   
+                                                 </div>
+
+                                                    <div class="cuadro cuadro-negro" style="margin-top: 22px;  background-color: rgb(42, 47, 67)  ! important; position: inherit;"> Lista de Unidades Coincidencia:   
+                                                        <div class="fist" style="width:100%; height:240px;">                                                            
+                                                            <div class="row-fluid" style="margin-top: 10px;">
+                                                                <div class="col-md-12 col-md-offset-0">     
+                                                                    <div class="input-group">                                   
+                                                                            <span class="input-group-addon">Código de Relación</span>
+                                                                             <input name="codigo" id="codigo" class="form-control" placeholder="codigo de trayecto" type="text"  disabled>
+                                                                        </div>
+                                                                    </div>
+                                                            </div><br>   
+
+                                                             <div class="row-fluid">
+                                                                    <div class="col-md-12 col-md-offset-0">     
+                                                                        <div class="input-group">                                   
+                                                                                <span class="input-group-addon">Trayecto:</span>
+                                                                                <div id="divTra">
+
+                                                                                <select class='selectpicker' id="seltray" data-live-search='true' data-size='auto'  data-max-options='1' title='Seleccione Trayecto'>
+                                                                                </select>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                            </div><br><br>
+
+
+                                                             <div class="row-fluid">
+                                                                    <div class="col-md-12 col-md-offset-0">     
+                                                                        <div class="input-group">                                   
+                                                                                <span class="input-group-addon">Tipo:</span>
+                                                                                <div id="divTipo">
+                                                                                        <select class='selectpicker' id="selTipo" data-live-search='true' data-size='auto'  data-max-options='1' title='Seleccione Tipo'>
+                                                                                            <option value="E">Eletiva</option> 
+                                                                                            <option value="O">Obligatoria</option> 
+                                                                                        </select>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                            </div><br><br>
+
+
+                                                             <div class="row-fluid">
+                                                                    <div class="col-md-12 col-md-offset-0">     
+                                                                        <div class="input-group">                                   
+                                                                                <span class="input-group-addon">busqueda:</span>
+                                                                                <input name="codigoUni" id="codigoUni" class="form-control" placeholder="codigo de unidad"  type="text" disabled>
+                                                                                <div id="divUni">
+
+                                                                                <select class='selectpicker' id="selUnidad" data-live-search='true' data-size='auto'  data-max-options='1' title='Seleccione Unidad Curricular'>
+                                                                                </select>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>                                                                      
+                                                            </div><br><br>
+
+                                                             <div class="row-fluid">
+                                                                    <div class="col-md-12 col-md-offset-0">     
+                                                                        <div class="input-group">                                   
+                                                                               <button class='btn btn-alert' onclick="setClear()" class='close' data-dismiss='alert'>LIMPIAR</button>
+                                                                               <button class='btn btn-success' onclick="agregarModificar()" class='close' >GUARDAR</button>
+
+                                                                            </div>
+                                                                        </div>
+                                                            </div><br><br>
+
+                                                            
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="cuadro cuadro-negro" style="margin-top: 22px;  background-color: rgb(42, 47, 67)  ! important; position: inherit;"> Detalle del trayecto Selecionada:   
+                                                       <div class="btn-group inactivoA" id="bloqEliEdit">
+                                                            <a class="btn btn-circle show-tooltip" title="Modificar" onclick="editarRelacion()" href="#"><i class="icon-pencil"></i></a>
+                                                            <a class="btn btn-circle show-tooltip" title="Remover" onclick="eliminarUnidadR()" href="#"><i class="icon-remove"></i></a>                                                           
+                                                        </div>
+                                                               
+                                           
+                                                     <div class="trow" style="width:100%; height:300px; overflow:auto;">
+                                                                       
+                                                            <table class="table table-hover mbn">
+                                                            <thead>
+                                                            <tr class="active">
+                                                                <th>#N° Trayecto</th>
+                                                                <th>Tipo</th>
+                                                                <th>(codigo)Nombre</th>
+                                                                <th></th>
+                                                                 <th></th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                
+                                                                <tr class="cuadro" style="background-color: rgb(255, 199, 52); position: inherit;">
+                                                                    <td colspan="5">NO HAY UNIDADES</td>
+                                                                    
+                                                                </tr>
+                                                               
+                                                                </table>
+                                                            
+                                                        </div>
+
+
+                                                    </div>
+                                          
+
+                                        
+
+                                        </div>
+
+                                    </div>
+                            </div>  
+                    </div>
+
+
+
+                    <div class="col-md-6">
+
+                                <div class="panel">
+                                        <div class="panel-heading" style="padding-bottom: 0px; padding-top: 0px;">                       
+                                             <h3><i class="icon-puzzle-piece"></i> Detalle de Unidad Curricular</h3>    
+                                        </div>
+                                        <div class="panel-body" style="min-height: 631px;">
+
+
+                                            <div class="box-content">
+
+                                                     <div class="btn-toolbar pull-right clearfix">
+                                                       
+                                                       <!-- <div class="btn-group">
+                                                            <a class="btn btn-circle show-tooltip" title="Print" href="#"><i class="fa fa-eraser"></i></a>
+                                                            <a class="btn btn-circle show-tooltip" title="Export to PDF" href="#"><i class="icon-file-text-alt"></i></a>
+                                                            <a class="btn btn-circle show-tooltip" title="Export to Exel" href="#"><i class="icon-table"></i></a>
+                                                        </div>                    
+                                           -->
+
+                                                    </div>
+
+                                                   
+
+                                                        <div class="cuadro cuadro-negro" style="margin-top: 22px; position: inherit;"> Detalle de Unidad Curricular selecionada:                           
+                                                         </div>
+
+                                                    <div id="detallePen" class="third">
+
+                                                        
+
+                                                        <div class="cuadro cuadro-amarillo" style="margin-top: 22px; position: inherit;"> No ha selecionado Unidad Curricular
+                                                         </div>
+
+                                                    </div>
+
+                                            </div>
+
+                                        </div>
+                                </div>  
+                        </div>
+
+                    	</div>
+
+                        <!-- -------------- /Wizard -------------- -->
+
+                
+                </div>
+                <!-- -------------- /Spec Form -------------- -->
+
+            </div>
+
+
+
+{% endblock %}

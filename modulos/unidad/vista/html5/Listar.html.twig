@@ -1,0 +1,174 @@
+{% extends 'Unidad.html.twig' %}
+
+{% block headVista %}
+
+ <!-- -------------- CSS - allcp forms -------------- -->
+  
+ <link rel="stylesheet" type="text/css" href="modulos/pensum/vista/html5/ccs/alert.css">
+{% endblock %}
+
+
+{% block contenido %}
+
+	
+
+    <div class="col-md-6">
+
+    		<div class="panel">
+                    <div class="panel-heading">                       
+                         <h3><i class="icon-table"></i> Lista de Unidades Curriculares</h3>    
+                    </div>
+                    <div class="panel-body" style="min-height: 447px;">
+
+  
+			            <div class="box-content">
+			                <div class="btn-toolbar pull-right clearfix">
+				                    <div class="btn-group">
+				                        <a class="btn btn-circle show-tooltip" title="Agregar Unidad Curricular" href="index.php?m_modulo=unidad&m_formato=html5&m_accion=preAgregarModif&m_vista=Agregar" ><i class="icon-plus"></i></a>
+				                   	</div>
+				                    <div class="btn-group">
+				                
+				                        <a class="btn btn-circle show-tooltip" title="Export to PDF" href="#"><i class="icon-file-text-alt"></i></a>				                        
+				                    </div>	                  
+		                       </div>
+				 			<div class="clearfix"></div>
+
+
+			                <div class="cuadro cuadro-negro" style="margin-top: -6px;  background-color: rgb(42, 47, 67)  ! important; position: initial;"> Lista de Coincidencia:   
+
+			                	 <div class="btn-group">
+                                                            <input type="text" style="float: right; margin-bottom: 10px;" id="nombreLista" name="nombreLista" class="form-control" onkeyup="verCoincidenciaLista()" placeholder="Buscar por nombre...">
+                                                            
+                                                    </div>       
+
+			                		<div class="trow" style="width:auto; min-height:540px; overflow:auto;">
+			                			<div id="listarI">
+			                			<table class="table table-hover mbn" id="tableTT">
+									    <thead>
+									    <tr class="active">
+									      		<th>N° Cod</th>
+								                <th>Nombre de Unidad</th>							                          
+								          
+								                <th>    </th>
+									    </tr>
+									    </thead>
+									      <tbody>									
+											{% for unidad in unidades %}									
+													<tr >
+														
+														<td><a href="#" onmouseover="verDetalle({{unidad.codigo}})" >{{unidad.codigo}}</a></td>
+														
+														{% if (unidad.cod_uni_ministerio != '') %}
+															<td><a href="#"  onmouseover="verDetalle({{unidad.codigo}})">{{unidad.nombre}} ({{unidad.cod_uni_ministerio}}) </a></td>
+														{% else %}
+															<td><a href="#"  onmouseover="verDetalle({{unidad.codigo}})">{{unidad.nombre}} (N/A) </a></td>
+														{% endif %}
+														
+														<td style="padding-left: 0px; padding-right: 0px; min-width: 54px;">										
+															<button class="btn btn-xs btn-info" title="Modificar la Unidada Curricular" onclick="redirectEdit({{unidad.codigo}})" title="Modificar Unidad">
+																<i class="icon-pencil"></i>
+															</button>
+
+															<button class="btn btn-xs btn-danger" title="Eliminar Pensum" onclick="eliminar({{unidad.codigo}});" title="Eliminar Unidad">
+																<i class="icon-remove"></i>
+															</button>
+														</td>	
+														
+													</tr>
+													
+											{% endfor %} 
+								  		</tbody>		
+										   
+											</table>
+										</div>
+			                		</div>
+               		  		 </div>
+               		  		 <!--
+					 			<div id='listarI'>											
+								    	<table class="table table-advance" id="tablez">
+										 <thead>
+								            <tr>
+								            	<th>N° Código</>
+								                <th>Nombre Unidad Curricular</th>
+								                <th>Descripción</th>			            
+								                <th>Modificar</th>
+								                <th>Eliminar</th>
+								            </tr>
+								        </thead>
+										  <tbody>									
+											{% for unidad in unidades %}									
+													<tr >
+														
+														<td><a href="#" onmouseover="verDetalle({{unidad.codigo}})" >{{unidad.codigo}}</a></td>
+														<td><a href="#"  onmouseover="verDetalle({{unidad.codigo}})">{{unidad.nombre}} </a></td>
+														<td><a href="#"  onmouseover="verDetalle({{unidad.codigo}})">{{unidad.cod_uni_ministerio}}</a></td>
+														<td>										
+															<button class="btn btn-xs btn-info" title="Modificar la Unidada Curricular" onclick="redirectEdit({{unidad.codigo}})">
+																<i class="icon-pencil"></i>
+															</button>
+														</td>	
+														<td>
+															<button class="btn btn-xs btn-danger" title="Eliminar Pensum" onclick="eliminarUnidad({{unidad.codigo}});" title="Eliminar Unidad">
+																<i class="icon-remove"></i>
+															</button>
+														</td>	
+
+													</tr>
+													
+											{% endfor %} 
+								  		</tbody>		
+									</table>    		 
+				   				 </div> -->
+						</div>			
+				</div>
+		    </div>
+	</div>
+
+<div class="col-md-6" style="position: fixed; margin-left: 48%;">
+
+		<div class="panel">
+                <div class="panel-heading">                       
+                     <h3><i class="icon-puzzle-piece"></i> Detalle de Unidad Curricular</h3>    
+                </div>
+                <div class="panel-body" style="min-height: 447px;">
+
+
+	        		<div class="box-content">
+
+	        				 <div class="btn-toolbar pull-right clearfix">
+			                   
+			                 <!--   <div class="btn-group">
+			                        <a class="btn btn-circle show-tooltip" title="Print" href="#"><i class="fa fa-eraser"></i></a>
+			                        <a class="btn btn-circle show-tooltip" title="Export to PDF" href="#"><i class="icon-file-text-alt"></i></a>
+			                        <a class="btn btn-circle show-tooltip" title="Export to Exel" href="#"><i class="icon-table"></i></a>
+			                    </div>	               -->   
+			       
+
+			                </div>
+
+			               
+
+			                	<div class="cuadro cuadro-negro" style="margin-top: 22px; position: unset;"> Detalle de Unidad Curricular selecionada:                           
+	                       		 </div>
+
+	                       	<div id="detallePen" class="third">
+
+			                	
+
+			                	<div class="cuadro cuadro-amarillo" style="margin-top: 22px; position: unset;"> No ha selecionado Unidad Curricular
+	                       		 </div>
+
+		                	</div>
+
+	        		</div>
+
+       			</div>
+        </div>	
+</div>
+
+
+
+
+	
+
+{% endblock %}

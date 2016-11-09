@@ -1,0 +1,35 @@
+/* Cuadro comparativo */
+
+Requerimientos
+
+Seguridad
+
+Expansibilidad
+
+Personal/Mantenimiento
+
+Documentación
+
+Tecnologìa
+
+Cantidad de Usuarios
+
+Accesibilidad
+
+Confiabilidad
+
+GPL
+
+/* Presentaciòn */
+
+Portada
+
+Objetivos
+
+El problema (comunidad)
+
+Procedimiento: Diseño de la investigaciòn
+
+Conclusiòn
+
+Recomendaciòn

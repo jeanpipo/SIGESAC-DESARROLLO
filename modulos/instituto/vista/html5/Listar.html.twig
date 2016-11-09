@@ -1,0 +1,111 @@
+{% extends 'Instituto.html.twig' %}
+
+{% block headVista %}
+
+ <!-- -------------- CSS - allcp forms -------------- -->
+  
+ <link rel="stylesheet" type="text/css" href="modulos/pensum/vista/html5/ccs/alert.css">
+
+
+<style>
+.input-group .popover   {
+   
+    position: fixed;
+}
+</style>
+
+{% endblock %}
+
+{% block contenido %}
+
+	    <div class="col-md-12">
+
+
+	    		<div class="panel">
+                        <div class="panel-heading">                       
+                             <h3><i class="icon-table"></i> Lista de Instituo</h3>    
+                        </div>
+                        <div class="panel-body">
+
+                
+	             
+                <div class="box-content">
+	                <div class="btn-toolbar pull-right clearfix">
+	                    <div class="btn-group">
+	                        <a class="btn btn-circle show-tooltip" title="Agregar Instituto" href="#"  onClick="abrirDialogoInstituto('dialogoInstituto','Agregar Instituto','agregarInstituto()')" data-toggle="modal" data-target="#dialogoInstituto"><i class="icon-plus"></i></a>
+	                   
+	                    </div>
+	                                  
+	                   <!-- <div class="btn-group">
+	                    	<button type="button" onClick="abrirDialogoInstituto('dialogoInstituto','Agregar Instituto','agregarInstituto()')" class="btn btn-success" data-toggle="modal" data-target="#dialogoInstituto">
+									Agregar Instituto
+									</button>
+						</div> -->
+	                </div>
+	                <div class="clearfix"></div>
+	                <div id='listarI'>
+					<table class="table table-advance" id="table">
+						 <thead>
+                            <tr>
+                                <th>Nombre Instituto</th>
+				                <th>Nombre Corto</th>
+				                <th>Dirección</th>
+				                <th>Modificar</th>
+				                <th>Eliminar</th>
+                            </tr>
+                        </thead>	
+                           <tbody>				    	 
+								{% if (institutos == null) %}
+									No hay Institutos
+								{% endif %}
+								{% set num = 1 %}
+						    	{% for instituto in institutos %}						    	    
+						 	
+									<tr>
+										<td>
+											{{instituto.nombre}}   
+										</td>
+										<td> 
+											{{instituto.nom_corto}}    
+										</td>
+										
+										<td> 
+										{% if instituto.direccion != null %}						
+											{{instituto.direccion}}
+										{% else %}
+											No asignada
+										{% endif %}
+										</td>
+										<td>
+									
+										<button type="button" class='btn btn-xs btn-info'  onClick="modificarInstituto({{instituto.codigo}})" data-toggle="modal" data-target="#dialogoInstituto" title="Modificar Instituto">
+													<i class="icon-edit"></i>
+											</button>
+									
+
+										</td>
+										<td>
+
+										<button type="button" class='btn btn-xs btn-danger'  onClick="eliminar({{instituto.codigo}});"  title="Eliminar Instituto">
+													<i class="icon-trash"></i>
+											</button>
+
+										</td>
+									</tr>	
+								
+								{% set num = 2	 %}
+								{% endfor %}
+							</tbody>	
+						</table>
+					</div>
+					</div>
+					
+				
+
+
+                        </div>
+                    </div>
+			
+		</div>
+			
+{% endblock %}

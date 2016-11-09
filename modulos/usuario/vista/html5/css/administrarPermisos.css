@@ -1,0 +1,111 @@
+.sinSalto{
+	display: inline;
+}
+
+.letrasPeque{
+	 font-size: 17px;
+
+}
+
+.morado{
+	background-color:#7A2E64;
+}
+.blanco{
+	color:#EEEBEF;
+}
+
+#tituloListaUsuario:hover {
+    background-color: #A96FC6;
+}
+
+.icoModRol:hover {
+font-size: 22px;
+}
+.icoModUsuario:hover {
+font-size: 22px;
+}
+
+.icoModRol{
+color :#7A2E64;;
+}
+
+.icoModUsuario{
+color :#19A563;
+}
+
+.verde{
+	background-color:#2AB071;
+}
+
+#tituloModificarPermiso:hover{
+ background-color: #4BC98D;
+
+}
+
+#icoUserInfo{
+color :#7A2E64;
+}
+.sinPadding{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.azulClaro{
+	 background-color:#ADD8E6;
+}
+
+#panelUsuarioRoles{
+  border: 0px solid white;
+
+}
+
+.ui-menu-item{
+ background-color: #C7E7FA;
+color :#1F3D4F;
+font-size: 13px;
+font-weight: bold;
+}
+
+.ui-menu{
+border-radius: 10px;
+  border: 3px solid #3283CF;
+}
+
+.list-group-item{
+	padding: 2px 15px;
+}
+
+.iconListaAcciones{
+	font-size: 10px;
+}
+
+.iconAzul{
+
+	color:#3DB8EC;
+}
+
+.iconVerde{
+
+	color:#39AC4A;
+}
+
+.iconRojo{
+
+	color:#CE2A40;
+}
+
+#swichesAcciones{
+  height: 250px; 
+  overflow: auto;
+}
+
+#listaUsuRoles{
+  height: 400px; 
+  overflow: auto;
+
+}
+
+.textoPequeno{
+	font-weight: bold;
+	font-size: 11px;
+}

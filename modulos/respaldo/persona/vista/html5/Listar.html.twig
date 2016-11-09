@@ -1,0 +1,129 @@
+{% extends 'Persona.html.twig' %}
+{% block headVista %}
+	<style>
+		
+	</style>
+
+	<script>
+
+		/*$(document).ready(function() {
+		    $('#example').DataTable();
+		} );*/
+	</script>
+
+{% endblock %}
+{% block contenido %}
+	<div class="contenedorListar">
+		<div class="caja col-md-10 col-md-offset-1">
+
+			<p class="text-center titulo-caja">
+				<b>Busqueda de Persona</b>
+			</p>
+
+			<div class="posion-fieldset">
+				<fieldset class="scheduler-border">
+					<legend class="scheduler-border">personalizacion de busqueda </legend>
+					<div class="selectListar text-center">
+						<div class="selectInstituto2"> 
+						<!--	<div id='selectIns' onmouseover="verInstituto();"> institutos
+								<select onchange='verPersona(); verPNF();' class='selectpicker' id='selectInstituto' title='institutos' data-live-search='true' data-size='auto' data-max-options='12' >
+									<option value='seleccionar' >Seleccionar</option>
+								</select>
+							</div>-->
+
+						</div>
+
+						<br>
+						<div class="selectPensum2">
+							<div id='selectPensuma'> Pensum 
+								<select class='selectpicker' id='selectPNF' title='Pensum' data-live-search='true' data-size='auto' data-max-options='12' >
+									<option value='seleccionar' >Seleccionar</option>
+								</select>
+							</div>
+						</div>
+						<br>
+
+						<div class="selectEstado2" > 
+							<!--<div id='selectEstados' onmouseover="verEstado();"> Estado
+								<select onchange='verPersona(); verEstado();' class='selectpicker' id='selectEstado' title='Estados' data-live-search='true' data-size='auto' data-max-options='12' >
+									<option value='seleccionar' >Seleccionar</option>
+								</select>
+							</div>-->
+						</div>
+						<br>
+						
+						<input type='text' name='campo' id='campo' placeholder='Nombre/Apellido/Cedula' onkeyup='buscarPorCampo();' class="form-control">
+						
+					</div>
+					<div class="text-left" id="botones">
+					<!--<div id="example_wrapper" class="dataTables_wrapper">
+						<div id="example_filter" class="dataTables_filter">
+							<label><input type="search" arial-controls="example" placeholder="buscador" class="form-control" ></input></label>
+						</div>
+					</div> -->
+						<br>
+						
+							<button type="button" id="bTodos1" class="btn btn-info boton-focus" title="Solo Empleados" onclick="empleadoFocus(); verPersonaEmpleado(); verEstadoEm(); ">
+							  <b>Empleados</b>
+							</button>
+
+							<button type="button" id="bTodos2" class="btn btn-info boton-focus" title="Solo Estudiantes" onclick="estudianteFocus(); verPersonaEstudiante(); verEstadoEs(); ">
+								<b>Estudiantes<b>
+							</button>
+
+							<button type="button" class="btn btn-info boton-focus" title="todos" id="bTodos3" onclick=" TodosFocus(); asignarAmbos(); verPersona(); verEstadoListar(); ">
+								<b>Todos<b>
+							</button><!--antes se llamaba ambos-->	
+
+					</div>
+				</fieldset>
+
+				<fieldset class="scheduler-border">
+					<legend class="scheduler-border">Resultados</legend>
+						<div class="text-right">
+							
+							<button type="button" class="btn btn-info" title="Agregar una nueva persona" onclick="nuevoPersonaEstudiante();">
+							  <span class="fa fa-plus"></span>
+							</button>
+
+							<button type="button" class="btn btn-info" title="Ver persona" onclick="mostrarPersona();" id="btnVerPersona">
+							  <span class="fa fa-search "></span>
+							</button>
+
+							<button type="button" class="btn btn-info" title="Editar persona" onclick="modificarPersona();" id="btnModificarPersona">
+							  <span class="fa fa-pencil"></span>
+							</button>
+							<button type="button" name="ods" class="btn btn-warning" title="Exportar en formato documento" onclick="exportarODT();"><b>ODT</b></button>
+
+						<a type="button" name="pdf" class="btn btn-warning" title="Exportar en formato PDF" onclick="exportarPDF(); "><b>PDF</b></a>
+
+						<button type="button" name="excel" class="btn btn-warning" title="Exportar en formato Excel" onclick="exportarODS();"><b>Hoja de calculo</b></button>
+
+							<input type="hidden" id="tipoPersona" name="tipoPersona" value="ambos">
+							<input type="hidden" id="cod_persona" name="cod_persona" value="null">
+						</div>
+
+						<table class="table table-hover tablaListar" id="primeraTabla"  width="100%">
+					      	<div class="text-center">
+					            <tr>
+					                <td>ID</td>
+					                <td>Cedula</td>
+					                <td>Apellido</td>
+					                <td>Nombre</td>
+					                <td>Correo</td>
+					            </tr>
+					       	</div>
+
+					       	<tbody id="listarPersona" class="listarPersona" >
+
+
+					       	</tbody>
+
+				    </table>
+				</fieldset>
+			</div>
+		</div>
+	</div>
+
+{% endblock %}
+

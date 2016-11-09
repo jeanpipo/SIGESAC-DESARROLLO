@@ -1,0 +1,287 @@
+{% extends 'Base.html.twig' %}
+
+{% block headVista %}
+
+ <!-- -------------- CSS - allcp forms -------------- -->
+ <link rel="stylesheet" type="text/css" href="modulos/pensum/vista/html5/ccs/forms.css">
+ <link rel="stylesheet" type="text/css" href="modulos/pensum/vista/html5/ccs/select.css">
+{% endblock %}
+
+{% block JavaScriptInit %}
+     <script src="modulos/pensum/vista/html5/js/prelacion.js"></script>
+
+    <script type="text/javascript">
+            jQuery(document).ready(function () {
+                   
+                    var a = ObtenerIDPensum();
+
+                        if (a != 'not'){ 
+                            
+                            cargarInstitutos();      
+                            SelectUnidadC();
+                          
+                            cargarUniCurricularPorPensum();
+                            modificarURL(a,'pre'); 
+
+                         }else{
+
+                            mostrarMensaje('URL no valido, rediccionarando a Pensum Listar ',2);
+                            window.location="index.php?m_modulo=pensum&m_formato=html5&m_accion=listar&m_vista=Listar";
+                        }
+                });
+    </script>
+
+{% endblock %}
+
+
+{% block contenido %}
+    
+     <input type='hidden' name='codigoPensum' id='codigoPensum' value="">
+     <input type='hidden' name='codigoPrelacion' id='codigoPrelacion' value="">
+     
+
+	<div class="mw1300 center-block">
+
+                <!-- -------------- Spec Form -------------- -->
+                <div class="allcp-form">
+                    <form method="post" id="form-wizard" novalidate="novalidate">
+                        <div class="wizard steps-bg clearfix steps-show-icons steps-tabs steps-left" id="steps-uid-0">
+                    	<div class="steps clearfix">
+                    		<li role="tab" class="last done" >
+                                <a id="steps-uid-0-t-I" href="" >
+                                    <i class="icon-sitemap"></i> Información General
+                                </a>
+                            </li>        
+                            <li role="tab" class="last done" >
+                                <a id="steps-uid-0-t-T"href="" >
+                                    <i class="icon-sitemap"></i>Trayectos
+                                </a>
+                            </li>
+                            <li role="tab" class="last done">
+                                <a id="steps-uid-0-t-U" href="" >
+                                    <i class="icon-hdd"></i> Unidades Curriculares 
+                                </a>
+                            </li>
+                            <li role="tab" class="first current" >
+                                <a id="steps-uid-0-t-P" href="" onclick="obtenerCodigo(selUnidadP)" >             
+                                    <i class="fa fa-file-text pr5"></i> Prelaciones 
+                                </a>
+                            </li>
+                    	</div><div class="content clearfix">
+     
+                        <div class="col-md-12">
+
+				    		<div class="panel" style="border: medium none;" >
+				                   
+				                    <div class="panel-body" style=" padding:0px;">
+
+                             <div class="box-content">
+		 						   <form class="form-horizontal" >
+
+	 						         <div class="form-group  display-10px">
+                                     <label  class="col-lg-1 control-label display-10px"  style=" padding:0px; font-size: 15px; font-weight: 900; margin-top: -10px;">Instituto:</label>
+                                        <div class="col-lg-5">
+                                                                                   
+                                                <div id="divInst">
+                                                <select class='selectpicker' id="selInst" onchange="" title='Seleccione Instituto'>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-lg-1 control-label" style="padding:0px; font-size: 15px; font-weight: 900; margin-top: 10px;">Código Relación:</label>
+
+                                        <div class="col-lg-4">                                    
+                                                
+                                        <input type='text' name='codigo'id='codigo' maxlength='50' class='form-control'  placeholder='Código' disabled>
+                    
+                                          
+                                        </div>
+                                    </div>  
+
+                                     <div class="clearfix"></div>
+                                    <div class="form-group  display-10px">
+                                        <label  class="col-lg-1 control-label display-10px"  style="padding:0px; font-size: 15px; font-weight: 900; margin-top: 10px;">Unidad Curricular:</label>
+                                        <div class="col-lg-5">
+                                         
+                                            <input type='text' name='codigoUnidadC'  id='codigoUnidadC' maxlength='25' class='form-control'  style="float: left; position: relative; width: 60px; margin-right: 10px; margin-top: 2px;" disabled>
+                                                <div id="divUni">
+
+                                                <select class='selectpicker' id="selUnidad" onchange="cargarPensums()" title='Seleccione Unidad Curricular'>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+	                                <div class="form-group  display-10px">
+                                        <label  class="col-lg-1 control-label display-10px"  style="padding:0px; font-size: 15px; font-weight: 900; margin-top: 10px;">Unidad Prelada:</label>
+                                        <div class="col-lg-5">
+                                         
+                                            <input type='text' name='codigoUnidadCP'  id='codigoUnidadCP' maxlength='25' class='form-control'  style="float: left; position: relative; width: 60px; margin-right: 10px; margin-top: 2px;" disable>
+                                                <div id="divUniP">
+
+                                                <select class='selectpicker' id="selUnidadP" onchange="cargarPensums()" title='Seleccione Instituto'>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>                 
+
+                             	<div class="clearfix"></div>
+                             	<hr class="short alt">
+
+                   
+
+                                 <div class="form-group" align="center">
+                                 	 <button class='btn btn-alert' onclick="setClear()" class='close' data-dismiss='alert'>LIMPIAR</button>
+                               		 <button class='btn btn-success' onclick="agregarModificar()" class='close' data-dismiss='alert'>GUARDAR</button>
+
+	                             </div>
+                            </form>	
+                        </div>
+
+        				</div>
+				
+			
+
+
+                        </div>
+
+
+                        </div>
+
+                        <div class="col-md-6">
+
+                            <div class="panel">
+                                   
+                            
+                                   <div class="alert alert-primary" style="margin-top: 22px;  background-color: rgb(42, 47, 67)  ! important; position: unset;"> Lista de Unidades:   
+                                                     
+                                                        <div class="trow" style="width:100%; height:337px; overflow:auto;">
+                                                                       
+                                                            <table class="table table-hover mbn">
+                                                            <thead>
+                                                            <tr class="active">
+                                                                <th>#N° Trayecto</th>
+                                                                <th>Tipo</th>
+                                                                <th>(codigo)Nombre</th>
+                                                                <th></th>
+                                                                 <th></th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                
+                                                                <tr class="alert" style="background-color: rgb(255, 199, 52); position: unset;">
+                                                                    <td colspan="5">NO HAY UNIDADES</td>
+                                                                    
+                                                                </tr>
+                                                               
+                                                                </table>
+                                                            
+                                                        </div>
+                       
+
+                                  </div>
+
+
+                        </div>
+
+
+                        </div>
+
+                            
+                             <div class="col-md-6">
+
+                            <div class="panel">
+                                   
+                            
+                                   <div class="alert alert-primary" style="margin-top: 22px;  background-color: rgb(42, 47, 67)  ! important; position: unset;">Unidad Curriculares Requeridas:   
+                                                     <div class="btn-group">
+                                                       
+                                                        <a class="btn btn-circle show-tooltip" title="Modificar" onclick="" href="#"><i class="icon-pencil"></i></a>
+                                                        <a class="btn btn-circle show-tooltip" title="Remover"   onclick="" href="#"><i class="icon-remove"></i></a>
+                                                  
+                                                    </div>  
+                                                        <div class="three" style="width:100%; height:115px; overflow:auto;">
+                                                                       
+                                                            <table class="table table-hover mbn">
+                                                            <thead>
+                                                            <tr class="active">
+                                                                <th>#Cod Relación</th>                                                              
+                                                                <th>Nombre</th>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <th></th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                
+                                                                <tr class="alert" style="background-color: rgb(255, 199, 52); position: unset;">
+                                                                    <td colspan="5">NO HAY UNIDADES</td>
+                                                                    
+                                                                </tr>
+                                                               
+                                                                </table>
+                                                            
+                                                        </div>
+                       
+
+                                  </div>
+
+                                                <div class="alert alert-primary" style="margin-top: 22px;  background-color: rgb(42, 47, 67)  ! important; position: unset;"> Es Requisito de las Siguientes Unidades:   
+                                                     <div class="btn-group">
+                                                        
+                                                        <a class="btn btn-circle show-tooltip" title="Modificar" onclick="" href="#"><i class="icon-pencil"></i></a>
+                                                        <a class="btn btn-circle show-tooltip" title="Remover"   onclick="" href="#"><i class="icon-remove"></i></a>
+                                                
+                                                    </div>  
+                                                        <div class="four" style="width:100%; height:115px; overflow:auto;">
+                                                                       
+                                                            <table class="table table-hover mbn">
+                                                            <thead>
+                                                            <tr class="active">
+                                                                <th>#Cod Relación</th>                                                              
+                                                                <th>Nombre</th>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <th></th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                
+                                                                <tr class="alert" style="background-color: rgb(255, 199, 52); position: unset;">
+                                                                    <td colspan="5">NO HAY UNIDADES</td>
+                                                                    
+                                                                </tr>
+                                                               
+                                                                </table>
+                                                            
+                                                        </div>
+                       
+
+                                  </div>
+
+
+                        </div>
+
+
+                        </div>
+                 
+                 
+                 
+
+                        </div>
+                    	</div>
+
+                        <!-- -------------- /Wizard -------------- -->
+
+                    </form>
+                    <!-- -------------- /Form -------------- -->
+                </div>
+                <!-- -------------- /Spec Form -------------- -->
+
+            </div>
+
+
+
+{% endblock %}

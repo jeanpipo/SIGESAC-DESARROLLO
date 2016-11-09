@@ -1,0 +1,26 @@
+{% extends 'Base.html.twig' %}
+{% block headModulo %}
+	<link rel="stylesheet" type="text/css" href="recursos/DataTables-1.10.9/media/css/dataTables.bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="recursos/DataTables-1.10.9/media/css/jquery.dataTables.css"/>
+	<link rel="stylesheet" type="text/css" href="recursos/uikit-2.22.0/css/uikit.css"/>
+	<link rel="stylesheet" type="text/css" href="modulos/persona/vista/html5/css/EstilosPersona.css"/>
+	 
+	<script type="text/javascript" src="recursos/uikit-2.22.0/js/uikit.js"></script>
+	<script type="text/javascript" src="recursos/uikit-2.22.0/js/core/tab.js"></script>
+	<script type="text/javascript" src="recursos/DataTables-1.10.9/media/js/dataTables.bootstrap.js"></script>
+	<script type="text/javascript" src="recursos/DataTables-1.10.9/media/js/jquery.dataTables.js"></script>
+
+	{% if (login.obtenerPermiso('PersonaListar')) %}
+		<script src="modulos/persona/vista/html5/js/persona.js"></script>
+	{% endif %}
+
+	{% if (login.obtenerPermiso('EstudianteListar')) %}
+		<script src="modulos/estudiante/vista/html5/js/estudiante.js"></script>
+	{% endif %}
+
+	{% if (login.obtenerPermiso('EmpleadoListar')) %}
+		<script src="modulos/empleado/vista/html5/js/empleado.js"></script>
+	{% endif %}
+
+{% endblock %}
+

@@ -1,0 +1,547 @@
+
+	{% extends 'Persona.html.twig' %}
+{% block headVista %}
+	<style>
+		/*td
+		{
+			text-align:center;
+		}	
+
+		.contenedor{
+			margin:7% 3%;			
+		}
+
+		.espacio-input{
+			padding-right:2%;			
+		}
+
+		.formuario-persona{
+			padding: 0 3%;
+			padding-bottom:2%;
+		}
+		textarea{
+			resize:none;
+		}
+		*/
+	</style>
+
+	<script>
+	
+	</script>
+	
+{% endblock %}
+{% block contenido %}
+	
+	<div class="contenedor">
+		<div class="col-md-12">
+
+			<div class="reset-fieldset">
+
+				<div id="tabsActivo">
+					<ul class="uk-tab" data-uk-tab>
+						<li class="uk-active"><a href="" class="infoPersona" >Persona</a></li>
+					    <li><a href="" class="estudiantes" onclick="">Estudiante</a></li>
+					    <li><a href="" class="empleados" onclick="  mostrarInformaion2();  verEstadoEm2(); verPNFEm2(); verInstitutoEm2();">Empleado</a></li>				    
+					    <li class="uk-disabled"><a  >Bloqueado</a></li>
+					</ul>					
+				</div>
+
+			<!--	<div id="tabsBloqueado">
+					<ul class="uk-tab" data-uk-tab>
+					<li class="uk-disabled">><a>Persona</a></li>
+					<li class="uk-disabled"><a>	Estudiante</a></li>
+					<li class="uk-disabled"><a>Empleado</a></li>			    
+					<li class="uk-disabled"><a  >Bloqueado</a></li>
+					</ul>
+				</div>-->
+
+
+
+
+
+				
+
+				
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+				<fieldset class="scheduler-border-1">
+					<legend class="scheduler-border">Agregar/Modificar</legend>
+					
+					<div id="infoPersona" class="infoPersona">
+
+
+						<div class="form-inline formuario-persona row primeraCaja">
+							
+							<div class="form-group espacio-input col-md-3">
+								Codigo
+								 <input type="text" name="cod_persona" id="cod_persona" class="form-control" placeholder="00000" maxlength="7" disabled>
+							</div>
+							
+							<div class="form-group espacio-input col-md-3">
+							 Cedula
+								 <input type="text" name="ced_persona" id="ced_persona" class="form-control"  maxlength="8" onkeyup="validarSoloNumeros('#ced_persona',6,8,true)">
+							</div>
+							
+							<div class="form-group espacio-input col-md-3">
+								RIF 
+								 <input type="text" name="rif_persona" id="rif_persona" class="form-control" maxlength="20">
+							</div>	
+
+							<div class="form-group espacio-input foto col-md-4 text-center" id="superImagen">
+								<div id="imagen">
+							      <img src="modulos/persona/vista/html5/imagen/foto.png" alt="..." >
+							   	</div>
+							   	<span class="file-input btn btn-primary btn-file" id="fotoSpan">
+                					Cargar&hellip; <input name="foto" class="form-group btn" type="file" id="foto" onfocus="foto();">
+            					</span>
+							   
+							</div>
+						</div>
+
+<!--<a href="" class="thumbnail" class="form-control" align="middle">-->
+						<div class="form-inline formuario-persona row">
+				
+							
+							<div class="form-group espacio-input col-md-3">
+								Nombre1
+								 <input type="name" name="nombre1" id="nombre1" class="form-control" maxlength="20" onkeyup="validarSoloTexto('#nombre1',2,20,true)">
+							</div>
+							
+							
+							<div class="form-group espacio-input col-md-3">
+								Nombre2
+								 <input type="name" name="nombre2" id="nombre2" class="form-control" maxlength="20" onkeyup="validarSoloTexto('#nombre2',2,20,false)">
+							</div>
+							
+							
+							<div class="form-group espacio-input col-md-3">
+								Apellido1
+								 <input type="name" name="apellido1" id="apellido1" class="form-control"  maxlength="20" onkeyup="validarSoloTexto('#apellido1',2,20,true)">
+							</div>
+
+						</div>
+
+
+						<div class="form-inline formuario-persona row">
+				
+							
+							<div class="form-group espacio-input col-md-3">
+								Apellido2
+								 <input type="name" name="apellido2" id="apellido2" class="form-control" maxlength="20" onkeyup="validarSoloTexto('#apellido2',2,20,false)">
+							</div>
+							
+							
+							<div class="form-group espacio-input col-md-3">
+								Fecha de Nacimiento
+								 <input type="date" name="fec_nac" id="fec_nac" class="form-control date"  onkeyup="validarFecha('#fec_nac',false)">
+							</div>
+							
+							
+							<div class="form-group espacio-input col-md-3">
+								Tipo de sangre
+								 <select name="tip_sangre" id="tip_sangre" class='selectpicker' data-live-search='true' data-size='auto' data-max-options='12' >
+								 	<option value="S/T">Sangre</option>
+								 	<option value="A+" selected='selected'>A+</option>
+								 	<option value="A-">A-</option>
+								 	<option value="B+">B+</option>
+								 	<option value="B-">B-</option>
+								 	<option value="AB+">AB+</option>
+								 	<option value="AB-">AB-</option>
+								 	<option value="O+">O+</option>
+								 	<option value="O-">O-</option>
+								 </select>
+							</div>
+
+							
+						</div>
+
+
+						<div class="form-inline formuario-persona row">			
+							
+							<div class="form-group espacio-input col-md-3">
+								Telefono1
+								 <input type="name" name="telefono1" id="telefono1" class="form-control"  maxlength="15" onkeyup="validarTelefono('#telefono1',7,15,true)">
+							</div>					
+							<div class="form-group espacio-input col-md-3">
+								Telefono2
+								 <input type="name" name="telefono2" id="telefono2" class="form-control" maxlength="15" onkeyup="validarTelefono('#telefono2',7,15,false)">
+							</div>
+							
+							
+							<div class="form-group espacio-input col-md-3">
+								Nacionalidad
+								 <select name="nacionalidad" id="nacionalidad" class='selectpicker' data-live-search='true' data-size='auto' data-max-options='12' >
+								 	<option value="V" selected='selected'>Venezolano</option>
+								 	<option value="E">Extrangero</option>
+								 </select>
+							</div>
+
+							
+							<div class="form-group espacio-input col-md-3">
+								Sexo
+								 <select name="sexo" id="sexo" class='selectpicker' data-live-search='true' data-size='auto' data-max-options='12' >					 	
+								 	<option value="M" selected='selected' >Masculino</option>
+								 	<option value="F">Femenino</option>
+								 </select>
+							</div>
+
+
+							
+						</div>
+
+
+						<div class="form-inline formuario-persona row">
+							
+							<div class="form-group espacio-input col-md-3">
+								Correo Personal
+								 <input type="email" name="cor_personal" id="cor_personal" class="form-control"  maxlength="50" onkeyup="validarEmail('#cor_personal',10,50,true)">
+							</div>
+							
+							
+							<div class="form-group espacio-input col-md-3">
+								Correo Institucional
+								 <input type="email" name="cor_institucional" id="cor_institucional" class="form-control"  maxlength="50" onkeyup="validarEmail('#cor_institucional',10,50,false)">
+							</div>
+							
+							
+							<div class="form-group espacio-input col-md-3">
+								Hijos
+								 <select name="hijos" id="hijo" class='selectpicker' data-live-search='true' data-size='auto' data-max-options='12' >				 	
+								 	<option value="0">0</option>
+								 	<option value="1">1</option>
+								 	<option value="2">2</option>
+								 	<option value="3">3</option>
+								 	<option value="4">4</option>
+								 	<option value="5">5</option>
+								 </select>
+							</div>
+
+							
+							<div class="form-group espacio-input col-md-3">
+								Estado Civil
+								 <select name="est_civil" id="est_civil" class='selectpicker' data-live-search='true' data-size='auto' data-max-options='12' >					 	
+								 	<option value="S">Soltero</option>
+								 	<option value="C">Casado</option>
+								 	<option value="D">Divorciado</option>
+								 	<option value="V">Viudo</option>
+								 	<option value="O">Estado O</option>
+								 </select>
+							</div>
+						</div>
+
+
+						<div class="formuario-persona col-md-12">
+				
+							Discapacidad
+							<div class="form-group espacio-input">
+								 <textarea  name="discapacidad" id="discapacidad" class="form-control" maxlength="48" ></textarea>
+							</div>
+							
+							Direccion
+							<div class="form-group espacio-input">
+								 <textarea  name="direccion" id="direccion" class="form-control" maxlength="148"></textarea>
+							</div>
+							
+							Observaciones
+							<div class="form-group espacio-input">
+								 <textarea  name="obs_persona" id="obs_persona" class="form-control" maxlength="198"></textarea>
+							</div>
+							<!--<input type="text" value="N" name="estado" id='estado'>-->
+							<input type="hidden" name="codigoPersona" id="codigoPersona">
+							<div class="text-right formuario-persona form-group">
+								<button type="button" name="md_persona" id="md_persona" class="btn btn-info" onclick="modificarPersona();"><b>Modificar</b></button>
+								<button type="button" name="grd_persona" id="guardarPersona" class="btn btn-success" onclick="preGuardarPersona();"><b>Guardar</b></button>
+								<button class="btn btn-primary btn-primary" onclick="nuevoPersonaEstudiante();" title="Agregar una nueva persona" type="button" id="nuevo_empleado">
+									Nuevo
+								</button>
+							
+								<button class="btn btn-danger" id="borrar_persona"onclick="crearConfirm('¿Estas de acuerdo en borrar a esta persona?','borrarPersona()','Aceptar');" title="Eliminar una persona" type="button">
+									Eliminar
+								</button>
+							</div>
+							
+						</div>
+
+
+					</div>	
+
+
+				
+			<div class="estudiante_empleado_agregar">					
+
+				<div class="estudiantes" id="estudiante" >
+					<input type="hidden" name="codigoPersona" id="codigoPersona">
+					<div class="form-inline formuario-persona row">
+						
+						<div class="form-group espacio-input col-md-3">
+							Codigo
+							 <input type="text" name="cod_estudiante" id="cod_estudiante" class="form-control" placeholder="00000" maxlength="7" disabled>
+						</div>
+						 
+						<div class="form-group espacio-input col-md-3">
+							Codigo Rusnies
+							 <input type="text" name="cod_rusnies" id="cod_rusnies" class="form-control" maxlength="20">
+						</div>		
+
+						<div class="form-group espacio-input col-md-3" id="selectInstitutos">
+
+						<!--	<div id='selectIns' onmouseover="verInstituto();"> institutos
+								<select onchange='verPersona(); verPNF();' class='selectpicker' id='selectInstituto' title='institutos' data-live-search='true' data-size='auto' data-max-options='12' >
+									<option value='seleccionar' >Seleccionar</option>
+								</select>
+							</div> -->
+							 
+						</div>			
+					</div>
+
+					<div class="form-inline formuario-persona row">				
+
+						
+						<div class="form-group espacio-input col-md-3">
+							N° Carnet
+							 <input type="text" name="num_carnet" id="num_carnet" class="form-control" maxlength="25" >
+						</div>
+
+						
+						<div class="form-group espacio-input col-md-3">
+							Expediente
+							 <input type="text" name="expediente" id="expediente" class="form-control"  maxlength="25">
+						</div>
+
+						<div class="form-group espacio-input selectPensum col-md-3">
+							
+							<!--<div id='selectPensuma'> Pensum 
+								<select onchange='verPersona(); verPNF();' class='selectpicker' id='selectPNF' title='Pensum' data-live-search='true' data-size='auto' data-max-options='12' >
+									<option value='seleccionar' >Seleccionar</option>
+								</select>
+							</div>-->
+
+						</div>	
+
+					</div>
+
+					<div class="form-inline formuario-persona row">
+
+						
+						<div class="form-group espacio-input col-md-3">
+							fecha de Inicio
+							 <input type="date" name="fec_ini_estudiante" id="fec_ini_estudiante" class="form-control date" onkeyup="validarFecha('#fec_ini_estudiante',true)">
+						</div>
+
+						
+						<div class="form-group espacio-input col-md-3">
+							culminacion
+							 <input type="date" name="fec_fin_estudiante" id="fec_fin_estudiante" class="form-control date" onkeyup="validarFecha('#fec_fin_estudiante',false)" >
+						</div>	
+
+						<div class="form-group espacio-input selectEstado col-md-3">
+						<!--	<div id='selectEstados' onmouseover="verEstado();"> Estado
+								<select onchange='verPersona(); verEstado();' class='selectpicker' id='selectEstado' title='Estados' data-live-search='true' data-size='auto' data-max-options='12' >
+									<option value='seleccionar' >Seleccionar</option>
+								</select>
+							</div> -->
+						</div>										
+					</div>
+					<div class="form-inline formuario-persona row">
+					
+						<div class="form-group espacio-input col-md-3">
+							Condicion
+							 <input type="text" name="condicion" id="condicion" class="form-control"  maxlength="5">
+						</div>	
+					</div>
+
+					<div class="formuario-persona col-md-12">
+				
+						Observaciones
+						<div class="form-group espacio-input">
+							 <textarea  name="obs_estudiante" id="obs_estudiante" class="form-control" maxlength="200"></textarea>
+						</div>
+								<div class="text-right formuario-persona form-inline">								
+									<button type="button" name="nv_estudiante" id="nv_estudiante" class="btn btn-primary" onclick="nuevoEstudiante();"><b>Nuevo</b></button>		
+									<div id="md_estudiante" class="form-group">	
+										<button type="button" name="md_estudiante" class="btn btn-success" onclick="preGuardarEstudiante();"><b>Guardar</b></button>	
+									</div>							
+								</div>
+							</div>
+
+						</div>
+
+					
+						<div class="empleados" id="empleado">
+					<div class="form-inline formuario-persona row">
+						
+						<div class="form-group espacio-input col-md-3">
+							Codigo
+							 <input type="text" name="cod_empleado" id="cod_empleado" class="form-control" placeholder="00000" maxlength="7" disabled>
+						</div>	
+
+						
+						<div class="form-group espacio-input col-md-3">
+							fecha de Inicio
+							 <input type="date" name="fec_ini_empleado" id="fec_ini_empleado" class="form-control date" onkeyup="validarFecha('#fec_ini_empleado',true)" >
+						</div>	
+
+						
+						<div class="form-group espacio-input col-md-3">
+							fecha fin
+							 <input type="date" name="fec_fin_empleado" id="fec_fin_empleado" class="form-control date" onkeyup="validarFecha('#fec_fin_empleado',false)" >
+						</div>	
+
+					</div>
+
+					<div class="form-inline formuario-persona selicion row" id="formu" >
+						<div class="form-group espacio-input selectInstitutoEm col-md-3" id="selectInstitutosEm">
+						<!--	 <div id='selectInsEm' onmouseover="verInstitutoEm2();"> institutos
+								<select onchange='verPersonaEmpleado(); ' class='selectpicker' id='selectInstituto' title='institutos' data-live-search='true' data-size='auto' data-max-options='12' >
+									<option value='seleccionar' >Seleccionar</option>
+								</select>
+							</div>-->
+						</div>
+						
+						<div class="form-group espacio-input selectPensumEm col-md-3" id="selPensumEm">
+							<!-- <div id='selectPensumaEm'> Pensum 
+								<select onchange='verPersonaEmpleado(); verPNFEm2();' class='selectpicker' id='selectPNF' title='Pensum' data-live-search='true' data-size='auto' data-max-options='12' >
+									<option value='seleccionar' >Seleccionar</option>
+								</select>
+							</div> -->
+						</div>	
+
+						<div class="form-group espacio-input selectEstadoEm col-md-3" id="selEstadosEm">
+							<!--<div id='selectEstadosEm' onmouseover="verEstadoEm2();"> Estado
+								<select onchange='verPersonaEmpleado();' class='selectpicker' id='selectEstado' title='Estados' data-live-search='true' data-size='auto' data-max-options='12' >
+									<option value='seleccionar' >Seleccionar</option>
+								</select>
+							</div>-->
+						</div>
+								
+					</div>
+
+					<div class="form-inline formuario-persona row" id='formu'>
+					
+						
+						Jefe de Pensum <input type="checkbox" name="es_jef_pensum" value="es_jef_pensum" id='es_jef_pensum'>
+
+						&nbsp; Jefe de Control de Estudio <input type="checkbox" name="es_jef_con_estudio" id='es_jef_con_estudio' value="es_jef_con_estudio">
+
+						&nbsp; Personal Ministerio <input type="checkbox" id="es_ministerio" name="es_ministerio" value="es_ministerio">
+
+						&nbsp; Docente <input type="checkbox" name="Docente" value="Docente" id='Docente'>				
+					</div>
+
+					<div class="formuario-persona col-md-12">
+				
+						Observaciones
+						<div class="form-group espacio-input">
+							 <textarea  name="obs_empleado" id="obs_empleado" class="form-control" maxlength="200"></textarea>
+						</div>
+								<div class="text-right formuario-persona form-inline">
+									
+									<button type="button" name="nv_empleado" id="nv_empleado" class="btn btn-primary btn-primary" onclick="NuevoEmpleado();"><b>Nuevo</b></button>
+									<div id="md_empleado" class="form-group">	
+										<button type="button" name="md_empleado" class="btn btn-success" onclick="antesPreGuardarEmpleado();"><b>Guardar</b></button>	
+									</div>							
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+				</fieldset>
+
+				
+
+				<div class="reset-fieldset" id="historico">
+				<fieldset class="scheduler-border">
+					<legend class="scheduler-border">Historico</legend>
+					<div class="estudiante_empleado">
+						<div class="estudiantes" >
+							<div class="text-right form-inline">
+
+								<button type="button" name="nuevo_estudiante" id="nuevo_estudiante" class="btn btn-primary" onclick="nuevoEstudiante();" ><span class="fa fa-plus" ></span></button>
+								<div id="borrar_estudiante" class="form-group ">
+									<button type="button" name="borrar_estudiante" class="btn btn-danger" onclick="crearConfirm('¿Estas de acuerdo en borrar a este estudiante?',
+									'borrarEstudiante()','Aceptar');"><span class="fa fa-times" ></span></button>
+								</div>
+								<button type="button" name="editar_estudiante" id="editar_estudiante" class="btn btn-info" onclick="modificarPersona();"><span class="fa fa-pencil" ></span></button>
+								
+							</div>
+							<table class="table table-hover" id="tablaEstudiante">
+
+								<tr>
+								  <td>Codigo</td>
+								  <td>Fecha de Inicio</td>
+								  <td>Fecha Fin</td>
+								  <td>Estado</td>
+								  <td>Instituto</td>
+								  <td>Pensum</td>
+								  <td>Condicion</td>
+								  <td>Observaciones</td>
+								</tr>
+
+								<tbody id="listarEstudiante">
+
+								</tody>
+								
+							</table>
+						</div>
+
+						<div class="empleados" >
+							<table class="table table-stdiped table-hover">
+								<div class="text-right form-inline">
+
+								<button type="button" name="nuevo_empleado" id="nuevo_empleado" class="btn btn-primary" onclick="NuevoEmpleado();"><span class="fa fa-plus" ></span></button>
+								<div id="borrar_empleado" class="form-group ">
+									<button type="button" name="borrar_empleado" class="btn btn-danger" onclick="crearConfirm('¿Estas de acuerdo en borrar a este empleado?',
+									'borrarEmpleado()','Aceptar');"><span class="fa fa-times" ></span></button>
+								</div>
+								<button type="button" name="editar_empleado" id="editar_empleado" class="btn btn-info" onclick="modificarPersona();"><span class="fa fa-pencil" ></span></button>
+								
+							</div>
+							<table class="table table-hover" id='tablaEmpleado'>
+
+								<tr>
+								  <td>N°</td>
+								  <td>Codigo</td>
+								  <td>Fecha de Inicio</td>
+								  <td>Fecha Fin</td>
+								  <td>Estado</td>
+								  <td>Instituto</td>
+								  <td>Pensum</td>
+								  <td title="Jefe de Pensum">J.P.</td>
+								  <td title="Jefe de Control de Estudio">J.C.E</td>
+								  <td title="Personal del Ministerio">Min.</td>
+								  <td title="Docente">Doc.</td>
+								  <td>Observaciones</td>
+								</tr>
+
+								<tbody id="listarEmpleado" >
+
+
+					       		</tbody>
+								
+							</table>
+							<br>
+						</div>
+					</div>
+					<br>
+				</fieldset>
+			</div>
+
+		</div>
+	</div>
+			
+{% endblock %}
+

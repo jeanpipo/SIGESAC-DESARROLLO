@@ -1,0 +1,244 @@
+{% extends 'Base.html.twig' %}
+
+{% block headVista %}
+
+ <!-- -------------- CSS - allcp forms -------------- -->
+ <link rel="stylesheet" type="text/css" href="modulos/pensum/vista/html5/ccs/forms.css">
+ <link rel="stylesheet" type="text/css" href="modulos/pensum/vista/html5/ccs/alert.css">
+ 
+{% endblock %}
+
+{% block headModulo %}
+    <script src="modulos/pensum/vista/html5/js/Trayecto.js"></script>
+
+{% endblock %}
+    
+    {% block JavaScriptInit %}
+        <script type="text/javascript">
+        jQuery(document).ready(function () {
+                         var a = ObtenerIDPensum();
+
+                         if (a != 'not'){                           
+                            modificarURL(a,'tray');
+                            CargarTrayectosPorPensum();
+
+                         }else{
+                            mostrarMensaje('URL no valido, rediccionarando a Pensum Listar ',2);
+                            window.location="index.php?m_modulo=pensum&m_formato=html5&m_accion=listar&m_vista=Listar";
+                         }
+                           
+                    });
+        </script>
+    {% endblock %}
+
+{% block contenido %}
+    
+    <input type='hidden' name='codigoPensum' id='codigoPensum' value="">
+
+    <input type='hidden' name='codigoTrayectoL' id='codigoTrayectoL' value="">
+
+	<div class="mw1300 center-block">
+
+                <!-- -------------- Spec Form -------------- -->
+
+                <div class="allcp-form">
+                    <form method="post" id="form-wizard" novalidate="novalidate">
+                        <div class="wizard steps-bg clearfix steps-show-icons steps-tabs steps-left" id="steps-uid-0">
+                    	<div class="steps clearfix">
+                    		<li role="tab" class="last done" >
+                            	<a id="steps-uid-0-t-I" href="" >
+                                	<i class="icon-sitemap"></i> Información General
+                                </a>
+                            </li>        
+                            <li role="tab" class="first current" >
+                            	<a id="steps-uid-0-t-T" href="" onclick="" >
+                                	<i class="icon-sitemap"></i>Trayectos
+                                </a>
+                            </li>
+                            <li role="tab" class="last done" >
+                            	<a id="steps-uid-0-t-U" href="" >
+                  			    	<i class="icon-hdd"></i> Unidad Curriculares 
+                  			    </a>
+                  			</li>
+                  			<li role="tab" class="last done">
+                  				<a id="steps-uid-0-t-P" href="" >             
+                                	<i class="fa fa-file-text pr5"></i> Prelaciones 
+                            	</a>
+                            </li>
+                    	</div><div class="content clearfix">
+     
+
+                    <div class="col-md-6">
+
+                            <div class="panel">
+                                    <div class="panel-heading" style="padding-bottom: 0px; padding-top: 0px;">                       
+                                         <h3><i class="icon-puzzle-piece"></i> Detalles</h3>  
+                                       
+                                    </div>
+                                    <div class="panel-body" style="min-height: 447px; padding: 0px;">
+
+
+                                        <div class="box-content">
+
+                                                 <div class="btn-toolbar pull-right clearfix">
+                                                   
+                                                    <div class="btn-group">
+                                                            <input type="text" style="float: left; margin-bottom: 10px;" id="Patron" name="Patron" class="form-control" onkeyup="consultarPorPatron()" placeholder="Buscar Trayecto...">
+                                                            
+                                                    </div>                    
+                                       
+
+                                                </div>
+
+                                               
+
+                                                    <div class="cuadro cuadro-negro" style="margin-top: 22px;  background-color: rgb(42, 47, 67)  ! important; position: inherit;"> Lista de Coincidencia:   
+
+                                                        <div class="trow" style="width:100%; height:200px; overflow:auto;">
+                                                            
+                                                            <table class="table table-hover mbn">
+                                                            <thead>
+                                                            <tr class="active">
+                                                                <th>#N°</th>
+                                                                <th>N° de trayecto</th>
+                                                                <th>Certificado</th>
+                                                                <th></th>
+                                                                 <th></th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                
+                                                                <tr class="alert" style="background-color: rgb(255, 199, 52); position: inherit;">
+                                                                    <td colspan="5">NO HAY COINCIDENCIA</td>
+                                                                    
+                                                                </tr>
+                                                               
+                                                                </table>
+                                                            
+                                                        </div>
+                                                 </div>
+
+
+                                                    <div class="cuadro cuadro-negro" style="margin-top: 22px;  background-color: rgb(42, 47, 67)  ! important; position: inherit;"> Detalle del Trayecto Selecionado:   
+                                                        <div class="btn-group inactivoA" id="bloqEliEdit">
+                                                            <a class="btn btn-circle show-tooltip" title="Modificar" onclick="ConsultarTrayectoEdit()" href="#"><i class="icon-pencil"></i></a>
+                                                            <a class="btn btn-circle show-tooltip" title="Remover" onclick="eliminarTrayecto()" href="#"><i class="icon-remove"></i></a>                                                           
+                                                        </div>
+                                                    </div>
+
+                                                    <div id="detallePen" class="third">
+
+                                                    
+
+                                                    <div class="cuadro cuadro-amarillo" style="margin-top: 22px; position: inherit;"> No ha selecionado ningún Trayecto
+                                                     </div>
+
+                                                </div>
+
+                                        </div>
+
+                                    </div>
+                            </div>  
+                    </div>
+
+
+                        <div class="col-md-6">
+
+				    		<div class="panel">
+				                    <div class="panel-heading" style="padding-bottom: 0px; padding-top: 0px;">                       
+				                         <h3><i class="icon-table"></i> Agregar/Modificar Trayecto de Pensum</h3>    
+				                        
+				                    </div>
+				            <div class="panel-body" style="min-height: 429px; padding: 0px ! important; margin-top: 34px;">
+
+                             <div class="box-content">
+                            <form class="form-horizontal" >                             
+                            <div class="row-fluid">
+                                    <div class="col-md-12 col-md-offset-0">     
+                                        <div class="input-group">                                   
+                                                <span class="input-group-addon">Código:</span>
+                                                 <input type='text' name='codigo' id='codigo' class='form-control'  placeholder='Código' disabled>
+                                            </div>
+                                        </div>
+                            </div><br><br>   
+
+                            <div class="row-fluid">
+                                    <div class="col-md-12 col-md-offset-0">     
+                                        <div class="input-group">                                   
+                                                <span class="input-group-addon">Número de Trayecto:</span>
+                                                 <input type='text' name='numeroTrayecto' id='numeroTrayecto' class='form-control'  placeholder='Número de Trayecto' >
+                                            </div>
+                                        </div>
+                            </div><br><br>                        
+                                
+                            <div class="row-fluid">
+                                    <div class="col-md-12 col-md-offset-0">     
+                                        <div class="input-group">                                   
+                                                <span class="input-group-addon">Certificado:</span>
+                                                <input type='text' name='certificado' id='certificado' onkeyup='validarSoloTexto("#certificado",5,60,true)'  maxlength='50' class='form-control'  placeholder='Nombre'>
+                                            </div>
+                                        </div>
+                            </div><br><br>
+                            <div class="row-fluid">
+                                    <div class="col-md-12 col-md-offset-0">     
+                                        <div class="input-group">                                   
+                                                <span class="input-group-addon">Mínima crédito obligatorio:</span>
+                                                <input type='number' name='min_cre_oblig' id='min_cre_oblig' onkeyup="validarSoloNumeros('#min_cre_oblig',1,2,true)"  maxlength='2'   class='form-control'  placeholder='Mín. crédito obligatorio'>
+                                            </div>
+                                        </div>
+                            </div><br><br>
+                            <div class="row-fluid">
+                                    <div class="col-md-12 col-md-offset-0">     
+                                        <div class="input-group">                                   
+                                                <span class="input-group-addon">Mínimo crédito electiva:</span>
+                                                <input type='number' name='min_cre_elect' id='min_cre_elect' onkeyup="validarSoloNumeros('#min_cre_elect',1,2,true)"  maxlength='2' class='form-control'  placeholder='Mín. crédito electiva:'>
+                                            </div>
+                                        </div>
+                            </div><br><br>
+                            <div class="row-fluid">
+                                    <div class="col-md-12 col-md-offset-0">     
+                                        <div class="input-group">                                   
+                                                <span class="input-group-addon">Mínimo crédito acreditable:</span>
+                                                <input type='number' name='min_cre_acre' id='min_cre_acre'  onkeyup="validarSoloNumeros('#min_cre_acre',1,3,true)"  maxlength='3'  class='form-control'  placeholder='Mín. crédito acreditable'>
+                                            </div>
+                                        </div>
+                            </div><br><br>
+                             <div class="row-fluid">
+                                    <div class="col-md-12 col-md-offset-0">     
+                                        <div class="input-group">                                   
+                                                <span class="input-group-addon">Minimo cantidad de electivas:</span>
+                                                <input type='number' name='min_cant_elect'  id='min_cant_elect' onkeyup="validarSoloNumeros('#min_cant_elect',1,3,true)"  maxlength='3' class='form-control'  placeholder='Mín. cantidad de electivas'>
+                                            </div>
+                                        </div>
+                            </div><br><br>
+                            <br>                        
+                                 <div class="form-group" align="center" style="margin-top: 20px;">
+                                     <button class='btn btn-alert' onclick="setClear()" class='close' data-dismiss='alert'>LIMPIAR</button>
+                                     <button class='btn btn-success' onclick="agregarTrayecto()" class='close' data-dismiss='alert'>GUARDAR</button>
+
+                                 </div>
+                            </form> 
+                        </div>
+                            </div>
+
+                        </div>
+
+
+                        </div>
+                         
+
+                        </div>
+                    	</div>
+
+                        <!-- -------------- /Wizard -------------- -->
+
+                    </form>
+                    <!-- -------------- /Form -------------- -->
+                </div>
+                <!-- -------------- /Spec Form -------------- -->
+
+            </div>
+
+
+
+{% endblock %}

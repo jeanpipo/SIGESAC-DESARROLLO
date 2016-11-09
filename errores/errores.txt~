@@ -1,0 +1,197 @@
+
+**************************** Error n° 1518 *****************************
+codigo Error: 1518
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/sisconot_correcciones/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/sisconot_correcciones/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/sisconot_correcciones/modulos/curso/CursoControlador.php(880): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/sisconot_correcciones/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/sisconot_correcciones/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/sisconot_correcciones/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/siscon...')
+		#5 /var/www/sisconot_correcciones/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/sisconot_correcciones/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 1519 *****************************
+codigo Error: 1519
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/sisconot_correcciones/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/sisconot_correcciones/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/sisconot_correcciones/modulos/curso/CursoControlador.php(880): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/sisconot_correcciones/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/sisconot_correcciones/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/sisconot_correcciones/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/siscon...')
+		#5 /var/www/sisconot_correcciones/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/sisconot_correcciones/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 1520 *****************************
+codigo Error: 1520
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/sisconot_correcciones/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/sisconot_correcciones/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/sisconot_correcciones/modulos/curso/CursoControlador.php(880): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/sisconot_correcciones/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/sisconot_correcciones/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/sisconot_correcciones/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/siscon...')
+		#5 /var/www/sisconot_correcciones/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/sisconot_correcciones/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 1521 *****************************
+codigo Error: 1521
+Mensaje error: Datos de autenticación incorrectos. Revise su usuario y password
+Archivo Error: /var/www/sisconot_correcciones/base/clases/basededatos/Conexion.php
+Linea Error: 67
+Trayecto:
+		#0 /var/www/sisconot_correcciones/modulos/login/modelo/LoginServicio.php(50): Conexion::conectar()
+		#1 /var/www/sisconot_correcciones/modulos/login/LoginControlador.php(83): LoginServicio::obtenerLogin('stefani', '12345')
+		#2 /var/www/sisconot_correcciones/modulos/login/LoginControlador.php(54): LoginControlador::iniciarLogin()
+		#3 /var/www/sisconot_correcciones/modulos/principal/Bloque.php(29): LoginControlador::manejarRequerimiento()
+		#4 /var/www/sisconot_correcciones/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/siscon...')
+		#5 /var/www/sisconot_correcciones/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/sisconot_correcciones/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 1522 *****************************
+codigo Error: 1522
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/sisconot_correcciones/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/sisconot_correcciones/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/sisconot_correcciones/modulos/curso/CursoControlador.php(880): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/sisconot_correcciones/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/sisconot_correcciones/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/sisconot_correcciones/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/siscon...')
+		#5 /var/www/sisconot_correcciones/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/sisconot_correcciones/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 1523 *****************************
+codigo Error: 1523
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/sisconot_correcciones/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/sisconot_correcciones/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/sisconot_correcciones/modulos/curso/CursoControlador.php(880): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/sisconot_correcciones/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/sisconot_correcciones/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/sisconot_correcciones/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/siscon...')
+		#5 /var/www/sisconot_correcciones/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/sisconot_correcciones/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 1524 *****************************
+codigo Error: 1524
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/sisconot_correcciones/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/sisconot_correcciones/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/sisconot_correcciones/modulos/curso/CursoControlador.php(880): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/sisconot_correcciones/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/sisconot_correcciones/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/sisconot_correcciones/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/siscon...')
+		#5 /var/www/sisconot_correcciones/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/sisconot_correcciones/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 1525 *****************************
+codigo Error: 1525
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/sisconot_correcciones/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/sisconot_correcciones/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/sisconot_correcciones/modulos/curso/CursoControlador.php(880): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/sisconot_correcciones/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/sisconot_correcciones/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/sisconot_correcciones/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/siscon...')
+		#5 /var/www/sisconot_correcciones/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/sisconot_correcciones/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 1526 *****************************
+codigo Error: 1526
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/sisconot_correcciones/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/sisconot_correcciones/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/sisconot_correcciones/modulos/curso/CursoControlador.php(880): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/sisconot_correcciones/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/sisconot_correcciones/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/sisconot_correcciones/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/siscon...')
+		#5 /var/www/sisconot_correcciones/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/sisconot_correcciones/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 1527 *****************************
+codigo Error: 1527
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/sisconot_correcciones/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/sisconot_correcciones/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/sisconot_correcciones/modulos/curso/CursoControlador.php(880): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/sisconot_correcciones/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/sisconot_correcciones/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/sisconot_correcciones/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/siscon...')
+		#5 /var/www/sisconot_correcciones/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/sisconot_correcciones/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 1528 *****************************
+codigo Error: 1528
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/sisconot_correcciones/modulos/pensum/modelo/PensumServicio.php
+Linea Error: 382
+Trayecto:
+		#0 /var/www/sisconot_correcciones/modulos/pensum/modelo/PensumServicio.php(382): PDOStatement->execute()
+		#1 /var/www/sisconot_correcciones/modulos/pensum/PensumControlador.php(260): PensumServicio::ObtenerPensumInsituto('')
+		#2 /var/www/sisconot_correcciones/modulos/pensum/PensumControlador.php(62): PensumControlador::buscarPorInstituto()
+		#3 /var/www/sisconot_correcciones/modulos/principal/Bloque.php(33): PensumControlador::manejarRequerimiento()
+		#4 /var/www/sisconot_correcciones/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/siscon...')
+		#5 /var/www/sisconot_correcciones/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/sisconot_correcciones/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 1529 *****************************
+codigo Error: 1529
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/sisconot_correcciones/modulos/pensum/modelo/PensumServicio.php
+Linea Error: 382
+Trayecto:
+		#0 /var/www/sisconot_correcciones/modulos/pensum/modelo/PensumServicio.php(382): PDOStatement->execute()
+		#1 /var/www/sisconot_correcciones/modulos/pensum/PensumControlador.php(260): PensumServicio::ObtenerPensumInsituto('')
+		#2 /var/www/sisconot_correcciones/modulos/pensum/PensumControlador.php(62): PensumControlador::buscarPorInstituto()
+		#3 /var/www/sisconot_correcciones/modulos/principal/Bloque.php(33): PensumControlador::manejarRequerimiento()
+		#4 /var/www/sisconot_correcciones/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/siscon...')
+		#5 /var/www/sisconot_correcciones/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/sisconot_correcciones/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 1530 *****************************
+codigo Error: 1530
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/sisconot_correcciones/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/sisconot_correcciones/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/sisconot_correcciones/modulos/curso/CursoControlador.php(880): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/sisconot_correcciones/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/sisconot_correcciones/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/sisconot_correcciones/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/siscon...')
+		#5 /var/www/sisconot_correcciones/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/sisconot_correcciones/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 1531 *****************************
+codigo Error: 1531
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/sisconot_correcciones/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/sisconot_correcciones/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/sisconot_correcciones/modulos/curso/CursoControlador.php(880): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/sisconot_correcciones/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/sisconot_correcciones/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/sisconot_correcciones/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/siscon...')
+		#5 /var/www/sisconot_correcciones/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/sisconot_correcciones/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}

@@ -1,0 +1,149 @@
+{% extends 'Base.html.twig' %}
+
+{% block base %}
+
+<html><head>
+    <!-- -------------- Meta and Title -------------- -->
+    <meta charset="utf-8">
+    <title>SISGESAC - Sistema de Gestión Académica</title>
+    <meta name="keywords" content="SISGESAC">
+    <meta name="description" content="SISGESAC - Sistema de Gestión Académica">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- -------------- Fonts -------------- -->
+
+
+    <!-- -------------- CSS - theme -------------- -->
+    <link rel="stylesheet" type="text/css" href="modulos/login/vista/html5/css/theme.css">
+
+    <!-- -------------- CSS - allcp forms -------------- -->
+    <link rel="stylesheet" type="text/css" href="modulos/login/vista/html5/css/forms.css">
+
+
+    <!-- -------------- IE8 HTML5 support  -------------- -->
+    <!--[if lt IE 9]>
+    <script src="modulos/login/vista/html5/javascript/html5shiv.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<link rel="stylesheet" type="text/css" href="modulos/login/vista/html5/css/github.css"></head>
+
+<body class="utility-page sb-l-c sb-r-c onload-check" style="min-height: 21px;">
+
+<!-- -------------- Body Wrap  -------------- -->
+<div id="main" class="animated fadeIn">
+
+    <!-- -------------- Main Wrapper -------------- -->
+    <section id="content_wrapper">
+
+        <div id="canvas-wrapper">
+            <canvas id="demo-canvas" width="1511" height="741"></canvas>
+        </div>
+
+        <!-- -------------- Content -------------- -->
+        <div class='alerts' style='z-index:10000;position:fixed;left:25%;right:25%'></div>
+        <section id="content">
+
+            <!-- -------------- Login Form -------------- -->
+            <div class="allcp-form theme-primary mw320" id="login">
+                <div class="text-center mb20">
+					<h1 style='color:#FFFFFF;text-shadow:2px 2px 2px #616161;'>SISGESAC</h1>
+
+					<h4 style='color:#FFFFFF'>Sistema de Gestión Académica</h4>
+                </div>
+                <div class="panel mw320">
+
+
+                        <div class="panel-body pn mv10">
+
+                            <div class="section">
+                                <label for="username" class="field prepend-icon">
+                                    <input type="text" id="Lusuario" class="gui-input" placeholder="Nombre de Usuario">
+                                    
+                                </label>
+                            </div>
+                            <!-- -------------- /section -------------- -->
+
+                            <div class="section">
+                                <label for="password" class="field prepend-icon">
+                                    <input type="password" id="Lcontraseña" class="gui-input" placeholder="Contraseña">
+                                    
+                                </label>
+                            </div>
+                            <!-- -------------- /section -------------- -->
+
+                            <div class="section">
+                              <center>
+                                <button class="btn btn-xs btn-primary" onclick='iniciarSesion()'>Iniciar Sesión</button>
+                            </div>
+                            <!-- -------------- /section -------------- -->
+
+                        </div>
+                        <!-- -------------- /Form -------------- -->
+
+                </div>
+                <!-- -------------- /Panel -------------- -->
+                <center><h5 style='color:white;font-size:12px'>Por favor, inicie sesión para poder ingresar al sistema.</h5>
+            </div>
+            <!-- -------------- /Spec Form -------------- -->
+        </section>
+        <!-- -------------- /Content -------------- -->
+
+    </section>
+    <!-- -------------- /Main Wrapper -------------- -->
+
+</div>
+<!-- -------------- /Body Wrap  -------------- -->
+
+<!-- -------------- Scripts -------------- -->
+
+
+
+<!-- -------------- /Scripts -------------- -->
+
+
+
+<!-- -------------- jQuery -------------- -->
+<script src="modulos/login/vista/html5/javascript/jquery-1.11.3.min.js"></script>
+<script src="modulos/login/vista/html5/javascript/jquery-ui.min.js"></script>
+
+<!-- -------------- CanvasBG JS -------------- -->
+<!--<script src="modulos/login/vista/html5/javascript/canvasbg.js"></script>
+
+<!-- -------------- Theme Scripts -------------- -->
+<script src="recursos/javascript/LibreriaMVC.js"></script>
+
+<script src="recursos/assets/js/main.js"></script>
+<script src="modulos/login/vista/html5/javascript/Login.js"></script>
+
+<!-- <script src="modulos/login/vista/html5/javascript/demo.js"></script>
+<script src="modulos/login/vista/html5/javascript/main.js"></script>
+
+<!-- -------------- Page JS -------------- -->
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+
+        "use strict";
+
+        // Init Theme Core
+    //    Core.init();
+
+        // Init Demo JS
+   //    Demo.init();
+
+        // Init CanvasBG
+        //CanvasBG.init({
+         //   Loc: {
+           //     x: window.innerWidth / 5,
+             //   y: window.innerHeight / 10
+           // }
+        //});
+
+    });
+</script>
+
+<!-- -------------- /Scripts -------------- -->
+
+
+{% endblock %}

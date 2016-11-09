@@ -1,0 +1,263 @@
+{% extends 'Pensum.html.twig' %}
+
+{% block headVista %}
+
+ <!-- -------------- CSS - allcp forms -------------- -->
+ <link rel="stylesheet" type="text/css" href="modulos/pensum/vista/html5/ccs/forms.css">
+
+{% endblock %}
+
+
+{% block JavaScriptInit %}
+    <script type="text/javascript">
+    jQuery(document).ready(function () {          
+
+                        activarCal();
+
+                       var a = ObtenerIDPensum();
+                         if (a != 'not'){                           
+                            modificarURL(a,'info');
+
+                         }
+
+                });
+    </script>
+{% endblock %}
+
+
+{% block contenido %}
+
+      <input type='hidden' name='codigoPensum' id='codigoPensum' value="">
+	<div class="mw1300 center-block">
+
+                <!-- -------------- Spec Form -------------- -->
+                <div class="allcp-form">
+                    <form method="post" id="form-wizard" novalidate="novalidate">
+                        <div class="wizard steps-bg clearfix steps-show-icons steps-tabs steps-left" id="steps-uid-0">
+                    	<div class="steps clearfix">
+                    		<li role="tab" class="first current " >
+                            	<a id="steps-uid-0-t-I" href="" class="inactivoA" >
+                                	<i class="icon-sitemap"></i> Información General
+                                </a>
+                            </li>        
+                            <li role="tab" class="last done " >
+                            	<a id="steps-uid-0-t-T" href="" class="inactivoA">
+                                	<i class="icon-sitemap"></i>Trayectos
+                                </a>
+                            </li>
+                            <li role="tab" class="last done " >
+                            	<a id="steps-uid-0-t-U" href="" class="inactivoA">
+                  			    	<i class="icon-hdd"></i> Unidades Curriculares 
+                  			    </a>
+                  			</li>
+                  			<li role="tab" class="last done ">
+                  				<a id="steps-uid-0-t-P" href="" class="inactivoA">             
+                                	<i class="fa fa-file-text pr5"></i> Prelaciones 
+                            	</a>
+                            </li>
+                    	</div><div class="content clearfix">
+     
+                        <div class="col-md-12">
+
+				    		<div class="panel" >
+				                    <div class="panel-heading">                       
+				                         <h3><i class="icon-table"></i> Agregar/Modificar Información del Pensum</h3>    
+				                         <span class="panel-title">Campos para agregar/modificar Pensum</span>
+				                    </div>
+				                    <div class="panel-body" style="min-height: 338px; padding: 0px ! important; margin-top: 4%;">
+
+                             <div class="box-content">
+						<form class="form-horizontal" >	 
+
+                        {% if pensum is null %}           						
+        	                 <div class="container-fluid">    
+
+                                          <div class="row-fluid">
+                                            <div class="col-md-12 col-md-offset-0">     
+                                                <div class="input-group">                                   
+                                                        <span class="input-group-addon">Código:</span>
+                                                        <input type='text' name='codigo' id='codigo' class='form-control'  placeholder='Código' disabled>
+                                                    </div>
+                                                </div>
+                                    </div><br><br>
+
+                                          <div class="row-fluid">
+                                            <div class="col-md-12 col-md-offset-0">     
+                                                <div class="input-group">                                   
+                                                        <span class="input-group-addon">Nombre Corto:</span>
+                                                        <input type='text' name='nom_corto' onkeyup='validarSoloTexto("#nom_corto",2,20,true)' id='nom_corto' maxlength='25' class='form-control'  placeholder='Nombre Corto'>
+                                                    </div>
+                                                </div>
+                                    </div><br><br>
+
+                                    <div class="row-fluid">
+                                            <div class="col-md-12 col-md-offset-0">     
+                                                <div class="input-group">                                   
+                                                        <span class="input-group-addon">Nombre Completo:</span>
+                                                        <input type='text' name='nombre' onkeyup='validarSoloTexto("#nombre",5,60,true)' id='nombre' maxlength='50' class='form-control'  placeholder='Nombre'>
+                                                    </div>
+                                                </div>
+                                    </div><br><br>
+                              
+
+                                    <div class="row-fluid">
+                                            <div class="col-md-12 col-md-offset-0">     
+                                                <div class="input-group">                                   
+                                                        <span class="input-group-addon">Míinima cantidad electiva:</span>
+                                                        <input type='number' name='min_cant_elect' onkeyup="validarSoloNumeros('#min_cant_elect',1,2,true)"  maxlength='2' id='min_cant_elect'  class='form-control'  placeholder='Mín. cantidad electiva'>
+                                                    </div>
+                                                </div>
+                                    </div><br><br>
+                                    <div class="row-fluid">
+                                            <div class="col-md-12 col-md-offset-0">     
+                                                <div class="input-group">                                   
+                                                        <span class="input-group-addon">Mínima crédito electiva:</span>
+                                                        <input type='number' name='min_cre_elect' onkeyup="validarSoloNumeros('#min_cre_elect',1,2,true)"  maxlength='2' id='min_cre_elect' class='form-control'  placeholder='Mín. crédito electiva'>
+                                                    </div>
+                                                </div>
+                                    </div><br><br>
+                                    <div class="row-fluid">
+                                            <div class="col-md-12 col-md-offset-0">     
+                                                <div class="input-group">                                   
+                                                        <span class="input-group-addon">Mínima crédito obligatorio:</span>
+                                                        <input type='number' name='min_cre_oblig'  onkeyup="validarSoloNumeros('#min_cre_oblig',1,3,true)"  maxlength='3' id='min_cre_oblig' class='form-control'  placeholder='Mín. crédito obligatorio'>
+                                                    </div>
+                                                </div>
+                                    </div><br><br>
+                                    <div class="row-fluid">
+                                            <div class="col-md-12 col-md-offset-0">     
+                                                <div class="input-group">                                   
+                                                        <span class="input-group-addon">Fecha:</span>
+                                                        <input type='text' name='fecha' id='fecha' maxlength='25' class='date form-control'  placeholder='Fecha'>
+                                                    </div>
+                                                </div>
+                                    </div><br><br>
+                                    <div class="row-fluid">
+                                            <div class="col-md-12 col-md-offset-0">     
+                                                <div class="input-group">                                   
+                                                        <span class="input-group-addon">Observaciones:</span>
+                                                    <!--    <input type='text' name='observaciones' id='observaciones' maxlength='200' class='form-control'  placeholder='Observaciones'> -->
+                                                        ​<textarea id="observaciones" rows="3" cols="60" name='observaciones' id='observaciones' maxlength='200' class='form-control'  placeholder='Observaciones'></textarea>
+                                                    </div>
+                                                </div>
+                                    </div><br><br>
+                                </div>  
+                            {% endif %} 
+
+                            {% if pensum is not null %} 
+
+                                    {% for uni in pensum %} 
+                                        
+                                
+
+
+                                     <div class="container-fluid">    
+
+                                          <div class="row-fluid">
+                                            <div class="col-md-12 col-md-offset-0">     
+                                                <div class="input-group">                                   
+                                                        <span class="input-group-addon">Código:</span>
+                                                        <input type='text' name='codigo' id='codigo' class='form-control'  placeholder='Código' value="{{uni.codigo}}" disabled>
+                                                    </div>
+                                                </div>
+                                    </div><br><br>
+
+                                          <div class="row-fluid">
+                                            <div class="col-md-12 col-md-offset-0">     
+                                                <div class="input-group">                                   
+                                                        <span class="input-group-addon">Nombre Corto:</span>
+                                                        <input type='text' name='nom_corto' onkeyup='validarSoloTexto("#nom_corto",2,20,true)' id='nom_corto' maxlength='25' class='form-control'  placeholder='Nombre Corto' value="{{uni.nom_corto}}" >
+                                                    </div>
+                                                </div>
+                                    </div><br><br>
+
+                                    <div class="row-fluid">
+                                            <div class="col-md-12 col-md-offset-0">     
+                                                <div class="input-group">                                   
+                                                        <span class="input-group-addon">Nombre Completo:</span>
+                                                        <input type='text' name='nombre' onkeyup='validarSoloTexto("#nombre",5,60,true)' id='nombre' maxlength='50' class='form-control'  placeholder='Nombre' value="{{uni.nombre}}" >
+                                                    </div>
+                                                </div>
+                                    </div><br><br>
+                              
+
+                                    <div class="row-fluid">
+                                            <div class="col-md-12 col-md-offset-0">     
+                                                <div class="input-group">                                   
+                                                        <span class="input-group-addon">Míinima cantidad electiva:</span>
+                                                        <input type='number' name='min_cant_elect' onkeyup="validarSoloNumeros('#min_cant_elect',1,2,true)"  maxlength='2' id='min_cant_elect'  class='form-control'  placeholder='Mín. cantidad electiva'  value="{{uni.min_can_electiva}}">
+                                                    </div>
+                                                </div>
+                                    </div><br><br>
+                                    <div class="row-fluid">
+                                            <div class="col-md-12 col-md-offset-0">     
+                                                <div class="input-group">                                   
+                                                        <span class="input-group-addon">Mínima crédito electiva:</span>
+                                                        <input type='number' name='min_cre_elect' onkeyup="validarSoloNumeros('#min_cre_elect',1,2,true)"  maxlength='2' id='min_cre_elect' class='form-control'  placeholder='Mín. crédito electiva' value="{{uni.min_cre_electiva}}">
+                                                    </div>
+                                                </div>
+                                    </div><br><br>
+                                    <div class="row-fluid">
+                                            <div class="col-md-12 col-md-offset-0">     
+                                                <div class="input-group">                                   
+                                                        <span class="input-group-addon">Mínima crédito obligatorio:</span>
+                                                        <input type='number' name='min_cre_oblig'  onkeyup="validarSoloNumeros('#min_cre_oblig',1,3,true)"  maxlength='3' id='min_cre_oblig' class='form-control'  placeholder='Mín. crédito obligatorio' value="{{uni.min_cre_obligatoria}}">
+                                                    </div>
+                                                </div>
+                                    </div><br><br>
+                                    <div class="row-fluid">
+                                            <div class="col-md-12 col-md-offset-0">     
+                                                <div class="input-group">                                   
+                                                        <span class="input-group-addon">Fecha:</span>
+                                                        <input type='text' name='fecha' id='fecha' maxlength='25' class='date form-control'  placeholder='Fecha' value="{{uni.fec_creacion}}">
+                                                    </div> 
+                                                </div>
+                                    </div><br><br>
+                                    <div class="row-fluid">
+                                            <div class="col-md-12 col-md-offset-0">     
+                                                <div class="input-group">                                   
+                                                        <span class="input-group-addon">Observaciones:</span>
+                                                    <!--    <input type='text' name='observaciones' id='observaciones' maxlength='200' class='form-control'  placeholder='Observaciones'> -->
+                                                        ​<textarea id="observaciones" rows="3" cols="60" name='observaciones' id='observaciones' maxlength='200' class='form-control'  placeholder='Observaciones'>{{uni.observaciones}}</textarea>
+                                                    </div>
+                                                </div>
+                                    </div><br><br>
+                                </div>  
+                                        
+
+                                    {% endfor %}
+
+                            {% endif %} 
+
+                            </form>	
+                        </div>
+                        				</div>
+				
+			           <div class="form-group" align="center" style="margin-top: 10px;">
+                                     <button class='btn btn-alert' onclick="setClear()" class='close' data-dismiss='alert'>LIMPIAR</button>
+                                     <button class='btn btn-success' onclick="validarAgregarPensum()" class='close' data-dismiss='alert'>GUARDAR</button>
+
+                                 </div>
+
+
+    </div>
+
+
+</div>
+                 
+
+                        </div>
+                    	</div>
+
+                        <!-- -------------- /Wizard -------------- -->
+
+                    </form>
+                    <!-- -------------- /Form -------------- -->
+                </div>
+                <!-- -------------- /Spec Form -------------- -->
+
+            </div>
+
+
+
+{% endblock %}

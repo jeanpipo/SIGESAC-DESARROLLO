@@ -1,0 +1,56 @@
+{% extends 'Curso.html.twig' %}
+
+{% block contenido %}
+
+<center><h2>Inscripción de Estudiantes</h2></center>
+<div class="row">
+	<div class="col-md-12">
+		<center>
+		<div class="col-md-4">
+			Instituto:
+			<div id="divInst">
+				<select class='selectpicker' id="selInst" onchange="cargarPensums()" title='Seleccione Instituto'>
+				</select>
+			</div>
+			<br>
+			Pensum:
+			<div id="divPen">
+				<select class='selectpicker' id="selPen" onchange="cargarPeriodos()" data-live-search='true' data-size='auto' multiple data-max-options="1" title='Seleccione Pensum'>
+				</select>
+			</div>
+			<br>
+<center><input type='checkbox' id='chckPrelacion'> Obviar prelaciones </input></center>
+		</div>
+		
+		<div class="col-md-8">
+		Periodo:
+			<div id="divPer">
+				<select class='selectpicker' id="selPer" onchange="cargarEstudiantes()" data-live-search='true' data-size='auto' multiple data-max-options="1" title='Seleccione Periodo'>
+				</select>
+			</div>
+			<br>
+			Estudiante:
+			<div id="divEstudiante">
+				<select class='selectpicker' id="selEstudiante" onchange="listarUniEstudiante()" data-live-search='true' data-size='auto' data-width='400px'  title='Seleccione Periodo'>
+				</select>
+			</div>
+			<br>
+			<br>
+			<button class='btn btn-xs btn-info' onclick='listarUniEstudiante()'>Recargar Lista</button>
+			<br>
+		</div>
+		
+	</div>
+</div>
+<br>
+<div class="row">
+	<div class="col-md-12" id="tableCursosD">
+
+	</div>
+</div>
+<center>
+<br>
+<br>
+<div id='ticket'>
+</div>
+{% endblock %}
