@@ -104,7 +104,7 @@
                                             <div class="col-md-12 col-md-offset-0">     
                                                 <div class="input-group">                                   
                                                         <span class="input-group-addon">Míinima cantidad electiva:</span>
-                                                        <input type='number' name='min_cant_elect' onkeyup="validarSoloNumeros('#min_cant_elect',1,2,true)"  maxlength='2' id='min_cant_elect'  class='form-control'  placeholder='Mín. cantidad electiva'>
+                                                        <input type='number' name='min_cant_elect' min=0 onkeyup="validarSoloNumeros('#min_cant_elect',1,2,true)"  maxlength='2' id='min_cant_elect'  class='form-control'  placeholder='Mín. cantidad electiva'>
                                                     </div>
                                                 </div>
                                     </div><br><br>
@@ -112,7 +112,7 @@
                                             <div class="col-md-12 col-md-offset-0">     
                                                 <div class="input-group">                                   
                                                         <span class="input-group-addon">Mínima crédito electiva:</span>
-                                                        <input type='number' name='min_cre_elect' onkeyup="validarSoloNumeros('#min_cre_elect',1,2,true)"  maxlength='2' id='min_cre_elect' class='form-control'  placeholder='Mín. crédito electiva'>
+                                                        <input type='number' name='min_cre_elect' min=0 onkeyup="validarSoloNumeros('#min_cre_elect',1,2,true)"  maxlength='2' id='min_cre_elect' class='form-control'  placeholder='Mín. crédito electiva'>
                                                     </div>
                                                 </div>
                                     </div><br><br>
@@ -120,7 +120,7 @@
                                             <div class="col-md-12 col-md-offset-0">     
                                                 <div class="input-group">                                   
                                                         <span class="input-group-addon">Mínima crédito obligatorio:</span>
-                                                        <input type='number' name='min_cre_oblig'  onkeyup="validarSoloNumeros('#min_cre_oblig',1,3,true)"  maxlength='3' id='min_cre_oblig' class='form-control'  placeholder='Mín. crédito obligatorio'>
+                                                        <input type='number' name='min_cre_oblig' min=0 onkeyup="validarSoloNumeros('#min_cre_oblig',1,3,true)"  maxlength='3' id='min_cre_oblig' class='form-control'  placeholder='Mín. crédito obligatorio'>
                                                     </div>
                                                 </div>
                                     </div><br><br>

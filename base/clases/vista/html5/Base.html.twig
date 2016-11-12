@@ -84,19 +84,18 @@
 	        </ul>
 
 	        <ul class="nav navbar-nav navbar-right">
-	        
+				
 	            <li class="dropdown dropdown-fuse">
 	                <a href="#" class="dropdown-toggle fw600" data-toggle="dropdown">
-	                    <span class="hidden-xs">
-							<div id='datUsuario'>
-							<button class="btn btn-primary btn-xs" onclick="cerrarSesion()">{{ datos[0][0] }} - Cerrar Sesión</button>
-								<img src="{{ fotoPerfil }}" alt="avatar" style='border-radius:50%;' class="mw60">
-							</div>
-						</span>
-
-
+	                
+	                <select id="usuario" onchange="javascript:cerrarSesion()" class="selectpicker btn-xs"  data-size='10'  title="{{ datos[0][0] }}" multiple>
+						<option>Cerrar Sesión</option>
+					</select>
+	                    
+	                    <img src="{{ fotoPerfil }}" alt="avatar" style='border-radius:50%;' class="mw60">
+	                    
 	                </a>
-
+	                
 	            </li>
 	        </ul>
 	    </header>
