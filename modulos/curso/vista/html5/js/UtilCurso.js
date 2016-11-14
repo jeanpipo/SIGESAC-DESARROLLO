@@ -1178,7 +1178,10 @@ function succListarEstudiantes(data){
 
 					cad += "<td style='text-align:center'>"+(i+1)+"</td>";
 
-				cad += "<td style='text-align:center'>"+est[i]['nacionalidad']+"-"+est[i]['cedula']+"</td>";
+				if(est[i]['nacionalidad'] != null)
+					cad += "<td style='text-align:center'>"+est[i]['nacionalidad']+"-"+est[i]['cedula']+"</td>";
+				else
+					cad += "<td style='text-align:center'>"+est[i]['cedula']+"</td>";
 
 				cad += "<td style='text-align:center'>"+est[i]['apellido1']+"</td>";
 
@@ -1344,7 +1347,7 @@ function montarSelects(){
 	var arr = Array("m_modulo"		,		"curso",
 					"m_accion"		,		"obtenerDatosDeCurso",
 					"codigo"		,		obtenerGet('codigo'));
-	
+
 	if(obtenerGet("m_vista") == "CargarNotas")
 		ajaxMVC(arr,succCargarNotas,err);
 	else	
@@ -1380,7 +1383,7 @@ function succCargarNotas(data){
 	var dat = data.cursoInfoMontar;
 
 	if(dat){
-		$("#inst").html(dat[0]['nombreins']);
+		/*$("#inst").html(dat[0]['nombreins']);
 		$("#tra").html(dat[0]['numtrayecto']);
 		if(dat[0]['nombredocente'] != null)
 			$("#doc").html(dat[0]['nombredocente']);
@@ -1392,7 +1395,10 @@ function succCargarNotas(data){
 
 		$("#per").html(dat[0]['nombreperiodo']);
 		$("#uni").html(dat[0]['nombreuni']);
-	
+		*/
+		//montarSelects(data);
+		succMontarSelects(data);
+
 		listarEstudiantes(succListarEstudiantesCargarNotas,obtenerGet('codigo'));
 	}
 }
@@ -1449,7 +1455,10 @@ function succListarEstudiantesCargarNotas(data){
 				cad += "<input type='hidden' id='curest"+i+"' value='"+est[i]['cod_curest']+"'></td>";
 				cad += "<input type='hidden' id='est"+i+"' value='"+est[i]['codigo']+"'></td>";
 
-				cad += "<td style='text-align:center'>"+est[i]['nacionalidad']+"-"+est[i]['cedula']+"</td>";
+				if(est[i]['nacionalidad'] != null)
+					cad += "<td style='text-align:center'>"+est[i]['nacionalidad']+"-"+est[i]['cedula']+"</td>";
+				else
+					cad += "<td style='text-align:center'>"+est[i]['cedula']+"</td>";
 
 				cad += "<td style='text-align:center'>"+est[i]['apellido1']+"</td>";
 
@@ -1497,6 +1506,7 @@ function succListarEstudiantesCargarNotas(data){
 	}
 
 	$(".selectpicker").selectpicker();
+
 }
 
 
@@ -1535,17 +1545,20 @@ function succGuardarNotas(data){
 }
 
 function succMontarSelects(data){
+
 	var dat = data.cursoInfoMontar;
-	var tmp = 300;
+	var tmp = 400;
 	var i = 1;
 	
+	var aux = (obtenerGet("m_vista") == "CargarNotas");
+
 	if(dat[0]['cod_instituto'] != null){
 		i++;
 		setTimeout(function (){
 			$("#selInst").val(dat[0]['cod_instituto']);
 			if(datos != null){
-				if(datos.est_instituto != null || datos.emp_instituto != null){
-					$("#selPen").prop("disabled",true);
+				if(datos.est_instituto != null || datos.emp_instituto != null || aux){
+					$("#selInst").prop("disabled",true);
 				}
 			}
 			cargarPensums();
@@ -1558,7 +1571,7 @@ function succMontarSelects(data){
 		setTimeout(function (){
 			$("#selPen").val(dat[0]['cod_pensum']);
 			if(datos != null){
-				if(datos.est_pensum != null || datos.emp_pensum != null){
+				if(datos.est_pensum != null || datos.emp_pensum != null || aux){
 					$("#selPen").prop("disabled",true);
 				}
 			}
@@ -1570,6 +1583,9 @@ function succMontarSelects(data){
 		i++;
 		setTimeout(function (){
 			$("#selPer").val(dat[0]['codigo']);
+			if(aux)
+				$("#selPer").prop("disabled",true);
+
 			cargarTrayectos();
 
 		}, tmp*i);
@@ -1579,6 +1595,9 @@ function succMontarSelects(data){
 		i++;
 		setTimeout(function (){
 			$("#selTra").val(dat[0]['cod_trayecto']);
+
+			if(aux)
+				$("#selTra").prop("disabled",true);			
 
 			if($("#selSec").length > 0)
 				cargarSeccion();

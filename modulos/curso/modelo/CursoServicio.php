@@ -1551,7 +1551,7 @@ Descripción:
 								sis.t_curso c,  sis.t_empleado e,
 								sis.t_uni_tra_pensum utp
 							where c.codigo=? and c.cod_uni_curricular=uc.codigo 
-								and p.codigo=e.cod_persona and e.codigo=c.cod_docente
+								and p.codigo=e.cod_persona
 								and uc.codigo=utp.cod_uni_curricular";
 
 

@@ -2,7 +2,8 @@
 {% block contenido %}
 <center><h2> Carga de Notas </h2></center>
 <br>
-<div class="row">
+
+<div class="row" hidden>
 	<div class="col-md-12">
 		<h6><center>
 		<div class="col-md-12">
@@ -29,7 +30,49 @@
 			<span style="color:#4fd8b0;font-weight:bold">Sección:</span> <div id='sec'></div>
 		</div>
 	</div>
+</div> 
+
+<div class="row">
+	<div class="col-md-3"></div>
+	<div class="col-md-6">
+		<div class="col-md-6">
+			Instituto:
+			<div id="divInst">
+				<select class='selectpicker' id="selInst" onchange="cargarPensums()" title='Seleccione Instituto'>
+				</select>
+			</div>
+
+
+			Pensum:
+			<div id="divPen">
+				<select class='selectpicker' id="selPen" onchange="cargarPeriodos()" data-live-search='true' data-size='auto' multiple data-max-options="1" title='Seleccione Pensum'>
+				</select>
+			</div>
+
+
+		<br><br>
+		</div>
+		<div class="col-md-6">
+
+			Período:
+			<div id="divPer">
+				<select class='selectpicker' id="selPer" data-live-search='true' data-size='auto' multiple data-max-options="1" title='Seleccione Periodo'>
+				</select>
+			</div>
+
+			Trayecto:
+			<div id="divTra">
+				<select class='selectpicker' id="selTra" data-live-search='true' onchange="cargarSeccion()" data-size='auto' multiple data-max-options="1" title='Seleccione Periodo'>
+				</select>
+			</div>
+			
+		</div>
+
+	</div>
 </div>
+
+
+
 <div class="row-fluid">
 	<div class="col-md-12">
 		<br>

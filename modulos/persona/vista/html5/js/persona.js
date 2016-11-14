@@ -1120,23 +1120,23 @@ function crearUsuario(){
 function preGuardarUsuario(){
 	var bool=true;
 
-	if(!$("#usuario").val().trim()){
+	if(!$("#dialogoCrearUsuario #usuario").val().trim()){
 		bool=false;
 		mostrarMensaje("Debes introducir un nombre de usuario",2);
 	}
-	else if($("#rol").val()=="-1"){
+	else if($("#dialogoCrearUsuario #rol").val()=="-1"){
 		bool=false;
 		mostrarMensaje("Debes seleccionar un rol",2);
 	}
-	else if(!$("#clave1").val()){
+	else if(!$("#dialogoCrearUsuario #clave1").val()){
 		bool=false;
 		mostrarMensaje("Debes ingresar una clave",2);
 	}
-	else if(!$("#clave2").val()){
+	else if(!$("#dialogoCrearUsuario #clave2").val()){
 		bool=false;
 		mostrarMensaje("Debes confirmar la clave",2);
 	}
-	else if($("#clave1").val() != $("#clave2").val()){
+	else if($("#dialogoCrearUsuario #clave1").val() != $("#dialogoCrearUsuario #clave2").val()){
 		bool=false;
 		mostrarMensaje("Las claves introducidas NO coinciden",2);
 	}
@@ -1150,9 +1150,9 @@ function guardarUsuario(){
 	var arr = Array("m_modulo"	,	"persona",
 					"m_accion"	,	"agregarUsuario",
 					"codPersona",   $("#cod_persona").val(),
-					"rol"		,	$("#rol").val(),	
-					"clave"		,	$("#clave1").val(),
-					"usuSistema",	$("#usuario").val()							
+					"rol"		,	$("#dialogoCrearUsuario #rol").val(),	
+					"clave"		,	$("#dialogoCrearUsuario #clave1").val(),
+					"usuSistema",	$("#dialogoCrearUsuario #usuario").val()							
 					);		
 	ajaxMVC(arr,succGuardarUsuario,errors);
 }

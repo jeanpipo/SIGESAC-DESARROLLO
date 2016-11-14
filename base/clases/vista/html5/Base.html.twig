@@ -84,11 +84,33 @@
 	        </ul>
 
 	        <ul class="nav navbar-nav navbar-right">
-				
+	        	<div class="dropdown">
+	        		<button class="btn btn-xs" style="background:#2a2f43;color:white;" data-toggle="dropdown">{{ datos[0][0] }} <img src="{{ fotoPerfil }}" alt="avatar" style='border-radius:50%;' class="mw60"></button>
+		        	<ul class="dropdown-menu">
+		        		<li><a href="javascript:cerrarSesion()">Cerrar Sesión</a></li>
+		        	</ul>
+
+		        	
+	        	</div>
+	        	
+
+	        <!--	
+	        	<li>
+	        		<a href="asdasd">asdidsajadskjds
+						<div class="dropdown-menu">
+			                <li> 
+			                	<a href="#">hlaaaaa</a>
+			                </li>
+			            </div>
+		            </a>
+				</li>
+
+
+
 	            <li class="dropdown dropdown-fuse">
 	                <a href="#" class="dropdown-toggle fw600" data-toggle="dropdown">
 	                
-	                <select id="usuario" onchange="javascript:cerrarSesion()" class="selectpicker btn-xs"  data-size='10'  title="{{ datos[0][0] }}" multiple>
+	                <select id="usuario"  class="selectpicker btn-xs"  data-size='10'  title="{{ datos[0][0] }}" multiple>
 						<option>Cerrar Sesión</option>
 					</select>
 	                    
@@ -96,7 +118,7 @@
 	                    
 	                </a>
 	                
-	            </li>
+	            </li> -->
 	        </ul>
 	    </header>
 	    <!-- -------------- /Header  -------------- -->
