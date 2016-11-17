@@ -1569,6 +1569,66 @@ Descripción:
 			}
 		}
 
+		public static function buscarAcreditadas($codEstudiante){
+			try{
+				$conexion = Conexion::conectar();
+				$consulta = "select a.codigo as codigo,p.nom_corto as pensum, t.num_trayecto as trayecto, 
+									a.fecha as fecha, a.descripcion as descripcion, a.uni_credito as uni_credito
+								from sis.t_acreditable as a, sis.t_pensum as p, sis.t_trayecto as t
+								where a.cod_estudiante=? and p.codigo=a.cod_pensum and t.codigo=a.cod_trayecto";
+				$ejecutar=$conexion->prepare($consulta);
+
+				$ejecutar-> execute(array($codEstudiante));
+
+				if($ejecutar->rowCount() != 0)
+					return $ejecutar->fetchAll();
+				else
+					return null;
+			}
+			catch(Exception $e){
+				throw $e;
+			}
+
+		}
+
+		public static function obtenerUltCodAcreditable(){
+			try{
+				$conexion = Conexion::conectar();
+				$consulta = "select coalesce(max(codigo),0) from sis.t_acreditable;";
+				$ejecutar=$conexion->prepare($consulta);
+				$ejecutar-> execute(array());
+				if($ejecutar->rowCount() != 0){
+					$a=$ejecutar->fetchAll();
+					return $a[0]["coalesce"];
+				}
+				else
+					return null;
+			}
+			catch(Exception $e){
+				throw $e;
+			}
+		}
+
+		public static function guardarAcreditada($codigo,$cod_estudiante,$cod_pensum,$cod_trayecto,$uni_credito,$fecha,$descripcion){
+			try{
+				$conexion = Conexion::conectar();
+				$consulta = "insert into sis.t_acreditable (codigo,cod_estudiante,cod_pensum,cod_trayecto,
+															uni_credito,fecha,descripcion) 
+									values (?,?,?,?,?,?,?);";
+				$ejecutar=$conexion->prepare($consulta);
+
+				$ejecutar-> execute(array($codigo,$cod_estudiante,$cod_pensum,
+											$cod_trayecto,$uni_credito,$fecha,$descripcion));
+				if($ejecutar->rowCount() != 0)
+					return $ejecutar->fetchAll();
+				else
+					return null;
+			}
+			catch(Exception $e){
+				throw $e;
+			}
+		}
+
 
 	}
 ?>

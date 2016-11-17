@@ -45,6 +45,8 @@ class EstudianteControlador
 			self::buscarEstudiante();
 		else if($accion == 'listarEstado')
 			self::listarEstado();
+		else if($accion == 'autocompletarEstudiante')
+			self::autocompletarEstudiante();
 		else
 			throw new Exception ("'EstudianteControlador' La accion $accion no es valida");
 	}
@@ -354,7 +356,20 @@ class EstudianteControlador
 			$pensum = PostGet::obtenerPostGet("pensum");
 			$instituto = PostGet::obtenerPostGet("instituto");
 			$estado = PostGet::obtenerPostGet("estado");
+			$mostrarCedula = PostGet::obtenerPostGet("mostrarCedula");
 			$patron=strtoupper($patron);
+
+			if($pnf=="seleccionar" || $pnf== 'undefined')
+				$pnf=null;
+				
+			if($estado=="seleccionar" || $estado== 'undefined')
+				$estado=null;
+							
+			if($instituto=="seleccionar" || $instituto == 'undefined')
+				$instituto=null;
+			if($mostrarCedula== 'undefined' || !$mostrarCedula)
+				$mostrarCedula=false;
+
 			$r = EstudianteServicio::listarPersonaEstudiante($pnf,$estado,$instituto,$patron);
 
 
@@ -365,7 +380,11 @@ class EstudianteControlador
 					if ($c > 0)
 						$cad .= ",";
 					$cad .= "{";
-					$cad .= '"label": "' . $estudiante['nombre1']. ' ' . $estudiante['nombre2']. ' ' . $estudiante['apellido1']. ' ' . $estudiante['apellido2']. '", ';
+					if($mostrarCedula)
+						$cad .= '"label": "' . $estudiante['nombre1']. ' ' . $estudiante['nombre2']. ' ' . $estudiante['apellido1']. ' ' . $estudiante['apellido2']. '('.$estudiante['cedula'].')", ';
+					else
+						$cad .= '"label": "' . $estudiante['nombre1']. ' ' . $estudiante['nombre2']. ' ' . $estudiante['apellido1']. ' ' . $estudiante['apellido2']. '", ';
+
 					$cad .= '"value": '.$estudiante['cod_persona'].",";
 					$cad .= '"cedula": '.$estudiante['cedula'].",";
 					$cad .= '"nombre": "' . $estudiante['nombre1']. ' '. $estudiante['nombre2']. ' ' . 
@@ -390,5 +409,6 @@ class EstudianteControlador
 			throw $e;
 		}
 	}
+
 }
 ?>
