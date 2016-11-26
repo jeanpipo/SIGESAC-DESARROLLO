@@ -3289,3 +3289,2472 @@ Trayecto:
 		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
 		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
 		#7 {main}
+**************************** Error n° 577 *****************************
+codigo Error: 577
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 578 *****************************
+codigo Error: 578
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 579 *****************************
+codigo Error: 579
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 580 *****************************
+codigo Error: 580
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 581 *****************************
+codigo Error: 581
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 582 *****************************
+codigo Error: 582
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 583 *****************************
+codigo Error: 583
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 584 *****************************
+codigo Error: 584
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 585 *****************************
+codigo Error: 585
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 586 *****************************
+codigo Error: 586
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 587 *****************************
+codigo Error: 587
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 588 *****************************
+codigo Error: 588
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 589 *****************************
+codigo Error: 589
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 590 *****************************
+codigo Error: 590
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 591 *****************************
+codigo Error: 591
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 592 *****************************
+codigo Error: 592
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 593 *****************************
+codigo Error: 593
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 594 *****************************
+codigo Error: 594
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 595 *****************************
+codigo Error: 595
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 596 *****************************
+codigo Error: 596
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 597 *****************************
+codigo Error: 597
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 598 *****************************
+codigo Error: 598
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 599 *****************************
+codigo Error: 599
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 600 *****************************
+codigo Error: 600
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 601 *****************************
+codigo Error: 601
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 602 *****************************
+codigo Error: 602
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 603 *****************************
+codigo Error: 603
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 604 *****************************
+codigo Error: 604
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 605 *****************************
+codigo Error: 605
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 606 *****************************
+codigo Error: 606
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 607 *****************************
+codigo Error: 607
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 608 *****************************
+codigo Error: 608
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 609 *****************************
+codigo Error: 609
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 610 *****************************
+codigo Error: 610
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 611 *****************************
+codigo Error: 611
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 612 *****************************
+codigo Error: 612
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 613 *****************************
+codigo Error: 613
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 614 *****************************
+codigo Error: 614
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 615 *****************************
+codigo Error: 615
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 616 *****************************
+codigo Error: 616
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 617 *****************************
+codigo Error: 617
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 618 *****************************
+codigo Error: 618
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/pensum/modelo/PensumServicio.php
+Linea Error: 382
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/pensum/modelo/PensumServicio.php(382): PDOStatement->execute()
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/pensum/PensumControlador.php(260): PensumServicio::ObtenerPensumInsituto('')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/pensum/PensumControlador.php(62): PensumControlador::buscarPorInstituto()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(33): PensumControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 619 *****************************
+codigo Error: 619
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/pensum/modelo/PensumServicio.php
+Linea Error: 382
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/pensum/modelo/PensumServicio.php(382): PDOStatement->execute()
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/pensum/PensumControlador.php(260): PensumServicio::ObtenerPensumInsituto('')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/pensum/PensumControlador.php(62): PensumControlador::buscarPorInstituto()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(33): PensumControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 620 *****************************
+codigo Error: 620
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 621 *****************************
+codigo Error: 621
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 622 *****************************
+codigo Error: 622
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 623 *****************************
+codigo Error: 623
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 624 *****************************
+codigo Error: 624
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 625 *****************************
+codigo Error: 625
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 626 *****************************
+codigo Error: 626
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 627 *****************************
+codigo Error: 627
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 628 *****************************
+codigo Error: 628
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 629 *****************************
+codigo Error: 629
+Mensaje error: Unexpected character ";" in "Base.html.twig" at line 440
+Archivo Error: /var/www/SIGESAC-DESARROLLO/recursos/twig/lib/Twig/Lexer.php
+Linea Error: 283
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/recursos/twig/lib/Twig/Lexer.php(215): Twig_Lexer->lexExpression()
+		#1 /var/www/SIGESAC-DESARROLLO/recursos/twig/lib/Twig/Lexer.php(116): Twig_Lexer->lexVar()
+		#2 /var/www/SIGESAC-DESARROLLO/recursos/twig/lib/Twig/Environment.php(443): Twig_Lexer->tokenize('{% block base %...', 'Base.html.twig')
+		#3 /var/www/SIGESAC-DESARROLLO/recursos/twig/lib/Twig/Environment.php(529): Twig_Environment->tokenize('{% block base %...', 'Base.html.twig')
+		#4 /var/www/SIGESAC-DESARROLLO/recursos/twig/lib/Twig/Environment.php(320): Twig_Environment->compileSource('{% block base %...', 'Base.html.twig')
+		#5 /var/www/SIGESAC-DESARROLLO/recursos/twig/lib/Twig/Environment.php(320) : eval()'d code(10): Twig_Environment->loadTemplate('Base.html.twig')
+		#6 /var/www/SIGESAC-DESARROLLO/recursos/twig/lib/Twig/Environment.php(334): __TwigTemplate_5e2257dac4eb595cb530f83012440086->__construct(Object(Twig_Environment))
+		#7 /var/www/SIGESAC-DESARROLLO/recursos/twig/lib/Twig/Environment.php(320) : eval()'d code(10): Twig_Environment->loadTemplate('Curso.html.twig')
+		#8 /var/www/SIGESAC-DESARROLLO/recursos/twig/lib/Twig/Environment.php(334): __TwigTemplate_ffe20da1fccc7519291504ca07f242be->__construct(Object(Twig_Environment))
+		#9 /var/www/SIGESAC-DESARROLLO/recursos/twig/lib/Twig/Environment.php(299): Twig_Environment->loadTemplate('Acreditables.ht...')
+		#10 /var/www/SIGESAC-DESARROLLO/base/clases/vista/Vista.php(286): Twig_Environment->display('Acreditables.ht...', Array)
+		#11 /var/www/SIGESAC-DESARROLLO/base/clases/vista/Vista.php(231): Vista::mostrarHtml5()
+		#12 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(423): Vista::mostrar()
+		#13 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(55): CursoControlador::mostrarVista()
+		#14 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#15 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#16 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#17 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#18 {main}
+**************************** Error n° 630 *****************************
+codigo Error: 630
+Mensaje error: The function "alert" does not exist in "Base.html.twig" at line 440
+Archivo Error: /var/www/SIGESAC-DESARROLLO/recursos/twig/lib/Twig/Node/Expression/Function.php
+Linea Error: 28
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/recursos/twig/lib/Twig/Compiler.php(87): Twig_Node_Expression_Function->compile(Object(Twig_Compiler))
+		#1 /var/www/SIGESAC-DESARROLLO/recursos/twig/lib/Twig/Node/Expression/Filter.php(50): Twig_Compiler->subcompile(Object(Twig_Node_Expression_Function))
+		#2 /var/www/SIGESAC-DESARROLLO/recursos/twig/lib/Twig/Node/Expression/Filter.php(32): Twig_Node_Expression_Filter->compileFilter(Object(Twig_Compiler), Object(Twig_Filter_Function))
+		#3 /var/www/SIGESAC-DESARROLLO/recursos/twig/lib/Twig/Compiler.php(87): Twig_Node_Expression_Filter->compile(Object(Twig_Compiler))
+		#4 /var/www/SIGESAC-DESARROLLO/recursos/twig/lib/Twig/Node/Print.php(36): Twig_Compiler->subcompile(Object(Twig_Node_Expression_Filter))
+		#5 /var/www/SIGESAC-DESARROLLO/recursos/twig/lib/Twig/Node.php(106): Twig_Node_Print->compile(Object(Twig_Compiler))
+		#6 /var/www/SIGESAC-DESARROLLO/recursos/twig/lib/Twig/Compiler.php(87): Twig_Node->compile(Object(Twig_Compiler))
+		#7 /var/www/SIGESAC-DESARROLLO/recursos/twig/lib/Twig/Node/Block.php(40): Twig_Compiler->subcompile(Object(Twig_Node))
+		#8 /var/www/SIGESAC-DESARROLLO/recursos/twig/lib/Twig/Node.php(106): Twig_Node_Block->compile(Object(Twig_Compiler))
+		#9 /var/www/SIGESAC-DESARROLLO/recursos/twig/lib/Twig/Node.php(106): Twig_Node->compile(Object(Twig_Compiler))
+		#10 /var/www/SIGESAC-DESARROLLO/recursos/twig/lib/Twig/Compiler.php(87): Twig_Node->compile(Object(Twig_Compiler))
+		#11 /var/www/SIGESAC-DESARROLLO/recursos/twig/lib/Twig/Node/Module.php(66): Twig_Compiler->subcompile(Object(Twig_Node))
+		#12 /var/www/SIGESAC-DESARROLLO/recursos/twig/lib/Twig/Node/Module.php(39): Twig_Node_Module->compileTemplate(Object(Twig_Compiler))
+		#13 /var/www/SIGESAC-DESARROLLO/recursos/twig/lib/Twig/Compiler.php(76): Twig_Node_Module->compile(Object(Twig_Compiler))
+		#14 /var/www/SIGESAC-DESARROLLO/recursos/twig/lib/Twig/Environment.php(515): Twig_Compiler->compile(Object(Twig_Node_Module))
+		#15 /var/www/SIGESAC-DESARROLLO/recursos/twig/lib/Twig/Environment.php(529): Twig_Environment->compile(Object(Twig_Node_Module))
+		#16 /var/www/SIGESAC-DESARROLLO/recursos/twig/lib/Twig/Environment.php(320): Twig_Environment->compileSource('{% block base %...', 'Base.html.twig')
+		#17 /var/www/SIGESAC-DESARROLLO/recursos/twig/lib/Twig/Environment.php(320) : eval()'d code(10): Twig_Environment->loadTemplate('Base.html.twig')
+		#18 /var/www/SIGESAC-DESARROLLO/recursos/twig/lib/Twig/Environment.php(334): __TwigTemplate_5e2257dac4eb595cb530f83012440086->__construct(Object(Twig_Environment))
+		#19 /var/www/SIGESAC-DESARROLLO/recursos/twig/lib/Twig/Environment.php(320) : eval()'d code(10): Twig_Environment->loadTemplate('Curso.html.twig')
+		#20 /var/www/SIGESAC-DESARROLLO/recursos/twig/lib/Twig/Environment.php(334): __TwigTemplate_ffe20da1fccc7519291504ca07f242be->__construct(Object(Twig_Environment))
+		#21 /var/www/SIGESAC-DESARROLLO/recursos/twig/lib/Twig/Environment.php(299): Twig_Environment->loadTemplate('Acreditables.ht...')
+		#22 /var/www/SIGESAC-DESARROLLO/base/clases/vista/Vista.php(286): Twig_Environment->display('Acreditables.ht...', Array)
+		#23 /var/www/SIGESAC-DESARROLLO/base/clases/vista/Vista.php(231): Vista::mostrarHtml5()
+		#24 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(423): Vista::mostrar()
+		#25 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(55): CursoControlador::mostrarVista()
+		#26 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#27 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#28 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#29 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#30 {main}
+**************************** Error n° 631 *****************************
+codigo Error: 631
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 632 *****************************
+codigo Error: 632
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 633 *****************************
+codigo Error: 633
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 634 *****************************
+codigo Error: 634
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 635 *****************************
+codigo Error: 635
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 636 *****************************
+codigo Error: 636
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 637 *****************************
+codigo Error: 637
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 638 *****************************
+codigo Error: 638
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 639 *****************************
+codigo Error: 639
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 640 *****************************
+codigo Error: 640
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 641 *****************************
+codigo Error: 641
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 642 *****************************
+codigo Error: 642
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 643 *****************************
+codigo Error: 643
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 644 *****************************
+codigo Error: 644
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 645 *****************************
+codigo Error: 645
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 646 *****************************
+codigo Error: 646
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 647 *****************************
+codigo Error: 647
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 648 *****************************
+codigo Error: 648
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 649 *****************************
+codigo Error: 649
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/trayecto/modelo/TrayectoServicio.php
+Linea Error: 331
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/trayecto/modelo/TrayectoServicio.php(331): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/trayecto/TrayectoControlador.php(296): TrayectoServicio::obtenerTrayectoPensum('')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/trayecto/TrayectoControlador.php(66): TrayectoControlador::listarTrayectoPensum()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(57): TrayectoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 650 *****************************
+codigo Error: 650
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/trayecto/modelo/TrayectoServicio.php
+Linea Error: 331
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/trayecto/modelo/TrayectoServicio.php(331): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/trayecto/TrayectoControlador.php(296): TrayectoServicio::obtenerTrayectoPensum('')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/trayecto/TrayectoControlador.php(66): TrayectoControlador::listarTrayectoPensum()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(57): TrayectoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 651 *****************************
+codigo Error: 651
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 652 *****************************
+codigo Error: 652
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 653 *****************************
+codigo Error: 653
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 654 *****************************
+codigo Error: 654
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 655 *****************************
+codigo Error: 655
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 656 *****************************
+codigo Error: 656
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 657 *****************************
+codigo Error: 657
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 658 *****************************
+codigo Error: 658
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «undefined»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/trayecto/modelo/TrayectoServicio.php
+Linea Error: 331
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/trayecto/modelo/TrayectoServicio.php(331): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/trayecto/TrayectoControlador.php(296): TrayectoServicio::obtenerTrayectoPensum('undefined')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/trayecto/TrayectoControlador.php(66): TrayectoControlador::listarTrayectoPensum()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(57): TrayectoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 659 *****************************
+codigo Error: 659
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 660 *****************************
+codigo Error: 660
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «undefined»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/trayecto/modelo/TrayectoServicio.php
+Linea Error: 331
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/trayecto/modelo/TrayectoServicio.php(331): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/trayecto/TrayectoControlador.php(296): TrayectoServicio::obtenerTrayectoPensum('undefined')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/trayecto/TrayectoControlador.php(66): TrayectoControlador::listarTrayectoPensum()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(57): TrayectoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 661 *****************************
+codigo Error: 661
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «undefined»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/trayecto/modelo/TrayectoServicio.php
+Linea Error: 331
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/trayecto/modelo/TrayectoServicio.php(331): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/trayecto/TrayectoControlador.php(296): TrayectoServicio::obtenerTrayectoPensum('undefined')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/trayecto/TrayectoControlador.php(66): TrayectoControlador::listarTrayectoPensum()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(57): TrayectoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 662 *****************************
+codigo Error: 662
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 663 *****************************
+codigo Error: 663
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 664 *****************************
+codigo Error: 664
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «undefined»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/trayecto/modelo/TrayectoServicio.php
+Linea Error: 331
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/trayecto/modelo/TrayectoServicio.php(331): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/trayecto/TrayectoControlador.php(296): TrayectoServicio::obtenerTrayectoPensum('undefined')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/trayecto/TrayectoControlador.php(66): TrayectoControlador::listarTrayectoPensum()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(57): TrayectoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 665 *****************************
+codigo Error: 665
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 666 *****************************
+codigo Error: 666
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «undefined»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/trayecto/modelo/TrayectoServicio.php
+Linea Error: 331
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/trayecto/modelo/TrayectoServicio.php(331): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/trayecto/TrayectoControlador.php(296): TrayectoServicio::obtenerTrayectoPensum('undefined')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/trayecto/TrayectoControlador.php(66): TrayectoControlador::listarTrayectoPensum()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(57): TrayectoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 667 *****************************
+codigo Error: 667
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 668 *****************************
+codigo Error: 668
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «undefined»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/trayecto/modelo/TrayectoServicio.php
+Linea Error: 331
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/trayecto/modelo/TrayectoServicio.php(331): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/trayecto/TrayectoControlador.php(296): TrayectoServicio::obtenerTrayectoPensum('undefined')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/trayecto/TrayectoControlador.php(66): TrayectoControlador::listarTrayectoPensum()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(57): TrayectoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 669 *****************************
+codigo Error: 669
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 670 *****************************
+codigo Error: 670
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «undefined»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/trayecto/modelo/TrayectoServicio.php
+Linea Error: 331
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/trayecto/modelo/TrayectoServicio.php(331): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/trayecto/TrayectoControlador.php(296): TrayectoServicio::obtenerTrayectoPensum('undefined')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/trayecto/TrayectoControlador.php(66): TrayectoControlador::listarTrayectoPensum()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(57): TrayectoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 671 *****************************
+codigo Error: 671
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 672 *****************************
+codigo Error: 672
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «undefined»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/trayecto/modelo/TrayectoServicio.php
+Linea Error: 331
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/trayecto/modelo/TrayectoServicio.php(331): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/trayecto/TrayectoControlador.php(296): TrayectoServicio::obtenerTrayectoPensum('undefined')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/trayecto/TrayectoControlador.php(66): TrayectoControlador::listarTrayectoPensum()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(57): TrayectoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 673 *****************************
+codigo Error: 673
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 674 *****************************
+codigo Error: 674
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 675 *****************************
+codigo Error: 675
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 676 *****************************
+codigo Error: 676
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 677 *****************************
+codigo Error: 677
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 678 *****************************
+codigo Error: 678
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 679 *****************************
+codigo Error: 679
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 680 *****************************
+codigo Error: 680
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 681 *****************************
+codigo Error: 681
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 682 *****************************
+codigo Error: 682
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 683 *****************************
+codigo Error: 683
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 684 *****************************
+codigo Error: 684
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 685 *****************************
+codigo Error: 685
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 686 *****************************
+codigo Error: 686
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 687 *****************************
+codigo Error: 687
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 688 *****************************
+codigo Error: 688
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 689 *****************************
+codigo Error: 689
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 690 *****************************
+codigo Error: 690
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 691 *****************************
+codigo Error: 691
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 692 *****************************
+codigo Error: 692
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 693 *****************************
+codigo Error: 693
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 694 *****************************
+codigo Error: 694
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 695 *****************************
+codigo Error: 695
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1621
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1621): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(933): CursoServicio::guardarAcreditada(8, '2307', '', '', '10', '21/11/2016', 'ahorita mismo')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(107): CursoControlador::guardarAcreditada()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 696 *****************************
+codigo Error: 696
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 697 *****************************
+codigo Error: 697
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1621
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1621): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(933): CursoServicio::guardarAcreditada(8, '2307', '', '', '5', '15/11/2016', 'ahoritaaa')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(107): CursoControlador::guardarAcreditada()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 698 *****************************
+codigo Error: 698
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 699 *****************************
+codigo Error: 699
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 700 *****************************
+codigo Error: 700
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1621
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1621): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(933): CursoServicio::guardarAcreditada(9, '', '1', '1', '5', '18/12/2016', 'jaja')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(107): CursoControlador::guardarAcreditada()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 701 *****************************
+codigo Error: 701
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 702 *****************************
+codigo Error: 702
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 703 *****************************
+codigo Error: 703
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 704 *****************************
+codigo Error: 704
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 705 *****************************
+codigo Error: 705
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 706 *****************************
+codigo Error: 706
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 707 *****************************
+codigo Error: 707
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 708 *****************************
+codigo Error: 708
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/trayecto/modelo/TrayectoServicio.php
+Linea Error: 331
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/trayecto/modelo/TrayectoServicio.php(331): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/trayecto/TrayectoControlador.php(296): TrayectoServicio::obtenerTrayectoPensum('')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/trayecto/TrayectoControlador.php(66): TrayectoControlador::listarTrayectoPensum()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(57): TrayectoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 709 *****************************
+codigo Error: 709
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 710 *****************************
+codigo Error: 710
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 711 *****************************
+codigo Error: 711
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 712 *****************************
+codigo Error: 712
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 713 *****************************
+codigo Error: 713
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 714 *****************************
+codigo Error: 714
+Mensaje error: No se pudo resolver la acción buscarUnaAcreditabl
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php
+Linea Error: 109
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#3 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#4 {main}
+**************************** Error n° 715 *****************************
+codigo Error: 715
+Mensaje error: No se pudo resolver la acción buscarUnaAcreditabl
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php
+Linea Error: 109
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#3 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#4 {main}
+**************************** Error n° 716 *****************************
+codigo Error: 716
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 717 *****************************
+codigo Error: 717
+Mensaje error: No se pudo resolver la acción buscarUnaAcreditabl
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php
+Linea Error: 109
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#3 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#4 {main}
+**************************** Error n° 718 *****************************
+codigo Error: 718
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 719 *****************************
+codigo Error: 719
+Mensaje error: No se pudo resolver la acción buscarUnaAcreditable
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php
+Linea Error: 109
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#3 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#4 {main}
+**************************** Error n° 720 *****************************
+codigo Error: 720
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(884): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 721 *****************************
+codigo Error: 721
+Mensaje error: No se pudo resolver la acción buscarUnaAcreditable
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php
+Linea Error: 109
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#3 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#4 {main}
+**************************** Error n° 722 *****************************
+codigo Error: 722
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(886): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 723 *****************************
+codigo Error: 723
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(886): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 724 *****************************
+codigo Error: 724
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(886): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 725 *****************************
+codigo Error: 725
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(886): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 726 *****************************
+codigo Error: 726
+Mensaje error: SQLSTATE[HY105]: Invalid parameter type: 7 
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1647
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1647): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(940): CursoServicio::modificarAcreditada('10', '2116', '1', '-1', '1', '23/11/2016', 'modficando')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(107): CursoControlador::guardarAcreditada()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 727 *****************************
+codigo Error: 727
+Mensaje error: SQLSTATE[HY105]: Invalid parameter type: 7 
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1647
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1647): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(940): CursoServicio::modificarAcreditada('10', '2116', '1', '1', '1', '23/11/2016', 'modficando')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(107): CursoControlador::guardarAcreditada()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 728 *****************************
+codigo Error: 728
+Mensaje error: SQLSTATE[HY105]: Invalid parameter type: 7 
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1647
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1647): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(940): CursoServicio::modificarAcreditada('10', '2116', '1', '1', '1', '23/11/2016', 'modficando')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(107): CursoControlador::guardarAcreditada()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 729 *****************************
+codigo Error: 729
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(886): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 730 *****************************
+codigo Error: 730
+Mensaje error: SQLSTATE[42P18]: Indeterminate datatype: 7 ERROR:  no se pudo determinar el tipo del parámetro $7
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1647
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1647): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(940): CursoServicio::modificarAcreditada('10', '2116', '1', '4', '1', '2016-09-08', 'modficando')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(107): CursoControlador::guardarAcreditada()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 731 *****************************
+codigo Error: 731
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(886): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 732 *****************************
+codigo Error: 732
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(886): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 733 *****************************
+codigo Error: 733
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(888): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 734 *****************************
+codigo Error: 734
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(888): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 735 *****************************
+codigo Error: 735
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(888): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 736 *****************************
+codigo Error: 736
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(888): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 737 *****************************
+codigo Error: 737
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(888): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 738 *****************************
+codigo Error: 738
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(888): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 739 *****************************
+codigo Error: 739
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(888): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 740 *****************************
+codigo Error: 740
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(888): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 741 *****************************
+codigo Error: 741
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(888): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 742 *****************************
+codigo Error: 742
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(888): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 743 *****************************
+codigo Error: 743
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(888): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 744 *****************************
+codigo Error: 744
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(888): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 745 *****************************
+codigo Error: 745
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(888): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 746 *****************************
+codigo Error: 746
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(888): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 747 *****************************
+codigo Error: 747
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(888): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 748 *****************************
+codigo Error: 748
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(888): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 749 *****************************
+codigo Error: 749
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(888): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 750 *****************************
+codigo Error: 750
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(888): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 751 *****************************
+codigo Error: 751
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1530
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1530): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(888): CursoServicio::listarCurElectivas('', '')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}

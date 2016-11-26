@@ -381,7 +381,7 @@ class EstudianteControlador
 						$cad .= ",";
 					$cad .= "{";
 					if($mostrarCedula)
-						$cad .= '"label": "' . $estudiante['nombre1']. ' ' . $estudiante['nombre2']. ' ' . $estudiante['apellido1']. ' ' . $estudiante['apellido2']. '('.$estudiante['cedula'].')", ';
+						$cad .= '"label": "' . $estudiante['nombre1']. ' ' . $estudiante['nombre2']. ' ' . $estudiante['apellido1']. ' ' . $estudiante['apellido2']. ' ('.$estudiante['cedula'].')", ';
 					else
 						$cad .= '"label": "' . $estudiante['nombre1']. ' ' . $estudiante['nombre2']. ' ' . $estudiante['apellido1']. ' ' . $estudiante['apellido2']. '", ';
 

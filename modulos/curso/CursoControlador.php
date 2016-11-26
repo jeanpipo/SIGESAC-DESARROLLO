@@ -105,6 +105,10 @@ Descripción:
 					self::buscarAcreditadas();
 				elseif($accion == "guardarAcreditada")
 					self::guardarAcreditada();
+				elseif($accion == "buscarUnaAcreditable")
+					self::buscarUnaAcreditable();
+				elseif($accion == "borrarAcreditable")
+					self::borrarAcreditable();
 				else
 					throw new Exception ("No se pudo resolver la acción $accion");
 			}
@@ -928,9 +932,15 @@ Descripción:
 				$uni_credito=PostGet::obtenerPostGet("uni_credito");
 				$fecha=PostGet::obtenerPostGet("fecha");
 				$descripcion=PostGet::obtenerPostGet("descripcion");
-				$codigo=CursoServicio::obtenerUltCodAcreditable();
-				$codigo++;
-				$r=CursoServicio::guardarAcreditada($codigo,$cod_estudiante,$cod_pensum,$cod_trayecto,$uni_credito,$fecha,$descripcion);
+				$codigo=PostGet::obtenerPostGet("codigo");
+				if(!$codigo){
+					$codigo=CursoServicio::obtenerUltCodAcreditable();
+					$codigo++;
+					$r=CursoServicio::agregarAcreditada($codigo,$cod_estudiante,$cod_pensum,$cod_trayecto,$uni_credito,$fecha,$descripcion);
+				}
+				else
+					$r=CursoServicio::modificarAcreditada($codigo,$cod_estudiante,$cod_pensum,$cod_trayecto,$uni_credito,$fecha,$descripcion);
+	
 				Vista::asignarDato("acreditada",$r);
 				Vista::mostrar();
 			}
@@ -940,6 +950,34 @@ Descripción:
 
 		}
 
+		public static function buscarUnaAcreditable(){
+			try{
+				$codigo=PostGet::obtenerPostGet("codigo");
+				$r=CursoServicio::buscarUnaAcreditable($codigo);
+				if($r)
+					Vista::asignarDato("acreditada",$r);
+
+				Vista::mostrar();
+
+			}
+			catch(Exception $e){
+				throw $e;
+			}
+		}
+
+		public static function borrarAcreditable(){
+			try{
+				$codigo=PostGet::obtenerPostGet("codigo");
+				$r=CursoServicio::borrarAcreditable($codigo);
+				if($r)
+					Vista::asignarDato("acreditada",$r);
+
+				Vista::mostrar();
+			}
+			catch(Exception $e){
+				throw $e;
+			}
+		}
 
 
 	}

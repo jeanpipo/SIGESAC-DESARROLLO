@@ -1609,7 +1609,9 @@ Descripción:
 			}
 		}
 
-		public static function guardarAcreditada($codigo,$cod_estudiante,$cod_pensum,$cod_trayecto,$uni_credito,$fecha,$descripcion){
+		public static function agregarAcreditada($codigo,		$cod_estudiante,$cod_pensum,
+												$cod_trayecto,	$uni_credito,	$fecha,
+												$descripcion){
 			try{
 				$conexion = Conexion::conectar();
 				$consulta = "insert into sis.t_acreditable (codigo,cod_estudiante,cod_pensum,cod_trayecto,
@@ -1619,6 +1621,50 @@ Descripción:
 
 				$ejecutar-> execute(array($codigo,$cod_estudiante,$cod_pensum,
 											$cod_trayecto,$uni_credito,$fecha,$descripcion));
+				if($ejecutar->rowCount() != 0){
+					$ejecutar->fetchAll();
+					return $codigo;
+				}else
+					return null;
+			}
+			catch(Exception $e){
+				throw $e;
+			}
+		}
+
+		public static function modificarAcreditada($codigo,		$cod_estudiante,$cod_pensum,
+												$cod_trayecto,	$uni_credito,	$fecha,
+												$descripcion){
+			try{
+				$conexion = Conexion::conectar();
+				$consulta = "update sis.t_acreditable set cod_pensum=?,cod_trayecto=?,
+															uni_credito=?,fecha=?,descripcion=?
+
+									where codigo=?;";
+				$ejecutar=$conexion->prepare($consulta);
+
+				$ejecutar-> execute(array($cod_pensum,$cod_trayecto,$uni_credito,$fecha,$descripcion,$codigo));
+				if($ejecutar->rowCount() != 0){
+					$ejecutar->fetchAll();
+					return $codigo;
+				}else
+					return null;
+			}
+			catch(Exception $e){
+				throw $e;
+			}
+		}
+
+		public static function buscarUnaAcreditable($codigo){
+			try{
+				$conexion = Conexion::conectar();
+				$consulta = "select codigo, cod_estudiante, cod_pensum, cod_trayecto, uni_credito, fecha, descripcion
+								from sis.t_acreditable
+								where codigo=?";
+				$ejecutar=$conexion->prepare($consulta);
+
+				$ejecutar-> execute(array($codigo));
+
 				if($ejecutar->rowCount() != 0)
 					return $ejecutar->fetchAll();
 				else
@@ -1629,6 +1675,23 @@ Descripción:
 			}
 		}
 
+		public static function borrarAcreditable($codigo){
+			try{
+				$conexion = Conexion::conectar();
+				$consulta = "delete from sis.t_acreditable where codigo=?";
+				$ejecutar=$conexion->prepare($consulta);
+
+				$ejecutar-> execute(array($codigo));
+
+				if($ejecutar->rowCount() != 0)
+					return $ejecutar->fetchAll();
+				else
+					return null;
+			}
+			catch(Exception $e){
+				throw $e;
+			}
+		}
 
 	}
 ?>
