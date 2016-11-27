@@ -428,7 +428,10 @@ function succCargarTrayectos(data){
 		cad += "<option value='-1' disabled selected> Seleccione Trayecto</option>";
 
 		for(var i = 0; i < tra.length; i++){
-			cad += "<option value="+tra[i]['codigo']+">Trayecto "+tra[i]['num_trayecto']+"</option>";
+			if(tra[i]['codigo'] == null)
+				cad += "<option value="+tra[i]['codigo']+">"+tra[i]['num_trayecto']+"</option>";
+			else
+				cad += "<option value="+tra[i]['codigo']+">Trayecto "+tra[i]['num_trayecto']+"</option>";
 		}
 	}
 	else{
@@ -454,7 +457,7 @@ function cargarSeccion(){
 					"m_accion"		,		"buscarSeccionPorTrayecto",
 					"codTrayecto"	,		$("#selTra").val(),
 					"periodo"		,		$("#selPer").val());
-	
+
 	ajaxMVC(arr,succCargarSeccion,err);
 }
 
@@ -625,7 +628,10 @@ function succListarCursos(data){
 
 				it = tra;
 				cad += "<tr>";
-				cad+="<th style='text-align:center' class='dark' colspan='10'>Trayecto "+cur[cont][1]+"</th>";
+				if(cur[cont][1] == null)
+					cad+="<th style='text-align:center' class='dark' colspan='10'>Generales del Pensum</th>";
+				else
+					cad+="<th style='text-align:center' class='dark' colspan='10'>Trayecto "+cur[cont][1]+"</th>";
 				cad += "</tr>";
 				cad += "<th style='text-align:center' class='dark'>Más opciones</th>";
 				cad += "<th style='text-align:center' class='dark'>Código del Curso</th>";
@@ -761,7 +767,7 @@ function verificarChecks(el){
 					if($("#cant"+i).html() != '0'){
 						//ARIC: Aprobados, Reprobados, reprobados por Inasistencia, Cursando
 						window.open('index.php?m_modulo=estudiante&m_accion=listarEstudiantesPorCurso&m_vista=listaAsistencia&m_formato=pdf&codigo='+$("#hid"+i).val() + '&est_estudiante=ARIC','_blank');
-						
+
 					}else
 						mostrarMensaje("No se puede generar la lista de estudiantes para este curso porque no posee estudiantes inscritos.",3);
 				}
@@ -1281,7 +1287,7 @@ function succListarEstudiantes(data){
 $( document ).ready(function() {
 	if($("#selInst").length > 0)
 		cargarInstitutos();
-	
+
 });
 
 
@@ -1309,8 +1315,8 @@ function montarSelectUsuario(){
 		$("#selInst").attr('disabled',true);
 		cargarPensums();
 	}
-	
-	
+
+
 	setTimeout(function(){
 		if(datos.emp_pensum != null){
 			$("#selPen").val(datos.emp_pensum);
@@ -1322,7 +1328,7 @@ function montarSelectUsuario(){
 			$("#selPen").val(datos.est_pensum);
 			$("#selPen").prop("disabled",true);
 			$(".selectpicker").selectpicker("refresh");
-			cargarPeriodos();	
+			cargarPeriodos();
 		}
 	},700);
 
@@ -1350,7 +1356,7 @@ function montarSelects(){
 
 	if(obtenerGet("m_vista") == "CargarNotas")
 		ajaxMVC(arr,succCargarNotas,err);
-	else	
+	else
 		ajaxMVC(arr,succMontarSelects,err);
 }
 
@@ -1549,7 +1555,7 @@ function succMontarSelects(data){
 	var dat = data.cursoInfoMontar;
 	var tmp = 400;
 	var i = 1;
-	
+
 	var aux = (obtenerGet("m_vista") == "CargarNotas");
 
 	if(dat[0]['cod_instituto'] != null){
@@ -1565,7 +1571,7 @@ function succMontarSelects(data){
 		}, tmp*i);
 	}
 
-	
+
 	if(dat[0]['cod_pensum'] != null){
 		i++;
 		setTimeout(function (){
@@ -1597,7 +1603,7 @@ function succMontarSelects(data){
 			$("#selTra").val(dat[0]['cod_trayecto']);
 
 			if(aux)
-				$("#selTra").prop("disabled",true);			
+				$("#selTra").prop("disabled",true);
 
 			if($("#selSec").length > 0)
 				cargarSeccion();
@@ -1642,7 +1648,7 @@ function succMontarSelects(data){
 		}
 		$(".selectpicker").selectpicker("refresh");
 	}, tmp*i);
-	
+
 }
 
 
@@ -1719,7 +1725,7 @@ function listarUniEstudiante(){
 						"pensum"		,		$("#selPen").val(),
 						"periodo"		,		$("#selPer").val(),
 						"prelaciones"	,		($("#chckPrelacion").is(':checked')));
-		
+
 		ajaxMVC(arr,succCursosInscribir,err);
 	}
 }
@@ -1918,9 +1924,9 @@ function succListarUniEstudiante(data){
 			cad += "<td style='text-align:center'><input type='checkbox' id='checkbox"+i+"'></input></td>";
 
 			cad += "<input type='hidden' id='hid"+i+"' value="+dat[i]['cod_ce']+"></input>";
-	
+
 			cad += "<td style='text-align:center'>"+dat[i]['cod_cur']+"</td>";
-			
+
 			cad += "<td style='text-align:center'>"+dat[i]['num_trayecto']+"</td>";
 
 			if(dat[i]['cod_uni_ministerio'] == null)

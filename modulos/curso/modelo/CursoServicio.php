@@ -145,13 +145,13 @@ Descripción:
 				$ejecutar->bindParam(':p_fec_final',$fecFinal, PDO::PARAM_STR);
 				$ejecutar->bindParam(':p_capacidad',$capacidad, PDO::PARAM_INT);
 				$ejecutar->bindParam(':p_observaciones',$observaciones, PDO::PARAM_STR);
-				
+
 				$login=Vista::obtenerDato('login');
 				if($login->obtenerPermiso('CursoAgregar'))
 					$ejecutar->execute();
 				else
 					throw new Exception("No posees permisos para agregar un curso");
-					
+
 
 				$row = $ejecutar->fetchColumn(0);
 
@@ -197,13 +197,13 @@ Descripción:
 				$ejecutar->bindParam(':p_fec_final',$fecFinal, PDO::PARAM_STR);
 				$ejecutar->bindParam(':p_capacidad',$capacidad, PDO::PARAM_INT);
 				$ejecutar->bindParam(':p_observaciones',$observaciones, PDO::PARAM_STR);
-				
+
 				$login=Vista::obtenerDato('login');
 				if($login->obtenerPermiso('CursoModificar'))
 					$ejecutar->execute();
 				else
 					throw new Exception("No tienes permiso para modificar un curso");
-					
+
 
 
 				$row = $ejecutar->fetchColumn(0);
@@ -240,7 +240,7 @@ Descripción:
 					$ejecutar->execute();
 				else
 					throw new Exception("No tiene permiso para eliminar un curso");
-					
+
 
 				$row = $ejecutar->fetchColumn(0);
 
@@ -470,9 +470,9 @@ Descripción:
 		public static function listarSeccionPorTrayecto($codigo,$periodo){
 		 	try{
 				$conexion=Conexion::conectar();
-				
-				
-				
+
+
+
 				$consulta="select 	distinct(cur.seccion)
 									from sis.t_uni_tra_pensum as utp
 									inner join sis.t_curso as cur
@@ -569,10 +569,10 @@ Descripción:
 									where (per.cod_instituto = ?)
 									and (per.cod_pensum = ?)
 									and (per.codigo = ?)
-									and (sis.utf(uni.nombre) ilike sis.utf(?) 
-									or sis.utf(pers.nombre1) ilike sis.utf(?) 
+									and (sis.utf(uni.nombre) ilike sis.utf(?)
+									or sis.utf(pers.nombre1) ilike sis.utf(?)
 									or sis.utf(pers.nombre2) ilike sis.utf(?)
-									or sis.utf(pers.apellido1) ilike sis.utf(?) 
+									or sis.utf(pers.apellido1) ilike sis.utf(?)
 									or sis.utf(pers.apellido2) ilike sis.utf(?))
 									group by
 										t1.t,
@@ -610,7 +610,7 @@ Descripción:
 				}
 				else
 					throw new Exception("No tienes permiso para listar cursos");
-					
+
 			}
 			catch(Exception $e){
 				throw $e;
@@ -642,7 +642,7 @@ Descripción:
 									inner join sis.t_periodo per
 										on per.codigo = cur.cod_periodo
 									inner join sis.t_uni_tra_pensum utp
-										on utp.cod_pensum = per.cod_pensum 
+										on utp.cod_pensum = per.cod_pensum
 									       and utp.cod_uni_curricular = cur.cod_uni_curricular
 									inner join sis.t_instituto ins
 										on ins.codigo = per.cod_instituto
@@ -1005,7 +1005,7 @@ Descripción:
 				//incluye el periodo
 
 				$consulta = "select
-										utp.cod_uni_curricular, 
+										utp.cod_uni_curricular,
 										cur.codigo,
 										tra.num_trayecto,
 										uni.nombre,
@@ -1156,6 +1156,25 @@ Descripción:
 			}
 		}
 
+		public static function obtenerLeyendaEstatusCurso(){
+			try{
+				$conexion = Conexion::conectar();
+
+				$consulta = "select * from sis.t_est_cur_estudiante order by codigo";
+
+				$ejecutar = $conexion->prepare($consulta);
+
+				$ejecutar->execute(array());
+
+				if($ejecutar->rowCount() != 0)
+					return $ejecutar->fetchAll();
+				else
+					return null;
+			}
+			catch(Exception $e){
+				throw $e;
+			}
+		}
 
 
 		public static function verificarEst($codEstudiante,$codCurso){
@@ -1227,7 +1246,7 @@ Descripción:
 									and pdo.codigo = :periodo
 									and pen.codigo = :pensum
 									and curest.cod_estado = 'C';";
-					
+
 					$ejecutar=$conexion->prepare($consulta);
 					$conexion->beginTransaction();
 					$ejecutar->bindParam(':estudiante', $codEstudiante, PDO::PARAM_INT);
@@ -1316,7 +1335,7 @@ Descripción:
 				$ejecutar->bindParam(':descripcion',$descripcion , PDO::PARAM_STR);
 
 				$login=Vista::obtenerDato('login');
-				if($login->obtenerPermiso('convalidar')){	
+				if($login->obtenerPermiso('convalidar')){
 					$ejecutar->setFetchMode(PDO::FETCH_ASSOC);
 
 					$ejecutar->execute();
@@ -1325,7 +1344,7 @@ Descripción:
 				}
 				else
 					throw new Exception("No tienes permiso para agregar una convalidacion");
-					
+
 			}
 			catch(Exception $e){
 				throw $e;
@@ -1365,7 +1384,7 @@ Descripción:
 
 				$consulta = "select c.*, uc.nombre,
 								p.nombre1 || ' ' || p.nombre2 || ' ' || p.apellido1 || ' ' ||
-								p.apellido2 as nomPersona, p.cedula, 
+								p.apellido2 as nomPersona, p.cedula,
 								(select to_char(c.fecha,'DD/MM/YYYY')) as fechas
 							from sis.t_convalidacion c, sis.t_uni_curricular uc,
 								sis.t_persona p, sis.t_estudiante e
@@ -1396,9 +1415,9 @@ Descripción:
 
 				$ejecutar->bindParam(':codigo',$codigo, PDO::PARAM_STR);
 				$ejecutar->bindParam(':descripcion',$descripcion, PDO::PARAM_STR);
-				
+
 				$login=Vista::obtenerDato('login');
-				if($login->obtenerPermiso('convalidar')){	
+				if($login->obtenerPermiso('convalidar')){
 					$ejecutar->setFetchMode(PDO::FETCH_ASSOC);
 						//ejecuta
 					$ejecutar->execute();
@@ -1409,7 +1428,7 @@ Descripción:
 				}
 				else
 					throw new Exception("NO tienes permiso para modificar una convalidacion");
-					
+
 			}
 			catch(Exception $e){
 				throw $e;
@@ -1425,7 +1444,7 @@ Descripción:
 
 				$ejecutar->bindParam(':codigo',$codigo, PDO::PARAM_STR);
 				$login=Vista::obtenerDato('login');
-				if($login->obtenerPermiso('convalidar')){	
+				if($login->obtenerPermiso('convalidar')){
 					$ejecutar->setFetchMode(PDO::FETCH_ASSOC);
 					//ejecuta
 
@@ -1438,7 +1457,7 @@ Descripción:
 				}
 				else
 					throw new Exception("NO tienes permiso para eliminar una convalidacon");
-					
+
 			}
 			catch(Exception $e){
 				throw $e;
@@ -1447,7 +1466,7 @@ Descripción:
 
 		public static function agregarElectiva($periodo,	$unidadCurricular,
 											   $docente,	$seccion,
-											   $fecInicio,	$fecFin,	
+											   $fecInicio,	$fecFin,
 											   $capacidad,  $observaciones){
 			try{
 
@@ -1455,7 +1474,7 @@ Descripción:
 
 				$consulta="insert into sis.t_curso (cod_periodo, cod_uni_curricular,cod_docente,
 													seccion,	 fec_inicio,		fec_final,
-													capacidad,	 observaciones,		cod_estado) 
+													capacidad,	 observaciones,		cod_estado)
 							values(?,?,?,?,?,?,?,?,?);";
 
 				$ejecutar=$conexion->prepare($consulta);
@@ -1477,7 +1496,7 @@ Descripción:
 
 		public static function modificarElectiva($periodo,	$unidadCurricular,
 											     $docente,	$seccion,
-											     $fecInicio,$fecFin,	
+											     $fecInicio,$fecFin,
 											     $capacidad,$observaciones,
 											     $codigo){
 			try{
@@ -1486,7 +1505,7 @@ Descripción:
 
 				$consulta="update sis.t_curso set cod_periodo=?, cod_uni_curricular=?, cod_docente=?,
 													seccion=?,	 fec_inicio=?,		   fec_final=?,
-													capacidad=?, observaciones=?,	   cod_estado=? 
+													capacidad=?, observaciones=?,	   cod_estado=?
 							where codigo=?";
 
 				$ejecutar=$conexion->prepare($consulta);
@@ -1514,13 +1533,13 @@ Descripción:
 				$consulta="select 	p.nombre1 || ' ' ||p.apellido1 as nom_persona,
 									 uc.nombre, c.*, (select to_char(c.fec_final,'DD/MM/YYYY')) as fec_fin,
 									 (select to_char(c.fec_inicio,'DD/MM/YYYY')) as fec_inicios
-							from sis.t_persona p, sis.t_uni_curricular uc, 
-								sis.t_curso c, sis.t_uni_tra_pensum utp, 
+							from sis.t_persona p, sis.t_uni_curricular uc,
+								sis.t_curso c, sis.t_uni_tra_pensum utp,
 								sis.t_periodo per,sis.t_empleado e
 
-							where utp.cod_pensum=? and utp.cod_tipo='E' 
-								and utp.cod_uni_curricular=uc.codigo 
-							and c.cod_uni_curricular=uc.codigo 
+							where utp.cod_pensum=? and utp.cod_tipo='E'
+								and utp.cod_uni_curricular=uc.codigo
+							and c.cod_uni_curricular=uc.codigo
 							and p.codigo=e.cod_persona and e.cod_persona=c.cod_docente
 							and per.codigo=? ";
 
@@ -1544,13 +1563,13 @@ Descripción:
 
 				$conexion = Conexion::conectar();
 
-				$consulta="select 	p.nombre1 || ' ' ||p.apellido1 as nom_persona, 
+				$consulta="select 	p.nombre1 || ' ' ||p.apellido1 as nom_persona,
 								uc.nombre, c.*, utp.cod_pensum, (select to_char(c.fec_final,'DD/MM/YYYY')) as fec_fin,
 									 (select to_char(c.fec_inicio,'DD/MM/YYYY')) as fec_inicios
-							from sis.t_persona p, sis.t_uni_curricular uc, 
+							from sis.t_persona p, sis.t_uni_curricular uc,
 								sis.t_curso c,  sis.t_empleado e,
 								sis.t_uni_tra_pensum utp
-							where c.codigo=? and c.cod_uni_curricular=uc.codigo 
+							where c.codigo=? and c.cod_uni_curricular=uc.codigo
 								and p.codigo=e.cod_persona
 								and uc.codigo=utp.cod_uni_curricular";
 
@@ -1572,7 +1591,7 @@ Descripción:
 		public static function buscarAcreditadas($codEstudiante){
 			try{
 				$conexion = Conexion::conectar();
-				$consulta = "select a.codigo as codigo,p.nom_corto as pensum, t.num_trayecto as trayecto, 
+				$consulta = "select a.codigo as codigo,p.nom_corto as pensum, t.num_trayecto as trayecto,
 									a.fecha as fecha, a.descripcion as descripcion, a.uni_credito as uni_credito
 								from sis.t_acreditable as a, sis.t_pensum as p, sis.t_trayecto as t
 								where a.cod_estudiante=? and p.codigo=a.cod_pensum and t.codigo=a.cod_trayecto";
@@ -1615,7 +1634,7 @@ Descripción:
 			try{
 				$conexion = Conexion::conectar();
 				$consulta = "insert into sis.t_acreditable (codigo,cod_estudiante,cod_pensum,cod_trayecto,
-															uni_credito,fecha,descripcion) 
+															uni_credito,fecha,descripcion)
 									values (?,?,?,?,?,?,?);";
 				$ejecutar=$conexion->prepare($consulta);
 
@@ -1693,5 +1712,63 @@ Descripción:
 			}
 		}
 
+		public static function obtenerEstConPensum($codigo){
+			try{
+				$conexion = Conexion::conectar();
+
+				$consulta = "select 	uni.nombre as nombreuni,
+										uni.not_min_aprobatoria,
+										uni.not_maxima,
+										uni.uni_credito,
+										cur.seccion,
+										docente.apellido1 || ', ' || docente.nombre1 as nombredocente,
+										docente.cedula ceduladoc,
+										pen.nombre nombrepensum,
+										per.nombre as periodo,
+										ins.nombre insti,
+										curest.nota,
+										curest.por_asistencia,
+										estudiante.apellido1 || ', ' || estudiante.nombre1 as nombreestudiante,
+										estudiante.cedula,
+										estado.codigo as codestado,
+										estado.nombre as nombreestado,
+										tra.num_trayecto
+										from sis.t_curso cur
+										inner join sis.t_uni_curricular uni
+											on cur.cod_uni_curricular = uni.codigo
+										inner join sis.t_periodo per
+											on per.codigo = cur.cod_periodo
+										inner join sis.t_persona docente
+											on docente.codigo = cur.cod_docente
+										inner join sis.t_pensum pen
+											on pen.codigo = per.cod_pensum
+										inner join sis.t_instituto ins
+											on ins.codigo = per.cod_instituto
+										inner join sis.t_cur_estudiante curest
+											on curest.cod_curso = cur.codigo
+										inner join sis.t_persona estudiante
+											on estudiante.codigo = curest.cod_estudiante
+										inner join sis.t_est_cur_estudiante estado
+											on estado.codigo = curest.cod_estado
+										inner join sis.t_uni_tra_pensum utp
+											on (utp.cod_uni_curricular = uni.codigo and utp.cod_pensum = pen.codigo)
+										left join sis.t_trayecto tra
+											on utp.cod_trayecto = tra.codigo
+										where cur.codigo = ?
+										order by nombreestudiante asc;";
+
+				$ejecutar = $conexion->prepare($consulta);
+
+				$ejecutar->execute(array($codigo));
+
+				if($ejecutar->rowCount() != 0)
+					return $ejecutar->fetchAll();
+				else
+					return null;
+			}
+			catch(Exception $e){
+				throw $e;
+			}
+		}
 	}
 ?>

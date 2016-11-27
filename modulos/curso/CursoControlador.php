@@ -99,7 +99,7 @@ Descripción:
 					self::guardarElectiva();
 				else if($accion == "listarCurElectivas")
 					self::listarCurElectivas();
-				elseif ($accion == "buscarCurElectiva") 
+				elseif ($accion == "buscarCurElectiva")
 					self::buscarCurElectiva();
 				elseif($accion == "buscarAcreditadas")
 					self::buscarAcreditadas();
@@ -109,6 +109,8 @@ Descripción:
 					self::buscarUnaAcreditable();
 				elseif($accion == "borrarAcreditable")
 					self::borrarAcreditable();
+				elseif($accion == "actaNotas")
+					self::verEstudiantesPDF();
 				else
 					throw new Exception ("No se pudo resolver la acción $accion");
 			}
@@ -235,7 +237,7 @@ Descripción:
 					$fecFinal = NULL;
 
 				$r = CursoServicio::modificarCurso($codigo,$codPeriodo, $codUniCurricular, $codDocente, $seccion, $fecInicio, $fecFinal, $capacidad, $observaciones);
-				
+
 				if($r>0){
 					Vista::asignarDato("mensaje","El curso con código $codigo se ha modificado exitosamente.");
 					Vista::asignarDato("estatus",1);
@@ -612,9 +614,9 @@ Descripción:
 				$pensum = PostGet::obtenerPostGet("pensum");
 				$periodo = PostGet::obtenerPostGet("periodo");
 				$conPrelaciones = PostGet::obtenerPostGet("prelaciones");
-				
+
 				$conPrelaciones = !($conPrelaciones == "true");
-				
+
 				/* Unidades curriculares que tiene que ver en el pensum */
 				$listaUniCur = CursoServicio::obtenerUnidadesCurricularesDelPensumPorEstudiante($estudiante);
 
@@ -623,18 +625,18 @@ Descripción:
 
 				//arreglo
 				$aprobadas = CursoServicio::obtenerUnidadesCurricularesAprobadasPorEstudiante($estudiante,$pensum);
-				
+
 				if ($aprobadas != null)
 					$listaUniCur = array_diff ($listaUniCur, $aprobadas);
 				if ($convalidaciones != null)
 					$listaUniCur = array_diff( $listaUniCur, $convalidaciones);
 
-				
+
 				if($conPrelaciones)
 					$preladas = CursoServicio::obtenerUnidadesCurricularesPreladasPorListaDeUnidadesCurriculares($listaUniCur,$pensum,$instituto);
 				else
 					$preladas = array();
-					
+
 				//arreglo
 				$cursando = CursoServicio::obtenerCursosCursando($estudiante,$pensum);
 
@@ -834,12 +836,12 @@ Descripción:
 				if(!$codigo)
 					$response=CursoServicio::agregarElectiva ($periodo,	$unidadCurricular,
 															  $docente,	$seccion,
-															  $fecInicio,$fecFin,	
+															  $fecInicio,$fecFin,
 															  $capacidad,$observaciones);
 				else
 					$response2=CursoServicio::modificarElectiva ($periodo,	$unidadCurricular,
 															   	 $docente,	$seccion,
-															     $fecInicio,$fecFin,	
+															     $fecInicio,$fecFin,
 															     $capacidad,$observaciones,
 															     $codigo);
 				if($response){
@@ -863,9 +865,9 @@ Descripción:
 						Vista::asignarDato("mensaje","Los cambos de la electiva no pudieron ser guardados.");
 					}
 				}
-					
+
 				if($reponse2 || $response){
-					
+
 				}
 				else{
 					Vista::asignarDato("mensaje","La informacion NO fue almacenada");
@@ -940,7 +942,7 @@ Descripción:
 				}
 				else
 					$r=CursoServicio::modificarAcreditada($codigo,$cod_estudiante,$cod_pensum,$cod_trayecto,$uni_credito,$fecha,$descripcion);
-	
+
 				Vista::asignarDato("acreditada",$r);
 				Vista::mostrar();
 			}
@@ -979,6 +981,27 @@ Descripción:
 			}
 		}
 
+		public static function verEstudiantesPDF(){
+			try{
+				$codCurso = PostGet::obtenerPostGet('codigo');
+
+				$r = CursoServicio::obtenerEstConPensum($codCurso);
+				$l = CursoServicio::obtenerLeyendaEstatusCurso();
+
+				if($r){
+					Vista::asignarDato('estatus',1);
+					Vista::asignarDato('leyenda',$l);
+					Vista::asignarDato('estudiante',$r);
+
+				}
+				else{
+					Vista::asignarDato("mensaje", "Hubo un error al generar el PDF. Revise los datos del curso.");
+				}
+				Vista::mostrar();
+			}catch(Exception $e){
+				throw $e;
+			}
+		}
 
 	}
 ?>

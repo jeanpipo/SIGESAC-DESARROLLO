@@ -54,14 +54,12 @@
 		</div>
 
 		<div class="col-md-11" hidden id="divButt">
-			<button class="btn btn-success btn-xs">Acta de Notas</button>
-			<button class="btn btn-warning btn-xs">Lista de Correos</button>
-			
+			<button class="btn btn-success btn-xs" onclick="javascript:window.location.href='index.php?m_modulo=curso&m_accion=actaNotas&m_vista=verEstudiantes&m_formato=pdf&codigo=' + $('#selUni').val()">Acta de Notas</button>
+			<!-- <button class="btn btn-warning btn-xs">Lista de Correos</button> -->
+
 			{# ARIC: Aprobados, Reprobados, reprobados por Inasistencia, Cursando  #}
 			<button class="btn btn-danger btn-xs" onclick="javascript:window.location.href='index.php?m_modulo=estudiante&m_accion=listarEstudiantesPorCurso&m_vista=listaAsistencia&m_formato=pdf&codigo=' + $('#selUni').val() + '&est_estudiante=ARIC'" >PDF</button>
 
-
-			<button class="btn btn-danger btn-xs">ODS</button>
 		</div>
 
 	</div>

@@ -6808,3 +6808,491 @@ Trayecto:
 		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
 		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
 		#7 {main}
+**************************** Error n° 827 *****************************
+codigo Error: 827
+Mensaje error: Ruta no existente verifique dicha ruta: modulos/curso/vista/pdf/verEstidoamtes.php
+Archivo Error: /var/www/html/github/SIGESAC-DESARROLLO/base/clases/vista/Vista.php
+Linea Error: 71
+Trayecto:
+		#0 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(182): Vista::iniciar('curso:pdf:verEs...')
+		#1 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(72): PrincipalControlador::configurar()
+		#2 /var/www/html/github/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#3 {main}
+**************************** Error n° 827 *****************************
+codigo Error: 827
+Mensaje error: Ruta no existente verifique dicha ruta: modulos/curso/vista/pdf/verEstidoamtes.php
+Archivo Error: /var/www/html/github/SIGESAC-DESARROLLO/base/clases/vista/Vista.php
+Linea Error: 71
+Trayecto:
+		#0 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(182): Vista::iniciar('curso:pdf:verEs...')
+		#1 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(72): PrincipalControlador::configurar()
+		#2 /var/www/html/github/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#3 {main}
+**************************** Error n° 827 *****************************
+codigo Error: 827
+Mensaje error: Ruta no existente verifique dicha ruta: modulos/curso/vista/pdf/verEstidoamtes.php
+Archivo Error: /var/www/html/github/SIGESAC-DESARROLLO/base/clases/vista/Vista.php
+Linea Error: 71
+Trayecto:
+		#0 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(182): Vista::iniciar('curso:pdf:verEs...')
+		#1 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(72): PrincipalControlador::configurar()
+		#2 /var/www/html/github/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#3 {main}
+**************************** Error n° 827 *****************************
+codigo Error: 827
+Mensaje error: Ruta no existente verifique dicha ruta: modulos/curso/vista/pdf/verEstidoamtes.php
+Archivo Error: /var/www/html/github/SIGESAC-DESARROLLO/base/clases/vista/Vista.php
+Linea Error: 71
+Trayecto:
+		#0 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(182): Vista::iniciar('curso:pdf:verEs...')
+		#1 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(72): PrincipalControlador::configurar()
+		#2 /var/www/html/github/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#3 {main}
+**************************** Error n° 827 *****************************
+codigo Error: 827
+Mensaje error: Ruta no existente verifique dicha ruta: modulos/curso/vista/pdf/verEstidoamtes.php
+Archivo Error: /var/www/html/github/SIGESAC-DESARROLLO/base/clases/vista/Vista.php
+Linea Error: 71
+Trayecto:
+		#0 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(182): Vista::iniciar('curso:pdf:verEs...')
+		#1 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(72): PrincipalControlador::configurar()
+		#2 /var/www/html/github/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#3 {main}
+**************************** Error n° 827 *****************************
+codigo Error: 827
+Mensaje error: Ruta no existente verifique dicha ruta: modulos/curso/vista/pdf/verEstidoamtes.php
+Archivo Error: /var/www/html/github/SIGESAC-DESARROLLO/base/clases/vista/Vista.php
+Linea Error: 71
+Trayecto:
+		#0 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(182): Vista::iniciar('curso:pdf:verEs...')
+		#1 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(72): PrincipalControlador::configurar()
+		#2 /var/www/html/github/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#3 {main}
+**************************** Error n° 827 *****************************
+codigo Error: 827
+Mensaje error: Ruta no existente verifique dicha ruta: modulos/curso/vista/pdf/verEstidoamtes.php
+Archivo Error: /var/www/html/github/SIGESAC-DESARROLLO/base/clases/vista/Vista.php
+Linea Error: 71
+Trayecto:
+		#0 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(182): Vista::iniciar('curso:pdf:verEs...')
+		#1 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(72): PrincipalControlador::configurar()
+		#2 /var/www/html/github/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#3 {main}
+**************************** Error n° 827 *****************************
+codigo Error: 827
+Mensaje error: Ruta no existente verifique dicha ruta: modulos/curso/vista/pdf/verEstidoamtes.php
+Archivo Error: /var/www/html/github/SIGESAC-DESARROLLO/base/clases/vista/Vista.php
+Linea Error: 71
+Trayecto:
+		#0 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(182): Vista::iniciar('curso:pdf:verEs...')
+		#1 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(72): PrincipalControlador::configurar()
+		#2 /var/www/html/github/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#3 {main}
+**************************** Error n° 827 *****************************
+codigo Error: 827
+Mensaje error: Ruta no existente verifique dicha ruta: modulos/curso/vista/pdf/ListarEstudiantes.php
+Archivo Error: /var/www/html/github/SIGESAC-DESARROLLO/base/clases/vista/Vista.php
+Linea Error: 71
+Trayecto:
+		#0 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(182): Vista::iniciar('curso:pdf:Lista...')
+		#1 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(72): PrincipalControlador::configurar()
+		#2 /var/www/html/github/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#3 {main}
+**************************** Error n° 827 *****************************
+codigo Error: 827
+Mensaje error: Ruta no existente verifique dicha ruta: modulos/curso/vista/pdf/ListarEstudiantes.php
+Archivo Error: /var/www/html/github/SIGESAC-DESARROLLO/base/clases/vista/Vista.php
+Linea Error: 71
+Trayecto:
+		#0 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(182): Vista::iniciar('curso:pdf:Lista...')
+		#1 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(72): PrincipalControlador::configurar()
+		#2 /var/www/html/github/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#3 {main}
+**************************** Error n° 827 *****************************
+codigo Error: 827
+Mensaje error: Ruta no existente verifique dicha ruta: modulos/curso/vista/pdf/ListarEstudiantes.php
+Archivo Error: /var/www/html/github/SIGESAC-DESARROLLO/base/clases/vista/Vista.php
+Linea Error: 71
+Trayecto:
+		#0 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(182): Vista::iniciar('curso:pdf:Lista...')
+		#1 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(72): PrincipalControlador::configurar()
+		#2 /var/www/html/github/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#3 {main}
+**************************** Error n° 827 *****************************
+codigo Error: 827
+Mensaje error: SQLSTATE[42P01]: Undefined table: 7 ERROR:  no existe la relación «sis.t_docente»
+LINE 27:           inner join sis.t_docente as docente
+                              ^
+Archivo Error: /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1763
+Trayecto:
+		#0 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1763): PDOStatement->execute(Array)
+		#1 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(988): CursoServicio::obtenerEstConPensum(NULL)
+		#2 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(113): CursoControlador::verEstudiantesPDF()
+		#3 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/html/g...')
+		#5 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/html/github/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 827 *****************************
+codigo Error: 827
+Mensaje error: SQLSTATE[42P01]: Undefined table: 7 ERROR:  no existe la relación «sis.t_docente»
+LINE 27:           inner join sis.t_docente as docente
+                              ^
+Archivo Error: /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1763
+Trayecto:
+		#0 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1763): PDOStatement->execute(Array)
+		#1 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(988): CursoServicio::obtenerEstConPensum(NULL)
+		#2 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(113): CursoControlador::verEstudiantesPDF()
+		#3 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/html/g...')
+		#5 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/html/github/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 827 *****************************
+codigo Error: 827
+Mensaje error: SQLSTATE[42P01]: Undefined table: 7 ERROR:  no existe la relación «sis.t_docente»
+LINE 27:           inner join sis.t_docente as docente
+                              ^
+Archivo Error: /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1763
+Trayecto:
+		#0 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1763): PDOStatement->execute(Array)
+		#1 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(988): CursoServicio::obtenerEstConPensum(NULL)
+		#2 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(113): CursoControlador::verEstudiantesPDF()
+		#3 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/html/g...')
+		#5 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/html/github/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 827 *****************************
+codigo Error: 827
+Mensaje error: SQLSTATE[42P01]: Undefined table: 7 ERROR:  no existe la relación «sis.t_docente»
+LINE 27:           inner join sis.t_docente as docente
+                              ^
+Archivo Error: /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1763
+Trayecto:
+		#0 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1763): PDOStatement->execute(Array)
+		#1 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(988): CursoServicio::obtenerEstConPensum(NULL)
+		#2 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(113): CursoControlador::verEstudiantesPDF()
+		#3 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/html/g...')
+		#5 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/html/github/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 827 *****************************
+codigo Error: 827
+Mensaje error: SQLSTATE[42P01]: Undefined table: 7 ERROR:  no existe la relación «sis.t_docente»
+LINE 27:           inner join sis.t_docente as docente
+                              ^
+Archivo Error: /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1763
+Trayecto:
+		#0 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1763): PDOStatement->execute(Array)
+		#1 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(988): CursoServicio::obtenerEstConPensum(NULL)
+		#2 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(113): CursoControlador::verEstudiantesPDF()
+		#3 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/html/g...')
+		#5 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/html/github/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 827 *****************************
+codigo Error: 827
+Mensaje error: SQLSTATE[42P01]: Undefined table: 7 ERROR:  no existe la relación «sis.t_docente»
+LINE 27:           inner join sis.t_docente as docente
+                              ^
+Archivo Error: /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1763
+Trayecto:
+		#0 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1763): PDOStatement->execute(Array)
+		#1 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(988): CursoServicio::obtenerEstConPensum(NULL)
+		#2 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(113): CursoControlador::verEstudiantesPDF()
+		#3 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/html/g...')
+		#5 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/html/github/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 827 *****************************
+codigo Error: 827
+Mensaje error: SQLSTATE[42P01]: Undefined table: 7 ERROR:  no existe la relación «sis.t_docente»
+LINE 27:           inner join sis.t_docente as docente
+                              ^
+Archivo Error: /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1763
+Trayecto:
+		#0 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1763): PDOStatement->execute(Array)
+		#1 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(988): CursoServicio::obtenerEstConPensum(NULL)
+		#2 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(113): CursoControlador::verEstudiantesPDF()
+		#3 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/html/g...')
+		#5 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/html/github/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 827 *****************************
+codigo Error: 827
+Mensaje error: SQLSTATE[42P01]: Undefined table: 7 ERROR:  no existe la relación «sis.t_docente»
+LINE 27:           inner join sis.t_docente as docente
+                              ^
+Archivo Error: /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1763
+Trayecto:
+		#0 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1763): PDOStatement->execute(Array)
+		#1 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(988): CursoServicio::obtenerEstConPensum(NULL)
+		#2 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(113): CursoControlador::verEstudiantesPDF()
+		#3 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/html/g...')
+		#5 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/html/github/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 827 *****************************
+codigo Error: 827
+Mensaje error: SQLSTATE[42P01]: Undefined table: 7 ERROR:  no existe la relación «sis.t_docente»
+LINE 27:           inner join sis.t_docente as docente
+                              ^
+Archivo Error: /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1763
+Trayecto:
+		#0 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1763): PDOStatement->execute(Array)
+		#1 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(988): CursoServicio::obtenerEstConPensum(NULL)
+		#2 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(113): CursoControlador::verEstudiantesPDF()
+		#3 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/html/g...')
+		#5 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/html/github/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 827 *****************************
+codigo Error: 827
+Mensaje error: SQLSTATE[42P01]: Undefined table: 7 ERROR:  no existe la relación «sis.t_docente»
+LINE 27:           inner join sis.t_docente as docente
+                              ^
+Archivo Error: /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1763
+Trayecto:
+		#0 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1763): PDOStatement->execute(Array)
+		#1 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(988): CursoServicio::obtenerEstConPensum(NULL)
+		#2 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(113): CursoControlador::verEstudiantesPDF()
+		#3 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/html/g...')
+		#5 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/html/github/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 827 *****************************
+codigo Error: 827
+Mensaje error: SQLSTATE[42P01]: Undefined table: 7 ERROR:  no existe la relación «sis.t_docente»
+LINE 27:           inner join sis.t_docente as docente
+                              ^
+Archivo Error: /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1763
+Trayecto:
+		#0 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1763): PDOStatement->execute(Array)
+		#1 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(988): CursoServicio::obtenerEstConPensum(NULL)
+		#2 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(113): CursoControlador::verEstudiantesPDF()
+		#3 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/html/g...')
+		#5 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/html/github/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 827 *****************************
+codigo Error: 827
+Mensaje error: SQLSTATE[42P01]: Undefined table: 7 ERROR:  no existe la relación «sis.t_docente»
+LINE 27:           inner join sis.t_docente as docente
+                              ^
+Archivo Error: /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1763
+Trayecto:
+		#0 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1763): PDOStatement->execute(Array)
+		#1 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(988): CursoServicio::obtenerEstConPensum(NULL)
+		#2 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(113): CursoControlador::verEstudiantesPDF()
+		#3 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/html/g...')
+		#5 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/html/github/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 827 *****************************
+codigo Error: 827
+Mensaje error: SQLSTATE[42P01]: Undefined table: 7 ERROR:  no existe la relación «sis.t_docente»
+LINE 27:           inner join sis.t_docente as docente
+                              ^
+Archivo Error: /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1763
+Trayecto:
+		#0 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1763): PDOStatement->execute(Array)
+		#1 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(988): CursoServicio::obtenerEstConPensum(NULL)
+		#2 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(113): CursoControlador::verEstudiantesPDF()
+		#3 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/html/g...')
+		#5 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/html/github/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 827 *****************************
+codigo Error: 827
+Mensaje error: SQLSTATE[42P01]: Undefined table: 7 ERROR:  no existe la relación «sis.t_docente»
+LINE 27:           inner join sis.t_docente as docente
+                              ^
+Archivo Error: /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1763
+Trayecto:
+		#0 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1763): PDOStatement->execute(Array)
+		#1 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(988): CursoServicio::obtenerEstConPensum(NULL)
+		#2 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(113): CursoControlador::verEstudiantesPDF()
+		#3 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/html/g...')
+		#5 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/html/github/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 827 *****************************
+codigo Error: 827
+Mensaje error: SQLSTATE[42P01]: Undefined table: 7 ERROR:  no existe la relación «sis.t_docente»
+LINE 27:           inner join sis.t_docente as docente
+                              ^
+Archivo Error: /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1763
+Trayecto:
+		#0 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1763): PDOStatement->execute(Array)
+		#1 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(988): CursoServicio::obtenerEstConPensum(NULL)
+		#2 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(113): CursoControlador::verEstudiantesPDF()
+		#3 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/html/g...')
+		#5 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/html/github/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 827 *****************************
+codigo Error: 827
+Mensaje error: SQLSTATE[42P01]: Undefined table: 7 ERROR:  no existe la relación «sis.t_docente»
+LINE 27:           inner join sis.t_docente as docente
+                              ^
+Archivo Error: /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 1763
+Trayecto:
+		#0 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1763): PDOStatement->execute(Array)
+		#1 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(988): CursoServicio::obtenerEstConPensum(NULL)
+		#2 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(113): CursoControlador::verEstudiantesPDF()
+		#3 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/html/g...')
+		#5 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/html/github/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 827 *****************************
+codigo Error: 827
+Mensaje error: Ruta no existente verifique dicha ruta: modulos/curso/vista/pdf/ListarEstudiantes.php
+Archivo Error: /var/www/html/github/SIGESAC-DESARROLLO/base/clases/vista/Vista.php
+Linea Error: 71
+Trayecto:
+		#0 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(182): Vista::iniciar('curso:pdf:Lista...')
+		#1 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(72): PrincipalControlador::configurar()
+		#2 /var/www/html/github/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#3 {main}
+**************************** Error n° 827 *****************************
+codigo Error: 827
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 488
+Trayecto:
+		#0 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(488): PDOStatement->execute()
+		#1 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(472): CursoServicio::listarSeccionPorTrayecto('', '102')
+		#2 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(61): CursoControlador::buscarSeccionPorTrayecto()
+		#3 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/html/g...')
+		#5 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/html/github/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 828 *****************************
+codigo Error: 828
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 527
+Trayecto:
+		#0 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(527): PDOStatement->execute()
+		#1 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(490): CursoServicio::listarUniCurricular('', '1', '', '102')
+		#2 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(63): CursoControlador::listarUniCurricular()
+		#3 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/html/g...')
+		#5 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/html/github/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 829 *****************************
+codigo Error: 829
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «null»
+Archivo Error: /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 488
+Trayecto:
+		#0 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(488): PDOStatement->execute()
+		#1 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(472): CursoServicio::listarSeccionPorTrayecto('null', '102')
+		#2 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(61): CursoControlador::buscarSeccionPorTrayecto()
+		#3 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/html/g...')
+		#5 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/html/github/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 830 *****************************
+codigo Error: 830
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «null»
+Archivo Error: /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 488
+Trayecto:
+		#0 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(488): PDOStatement->execute()
+		#1 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(472): CursoServicio::listarSeccionPorTrayecto('null', '103')
+		#2 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(61): CursoControlador::buscarSeccionPorTrayecto()
+		#3 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/html/g...')
+		#5 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/html/github/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 831 *****************************
+codigo Error: 831
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 488
+Trayecto:
+		#0 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(488): PDOStatement->execute()
+		#1 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(472): CursoServicio::listarSeccionPorTrayecto('', '102')
+		#2 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(61): CursoControlador::buscarSeccionPorTrayecto()
+		#3 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/html/g...')
+		#5 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/html/github/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 832 *****************************
+codigo Error: 832
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 527
+Trayecto:
+		#0 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(527): PDOStatement->execute()
+		#1 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(490): CursoServicio::listarUniCurricular('', '1', '', '102')
+		#2 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(63): CursoControlador::listarUniCurricular()
+		#3 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/html/g...')
+		#5 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/html/github/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 833 *****************************
+codigo Error: 833
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «null»
+Archivo Error: /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 488
+Trayecto:
+		#0 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(488): PDOStatement->execute()
+		#1 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(472): CursoServicio::listarSeccionPorTrayecto('null', '103')
+		#2 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(61): CursoControlador::buscarSeccionPorTrayecto()
+		#3 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/html/g...')
+		#5 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/html/github/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 834 *****************************
+codigo Error: 834
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «null»
+Archivo Error: /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
+Linea Error: 488
+Trayecto:
+		#0 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(488): PDOStatement->execute()
+		#1 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(472): CursoServicio::listarSeccionPorTrayecto('null', '103')
+		#2 /var/www/html/github/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(61): CursoControlador::buscarSeccionPorTrayecto()
+		#3 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): CursoControlador::manejarRequerimiento()
+		#4 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/html/g...')
+		#5 /var/www/html/github/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/html/github/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
