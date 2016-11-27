@@ -86,14 +86,62 @@ $(document).ready(function() {
 		mostrarInformaion();
 		activarCal();
 	}
-	else{	
-
-		verInstitutoListar();
-		verEstadolistar();
-		verPersona();			
+	else if(getVarsUrl().Fbtn || getVarsUrl().FCampo || getVarsUrl().FInstituto || getVarsUrl().FPensum){	
+	//	window.location.href = 'index.php?m_modulo=persona&m_vista=Listar&m_formato=html5&FInstituto='+getVarsUrl().FInstituto+'&FPensum='+getVarsUrl().FPensum+'&FEstado='+getVarsUrl().FEstado+'&FCampo='+getVarsUrl().FCampo;
+		//alert($("#bTodos1").css("background-color"));rgb(79, 216, 176);
+	
+		if(getVarsUrl().Fbtn=="todos"){
+			$("#bTodos3").css("background-color","#209472");
+			$("#bTodos1").css("background-color","#4FD8B0");
+			$("#bTodos2").css("background-color","#4FD8B0");
+		}
+		else if(getVarsUrl().Fbtn=="estudiantes"){
+			$("#bTodos3").css("background-color","#4FD8B0");
+			$("#bTodos1").css("background-color","#4FD8B0");
+			$("#bTodos2").css("background-color","#209472");
+		}
+		else{
+			$("#bTodos3").css("background-color","#4FD8B0");
+			$("#bTodos1").css("background-color","#209472");
+			$("#bTodos2").css("background-color","#4FD8B0");
+		}
+		//verEstadolistar();
+		verInstitutoListar();		
+				
+		$("#campo").val(getVarsUrl().FCampo);
+		setTimeout(function(){ 			
+			$("#selectInstituto").val(getVarsUrl().FInstituto);		
+			$('#selectInstituto').selectpicker('refresh');
+			verPNFListar();
+			if(getVarsUrl().Fbtn=="todos")
+				verEstadolistar();
+			else if(getVarsUrl().Fbtn=="estudiantes")
+				verEstadoEs();
+			else
+				verEstadoEm(); 
+			
+			setTimeout(function(){ 
+				$("#selectPNF").val(getVarsUrl().FPensum);		
+				$('#selectPNF').selectpicker('refresh');
+				$("#selectEstado").val(getVarsUrl().FEstado);
+				$('#selectEstado').selectpicker('refresh');
+				if(getVarsUrl().Fbtn=="todos")
+					verPersona(); //TodosFocus();
+				else if(getVarsUrl().Fbtn=="estudiantes")
+					verPersonaEstudiante();
+				else
+					verPersonaEmpleado();
+			},450);
+		},200);
 		
+	}
+	else{
+		verEstadolistar();
+		verInstitutoListar();		
+		verPersona();
 		TodosFocus();
 	}
+
 
 
 } );
@@ -113,7 +161,15 @@ function getVarsUrl(){
 
 
 function nuevoPersonaEstudiante (){	
-	window.location.href = 'index.php?m_modulo=persona&m_vista=Principal&m_formato=html5&accion=N&persona=-1'; 
+	var Fbtn="";
+	//alert($("#bTodos1").css("background-color"));rgb(79, 216, 176);
+	if($("#bTodos3").css("background-color")=="rgb(32, 148, 114)")
+		Fbtn="todos";
+	else if($("#bTodos2").css("background-color")=="rgb(32, 148, 114)")
+		Fbtn="estudiantes";
+	else
+		Fbtn="profesores";
+	window.location.href = 'index.php?m_modulo=persona&m_vista=Principal&m_formato=html5&accion=N&persona=-1&FInstituto='+$("#selectInstituto").val()+'&FPensum='+$("#selectPNF").val()+'&FEstado='+$("#selectEstado").val()+'&FCampo='+$("#campo").val()+'&Fbtn='+Fbtn; 
 }
 
 function nuevoPersonaEmpleado (){	
@@ -771,6 +827,14 @@ function guardarPersona(){
 * por ajax.
 */
 function modificarPersona(codigo){
+	var Fbtn="";
+	//alert($("#bTodos1").css("background-color"));rgb(79, 216, 176);
+	if($("#bTodos3").css("background-color")=="rgb(32, 148, 114)")
+		Fbtn="todos";
+	else if($("#bTodos2").css("background-color")=="rgb(32, 148, 114)")
+		Fbtn="estudiantes";
+	else
+		Fbtn="profesores";
 
 	if(getVarsUrl().persona)
 		codigo=getVarsUrl().persona;
@@ -779,12 +843,21 @@ function modificarPersona(codigo){
 	if(!codigo || codigo=='null')
 		mostrarMensaje("Debes seleccionar a una persona.",2);
 	else
-		window.location.href = 'index.php?m_modulo=persona&m_vista=Principal&m_accion=listar&m_formato=html5&persona='+codigo+'&accion=M';
+		window.location.href = 'index.php?m_modulo=persona&m_vista=Principal&m_accion=listar&m_formato=html5&persona='+codigo+'&accion=M&FInstituto='+$("#selectInstituto").val()+'&FPensum='+$("#selectPNF").val()+'&FEstado='+$("#selectEstado").val()+'&FCampo='+$("#campo").val()+'&Fbtn='+Fbtn;
 }
 
 function mostrarPersona(){
 
 	var codigo=null;
+	var Fbtn="";
+	//alert($("#bTodos1").css("background-color"));rgb(79, 216, 176);
+	if($("#bTodos3").css("background-color")=="rgb(32, 148, 114)")
+		Fbtn="todos";
+	else if($("#bTodos2").css("background-color")=="rgb(32, 148, 114)")
+		Fbtn="estudiantes";
+	else
+		Fbtn="profesores";
+
 	if(getVarsUrl().persona)
 		codigo=getVarsUrl().persona;
 	else
@@ -793,9 +866,13 @@ function mostrarPersona(){
 	if(!codigo || codigo=='null')	
 		mostrarMensaje("Debes seleccionar a una persona.",2);
 	else
-		window.location.href = 'index.php?m_modulo=persona&m_vista=Principal&m_formato=html5&persona='+codigo+'&accion=V';
+		window.location.href = 'index.php?m_modulo=persona&m_vista=Principal&m_formato=html5&persona='+codigo+'&accion=V&FInstituto='+$("#selectInstituto").val()+'&FPensum='+$("#selectPNF").val()+'&FEstado='+$("#selectEstado").val()+'&FCampo='+$("#campo").val()+'&Fbtn='+Fbtn;
 }
 
+function volverPersona(){
+	window.location.href = 'index.php?m_modulo=persona&m_vista=Listar&m_formato=html5&FInstituto='+getVarsUrl().FInstituto+'&FPensum='+getVarsUrl().FPensum+'&FEstado='+getVarsUrl().FEstado+'&FCampo='+getVarsUrl().FCampo+'&Fbtn='+getVarsUrl().Fbtn;
+
+}
 
 function bloquearCampos(){			
 	bloquearCamposEstudiante();		
