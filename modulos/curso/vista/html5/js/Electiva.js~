@@ -464,7 +464,7 @@ function autocompletarDocentes(){
 
 function preGuardar(){
 	var bool=true;
-//alert("dfdsf");
+alert("dfdsf");
 	if($("#SelectPeriodo").val()=="-1"){
 		bool=false;
 		mostrarMensaje("Debe de Seleccionar un periodo.",2);

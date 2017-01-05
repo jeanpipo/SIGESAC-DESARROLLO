@@ -335,6 +335,7 @@ class TrayectoServicio
 					$tra['codigo'] = '';
 					$tra['num_trayecto'] = "Generales del Pensum";
 					$ejecutar[count($ejecutar)] = $tra;
+					return $ejecutar;
 				}
 				else
 					return null;
