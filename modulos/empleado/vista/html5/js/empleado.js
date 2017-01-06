@@ -414,7 +414,18 @@ function montarSelectInstitutoE(data){
 		cadena += "<option value='seleccionar' >Seleccionar</option>";
 	for(var x=0; x<data.institutos.length;x++)
 	{
-		cadena += '<option value="'+data.institutos[x]["codigo"]+'">'+data.institutos[x]["nom_corto"]+'</option>';
+		if(data.datos){
+			if((data.datos[0].emp_inst != data.institutos[x]["codigo"] || !data.datos[0].emp_inst ) && (data.datos[0].est_inst != data.institutos[x]["codigo"] || !data.datos[0].est_inst ) )
+				cadena += '<option value="'+data.institutos[x]["codigo"]+'">'+data.institutos[x]["nom_corto"]+'</option>';
+			else{
+				cadena += '<option selected value="'+data.institutos[x]["codigo"]+'">'+data.institutos[x]["nom_corto"]+'</option>';
+				setTimeout(function(){ 
+					verPNFEm2();
+				}, 1000);
+			}
+		}
+		else
+			cadena += '<option value="'+data.institutos[x]["codigo"]+'">'+data.institutos[x]["nom_corto"]+'</option>';
 	}
 	cadena+="</select></div>";
 

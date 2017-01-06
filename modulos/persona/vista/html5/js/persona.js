@@ -108,7 +108,7 @@ $(document).ready(function() {
 		//verEstadolistar();
 		verInstitutoListar();		
 				
-		$("#campo").val(getVarsUrl().FCampo);
+		$("#campo").val(quitarEspacioUrl(getVarsUrl().FCampo));
 		setTimeout(function(){ 			
 			$("#selectInstituto").val(getVarsUrl().FInstituto);		
 			$('#selectInstituto').selectpicker('refresh');
@@ -144,7 +144,7 @@ $(document).ready(function() {
 
 
 
-} );
+});
 
 
 
@@ -169,7 +169,11 @@ function nuevoPersonaEstudiante (){
 		Fbtn="estudiantes";
 	else
 		Fbtn="profesores";
-	window.location.href = 'index.php?m_modulo=persona&m_vista=Principal&m_formato=html5&accion=N&persona=-1&FInstituto='+$("#selectInstituto").val()+'&FPensum='+$("#selectPNF").val()+'&FEstado='+$("#selectEstado").val()+'&FCampo='+$("#campo").val()+'&Fbtn='+Fbtn; 
+	if($("#campo").val()!=undefined)
+		window.location.href = 'index.php?m_modulo=persona&m_vista=Principal&m_formato=html5&accion=N&persona=-1&FInstituto='+$("#selectInstituto").val()+'&FPensum='+$("#selectPNF").val()+'&FEstado='+$("#selectEstado").val()+'&FCampo='+$("#campo").val()+'&Fbtn='+Fbtn; 
+	else
+		window.location.href = 'index.php?m_modulo=persona&m_vista=Principal&m_formato=html5&accion=N&persona=-1&FInstituto='+getVarsUrl().FInstituto+'&FPensum='+getVarsUrl().FPensum+'&FEstado='+getVarsUrl().FEstado+'&FCampo='+getVarsUrl().FCampo+'&Fbtn='+getVarsUrl().Fbtn; 
+																																								 																							
 }
 
 function nuevoPersonaEmpleado (){	
@@ -336,7 +340,6 @@ function verInstitutoListar(){
 
 function montarSelectInstitutoPersona(data){
 	var cadena = "";
-
 	$("#selectIns").remove();
 	cadena+="<div id='selectIns'> Instituto ";
 	
@@ -351,7 +354,25 @@ function montarSelectInstitutoPersona(data){
 	if(data.institutos){
 		for(var x=0; x<data.institutos.length;x++)
 		{
-			cadena += '<option value="'+data.institutos[x]["codigo"]+'">'+data.institutos[x]["nom_corto"]+'</option>';
+			if(data.datos){
+				if((data.datos[0].emp_inst != data.institutos[x]["codigo"] || !data.datos[0].emp_inst ) && (data.datos[0].est_inst != data.institutos[x]["codigo"] || !data.datos[0].est_inst ) )
+					cadena += '<option value="'+data.institutos[x]["codigo"]+'">'+data.institutos[x]["nom_corto"]+'</option>';
+				else{
+					
+					cadena += '<option selected value="'+data.institutos[x]["codigo"]+'">'+data.institutos[x]["nom_corto"]+'</option>';
+					setTimeout(function(){ 
+
+						if(data.tipo_persona=='estudiante' && !getVarsUrl().FPensum)
+							verPNFEs();
+						else if(data.tipo_persona=='empleado' && !getVarsUrl().FPensum)
+							verPersonaEmpleado(); 
+						else if(!getVarsUrl().FPensum)
+							verPNFListar();
+					}, 1000);
+				}
+			}
+			else
+				cadena += '<option value="'+data.institutos[x]["codigo"]+'">'+data.institutos[x]["nom_corto"]+'</option>';
 		}
 	}
 
@@ -376,7 +397,20 @@ function montarSelectInstituto(data){
 	if(data.institutos)
 	for(var x=0; x<data.institutos.length;x++)
 	{	
-		cadena += '<option value="'+data.institutos[x]["codigo"]+'">'+data.institutos[x]["nom_corto"]+'</option>';
+		if(data.datos){
+			if((data.datos[0].emp_inst != data.institutos[x]["codigo"] || !data.datos[0].emp_inst ) && (data.datos[0].est_inst != data.institutos[x]["codigo"] || !data.datos[0].est_inst ) )
+				cadena += '<option value="'+data.institutos[x]["codigo"]+'">'+data.institutos[x]["nom_corto"]+'</option>';
+			else{
+				cadena += '<option selected value="'+data.institutos[x]["codigo"]+'">'+data.institutos[x]["nom_corto"]+'</option>';			
+
+				setTimeout(function(){ 
+					verPNFEsPrincipal();
+				}, 1000);
+				
+			}
+		}
+		else
+			cadena += '<option value="'+data.institutos[x]["codigo"]+'">'+data.institutos[x]["nom_corto"]+'</option>';
 	}
 	cadena +="</select>";
 
@@ -842,8 +876,13 @@ function modificarPersona(codigo){
 		codigo=$('#cod_persona').val();
 	if(!codigo || codigo=='null')
 		mostrarMensaje("Debes seleccionar a una persona.",2);
-	else
+
+	else if($("#campo").val()!=undefined)
 		window.location.href = 'index.php?m_modulo=persona&m_vista=Principal&m_accion=listar&m_formato=html5&persona='+codigo+'&accion=M&FInstituto='+$("#selectInstituto").val()+'&FPensum='+$("#selectPNF").val()+'&FEstado='+$("#selectEstado").val()+'&FCampo='+$("#campo").val()+'&Fbtn='+Fbtn;
+	else
+		window.location.href = 'index.php?m_modulo=persona&m_vista=Principal&m_accion=listar&m_formato=html5&persona='+codigo+'&accion=M&FInstituto='+getVarsUrl().FInstituto+'&FPensum='+getVarsUrl().FPensum+'&FEstado='+getVarsUrl().FEstado+'&FCampo='+getVarsUrl().FCampo+'&Fbtn='+getVarsUrl().Fbtn;
+
+
 }
 
 function mostrarPersona(){
@@ -1132,12 +1171,16 @@ function borrarPersona(){
 
 }
 
+function quitarEspacioUrl(str){
+	return str.replace(/%20/g," ");
+}
+
 function succMontarEliminarPersona (data){
 
 	if(data.estatus>0){
 		mostrarMensaje(data.mensaje,1);
-		setTimeout(function(){ 
-			window.location.href = 'index.php?m_accion=listar&m_modulo=persona&m_vista=Listar&m_formato=html5'
+		setTimeout(function(){ 			
+			window.location.href = 'index.php?m_accion=listar&m_modulo=persona&m_vista=Listar&m_formato=html5&FInstituto='+getVarsUrl().FInstituto+'&FPensum='+getVarsUrl().FPensum+'&FEstado='+getVarsUrl().FEstado+'&FCampo='+getVarsUrl().FCampo+'&Fbtn='+getVarsUrl().Fbtn;
 		}, 2000);
 	}
 	else
@@ -1289,6 +1332,10 @@ function succAgregarPersona(data){
 	}
 }
 
+function fichaPersonaPDF(){							
+
+	window.open('index.php?m_modulo=persona&m_vista=fichaPersona&m_accion=modificar&m_formato=pdf&codPersona='+$('#cod_persona').val()).focus();
+}
 
 
 function exportarODS(){
