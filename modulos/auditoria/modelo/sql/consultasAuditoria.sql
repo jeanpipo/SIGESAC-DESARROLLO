@@ -56,6 +56,9 @@ BEGIN
 	
 	 return query select a.* from aud.t_auditoria as a;
 
+	 select * from sis.t_empleado where cod_persona = 2176;
+	 delete from sis.t_empleado where cod_persona = 2176
+
 	
 	
 END;

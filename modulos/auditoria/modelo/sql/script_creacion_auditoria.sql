@@ -17,12 +17,9 @@ DECLARE
 BEGIN
 	IF (TG_OP = 'INSERT') THEN
 		data = row_to_json(NEW.*);
-	ELSEIF (TG_OP = 'DELETE') THEN
-		IF (TG_WHEN = 'BEFORE') THEN
-			data = row_to_json(OLD.*);
-		ELSE 
-			data = row_to_json(NEW.*);
-		END IF;
+	ELSEIF (TG_OP = 'DELETE') THEN		
+		data = row_to_json(OLD.*);		
+		
 	ELSEIF (TG_OP = 'UPDATE') THEN
 		IF (TG_WHEN = 'BEFORE') THEN
 			data = row_to_json(OLD.*);
@@ -33,7 +30,11 @@ BEGIN
 	
 	INSERT INTO aud.t_auditoria (usuario,datos,hora,tabla,tipo,subtipo) 
 		VALUES (user,data,current_timestamp,TG_TABLE_NAME,TG_OP,TG_WHEN);
-	RETURN NEW;
+	IF (TG_OP <> 'DELETE') THEN
+		RETURN NEW;
+	ELSE
+		RETURN OLD;
+	END IF;
 END;
 $BODY$
   LANGUAGE plpgsql VOLATILE
@@ -67,9 +68,10 @@ select borrartg('sis')
 SELECT * FROM AUD.T_AUDITORIA
 
 --DELETE FROM AUD.T_AUDITORIA
---DELETE FROM PUBLIC.DEL
+--DELETE FROM PUBLIC.DEL where a = 7770
 
 select * from del
+
 
 insert into del values(5105)
 

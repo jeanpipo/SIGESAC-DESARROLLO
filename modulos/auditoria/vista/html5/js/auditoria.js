@@ -28,27 +28,53 @@ function listarAuditoriaCallBack(data){
 	cadena+="<th>Acción</th>";
 	cadena+="</tr>";
 	cadena+="</thead>";
-	cadena+="<tbody id='tbody'>";
-	for(var x=0; x<data.auditoria.length;x+=2){
+	var x=0; 
+	var incrementarDos=false;
+	
+	while(x<data.auditoria.length){
+		 		
 		var objCambios=jQuery.parseJSON(datos[x].datos);
-		var objCambiosAfter=jQuery.parseJSON(datos[x+1].datos);
-		var linea="";
-		var lineaAfter="";
+		if(data.auditoria.length>x+1){
+			if(datos[x].hora==datos[x+1].hora){
+				var objCambiosAfter=jQuery.parseJSON(datos[x+1].datos);	
+				
+				 incrementarDos=true;
+			}
+			else {				
+				var objCambiosAfter="ACCION FALLIDA";
+				incrementarDos=false;
+			}
+		}		
+		else if(data.auditoria.length>x){
+			
+			if(datos[x].hora==datos[x-1].hora)
+				var objCambios=jQuery.parseJSON(datos[x-1].datos);	
+			else {				
+				var objCambiosAfter="ACCION FALLIDA";
+			}
+			incrementarDos=false;
+			
+		}
+		
+		
+		
+		
+		
 		cadena+="<tr>";
 		cadena+="<th>"+x+"</th>";
-		cadena+="<th>"+datos[x].usuario+"</th>";
-		c=0;
-		for(var i in objCambios) {			
-   			linea+="<b style='color:red;'>"+Object.keys(objCambios)[c]+":"+objCambios[i]+"</b> | "; 
-   			lineaAfter+="<b style='color:green;'>"+Object.keys(objCambios)[c]+":"+objCambiosAfter[i]+"</b> | "; 
-   			c++;
-		}
-		cadena+="<th>"+linea+"</th>";
-		cadena+="<th>"+lineaAfter+"</th>";
+		cadena+="<th>"+datos[x].usuario+"</th>";		
+		var linea=compararCadena(objCambios,objCambiosAfter,datos[x].tipo);
+		cadena+="<th>"+linea[0]+"</th>";
+		cadena+="<th>"+linea[1]+"</th>";
 		cadena+="<th>"+datos[x].hora+"</th>";
 		cadena+="<th>"+datos[x].tabla+"</th>";
-		cadena+="<th>"+datos[x].tipo+"</th>";	
+		cadena+="<th>"+colorAccion(datos[x].tipo)+"</th>";	
 		cadena+="</tr>";
+
+		if(incrementarDos)
+			x+=2;
+		else 
+			x++
 
 	}
 	cadena+="</tbody>";
@@ -60,6 +86,58 @@ function listarAuditoriaCallBack(data){
 		    $('#tabla').DataTable();
 
 
+}
+function colorAccion(accion){
+
+	var linea ="";
+	if(accion=="DELETE")
+		linea="<b style='color:red;'>"+accion+"</b>";
+	else if(accion=="INSERT")
+		linea="<b style='color:green;'>"+accion+"</b>";
+	else
+		linea="<b style='color:#e9bd15;'>"+accion+"</b>";
+	return linea;
+}
+function compararCadena(objCambios,objCambiosAfter,tipo){
+	var c=0;
+	var linea="";
+	var lineaAfter="";
+
+	for(var i in objCambios){	
+		if(tipo =="DELETE")	{	
+			linea+="<b style='color:black;'>"+Object.keys(objCambios)[c]+":</b><b style='color:red;'>"+objCambios[i]+"</b> <b style='color:black;'> | </b> "; 
+			if(objCambiosAfter!="ACCION FALLIDA" )
+				lineaAfter+="<b style='color:black;'>"+Object.keys(objCambios)[c]+":</b><b style='color:red;'>"+objCambiosAfter[i]+"</b> <b style='color:black;'> | </b>"; 
+		}
+		else if(tipo =="INSERT"){	
+			linea+="<b style='color:black;'>"+Object.keys(objCambios)[c]+":</b><b style='color:green;'>"+objCambios[i]+"</b> <b style='color:black;'> | </b> "; 
+			lineaAfter+="<b style='color:black;'>"+Object.keys(objCambios)[c]+":</b><b style='color:green;'>"+objCambiosAfter[i]+"</b> <b style='color:black;'> | </b>"; 
+		}
+		else{	
+			if(objCambios[i]===objCambiosAfter[i]){
+				linea+=Object.keys(objCambios)[c]+":"+objCambios[i]+" <b style='color:black;'> | </b> "; 
+				lineaAfter+=Object.keys(objCambios)[c]+":"+objCambiosAfter[i]+"<b style='color:black;'> | </b>"; 
+			}
+			else if(objCambiosAfter[i]){
+				linea+="<b style='color:black;'>"+Object.keys(objCambios)[c]+":</b> <b style='color:#e9bd15;'>"+objCambios[i]+"</b> <b style='color:black;'> | </b> "; 
+				lineaAfter+="<b style='color:black;'>"+Object.keys(objCambios)[c]+":</b> <b style='color:#e9bd15;'>"+objCambiosAfter[i]+"</b> <b style='color:black;'> | </b>";
+			}
+			else{
+				linea+="<b style='color:black;'>"+Object.keys(objCambios)[c]+":</b> <b style='color:red;'>"+objCambios[i]+"</b> <b style='color:black;'> | </b> "; 
+				lineaAfter+="<b style='color:black;'>"+Object.keys(objCambios)[c]+":"+objCambiosAfter[i]+"</b> <b style='color:black;'> | </b>"; 
+			}
+
+		}
+		c++;
+			
+	}
+	var resultado=[];
+	resultado[0]=linea;
+	if(objCambiosAfter!="ACCION FALLIDA")
+		resultado[1]=lineaAfter;
+	else
+		resultado[1]="<b style='color:black;'>"+objCambiosAfter+"</b>";
+	return resultado
 }
 
 
