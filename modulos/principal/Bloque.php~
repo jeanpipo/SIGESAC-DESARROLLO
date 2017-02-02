@@ -1,10 +1,6 @@
 <?php
 
-if($modulo == 'auditoria'){
-	require_once 'modulos/auditoria/AuditoriaControlador.php';
-	AuditoriaControlador::manejarRequerimiento();
-}
-else if($modulo == 'curso'){
+if($modulo == 'curso'){
 	require_once 'modulos/curso/CursoControlador.php';
 	CursoControlador::manejarRequerimiento();
 }

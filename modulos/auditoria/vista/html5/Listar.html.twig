@@ -1,0 +1,47 @@
+{% extends 'Auditoria.html.twig' %}
+{% block headVista %}
+
+	<script>
+
+		setTimeout(function(){ 
+		    $('#tabla').DataTable();
+		}, 100);
+	</script>
+
+{% endblock %}
+{% block contenido %}
+<div class="contenedorListar">
+	<div class="caja col-md-10 col-md-offset-1">
+		<p class="text-center titulo-caja">
+			<b>Auditoria</b>
+		</p>
+		<div class="posion-fieldset">			
+			<fieldset class="scheduler-border">
+				<legend class="scheduler-border">Lista Auditable</legend>
+				<div id='todaTabla'>
+				<div id='contenidoTala'>
+					<table class='table table-advance' id='tabla'>
+						<thead>
+				            <tr>
+				            	<th>N°</th>
+				                <th>Usuario</th>
+				                <th>Antes</th>			            
+				                <th>Fecha y hora</th>
+				                <th>Tabla</th>
+				                <th>Acción</th>				                
+				            </tr>
+				        </thead>
+						<tbody id='tbody'>
+							
+
+							
+						</tbody>							
+					</table>
+				</div>
+				</div>
+			</fieldset>	
+		</div>
+	</div>
+</div>
+
+{% endblock %}

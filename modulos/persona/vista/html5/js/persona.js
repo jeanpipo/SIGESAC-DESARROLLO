@@ -877,8 +877,11 @@ function modificarPersona(codigo){
 	if(!codigo || codigo=='null')
 		mostrarMensaje("Debes seleccionar a una persona.",2);
 
-	else if($("#campo").val()!=undefined)
+
+
+	else if($("#campo").val()!=undefined){
 		window.location.href = 'index.php?m_modulo=persona&m_vista=Principal&m_accion=listar&m_formato=html5&persona='+codigo+'&accion=M&FInstituto='+$("#selectInstituto").val()+'&FPensum='+$("#selectPNF").val()+'&FEstado='+$("#selectEstado").val()+'&FCampo='+$("#campo").val()+'&Fbtn='+Fbtn;
+	}
 	else
 		window.location.href = 'index.php?m_modulo=persona&m_vista=Principal&m_accion=listar&m_formato=html5&persona='+codigo+'&accion=M&FInstituto='+getVarsUrl().FInstituto+'&FPensum='+getVarsUrl().FPensum+'&FEstado='+getVarsUrl().FEstado+'&FCampo='+getVarsUrl().FCampo+'&Fbtn='+getVarsUrl().Fbtn;
 
@@ -1403,6 +1406,6 @@ function removerEsEm(){
 */
 function errors(data){	
 	console.log(data);
-	alert(data.mensaje);
+	//alert(data.mensaje);
 	mostrarMensaje("Error de comunicación con el servidor.",2);
 }

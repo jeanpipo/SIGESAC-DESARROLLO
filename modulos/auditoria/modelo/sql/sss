@@ -1,0 +1,27 @@
+CREATE OR REPLACE FUNCTION aud.f_auditoria_sel(nombre text[])
+  RETURNS table (id int,
+				username character varying,
+				data text,
+				tima timestamp,
+				table_name character varying,
+				type character varying,
+				subtype character varying) AS
+$BODY$
+DECLARE
+	
+BEGIN
+	
+	  select * from aud.t_auditoria where table_name= 't_persona';
+	
+END;
+$BODY$
+  LANGUAGE plpgsql VOLATILE
+  COST 100;
+ALTER FUNCTION aud.f_auditoria_sel(nombre text[])
+  OWNER TO admin;
+
+ select aud.f_auditoria_sel ('{t_persona,111}')
+
+
+
+
