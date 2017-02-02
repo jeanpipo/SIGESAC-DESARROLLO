@@ -30,6 +30,9 @@ function listarAuditoriaCallBack(data){
 	cadena+="</thead>";
 	var x=0; 
 	var incrementarDos=false;
+
+	var usuarios=[];
+	var tablas=[];
 	
 	while(x<data.auditoria.length){
 		 		
@@ -37,7 +40,7 @@ function listarAuditoriaCallBack(data){
 		if(data.auditoria.length>x+1){
 			if(datos[x].hora==datos[x+1].hora){
 				var objCambiosAfter=jQuery.parseJSON(datos[x+1].datos);	
-				
+
 				 incrementarDos=true;
 			}
 			else {				
@@ -57,9 +60,6 @@ function listarAuditoriaCallBack(data){
 		}
 		
 		
-		
-		
-		
 		cadena+="<tr>";
 		cadena+="<th>"+x+"</th>";
 		cadena+="<th>"+datos[x].usuario+"</th>";		
@@ -70,6 +70,13 @@ function listarAuditoriaCallBack(data){
 		cadena+="<th>"+datos[x].tabla+"</th>";
 		cadena+="<th>"+colorAccion(datos[x].tipo)+"</th>";	
 		cadena+="</tr>";
+
+		if(tablas.indexOf(datos[x].tabla)=="-1")
+			tablas.push(datos[x].tabla);
+
+		if(usuarios.indexOf(datos[x].usuario)=="-1")
+			usuarios.push(datos[x].usuario);
+
 
 		if(incrementarDos)
 			x+=2;
@@ -82,10 +89,57 @@ function listarAuditoriaCallBack(data){
 	cadena+="</div>";
 	//alert(JSON.stringify(data));
 	$(cadena).appendTo('#todaTabla');
+	$('#tabla').DataTable();
 
-		    $('#tabla').DataTable();
+	llenarSelectAuditoria(tablas,usuarios);
 
 
+}
+
+function llenarSelectAuditoria(tablas,usuarios){
+
+	var cadena="";
+	cadena+="<div> <b> Tablas </b>";
+	cadena+="<select class='selectpicker' id='tablabd' name='tablas' title='Tablas' data-live-search='true' data-size='auto' data-max-options='12' multiple>";
+	cadena += "<option value='seleccionar'>Seleccionar</option>";
+	for(var x=0; x<tablas.length;x++){
+		cadena+="<option value='"+tablas[x]+"'>"+tablas[x]+"</option>'";
+	}
+	cadena+="</select>";
+	cadena+="</div>";
+	cadena+="<br>";
+	$(cadena).appendTo('#tablasbd');
+	cadena="";
+	cadena+="<div> <b> Usuarios </b>";
+	cadena+="<select class='selectpicker' id='usuariobd' name='usuarios' title='accion' data-live-search='true' data-size='auto' data-max-options='12' multiple>";
+	cadena += "<option value='seleccionar'>Seleccionar</option>";
+	for(var x=0; x<usuarios.length;x++){
+		cadena+="<option value='"+usuarios[x]+"'>"+usuarios[x]+"</option>'";
+	}
+	cadena+="</select>";
+	cadena+="</div>";
+
+	cadena+="<br>";
+	$(cadena).appendTo('#usuarios');
+	cadena="";
+	cadena+="<div> <b> Accion </b>";
+	cadena+="<select class='selectpicker' id='Accionbd' onchange='' name='accion' title='accion' data-live-search='true' data-size='auto' data-max-options='12' multiple>";
+	cadena += "<option value='seleccionar'>Seleccionar</option>";
+
+	cadena+="<option value='UPDATE'>UPDATE</option>'";
+	cadena+="<option value='DELETE'>DELETE</option>'";
+	cadena+="<option value='INSERT'>INSERT</option>'";
+	
+	cadena+="</select>";
+	cadena+="</div>";
+	$(cadena).appendTo('#accion');
+	activarSelect();
+
+
+}
+
+function echo (){
+	alert();
 }
 function colorAccion(accion){
 
