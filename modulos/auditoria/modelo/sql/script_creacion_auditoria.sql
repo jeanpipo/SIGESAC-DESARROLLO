@@ -42,8 +42,7 @@ $BODY$
 ALTER FUNCTION aud.f_auditoria()
   OWNER TO admin;
 
-select tg_auditoria ('sis');
- CREATE OR REPLACE FUNCTION tg_auditoria (p_esquema text) returns void
+ CREATE OR REPLACE FUNCTION aud.f_crearTgAuditoria (p_esquema text) returns void
    as $BODY$
 DECLARE
 	r information_schema.tables;
@@ -60,27 +59,11 @@ END;
 $BODY$
   LANGUAGE plpgsql VOLATILE
   COST 100;
-ALTER FUNCTION tg_auditoria(p_esquema text)
+ALTER FUNCTION aud.f_crearTgAuditoria (p_esquema text)
   OWNER TO admin;
 
-select borrartg('sis')
 
-SELECT * FROM AUD.T_AUDITORIA
-
---DELETE FROM AUD.T_AUDITORIA where datos is null
---DELETE FROM PUBLIC.DEL where a = 7990
-
-select * from del
-
-
-insert into del values(5105)
-
-UPDATE  DEL SET A=7990 WHERE A=510
-
-
-DROP TRIGGER test_trgg on public.del
-
- CREATE OR REPLACE FUNCTION borrartg (p_esquema text) returns void
+ CREATE OR REPLACE FUNCTION aud.f_eliminarTg (p_esquema text) returns void
    as $BODY$
 DECLARE
 	r information_schema.tables;
@@ -97,7 +80,7 @@ END;
 $BODY$
   LANGUAGE plpgsql VOLATILE
   COST 100;
-ALTER FUNCTION borrartg(p_esquema text)
+ALTER FUNCTION aud.f_eliminarTg(p_esquema text)
   OWNER TO admin;
 
 
@@ -168,6 +151,37 @@ ALTER FUNCTION sis.f_persona_ins(p_cedula integer, p_rif text, p_nombre1 text, p
 OWNER TO admin;
 
 
+grant all on sequence aud.t_auditoria_id_seq to public;
 
 
-  
+ CREATE OR REPLACE FUNCTION aud.f_agregarPermmisoATodosUsuarios () returns void
+   as $BODY$
+DECLARE
+	r pg_user;
+	i per.t_usuario;
+	x integer;
+BEGIN
+
+	for r in SELECT usename FROM pg_user loop
+		execute 'grant insert on table aud.t_auditoria to ' || r.usename ||';';
+			
+		execute 'grant select on table aud.t_auditoria to ' || r.usename ||';';			
+	end loop;
+
+	for i in SELECT codigo FROM per.t_usuario loop
+		select max(cod_usuario) from per.t_acc_usuario where cod_accion in (64,65) and cod_usuario =i.codigo into x;
+		if(x is null) then
+			execute 'select per.f_usuario_usu_acc_insertar('  ||i.codigo ||',64);';
+			execute 'select per.f_usuario_usu_acc_insertar('  ||i.codigo ||',65);';	
+		end if;		
+	end loop;
+	
+END;
+$BODY$
+  LANGUAGE plpgsql VOLATILE
+  COST 100;
+ALTER FUNCTION aud.f_agregarPermmisoATodosUsuarios()
+  OWNER TO admin;
+
+
+  select aud.f_agregarPermmisoATodosUsuarios ();

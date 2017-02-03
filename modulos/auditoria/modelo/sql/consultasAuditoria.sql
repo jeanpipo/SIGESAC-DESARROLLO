@@ -10,18 +10,15 @@ $BODY$
 DECLARE
 
 BEGIN
-	/*IF(p_tipo is not null) THEN
-	    	return query select a.id, a.usuario, a.datos, a.hora, a.tabla, a.tipo, a.subtipo from aud.t_auditoria as a;
-	*/
-	/*IF(p_tabla is not null and p_usuario is not null and  p_tipo is not null) THEN
-	    	return query select a.id, a.usuario, a.datos, a.hora, a.tabla, a.tipo, a.subtipo from aud.t_auditoria as a where a.tabla=any(p_tabla) or a.usuario=any(p_usuario) or a.tipo=any(p_tipo);
+	IF(p_tabla is not null and p_usuario is not null and  p_tipo is not null) THEN
+	    	return query select a.id, a.usuario, a.datos, a.hora, a.tabla, a.tipo, a.subtipo from aud.t_auditoria as a where a.tabla=any(p_tabla) and a.usuario=any(p_usuario) and a.tipo=any(p_tipo);
 	ELSEIF(p_tabla is not null and p_usuario is not null) THEN
 		return query select a.id, a.usuario, a.datos, a.hora, a.tabla, a.tipo, a.subtipo from aud.t_auditoria as a where a.tabla=any(p_tabla) and a.usuario=any(p_usuario);
 	ELSEIF( p_tabla is not null and p_tipo is not null) THEN
 		return query select a.id, a.usuario, a.datos, a.hora, a.tabla, a.tipo, a.subtipo from aud.t_auditoria as a where a.tabla=any(p_tabla) and a.tipo=any(p_tipo);
 	ELSEIF(p_usuario is not null and p_tipo is not null) THEN
 		return query select a.id, a.usuario, a.datos, a.hora, a.tabla, a.tipo, a.subtipoo from aud.t_auditoria as a where a.usuario=any(p_usuario) and a.tipo= any(p_tipo);
-	ELSE*/IF(p_tabla is null and p_usuario is null and  p_tipo is null) THEN
+	ELSEIF(p_tabla is null and p_usuario is null and  p_tipo is null) THEN
 	    	return query select a.id, a.usuario, a.datos, a.hora, a.tabla, a.tipo, a.subtipo from aud.t_auditoria as a;
 	ELSE
 		return query select a.id, a.usuario, a.datos, a.hora, a.tabla, a.tipo, a.subtipo from aud.t_auditoria as a where a.tabla=any(p_tabla) or a.usuario=any(p_usuario) or a.tipo=any(p_tipo);
@@ -33,6 +30,7 @@ $BODY$
 ALTER FUNCTION aud.f_auditoria_sel(p_tabla text[], p_usuario text[], p_tipo text[])
   OWNER TO admin;
 
+/*
  select * from aud.f_auditoria_sel (null,null,null)
 
 select * from aud.t_auditoria
@@ -69,3 +67,5 @@ ALTER FUNCTION sa()
   OWNER TO admin;
 
   select sa()
+
+  */

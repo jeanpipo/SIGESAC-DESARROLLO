@@ -29,7 +29,7 @@ function listarAuditoriaCallBack(data){
 	cadena+="<th>N°</th>";
 	cadena+="<th>Usuario</th>";
 	cadena+=" <th>Antes</th>";
-	cadena+=" <th>Despues</th>";
+	cadena+=" <th>Después</th>";
 	cadena+=" <th>Fecha y hora</th>";
 	cadena+="<th>Tabla</th>";
 	cadena+="<th>Acción</th>";
@@ -51,7 +51,7 @@ function listarAuditoriaCallBack(data){
 				 incrementarDos=true;
 			}
 			else {				
-				var objCambiosAfter="ACCION FALLIDA";
+				var objCambiosAfter="ACCIÓN FALLIDA";
 				incrementarDos=false;
 			}
 		}		
@@ -60,7 +60,7 @@ function listarAuditoriaCallBack(data){
 			if(datos[x].hora==datos[x-1].hora)
 				var objCambios=jQuery.parseJSON(datos[x-1].datos);	
 			else {				
-				var objCambiosAfter="ACCION FALLIDA";
+				var objCambiosAfter="ACCIÓN FALLIDA";
 			}
 			incrementarDos=false;
 			
@@ -132,7 +132,7 @@ function llenarSelectAuditoria(tablas,usuarios){
 	cadena+="<br>";
 	$(cadena).appendTo('#usuarios');
 	cadena="";
-	cadena+="<div> <b> Accion </b>";
+	cadena+="<div> <b> Acción </b>";
 	cadena+="<select class='selectpicker' id='Accionbd' onchange='listarAuditoria();' name='accion' title='accion' data-live-search='true' data-size='auto' data-max-options='12' multiple>";
 	cadena += "<option value='seleccionar'>Seleccionar</option>";
 
