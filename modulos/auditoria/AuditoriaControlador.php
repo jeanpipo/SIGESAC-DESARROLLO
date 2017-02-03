@@ -66,7 +66,14 @@
 			{	
 				$tabla=PostGet::obtenerPostGet('tabla');
 				$usuario=PostGet::obtenerPostGet('usuario');
-				$tipo=PostGet::obtenerPostGet('tipo');
+				$tipo=PostGet::obtenerPostGet('accion');
+			
+				if(!$tipo)
+					$tipo=null;
+				if(!$usuario)
+					$usuario=null;
+				if(!$tabla)
+					$tabla=null;
 
 				$auditoria=AuditoriaServicio::listar($tabla,$usuario,$tipo);
 

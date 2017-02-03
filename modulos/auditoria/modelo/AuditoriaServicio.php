@@ -60,8 +60,8 @@ class AuditoriaServicio
 		{	
 			$conexion = Conexion::conectar();
 			
-			$consulta = "select * from aud.f_auditoria_sel(string_to_array(upper(?),','),
-															string_to_array(upper(?),','),
+			$consulta = "select * from aud.f_auditoria_sel(string_to_array(?,','),
+															string_to_array(?,','),
 															string_to_array(upper(?),',')
 														);";
 

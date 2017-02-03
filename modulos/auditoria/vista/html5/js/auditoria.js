@@ -2,8 +2,15 @@ listarAuditoria();
 
 function listarAuditoria(){
 
+	var accion = $("#Accionbd").val();
+	var usuario = $("#usuariobd").val();
+	var tabla =	$("#tablabd").val();
+
 	var arr = Array("m_modulo"	,	"auditoria",
-					"m_accion"	,	"listar"
+					"m_accion"	,	"listar",
+					"tabla"		,	tabla,
+					"usuario"	,	usuario,
+					"accion"	,	accion
 					);
 		
 	ajaxMVC(arr,listarAuditoriaCallBack,error);
@@ -90,17 +97,20 @@ function listarAuditoriaCallBack(data){
 	//alert(JSON.stringify(data));
 	$(cadena).appendTo('#todaTabla');
 	$('#tabla').DataTable();
-
-	llenarSelectAuditoria(tablas,usuarios);
+	
+	if($("#tablabd").val()==undefined)
+		llenarSelectAuditoria(tablas,usuarios);
 
 
 }
 
 function llenarSelectAuditoria(tablas,usuarios){
 
+	
+
 	var cadena="";
 	cadena+="<div> <b> Tablas </b>";
-	cadena+="<select class='selectpicker' id='tablabd' name='tablas' title='Tablas' data-live-search='true' data-size='auto' data-max-options='12' multiple>";
+	cadena+="<select class='selectpicker' id='tablabd' onchange='listarAuditoria();' name='tablas' title='Tablas' data-live-search='true' data-size='auto' data-max-options='12' multiple>";
 	cadena += "<option value='seleccionar'>Seleccionar</option>";
 	for(var x=0; x<tablas.length;x++){
 		cadena+="<option value='"+tablas[x]+"'>"+tablas[x]+"</option>'";
@@ -111,7 +121,7 @@ function llenarSelectAuditoria(tablas,usuarios){
 	$(cadena).appendTo('#tablasbd');
 	cadena="";
 	cadena+="<div> <b> Usuarios </b>";
-	cadena+="<select class='selectpicker' id='usuariobd' name='usuarios' title='accion' data-live-search='true' data-size='auto' data-max-options='12' multiple>";
+	cadena+="<select class='selectpicker' id='usuariobd' onchange='listarAuditoria();' name='usuarios' title='accion' data-live-search='true' data-size='auto' data-max-options='12' multiple>";
 	cadena += "<option value='seleccionar'>Seleccionar</option>";
 	for(var x=0; x<usuarios.length;x++){
 		cadena+="<option value='"+usuarios[x]+"'>"+usuarios[x]+"</option>'";
@@ -123,7 +133,7 @@ function llenarSelectAuditoria(tablas,usuarios){
 	$(cadena).appendTo('#usuarios');
 	cadena="";
 	cadena+="<div> <b> Accion </b>";
-	cadena+="<select class='selectpicker' id='Accionbd' onchange='' name='accion' title='accion' data-live-search='true' data-size='auto' data-max-options='12' multiple>";
+	cadena+="<select class='selectpicker' id='Accionbd' onchange='listarAuditoria();' name='accion' title='accion' data-live-search='true' data-size='auto' data-max-options='12' multiple>";
 	cadena += "<option value='seleccionar'>Seleccionar</option>";
 
 	cadena+="<option value='UPDATE'>UPDATE</option>'";
@@ -138,9 +148,6 @@ function llenarSelectAuditoria(tablas,usuarios){
 
 }
 
-function echo (){
-	alert();
-}
 function colorAccion(accion){
 
 	var linea ="";
@@ -172,10 +179,14 @@ function compararCadena(objCambios,objCambiosAfter,tipo){
 				linea+=Object.keys(objCambios)[c]+":"+objCambios[i]+" <b style='color:black;'> | </b> "; 
 				lineaAfter+=Object.keys(objCambios)[c]+":"+objCambiosAfter[i]+"<b style='color:black;'> | </b>"; 
 			}
+			else if(!objCambios[i] ){
+				linea+="<b style='color:black;'>"+Object.keys(objCambios)[c]+":</b> <b style='color:green;'>"+objCambios[i]+"</b> <b style='color:black;'> | </b> "; 
+				lineaAfter+="<b style='color:black;'>"+Object.keys(objCambios)[c]+":</b> <b style='color:green;'>"+objCambiosAfter[i]+"</b> <b style='color:black;'> | </b>";
+			}
 			else if(objCambiosAfter[i]){
 				linea+="<b style='color:black;'>"+Object.keys(objCambios)[c]+":</b> <b style='color:#e9bd15;'>"+objCambios[i]+"</b> <b style='color:black;'> | </b> "; 
 				lineaAfter+="<b style='color:black;'>"+Object.keys(objCambios)[c]+":</b> <b style='color:#e9bd15;'>"+objCambiosAfter[i]+"</b> <b style='color:black;'> | </b>";
-			}
+			}			
 			else{
 				linea+="<b style='color:black;'>"+Object.keys(objCambios)[c]+":</b> <b style='color:red;'>"+objCambios[i]+"</b> <b style='color:black;'> | </b> "; 
 				lineaAfter+="<b style='color:black;'>"+Object.keys(objCambios)[c]+":"+objCambiosAfter[i]+"</b> <b style='color:black;'> | </b>"; 

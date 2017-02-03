@@ -67,8 +67,8 @@ select borrartg('sis')
 
 SELECT * FROM AUD.T_AUDITORIA
 
---DELETE FROM AUD.T_AUDITORIA
---DELETE FROM PUBLIC.DEL where a = 7770
+--DELETE FROM AUD.T_AUDITORIA where datos is null
+--DELETE FROM PUBLIC.DEL where a = 7990
 
 select * from del
 
