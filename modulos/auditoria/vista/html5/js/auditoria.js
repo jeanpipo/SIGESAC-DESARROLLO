@@ -98,7 +98,7 @@ function listarAuditoriaCallBack(data){
 	$(cadena).appendTo('#todaTabla');
 	$('#tabla').DataTable();
 	
-	if($("#tablabd").val()==undefined)
+	if($("#haySelect").val()=='false')
 		llenarSelectAuditoria(tablas,usuarios);
 
 
@@ -106,7 +106,7 @@ function listarAuditoriaCallBack(data){
 
 function llenarSelectAuditoria(tablas,usuarios){
 
-	
+	$("#haySelect").val("true");
 
 	var cadena="";
 	cadena+="<div> <b> Tablas </b>";
