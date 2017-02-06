@@ -1,0 +1,45 @@
+{% extends 'Persona.html.twig' %}
+{% block headVista %}
+
+{% endblock %}
+{% block contenido %}
+
+<div class="contenedorListar">
+	<div class="caja col-md-10 col-md-offset-1">
+
+		<p class="text-center titulo-caja">
+			<b>Inscribir Nuevo Ingreso</b>
+		</p>
+
+		<div class="col-md-12  text-center">
+			<p >La información contenida en el archivo debe tener el siguiente orden: <b style="color:black">cedula, nombre, apellido, E-mail.</b>
+			<br>
+			Los campos deberan estar separdos por <b style="color:black">";" (punto y coma)</b> en caso de cargar un archivo <b style="color:black"> cvs, ods, doc, xls, xlsx, odt o txt</b>
+			</p>
+		</div>
+
+		<div class="col-md-12 text-center">
+			<div id='selectInstitutos'> 
+				
+			</div>
+
+			<div id='selectPensum'>
+				
+			</div>
+
+			<input type="file" name="archivo" id="archivo" onfocus="archivo();" onchange="archivoExtencion(true); archivoTamaño(true);"> 
+		</div>
+		<div class="col-md-12 text-center" id="contenedorTabla">
+			
+		</div>
+		<div class="col-md-12 text-center">
+			<button type="button"  class="btn btn-info" title="Cargar Archivo" onclick="cargaArchivoNuevoIngreso();"><b>Cargar Archivo</b></button>
+			<button type="button"  class="btn btn-info" title="Inscribir" onclick="nuevoPersonaEstudiante();"><b>Inscribir Estudiante Manualemnte</b></button>
+			<br><br>
+		</div>
+		<input type="hidden" value="" id="ruta">
+	</div>
+
+</div>
+	
+{% endblock %}

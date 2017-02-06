@@ -1,60 +1,162 @@
 
-**************************** Error n° 1401 *****************************
-codigo Error: 1401
-Mensaje error: SQLSTATE[42501]: Insufficient privilege: 7 ERROR:  permiso denegado a la relación t_auditoria
-CONTEXT:  función PL/pgSQL aud.f_auditoria_sel(text[],text[],text[]) en la línea 17 en RETURN QUERY
-Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/auditoria/modelo/AuditoriaServicio.php
-Linea Error: 69
+**************************** Error n° 1631 *****************************
+codigo Error: 1631
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/persona/modelo/PersonaServicio.php
+Linea Error: 115
 Trayecto:
-		#0 /var/www/SIGESAC-DESARROLLO/modulos/auditoria/modelo/AuditoriaServicio.php(69): PDOStatement->execute(Array)
-		#1 /var/www/SIGESAC-DESARROLLO/modulos/auditoria/AuditoriaControlador.php(78): AuditoriaServicio::listar(NULL, NULL, NULL)
-		#2 /var/www/SIGESAC-DESARROLLO/modulos/auditoria/AuditoriaControlador.php(48): AuditoriaControlador::listar()
-		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): AuditoriaControlador::manejarRequerimiento()
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/persona/modelo/PersonaServicio.php(115): PDOStatement->execute()
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/persona/PersonaControlador.php(548): PersonaServicio::agregar('', NULL, 'JOSEPH', 'DANIEL', 'ALFONZO', 'ROJAS', 'M', NULL, NULL, NULL, NULL, 'Josephalfonz64@...')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/persona/PersonaControlador.php(73): PersonaControlador::cargaArchivoNuevoIngreso()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(49): PersonaControlador::manejarRequerimiento()
 		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
 		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
 		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
 		#7 {main}
-**************************** Error n° 1402 *****************************
-codigo Error: 1402
-Mensaje error: SQLSTATE[42501]: Insufficient privilege: 7 ERROR:  permiso denegado a la relación t_auditoria
-CONTEXT:  función PL/pgSQL aud.f_auditoria_sel(text[],text[],text[]) en la línea 17 en RETURN QUERY
-Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/auditoria/modelo/AuditoriaServicio.php
-Linea Error: 69
+**************************** Error n° 1632 *****************************
+codigo Error: 1632
+Mensaje error: SQLSTATE[23514]: Check violation: 7 ERROR:  el nuevo registro para la relación «t_persona» viola la restricción «check» «chk_persona_02»
+DETAIL:  La fila que falla contiene (2368, 2629624, null, JOSEPH, DANIEL, ALFONZO, ROJAS, f, null, null, null, null, Josephalfojz64@gmail.com, null, null, null, null, null, null, null, null).
+CONTEXT:  sentencia SQL: «insert into sis.t_persona (codigo,		cedula,			rif,
+					   nombre1,		nombre2,		apellido1,
+					   apellido2,   	sexo,			fec_nacimiento,
+					   tip_sangre,		telefono1,		telefono2,
+					   cor_personal,	cor_institucional,	direccion,
+					   discapacidad,	nacionalidad,		hijos,
+					   est_civil,		observaciones
+					)
+
+				  values (cod_persona,		p_cedula,		p_rif,
+					  upper(p_nombre1),	upper(p_nombre2),	upper(p_apellido1),
+					  upper(p_apellido2),	p_sexo,			p_fec_nacimiento,
+					  p_tip_sangre,		p_telefono1,		p_telefono2,
+					  p_cor_personal,	p_cor_institucional,	p_direccion,
+					  p_discapacidad, 	p_nacionalidad,		p_hijos,
+					  p_est_civil,		p_observaciones
+					)»
+función PL/pgSQL sis.f_persona_ins(integer,text,text,text,text,text,text,date,text,text,text,text,text,text,text,text,integer,text,text) en la línea 10 en sentencia SQL
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/persona/modelo/PersonaServicio.php
+Linea Error: 115
 Trayecto:
-		#0 /var/www/SIGESAC-DESARROLLO/modulos/auditoria/modelo/AuditoriaServicio.php(69): PDOStatement->execute(Array)
-		#1 /var/www/SIGESAC-DESARROLLO/modulos/auditoria/AuditoriaControlador.php(78): AuditoriaServicio::listar(NULL, NULL, NULL)
-		#2 /var/www/SIGESAC-DESARROLLO/modulos/auditoria/AuditoriaControlador.php(48): AuditoriaControlador::listar()
-		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): AuditoriaControlador::manejarRequerimiento()
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/persona/modelo/PersonaServicio.php(115): PDOStatement->execute()
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/persona/PersonaControlador.php(563): PersonaServicio::agregar('2629624', NULL, 'JOSEPH', 'DANIEL', 'ALFONZO', 'ROJAS', 'f', NULL, NULL, NULL, NULL, 'Josephalfojz64@...')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/persona/PersonaControlador.php(73): PersonaControlador::cargaArchivoNuevoIngreso()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(49): PersonaControlador::manejarRequerimiento()
 		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
 		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
 		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
 		#7 {main}
-**************************** Error n° 1403 *****************************
-codigo Error: 1403
-Mensaje error: SQLSTATE[42501]: Insufficient privilege: 7 ERROR:  permiso denegado a la relación t_auditoria
-CONTEXT:  función PL/pgSQL aud.f_auditoria_sel(text[],text[],text[]) en la línea 17 en RETURN QUERY
-Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/auditoria/modelo/AuditoriaServicio.php
-Linea Error: 69
+**************************** Error n° 1633 *****************************
+codigo Error: 1633
+Mensaje error: SQLSTATE[23514]: Check violation: 7 ERROR:  el nuevo registro para la relación «t_persona» viola la restricción «check» «chk_persona_02»
+DETAIL:  La fila que falla contiene (2368, 2629624, null, JOSEPH, DANIEL, ALFONZO, ROJAS, f, null, null, null, null, Josephalfojz64@gmail.com, null, null, null, null, null, null, null, null).
+CONTEXT:  sentencia SQL: «insert into sis.t_persona (codigo,		cedula,			rif,
+					   nombre1,		nombre2,		apellido1,
+					   apellido2,   	sexo,			fec_nacimiento,
+					   tip_sangre,		telefono1,		telefono2,
+					   cor_personal,	cor_institucional,	direccion,
+					   discapacidad,	nacionalidad,		hijos,
+					   est_civil,		observaciones
+					)
+
+				  values (cod_persona,		p_cedula,		p_rif,
+					  upper(p_nombre1),	upper(p_nombre2),	upper(p_apellido1),
+					  upper(p_apellido2),	p_sexo,			p_fec_nacimiento,
+					  p_tip_sangre,		p_telefono1,		p_telefono2,
+					  p_cor_personal,	p_cor_institucional,	p_direccion,
+					  p_discapacidad, 	p_nacionalidad,		p_hijos,
+					  p_est_civil,		p_observaciones
+					)»
+función PL/pgSQL sis.f_persona_ins(integer,text,text,text,text,text,text,date,text,text,text,text,text,text,text,text,integer,text,text) en la línea 10 en sentencia SQL
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/persona/modelo/PersonaServicio.php
+Linea Error: 115
 Trayecto:
-		#0 /var/www/SIGESAC-DESARROLLO/modulos/auditoria/modelo/AuditoriaServicio.php(69): PDOStatement->execute(Array)
-		#1 /var/www/SIGESAC-DESARROLLO/modulos/auditoria/AuditoriaControlador.php(78): AuditoriaServicio::listar(NULL, NULL, NULL)
-		#2 /var/www/SIGESAC-DESARROLLO/modulos/auditoria/AuditoriaControlador.php(48): AuditoriaControlador::listar()
-		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): AuditoriaControlador::manejarRequerimiento()
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/persona/modelo/PersonaServicio.php(115): PDOStatement->execute()
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/persona/PersonaControlador.php(563): PersonaServicio::agregar('2629624', NULL, 'JOSEPH', 'DANIEL', 'ALFONZO', 'ROJAS', 'f', NULL, NULL, NULL, NULL, 'Josephalfojz64@...')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/persona/PersonaControlador.php(73): PersonaControlador::cargaArchivoNuevoIngreso()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(49): PersonaControlador::manejarRequerimiento()
 		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
 		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
 		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
 		#7 {main}
-**************************** Error n° 1404 *****************************
-codigo Error: 1404
-Mensaje error: SQLSTATE[42501]: Insufficient privilege: 7 ERROR:  permiso denegado a la relación t_auditoria
-CONTEXT:  función PL/pgSQL aud.f_auditoria_sel(text[],text[],text[]) en la línea 17 en RETURN QUERY
-Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/auditoria/modelo/AuditoriaServicio.php
-Linea Error: 69
+**************************** Error n° 1634 *****************************
+codigo Error: 1634
+Mensaje error: SQLSTATE[23514]: Check violation: 7 ERROR:  el nuevo registro para la relación «t_persona» viola la restricción «check» «chk_persona_02»
+DETAIL:  La fila que falla contiene (2368, 2629624, null, JOSEPH, DANIEL, ALFONZO, ROJAS, f, null, null, null, null, Josephalfojz64@gmail.com, null, null, null, null, null, null, null, null).
+CONTEXT:  sentencia SQL: «insert into sis.t_persona (codigo,		cedula,			rif,
+					   nombre1,		nombre2,		apellido1,
+					   apellido2,   	sexo,			fec_nacimiento,
+					   tip_sangre,		telefono1,		telefono2,
+					   cor_personal,	cor_institucional,	direccion,
+					   discapacidad,	nacionalidad,		hijos,
+					   est_civil,		observaciones
+					)
+
+				  values (cod_persona,		p_cedula,		p_rif,
+					  upper(p_nombre1),	upper(p_nombre2),	upper(p_apellido1),
+					  upper(p_apellido2),	p_sexo,			p_fec_nacimiento,
+					  p_tip_sangre,		p_telefono1,		p_telefono2,
+					  p_cor_personal,	p_cor_institucional,	p_direccion,
+					  p_discapacidad, 	p_nacionalidad,		p_hijos,
+					  p_est_civil,		p_observaciones
+					)»
+función PL/pgSQL sis.f_persona_ins(integer,text,text,text,text,text,text,date,text,text,text,text,text,text,text,text,integer,text,text) en la línea 10 en sentencia SQL
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/persona/modelo/PersonaServicio.php
+Linea Error: 115
 Trayecto:
-		#0 /var/www/SIGESAC-DESARROLLO/modulos/auditoria/modelo/AuditoriaServicio.php(69): PDOStatement->execute(Array)
-		#1 /var/www/SIGESAC-DESARROLLO/modulos/auditoria/AuditoriaControlador.php(78): AuditoriaServicio::listar(NULL, NULL, NULL)
-		#2 /var/www/SIGESAC-DESARROLLO/modulos/auditoria/AuditoriaControlador.php(48): AuditoriaControlador::listar()
-		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): AuditoriaControlador::manejarRequerimiento()
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/persona/modelo/PersonaServicio.php(115): PDOStatement->execute()
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/persona/PersonaControlador.php(563): PersonaServicio::agregar('2629624', NULL, 'JOSEPH', 'DANIEL', 'ALFONZO', 'ROJAS', 'f', NULL, NULL, NULL, NULL, 'Josephalfojz64@...')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/persona/PersonaControlador.php(73): PersonaControlador::cargaArchivoNuevoIngreso()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(49): PersonaControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 1635 *****************************
+codigo Error: 1635
+Mensaje error: SQLSTATE[23514]: Check violation: 7 ERROR:  el nuevo registro para la relación «t_persona» viola la restricción «check» «chk_persona_02»
+DETAIL:  La fila que falla contiene (2368, 2629624, null, JOSEPH, DANIEL, ALFONZO, ROJAS, f, null, null, null, null, Josephalfojz64@gmail.com, null, null, null, null, null, null, null, null).
+CONTEXT:  sentencia SQL: «insert into sis.t_persona (codigo,		cedula,			rif,
+					   nombre1,		nombre2,		apellido1,
+					   apellido2,   	sexo,			fec_nacimiento,
+					   tip_sangre,		telefono1,		telefono2,
+					   cor_personal,	cor_institucional,	direccion,
+					   discapacidad,	nacionalidad,		hijos,
+					   est_civil,		observaciones
+					)
+
+				  values (cod_persona,		p_cedula,		p_rif,
+					  upper(p_nombre1),	upper(p_nombre2),	upper(p_apellido1),
+					  upper(p_apellido2),	p_sexo,			p_fec_nacimiento,
+					  p_tip_sangre,		p_telefono1,		p_telefono2,
+					  p_cor_personal,	p_cor_institucional,	p_direccion,
+					  p_discapacidad, 	p_nacionalidad,		p_hijos,
+					  p_est_civil,		p_observaciones
+					)»
+función PL/pgSQL sis.f_persona_ins(integer,text,text,text,text,text,text,date,text,text,text,text,text,text,text,text,integer,text,text) en la línea 10 en sentencia SQL
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/persona/modelo/PersonaServicio.php
+Linea Error: 115
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/persona/modelo/PersonaServicio.php(115): PDOStatement->execute()
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/persona/PersonaControlador.php(563): PersonaServicio::agregar('2629624', NULL, 'JOSEPH', 'DANIEL', 'ALFONZO', 'ROJAS', 'f', NULL, NULL, NULL, NULL, 'Josephalfojz64@...')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/persona/PersonaControlador.php(73): PersonaControlador::cargaArchivoNuevoIngreso()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(49): PersonaControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 1636 *****************************
+codigo Error: 1636
+Mensaje error: SQLSTATE[42601]: Syntax error: 7 ERROR:  error de sintaxis en o cerca de «de»
+LINE 2: ...t_persona p  where true and p.cedula = Evaluación de módulos...
+                                                             ^
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/persona/modelo/PersonaServicio.php
+Linea Error: 256
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/persona/modelo/PersonaServicio.php(256): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/persona/PersonaControlador.php(578): PersonaServicio::listar(NULL, NULL, NULL, NULL, NULL, 'Evaluaci\xC3\xB3n de ...')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/persona/PersonaControlador.php(73): PersonaControlador::cargaArchivoNuevoIngreso()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(49): PersonaControlador::manejarRequerimiento()
 		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
 		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
 		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()

@@ -135,6 +135,9 @@ $(document).ready(function() {
 		},200);
 		
 	}
+	else if(getVarsUrl().m_vista=="CargaArchivoNuevoIngreso"){
+		selectInstituto();
+	}
 	else{
 		verEstadolistar();
 		verInstitutoListar();		
@@ -825,7 +828,7 @@ function guardarPersona(){
 	   a='archivo';
 	   b=file;
 	});
-
+	//alert(JSON.stringify(b));
 	var arr= Array( "m_modulo"	,	"persona",
 					"m_accion"	,	"agregar",
 					"cedPersona",	$("#ced_persona").val(),
@@ -1289,7 +1292,8 @@ function succGuardarUsuario(data){
 }
 
 function succAgregarPersona(data){
-	console.log(data);
+	//alert(JSON.stringify(data));
+		//alert(JSON.stringify(data));
 	if(data.estatus>0)
 		mostrarMensaje(data.mensaje, 1);
 	else
@@ -1401,11 +1405,259 @@ function removerEsEm(){
 	
 }
 
+function cargaArchivoNuevoIngreso(){
+	var a="archivo";
+	var b="";
+	
+	jQuery.each($('#archivo')[0].files, function(i, file) {
+	   a='archivo';
+	   b=file;
+
+	});
+	//alert(JSON.stringify($('#archivo')[0].files));
+	var arr = Array("m_modulo"	,	"persona",
+					"m_accion"	,	"cargaArchivoNuevoIngreso",					
+					"instituto"	,	$("#selectInstituto").val(),
+					"pnf"		,	$("#selectPNF").val(),
+					a 			,	b
+					);	
+
+	ajaxMVC(arr,succCargaArchivoNuevoIngreso,errors);
+
+}
+
+function succCargaArchivoNuevoIngreso(data){
+	alert(data.contadorExiste);
+	if(data.contadorExiste>1){
+		$("#tablaNo").remove();
+		var cadena=""
+		cadena+="<div id='tablaNo'> ESTAS PERSONAS DEBE SER REGISTRADAS MANUALMENTE PORQUE YA SE ENCUENTRAN REGISTRAS EN EL SISTEMA";
+		cadena+="<table border='1'>";	
+		var datos=data.personasYaRegistradas;
+		var datosSplit="";
+		for(var x=0;x<datos.length;x++){
+			cadena+="<tr>";
+			datosSplit=datos[x].split(";");
+			
+			for(var y=0;y<datosSplit.length;y++){				
+				cadena+="<td>"+datosSplit[y]+"</td>";
+			}
+			cadena+="</tr>";
+		}				
+		cadena+="</table>";
+		cadena+="</div>";
+		$(cadena).appendTo('#contenedorTabla');
+	}
+	
+	if(data.contadorNoExite>1){
+		$("#tabla").remove();
+		var cadena=""
+		cadena+="<div id='tabla'> SE VAN A REGISTRAR LAS SIGUIENTES PERSONAS";
+		cadena+="<table border='1'>";	
+		var datos=data.personasAgregadas;
+		var datosSplit="";
+		for(var x=0;x<datos.length;x++){
+			cadena+="<tr>";
+			datosSplit=datos[x].split(";");
+			
+			for(var y=0;y<datosSplit.length;y++){				
+				cadena+="<td>"+datosSplit[y]+"</td>";
+			}
+			cadena+="</tr>";
+		}				
+		cadena+="</table>";
+		cadena+="</div>";
+		$(cadena).appendTo('#contenedorTabla');
+	}
+
+	
+	
+	//alert(JSON.stringify(data));
+}
+
+function selectInstituto(){
+	var arr = Array("m_modulo"	,	"instituto",
+					"m_accion"	,	"listar"
+					);
+		
+	ajaxMVC(arr,succSelectInstituto,error);
+}
+
+function succSelectInstituto(data){
+	var cadena = "";
+	$("#selectIns").remove();
+	cadena+="<div id='selectIns'> Instituto ";
+	
+	
+	cadena += "<select onchange='selectPNF();' class='selectpicker' id='selectInstituto' title='institutos' data-live-search='true' data-size='auto' data-max-options='12' >"; 
+	cadena += "<option value='-1' >Seleccionar</option>";
+	if(data.institutos){
+		for(var x=0; x<data.institutos.length;x++)
+		{
+			if(data.datos){
+				if((data.datos[0].emp_inst != data.institutos[x]["codigo"] || !data.datos[0].emp_inst ) && (data.datos[0].est_inst != data.institutos[x]["codigo"] || !data.datos[0].est_inst ) )
+					cadena += '<option value="'+data.institutos[x]["codigo"]+'">'+data.institutos[x]["nom_corto"]+'</option>';
+				else					
+					cadena += '<option selected value="'+data.institutos[x]["codigo"]+'">'+data.institutos[x]["nom_corto"]+'</option>';			
+			}
+			else
+				cadena += '<option value="'+data.institutos[x]["codigo"]+'">'+data.institutos[x]["nom_corto"]+'</option>';
+		}
+		setTimeout(function(){						
+			selectPNF();						
+		}, 500);
+	}
+
+	cadena +="</select>";
+
+	$(cadena).appendTo('#selectInstitutos');
+
+	activarSelect();
+}
+
+function selectPNF(){
+
+	var arr = Array("m_modulo"	,	"pensum",
+					"m_accion"	,	"buscarPorInstituto",
+					"codigo"	,	$("#selectInstituto").val()				
+					);
+		
+	ajaxMVC(arr,succSelectPNF,error);
+
+}
+
+function succSelectPNF(data){
+
+	console.log(data);
+	var cadena = "";
+
+	$("#selectPensuma").remove();
+	cadena+="<div id='selectPensuma'> Pensum ";
+	
+	
+	cadena += "<select  class='selectpicker' id='selectPNF' title='pensum' data-live-search='true' data-size='auto' data-max-options='12' >"; 
+	cadena += "<option value='-1'>Seleccionar</option>";
+	
+	if(data.pensum){
+		for(var x=0; x<data.pensum.length;x++)
+		{	
+			if(data.datos){
+				if(data.datos[0].emp_pensum != data.pensum[x]["codigo"] )
+					cadena += '<option value="'+data.pensum[x]["codigo"]+'">'+data.pensum[x][2]+'</option>';
+				else
+					cadena += '<option selected value="'+data.pensum[x]["codigo"]+'">'+data.pensum[x][2]+'</option>';
+			}
+			else 
+				cadena += '<option value="'+data.pensum[x]["codigo"]+'">'+data.pensum[x][2]+'</option>';
+		}
+	}
+	
+	cadena +="</select></div>";
+
+	$(cadena).appendTo('#selectPensum');
+
+	activarSelect();
+}
+
+function  validarCargaArchivo(){
+	var bool=true;
+	msj="";
+	if($("#selectInstituto").val()<0){
+		bool=false;
+		msj="Debe seleccionar un instituto.";
+	}
+	else if($("#selectPNF").val()<0){
+		bool=false;
+		msj="Debe seleccionar un PNF.";
+	}
+	else if(!$("#archivo").val()){
+		bool=false;
+		msj="Debes cargar un archivo.";
+	}
+	/*else if(archivoExtencion ('true')){
+		bool=false;
+	}
+	else if(archivoTamaño('true')){
+		bool=false;
+	}*/
+	
+	if(bool)
+		cargaArchivoNuevoIngreso();
+	else if(msj)
+		mostrarMensaje(msj,2);
+
+}
+
+
+function archivoExtencion (mensaje){ 
+	
+	var  extensiones_permitidas = new Array(".odt", ".txt",".csv",".xls",".doc",".ods",".xlsx",".docx"); 
+	var  error = ""; 
+	var  archivo=$("#archivo").val();
+	
+	if (archivo) 	  
+   { 
+	    //recupero la extensión de este nombre de archivo 
+	    var  extension = (archivo.substring(archivo.lastIndexOf("."))).toLowerCase(); 
+	     
+	    //compruebo si la extensión está entre las permitidas 
+	    var  permitida = false; 
+	    for (var i = 0; i < extensiones_permitidas.length; i++) 
+	    { 
+	       if (extensiones_permitidas[i] == extension) 
+	       { 
+		       permitida = true; 		        
+		       break; 
+	        } 
+	    } 	      
+	} 
+	
+
+	if (!permitida){
+
+		if(mensaje){
+			error = "Comprueba la extension del archivo a subir. \n Solo se pueden cargar archivos con extensiones: " + extensiones_permitidas.join(); 
+			mostrarMensaje(error,2);
+		}
+		$("#archivo").val("");
+		var cadena ="";		
+		return false;
+	}
+	else 
+		return true;
+
+}
+
+function archivoTamaño(mensaje){
+	input = document.getElementById('archivo');
+	if($("#archivo").val()){
+		if((input.files[0].size/1024/1024)>1){
+			if(mensaje)
+				mostrarMensaje("el archivo NO puede pesar mas de 1 MB ",2);
+
+			$("#archivo").val("");
+			return false;
+		}
+		else
+			return true;
+	}
+}
+
+function archivo(){
+
+	$("#archivo").on("change", function(){
+	    fotoExtencion(true);
+	    fotoTamaño(true);		
+	});
+}
+
+
+
 /**
 * Funcion Java Script que permite mostrar un mensaje de error.
 */
 function errors(data){	
 	console.log(data);
-	//alert(data.mensaje);
+	alert(JSON.stringify(data));
 	mostrarMensaje("Error de comunicación con el servidor.",2);
 }

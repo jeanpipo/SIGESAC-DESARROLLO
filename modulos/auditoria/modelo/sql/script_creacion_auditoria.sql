@@ -119,30 +119,34 @@ CREATE OR REPLACE FUNCTION sis.f_persona_ins(p_cedula integer, p_rif text, p_nom
     LANGUAGE plpgsql
     AS $$
 DECLARE cod_persona integer := 0;
+	exite integer := 0;
 BEGIN
 	select coalesce(max(codigo),0) from sis.t_persona into cod_persona;
 
 	cod_persona := cod_persona + 1;
+	select codigo from sis.t_persona where cedula=p_cedula into exite;
+	IF (exite is  null) THEN
+		insert into sis.t_persona (codigo,		cedula,			rif,
+					   nombre1,		nombre2,		apellido1,
+					   apellido2,   	sexo,			fec_nacimiento,
+					   tip_sangre,		telefono1,		telefono2,
+					   cor_personal,	cor_institucional,	direccion,
+					   discapacidad,	nacionalidad,		hijos,
+					   est_civil,		observaciones
+					)
 
-	insert into sis.t_persona (codigo,		cedula,			rif,
-				   nombre1,		nombre2,		apellido1,
-				   apellido2,   	sexo,			fec_nacimiento,
-				   tip_sangre,		telefono1,		telefono2,
-				   cor_personal,	cor_institucional,	direccion,
-				   discapacidad,	nacionalidad,		hijos,
-				   est_civil,		observaciones
-				)
-
-		          values (cod_persona,		p_cedula,		p_rif,
-				  upper(p_nombre1),	upper(p_nombre2),	upper(p_apellido1),
-				  upper(p_apellido2),	p_sexo,			p_fec_nacimiento,
-				  p_tip_sangre,		p_telefono1,		p_telefono2,
-				  p_cor_personal,	p_cor_institucional,	p_direccion,
-				  p_discapacidad, 	p_nacionalidad,		p_hijos,
-				  p_est_civil,		p_observaciones
-				);
- 
-  RETURN cod_persona;
+				  values (cod_persona,		p_cedula,		p_rif,
+					  upper(p_nombre1),	upper(p_nombre2),	upper(p_apellido1),
+					  upper(p_apellido2),	p_sexo,			p_fec_nacimiento,
+					  p_tip_sangre,		p_telefono1,		p_telefono2,
+					  p_cor_personal,	p_cor_institucional,	p_direccion,
+					  p_discapacidad, 	p_nacionalidad,		p_hijos,
+					  p_est_civil,		p_observaciones
+					);	 
+		RETURN cod_persona;
+	ELSE
+		RETURN -1;
+	END IF;
 END;
 $$;
 

@@ -7,6 +7,9 @@
 	require_once("modulos/instituto/modelo/InstitutoServicio.php");
 	require_once("modulos/foto/modelo/FotografiaServicio.php");
 	require_once("modulos/foto/FotoControlador.php");
+	require_once('recursos/spreadsheet-reader-master/php-excel-reader/excel_reader2.php');
+	require_once('recursos/spreadsheet-reader-master/SpreadsheetReader.php');
+
 /**
  * @copyright 2015 - Instituto Universtiario de Tecnología Dr. Federico Rivero Palacio
  * @license GPLv3
@@ -66,6 +69,8 @@
 				self::agregarUsuario();
 			else if($accion == "obtenerRol")
 				self::obtenerRol();
+			else if($accion == "cargaArchivoNuevoIngreso")
+				self::cargaArchivoNuevoIngreso();
 			else
 				throw new Exception ("'PersonaControlador' La accion $accion no es valida");
 		}
@@ -307,7 +312,8 @@
 														   $discapacidad,	$nacionalidad,		$hijos,
 														   $estCivil,		$observaciones
 														);
-				if($response){
+
+				if($response){					
 					if($response>0)
 						Vista::asignarDato('mensaje','Se ha agregado la Persona '.$nombre1.' '.$apellido1.'.');
 					else
@@ -464,6 +470,145 @@
 
 			}
 			catch(Exception $e){
+				throw $e;
+			}
+		}
+
+		public static function cargaArchivoNuevoIngreso ()
+		{
+			try
+			{
+				
+				$instituto=PostGet::obtenerPostGet('instituto');
+				$pnf=PostGet::obtenerPostGet('pnf');
+				$validar=PostGet::obtenerPostGet('validar');
+				$fechaInicio=date('d')."/".date('m')."/".date('Y');
+				
+				$ruta=PostGet::obtenerPostGet('ruta');
+
+				if(!$ruta){		
+					$personasCargadasExito[0]="nombre;apellido;cedula;correo";
+					$personasCargadasFallo[0]="nombre;apellido;cedula;correo";			
+					$archivo=PostGet::obtenerFiles("archivo","name");
+					$a=explode("/", (__DIR__));
+					$path="";
+					$x=0;
+					$contador=count($a);
+					unset($a[$contador-1]);
+					unset($a[$contador-2]);				
+					$path=implode("/",$a);
+					$tipo=explode(".",$archivo["name"]);
+					$arch=pg_escape_string($archivo["tmp_name"]);
+					$ruta=$path."/temp/".$tipo[0].date('d')."-".date('m')."-".date('Y')."-".date('G').":".date('i').":".date('s').".".$tipo[count($tipo)-1];
+					copy($arch,$ruta);
+				}
+				else{
+					$personasCargadasExito="codigo;nombre;apellido;cedula;correo\n";
+					$personasCargadasFallo="nombre;apellido;cedula;correo\n";
+				}
+
+				//Vista::asignarDato("rutaaa",$ruta);
+			
+				if($tipo=='txt'){
+
+				}
+				else{
+
+					
+
+					$Spreadsheet = new SpreadsheetReader($ruta);
+					$BaseMem = memory_get_usage();
+					$Sheets = $Spreadsheet -> Sheets();	
+					$contExite=1;
+					$conNoExiste=1;
+
+					foreach ($Sheets as $Index => $Name)
+					{
+						$Spreadsheet -> ChangeSheet($Index);
+
+						foreach ($Spreadsheet as $Key => $Row)
+						{
+							//for($x=0; $x<count($Row);$x++){
+								if($Row[0]=="")
+									break;
+								$nombre="";
+								$nombre=explode(" ", $Row[2]);
+								$nombre2="";
+									
+								if(count($nombre)>2){
+									for($x=1;$x<count($nombre);$x++){
+										$nombre2.=$nombre[$x]." ";
+									}
+								}	
+								elseif(count($nombre)==2)
+									$nombre2=$nombre[1];
+
+								$apellido="";
+								$apellidoAux=explode(" ", $Row[1]);
+								$apellido2="";
+
+								if(count($apellidoAux)>2){
+									$apellido=$apellidoAux[0]." ".$apellidoAux[1];
+									for($x=1;$x<count($apellidoAux);$x++){
+										$apellido2.=$apellidoAux[$x]." ";
+									}
+								}	
+								elseif(count($apellidoAux)==2){
+									$apellido2=$apellidoAux[1];	
+									$apellido=$apellidoAux[0];
+								}
+
+								
+
+								if(PostGet::obtenerPostGet('ruta')){
+									$r=PersonaServicio::agregar (str_replace(",","",str_replace(".","",$Row[0])),null,				$nombre[0],		
+																$nombre2,			$apellido,			$apellido2,		
+																$Row[3],			null,				null,	
+																null,				null,				$Row[4]															
+															);
+									if($r>0){
+										$personasCargadasExito.=$r.";".$Row[1].";".$Row[2].";".$Row[0].";".$Row[4]."\n";
+										EstudianteServicio::agregar($r, 			$instituto, 	$pnf,
+																	null, 			null,			null,
+																	'A',			$fechaInicio 	
+																);
+									}
+									else
+										$personasCargadasFallo.=$Row[1].";".$Row[2].";".$Row[0].";".$Row[4]."\n";	
+								}
+								else{
+									$r=PersonaServicio::listar(	null, 				null,			null,
+																null, 				null,			str_replace(",","",str_replace(".","",$Row[0]))															
+											
+															);
+									if($r){
+										$personasCargadasFallo[$contExite]=$Row[1].";".$Row[2].";".$Row[0].";".$Row[4];
+										$contExite++;
+										
+									}
+									else{
+										$personasCargadasExito[$conNoExiste]=$Row[1].";".$Row[2].";".$Row[0].";".$Row[4];
+										$conNoExiste++;
+									}
+
+								}							
+
+							//}		
+								
+						
+						}
+					}
+					Vista::asignarDato('personasAgregadas',$personasCargadasExito);
+					Vista::asignarDato('personasYaRegistradas',$personasCargadasFallo);
+					Vista::asignarDato('contadorNoExite',$conNoExiste);
+					Vista::asignarDato('contadorExiste',$contExite);
+					if(PostGet::obtenerPostGet('ruta'))
+						unlink($ruta);
+				}
+
+				Vista::mostrar();
+			}
+			catch (Exception $e){
 				throw $e;
 			}
 		}
