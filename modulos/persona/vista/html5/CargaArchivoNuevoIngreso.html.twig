@@ -33,8 +33,13 @@
 			
 		</div>
 		<div class="col-md-12 text-center">
-			<button type="button"  class="btn btn-info" title="Cargar Archivo" onclick="cargaArchivoNuevoIngreso();"><b>Cargar Archivo</b></button>
-			<button type="button"  class="btn btn-info" title="Inscribir" onclick="nuevoPersonaEstudiante();"><b>Inscribir Estudiante Manualemnte</b></button>
+			<div id="btnCarga">
+				<button type="button"  class="btn btn-info" title="Cargar Archivo" onclick="cargaArchivoNuevoIngreso(); validarCargaArchivo();"><b>Cargar Archivo</b></button>
+				<button type="button"  class="btn btn-info" title="Inscribir" onclick="nuevoPersonaEstudiante();"><b>Inscribir Estudiante Manualemnte</b></button>
+			</div>
+			<div id="btnRegistrar">				
+				<button type="button"  class="btn btn-info" title="Cargar Archivo" onclick="registrarCargaArchivoNuevoIngreso(); validarCargaArchivo();"><b>Inscribir Estudiantes</b></button>				
+			</div>
 			<br><br>
 		</div>
 		<input type="hidden" value="" id="ruta">

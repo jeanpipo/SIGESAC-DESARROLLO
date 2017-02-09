@@ -485,7 +485,11 @@
 				$fechaInicio=date('d')."/".date('m')."/".date('Y');
 				
 				$ruta=PostGet::obtenerPostGet('ruta');
-
+				if($ruta){
+					$tipo=explode(".",$ruta);
+				}
+				$contExite=1;
+					$conNoExiste=1;
 				if(!$ruta){		
 					$personasCargadasExito[0]="nombre;apellido;cedula;correo";
 					$personasCargadasFallo[0]="nombre;apellido;cedula;correo";			
@@ -507,11 +511,82 @@
 					$personasCargadasFallo="nombre;apellido;cedula;correo\n";
 				}
 
-				//Vista::asignarDato("rutaaa",$ruta);
+				
 			
-				if($tipo=='txt'){
+				if($tipo[count($tipo)-1]=='txt' or $tipo[count($tipo)-1]=='odt' or $tipo[count($tipo)-1]=='doc' or $tipo[count($tipo)-1]=='docx'){
+					$arch=fopen($ruta,'a+');
+					while (!feof($arch)){
 
+						$Row=explode(";", fgets($arch));
+
+						if(PostGet::obtenerPostGet('ruta')){
+
+							if($Row[0]=="")
+									break;
+
+							$nombre="";
+							$nombre=explode(" ", $Row[2]);
+							$nombre2="";
+								
+							if(count($nombre)>2){
+								for($x=1;$x<count($nombre);$x++){
+									$nombre2.=$nombre[$x]." ";
+								}
+							}	
+							elseif(count($nombre)==2)
+								$nombre2=$nombre[1];
+
+							$apellido="";
+							$apellidoAux=explode(" ", $Row[1]);
+							$apellido2="";
+
+							if(count($apellidoAux)>2){
+								$apellido=$apellidoAux[0]." ".$apellidoAux[1];
+								for($x=1;$x<count($apellidoAux);$x++){
+									$apellido2.=$apellidoAux[$x]." ";
+								}
+							}	
+							elseif(count($apellidoAux)==2){
+								$apellido2=$apellidoAux[1];	
+								$apellido=$apellidoAux[0];
+							}
+							
+							
+
+							$r=PersonaServicio::agregar (str_replace(",","",str_replace(".","",$Row[0])),null,				$nombre[0],		
+																$nombre2,			$apellido,			$apellido2,		
+																$Row[3],			null,				null,	
+																null,				null,				$Row[4],null,null,null,null,null,null,null														
+															);
+								if($r>0){
+									$personasCargadasExito.=$r.";".$Row[1].";".$Row[2].";".$Row[0].";".$Row[4]."\n";
+									EstudianteServicio::agregar($r, 			$instituto, 	$pnf,
+																null, 			null,			null,
+																'A',			$fechaInicio, null,null,null 	
+															);
+								}
+								else
+									$personasCargadasFallo.=$Row[1].";".$Row[2].";".$Row[0].";".$Row[4]."\n";	
+						}
+						else if($Row[0]){
+							$r=PersonaServicio::listar(	null, 				null,			null,
+																null, 				null,			str_replace(",","",str_replace(".","",$Row[0]))															
+											
+															);
+									if($r){
+										$personasCargadasFallo[$contExite]=$Row[1].";".$Row[2].";".$Row[0].";".$Row[4];
+										$contExite++;
+										
+									}
+									else{
+										$personasCargadasExito[$conNoExiste]=$Row[1].";".$Row[2].";".$Row[0].";".$Row[4];
+										$conNoExiste++;
+
+									}
+					
+					}
 				}
+			}
 				else{
 
 					
@@ -519,8 +594,7 @@
 					$Spreadsheet = new SpreadsheetReader($ruta);
 					$BaseMem = memory_get_usage();
 					$Sheets = $Spreadsheet -> Sheets();	
-					$contExite=1;
-					$conNoExiste=1;
+					
 
 					foreach ($Sheets as $Index => $Name)
 					{
@@ -572,9 +646,13 @@
 																	null, 			null,			null,
 																	'A',			$fechaInicio 	
 																);
+										$conNoExiste++;
+
 									}
-									else
+									else{
 										$personasCargadasFallo.=$Row[1].";".$Row[2].";".$Row[0].";".$Row[4]."\n";	
+										$contExite++;
+									}
 								}
 								else{
 									$r=PersonaServicio::listar(	null, 				null,			null,
@@ -598,14 +676,28 @@
 						
 						}
 					}
-					Vista::asignarDato('personasAgregadas',$personasCargadasExito);
-					Vista::asignarDato('personasYaRegistradas',$personasCargadasFallo);
-					Vista::asignarDato('contadorNoExite',$conNoExiste);
-					Vista::asignarDato('contadorExiste',$contExite);
-					if(PostGet::obtenerPostGet('ruta'))
-						unlink($ruta);
+					
 				}
-
+				
+				if(PostGet::obtenerPostGet('ruta')){
+					unlink($ruta);
+					if($conNoExiste>1){
+						Vista::asignarDato("estatus","1");
+						Vista::asignarDato("mensaje","Fueron inscritas ".$conNoExiste." Con Exito y ".$contExite." ya estaban registradas");
+					}
+					else{
+						Vista::asignarDato("estatus","2");
+						Vista::asignarDato("mensaje","No se registro ninguna persona");
+					}
+				}
+						
+				
+				Vista::asignarDato('personasAgregadas',$personasCargadasExito);
+				Vista::asignarDato('personasYaRegistradas',$personasCargadasFallo);
+				Vista::asignarDato('contadorNoExite',$conNoExiste);
+				Vista::asignarDato('contadorExiste',$contExite);
+				Vista::asignarDato('ruta',$ruta);
+					
 				Vista::mostrar();
 			}
 			catch (Exception $e){

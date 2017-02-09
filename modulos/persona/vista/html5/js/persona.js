@@ -136,7 +136,8 @@ $(document).ready(function() {
 		
 	}
 	else if(getVarsUrl().m_vista=="CargaArchivoNuevoIngreso"){
-		selectInstituto();
+		selectInstituto();		
+		$("#btnRegistrar").hide();
 	}
 	else{
 		verEstadolistar();
@@ -1427,7 +1428,8 @@ function cargaArchivoNuevoIngreso(){
 }
 
 function succCargaArchivoNuevoIngreso(data){
-	alert(data.contadorExiste);
+	
+	//alert(data.contadorExiste);
 	if(data.contadorExiste>1){
 		$("#tablaNo").remove();
 		var cadena=""
@@ -1469,10 +1471,32 @@ function succCargaArchivoNuevoIngreso(data){
 		cadena+="</div>";
 		$(cadena).appendTo('#contenedorTabla');
 	}
-
-	
+	$("#ruta").val(data.ruta);
+	$("#btnCarga").hide();
+	$("#btnRegistrar").show();
 	
 	//alert(JSON.stringify(data));
+}
+
+function registrarCargaArchivoNuevoIngreso(){
+	var arr = Array("m_modulo"	,	"persona",
+					"m_accion"	,	"cargaArchivoNuevoIngreso",					
+					"instituto"	,	$("#selectInstituto").val(),
+					"pnf"		,	$("#selectPNF").val(),
+					"ruta" 		,	$("#ruta").val()
+					);	
+
+	ajaxMVC(arr,succRegistrarCargaArchivoNuevoIngreso,errors);
+}
+
+function succRegistrarCargaArchivoNuevoIngreso(data){
+
+	if(data.estatus>0)
+		mostrarMensaje(data.mensaje,1);
+	else
+		mostrarMensaje(data.mensaje,2);
+
+	$("#ruta").val("");
 }
 
 function selectInstituto(){
@@ -1581,8 +1605,11 @@ function  validarCargaArchivo(){
 		bool=false;
 	}*/
 	
-	if(bool)
+	if(bool && !$("#ruta").val())
 		cargaArchivoNuevoIngreso();
+	else if(bool && $("#ruta").val()){
+		registrarCargaArchivoNuevoIngreso();
+	}
 	else if(msj)
 		mostrarMensaje(msj,2);
 
