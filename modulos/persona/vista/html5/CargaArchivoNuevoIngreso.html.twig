@@ -32,16 +32,22 @@
 		<div class="col-md-12 text-center" id="contenedorTabla">
 			
 		</div>
-		<div class="col-md-12 text-center">
-			<div id="btnCarga">
-				<button type="button"  class="btn btn-info" title="Cargar Archivo" onclick="cargaArchivoNuevoIngreso(); validarCargaArchivo();"><b>Cargar Archivo</b></button>
-				<button type="button"  class="btn btn-info" title="Inscribir" onclick="nuevoPersonaEstudiante();"><b>Inscribir Estudiante Manualemnte</b></button>
-			</div>
-			<div id="btnRegistrar">				
-				<button type="button"  class="btn btn-info" title="Cargar Archivo" onclick="registrarCargaArchivoNuevoIngreso(); validarCargaArchivo();"><b>Inscribir Estudiantes</b></button>				
-			</div>
+		<div class="col-md-12 text-center" id="btnCarga">
+			<button type="button"  class="btn btn-info" title="Cargar Archivo" onclick="cargaArchivoNuevoIngreso();"><b>Cargar Archivo</b></button>
+			<button type="button"  class="btn btn-info" title="Inscribir" onclick="nuevoPersonaEstudiante();"><b>Inscribir Estudiante Manualemnte</b></button>
 			<br><br>
 		</div>
+		<div class="col-md-8 text-center" id="btnRegistrar">
+			<br>
+			<button type="button"  class="btn btn-info" title="Inscribir Estudiante" onclick="registrarCargaArchivoNuevoIngreso();"><b>Inscribir Estudiantes</b></button>
+			<button type="button" id="noInscritos" class="btn btn-warning" title="Descargar reportes de estudiantes que no se podran inscribir" onclick="pdfEstudiantesNuevoIngresoNoInscrito();"><b>PDF estudiantes NO inscritos</b></button>
+			<br><br>
+		</div>
+		<div class="col-md-4 text-right" id="limpiarFormulario">
+			<br>
+			<button type="button"  class="btn btn-danger" title="Limpiar Formulario" onclick="limpiarFormularioCargaArchivo();"><b>Limpiar formulario</b></button>
+		</div>
+		
 		<input type="hidden" value="" id="ruta">
 	</div>
 

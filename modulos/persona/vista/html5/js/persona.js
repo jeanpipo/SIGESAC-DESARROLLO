@@ -138,6 +138,9 @@ $(document).ready(function() {
 	else if(getVarsUrl().m_vista=="CargaArchivoNuevoIngreso"){
 		selectInstituto();		
 		$("#btnRegistrar").hide();
+		$("#noInscritos").hide();
+		$("#noInscritos").hide();
+		$("#limpiarFormulario").hide();
 	}
 	else{
 		verEstadolistar();
@@ -1433,7 +1436,8 @@ function succCargaArchivoNuevoIngreso(data){
 	if(data.contadorExiste>1){
 		$("#tablaNo").remove();
 		var cadena=""
-		cadena+="<div id='tablaNo'> ESTAS PERSONAS DEBE SER REGISTRADAS MANUALMENTE PORQUE YA SE ENCUENTRAN REGISTRAS EN EL SISTEMA";
+		cadena+="<div id='tablaNo'> <b> <font color='red'>ESTAS PERSONAS DEBE SER REGISTRADAS MANUALMENTE ";
+		cadena+="EN EL MODULO DE ESTUDIANTES PORQUE YA SE ENCUENTRAN REGISTRAS EN EL SISTEMA </font></b>";
 		cadena+="<table border='1'>";	
 		var datos=data.personasYaRegistradas;
 		var datosSplit="";
@@ -1454,7 +1458,7 @@ function succCargaArchivoNuevoIngreso(data){
 	if(data.contadorNoExite>1){
 		$("#tabla").remove();
 		var cadena=""
-		cadena+="<div id='tabla'> SE VAN A REGISTRAR LAS SIGUIENTES PERSONAS";
+		cadena+="<div id='tabla'> <b> <font color='green'>SE VAN A REGISTRAR LAS SIGUIENTES PERSONAS </font></b>";
 		cadena+="<table border='1'>";	
 		var datos=data.personasAgregadas;
 		var datosSplit="";
@@ -1471,9 +1475,20 @@ function succCargaArchivoNuevoIngreso(data){
 		cadena+="</div>";
 		$(cadena).appendTo('#contenedorTabla');
 	}
-	$("#ruta").val(data.ruta);
-	$("#btnCarga").hide();
-	$("#btnRegistrar").show();
+
+	if(data.contadorNoExite>1 || data.contadorExiste>1){
+		$("#ruta").val(data.ruta);
+		$("#btnCarga").hide();
+		$("#btnRegistrar").show();
+		$("#limpiarFormulario").show();
+		if(data.contadorExiste>1)
+			$("#noInscritos").show();
+		else
+			$("#noInscritos").hide();
+	}
+	else{
+		mostrarMensaje("Este archivo no contiene los estudiantes para cargar",2);
+	}
 	
 	//alert(JSON.stringify(data));
 }
@@ -1678,7 +1693,27 @@ function archivo(){
 	});
 }
 
+function limpiarFormularioCargaArchivo(){
 
+	$("#ruta").val("");
+	$("#btnCarga").show();
+	$("#btnRegistrar").hide();
+	$("#limpiarFormulario").hide();
+	$("#noInscritos").hide();
+	$("#tablaNo").remove();
+	$("#tabla").remove();
+	$("#selectInstituto").val("-1");
+	$("#selectPNF").val("-1");
+	$("#archivo").val("");
+	$('.selectpicker').selectpicker('refresh');
+
+}
+
+function pdfEstudiantesNuevoIngresoNoInscrito(){
+
+	window.open("index.php?m_modulo=persona&m_formato=pdf&m_vista=nuevoIngresoNoInscrito&m_accion=cargaArchivoNuevoIngreso&ruta="+$("#ruta").val());
+
+}
 
 /**
 * Funcion Java Script que permite mostrar un mensaje de error.

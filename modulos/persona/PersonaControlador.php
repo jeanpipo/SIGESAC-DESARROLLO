@@ -483,14 +483,15 @@
 				$pnf=PostGet::obtenerPostGet('pnf');
 				$validar=PostGet::obtenerPostGet('validar');
 				$fechaInicio=date('d')."/".date('m')."/".date('Y');
+				$formato = PostGet::obtenerPostGet('m_formato');
 				
 				$ruta=PostGet::obtenerPostGet('ruta');
-				if($ruta){
+				if($ruta  && $formato=="html5"){
 					$tipo=explode(".",$ruta);
 				}
 				$contExite=1;
 					$conNoExiste=1;
-				if(!$ruta){		
+				if(!$ruta || $formato=="html5"){		
 					$personasCargadasExito[0]="nombre;apellido;cedula;correo";
 					$personasCargadasFallo[0]="nombre;apellido;cedula;correo";			
 					$archivo=PostGet::obtenerFiles("archivo","name");
@@ -506,6 +507,10 @@
 					$ruta=$path."/temp/".$tipo[0].date('d')."-".date('m')."-".date('Y')."-".date('G').":".date('i').":".date('s').".".$tipo[count($tipo)-1];
 					copy($arch,$ruta);
 				}
+				elseif($formato!="html5"){
+					$personasCargadasExito[0]="nombre;apellido;cedula;correo";
+					$personasCargadasFallo[0]="nombre;apellido;cedula;correo";	
+				}
 				else{
 					$personasCargadasExito="codigo;nombre;apellido;cedula;correo\n";
 					$personasCargadasFallo="nombre;apellido;cedula;correo\n";
@@ -519,7 +524,7 @@
 
 						$Row=explode(";", fgets($arch));
 
-						if(PostGet::obtenerPostGet('ruta')){
+						if(PostGet::obtenerPostGet('ruta') && $formato=="html5"){
 
 							if($Row[0]=="")
 									break;
@@ -584,9 +589,9 @@
 
 									}
 					
+						}
 					}
 				}
-			}
 				else{
 
 					
@@ -634,7 +639,7 @@
 
 								
 
-								if(PostGet::obtenerPostGet('ruta')){
+								if(PostGet::obtenerPostGet('ruta') && $formato=="html5"){
 									$r=PersonaServicio::agregar (str_replace(",","",str_replace(".","",$Row[0])),null,				$nombre[0],		
 																$nombre2,			$apellido,			$apellido2,		
 																$Row[3],			null,				null,	
@@ -679,7 +684,7 @@
 					
 				}
 				
-				if(PostGet::obtenerPostGet('ruta')){
+				if(PostGet::obtenerPostGet('ruta') && $formato=="html5"){
 					unlink($ruta);
 					if($conNoExiste>1){
 						Vista::asignarDato("estatus","1");
