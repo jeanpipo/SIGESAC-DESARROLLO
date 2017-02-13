@@ -199,20 +199,17 @@ class FotografiaServicio {
 				$a=explode("/", (__DIR__));
 				$path="";
 				$x=0;
-				while($a[$x]!="sisconot"){
-					if($x!=1)
-						$path.="/".$a[$x];
-					else
-						$path.=$a[$x];
-					$x++;
-				}
-
-				$path.="/".$a[$x]."/temp/".$nombre.".".$tipo;
-				//~ $path.="temp/".$nombre.".".$tipo;
+				$contador=count($a);
+				unset($a[$contador-1]);
+				unset($a[$contador-2]);	
+				unset($a[$contador-3]);	
+				$path=implode("/",$a)."/temp/".$nombre.".".$tipo;				
 				$ruta=$path;
 			}
+			else
+				return $ruta."/".$nombre.".".$tipo;
 			
-			if($nombre)
+			if($nombre && $tipo)
 				return $ruta;
 			return null;	
 		}

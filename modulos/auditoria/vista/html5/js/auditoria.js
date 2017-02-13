@@ -1,4 +1,8 @@
+
 listarAuditoria();
+
+
+
 
 function listarAuditoria(){
 
@@ -166,30 +170,30 @@ function compararCadena(objCambios,objCambiosAfter,tipo){
 
 	for(var i in objCambios){	
 		if(tipo =="DELETE")	{	
-			linea+="<b style='color:black;'>"+Object.keys(objCambios)[c]+":</b><b style='color:red;'>"+objCambios[i]+"</b> <b style='color:black;'> | </b> "; 
+			linea+="<b style='color:black;'>"+Object.keys(objCambios)[c]+" : </b><b style='color:red;'>"+objCambios[i]+"</b> <b style='color:black;'> | </b> "; 
 			if(objCambiosAfter!="ACCION FALLIDA" )
-				lineaAfter+="<b style='color:black;'>"+Object.keys(objCambios)[c]+":</b><b style='color:red;'>"+objCambiosAfter[i]+"</b> <b style='color:black;'> | </b>"; 
+				lineaAfter+="<b style='color:black;'>"+Object.keys(objCambios)[c]+" : </b><b style='color:red;'>"+objCambiosAfter[i]+"</b> <b style='color:black;'> | </b>"; 
 		}
 		else if(tipo =="INSERT"){	
-			linea+="<b style='color:black;'>"+Object.keys(objCambios)[c]+":</b><b style='color:green;'>"+objCambios[i]+"</b> <b style='color:black;'> | </b> "; 
-			lineaAfter+="<b style='color:black;'>"+Object.keys(objCambios)[c]+":</b><b style='color:green;'>"+objCambiosAfter[i]+"</b> <b style='color:black;'> | </b>"; 
+			linea+="<b style='color:black;'>"+Object.keys(objCambios)[c]+" : </b><b style='color:green;'>"+objCambios[i]+"</b> <b style='color:black;'> | </b> "; 
+			lineaAfter+="<b style='color:black;'>"+Object.keys(objCambios)[c]+" : </b><b style='color:green;'>"+objCambiosAfter[i]+"</b> <b style='color:black;'> | </b>"; 
 		}
 		else{	
 			if(objCambios[i]===objCambiosAfter[i]){
-				linea+=Object.keys(objCambios)[c]+":"+objCambios[i]+" <b style='color:black;'> | </b> "; 
-				lineaAfter+=Object.keys(objCambios)[c]+":"+objCambiosAfter[i]+"<b style='color:black;'> | </b>"; 
+				linea+=Object.keys(objCambios)[c]+" : "+objCambios[i]+" <b style='color:black;'> | </b> "; 
+				lineaAfter+=Object.keys(objCambios)[c]+" : "+objCambiosAfter[i]+"<b style='color:black;'> | </b>"; 
 			}
 			else if(!objCambios[i] ){
-				linea+="<b style='color:black;'>"+Object.keys(objCambios)[c]+":</b> <b style='color:green;'>"+objCambios[i]+"</b> <b style='color:black;'> | </b> "; 
-				lineaAfter+="<b style='color:black;'>"+Object.keys(objCambios)[c]+":</b> <b style='color:green;'>"+objCambiosAfter[i]+"</b> <b style='color:black;'> | </b>";
+				linea+="<b style='color:black;'>"+Object.keys(objCambios)[c]+" : </b> <b style='color:green;'>"+objCambios[i]+"</b> <b style='color:black;'> | </b> "; 
+				lineaAfter+="<b style='color:black;'>"+Object.keys(objCambios)[c]+" : </b> <b style='color:green;'>"+objCambiosAfter[i]+"</b> <b style='color:black;'> | </b>";
 			}
 			else if(objCambiosAfter[i]){
-				linea+="<b style='color:black;'>"+Object.keys(objCambios)[c]+":</b> <b style='color:#e9bd15;'>"+objCambios[i]+"</b> <b style='color:black;'> | </b> "; 
-				lineaAfter+="<b style='color:black;'>"+Object.keys(objCambios)[c]+":</b> <b style='color:#e9bd15;'>"+objCambiosAfter[i]+"</b> <b style='color:black;'> | </b>";
+				linea+="<b style='color:black;'>"+Object.keys(objCambios)[c]+" : </b> <b style='color:#e9bd15;'>"+objCambios[i]+"</b> <b style='color:black;'> | </b> "; 
+				lineaAfter+="<b style='color:black;'>"+Object.keys(objCambios)[c]+" : </b> <b style='color:#e9bd15;'>"+objCambiosAfter[i]+"</b> <b style='color:black;'> | </b>";
 			}			
 			else{
-				linea+="<b style='color:black;'>"+Object.keys(objCambios)[c]+":</b> <b style='color:red;'>"+objCambios[i]+"</b> <b style='color:black;'> | </b> "; 
-				lineaAfter+="<b style='color:black;'>"+Object.keys(objCambios)[c]+":"+objCambiosAfter[i]+"</b> <b style='color:black;'> | </b>"; 
+				linea+="<b style='color:black;'>"+Object.keys(objCambios)[c]+" : </b> <b style='color:red;'>"+objCambios[i]+"</b> <b style='color:black;'> | </b> "; 
+				lineaAfter+="<b style='color:black;'>"+Object.keys(objCambios)[c]+" : "+objCambiosAfter[i]+"</b> <b style='color:black;'> | </b>"; 
 			}
 
 		}
@@ -209,5 +213,5 @@ function compararCadena(objCambios,objCambiosAfter,tipo){
 function  errorAjax(data){
 	mostrarMensaje("Error de comunicación con el servidor.",2);
 	console.log(data);
-	alert(JSON.stringify(data));
+	//alert(JSON.stringify(data));
 }

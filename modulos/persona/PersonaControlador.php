@@ -369,7 +369,6 @@
 						PersonaServicio::AgregarFoto(Vista::obtenerDato("codPersona"),$codigo[0][0]);
 					}
 				}
-
 				
 
 				if($foto!=='2' && $foto===true){
@@ -483,7 +482,7 @@
 				$pnf=PostGet::obtenerPostGet('pnf');
 				$validar=PostGet::obtenerPostGet('validar');
 				$fechaInicio=date('d')."/".date('m')."/".date('Y');
-				$formato = PostGet::obtenerPostGet('m_formato');
+				$formato = PostGet::obtenerPostGet('formato');
 				
 				$ruta=PostGet::obtenerPostGet('ruta');
 				if($ruta  && $formato=="html5"){
@@ -491,7 +490,7 @@
 				}
 				$contExite=1;
 					$conNoExiste=1;
-				if(!$ruta || $formato=="html5"){		
+				if(!$ruta){		
 					$personasCargadasExito[0]="nombre;apellido;cedula;correo";
 					$personasCargadasFallo[0]="nombre;apellido;cedula;correo";			
 					$archivo=PostGet::obtenerFiles("archivo","name");
@@ -561,7 +560,7 @@
 							$r=PersonaServicio::agregar (str_replace(",","",str_replace(".","",$Row[0])),null,				$nombre[0],		
 																$nombre2,			$apellido,			$apellido2,		
 																$Row[3],			null,				null,	
-																null,				null,				$Row[4],null,null,null,null,null,null,null														
+																$Row[5],				null,				$Row[4],null,null,null,null,null,null,null														
 															);
 								if($r>0){
 									$personasCargadasExito.=$r.";".$Row[1].";".$Row[2].";".$Row[0].";".$Row[4]."\n";
@@ -643,7 +642,7 @@
 									$r=PersonaServicio::agregar (str_replace(",","",str_replace(".","",$Row[0])),null,				$nombre[0],		
 																$nombre2,			$apellido,			$apellido2,		
 																$Row[3],			null,				null,	
-																null,				null,				$Row[4]															
+																$Row[5],				null,				$Row[4]															
 															);
 									if($r>0){
 										$personasCargadasExito.=$r.";".$Row[1].";".$Row[2].";".$Row[0].";".$Row[4]."\n";
@@ -660,6 +659,7 @@
 									}
 								}
 								else{
+
 									$r=PersonaServicio::listar(	null, 				null,			null,
 																null, 				null,			str_replace(",","",str_replace(".","",$Row[0]))															
 											
@@ -683,15 +683,15 @@
 					}
 					
 				}
-				
+				//Vista::asignarDato("papa",PostGet::obtenerPostGet('ruta')." ---- ".$formato);
 				if(PostGet::obtenerPostGet('ruta') && $formato=="html5"){
 					unlink($ruta);
 					if($conNoExiste>1){
 						Vista::asignarDato("estatus","1");
-						Vista::asignarDato("mensaje","Fueron inscritas ".$conNoExiste." Con Exito y ".$contExite." ya estaban registradas");
+						Vista::asignarDato("mensaje","Fueron inscritas ".($conNoExiste-1)." personas Con Exito y ".($contExite-1)." personas ya estaban registradas");
 					}
 					else{
-						Vista::asignarDato("estatus","2");
+						Vista::asignarDato("estatus","-1");
 						Vista::asignarDato("mensaje","No se registro ninguna persona");
 					}
 				}

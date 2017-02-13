@@ -1,113 +1,61 @@
 
-**************************** Error n° 1692 *****************************
-codigo Error: 1692
-Mensaje error: SQLSTATE[42501]: Insufficient privilege: 7 ERROR:  permiso denegado a la relación t_est_cur_estudiante
-Archivo Error: /var/www/pipo/SIGESAC-DESARROLLO/modulos/estudiante/modelo/EstudianteServicio.php
-Linea Error: 554
+**************************** Error n° 1793 *****************************
+codigo Error: 1793
+Mensaje error: (PrincipalControlador) Módulo inválido: $modulo
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php
+Linea Error: 76
 Trayecto:
-		#0 /var/www/pipo/SIGESAC-DESARROLLO/modulos/estudiante/modelo/EstudianteServicio.php(554): PDOStatement->execute()
-		#1 /var/www/pipo/SIGESAC-DESARROLLO/modulos/estudiante/EstudianteControlador.php(320): EstudianteServicio::listarEstudiantesDeCurso('202')
-		#2 /var/www/pipo/SIGESAC-DESARROLLO/modulos/estudiante/EstudianteControlador.php(41): EstudianteControlador::listarEstudiantesPorCurso()
-		#3 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(21): EstudianteControlador::manejarRequerimiento()
-		#4 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/pipo/S...')
-		#5 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
-		#6 /var/www/pipo/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
-		#7 {main}
-**************************** Error n° 1693 *****************************
-codigo Error: 1693
-Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
-Archivo Error: /var/www/pipo/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
-Linea Error: 1549
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once()
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#2 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#3 {main}
+**************************** Error n° 1794 *****************************
+codigo Error: 1794
+Mensaje error: (PrincipalControlador) Módulo inválido: $modulo
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php
+Linea Error: 76
 Trayecto:
-		#0 /var/www/pipo/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1549): PDOStatement->execute(Array)
-		#1 /var/www/pipo/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(890): CursoServicio::listarCurElectivas('', '')
-		#2 /var/www/pipo/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
-		#3 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(9): CursoControlador::manejarRequerimiento()
-		#4 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/pipo/S...')
-		#5 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
-		#6 /var/www/pipo/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
-		#7 {main}
-**************************** Error n° 1694 *****************************
-codigo Error: 1694
-Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
-Archivo Error: /var/www/pipo/SIGESAC-DESARROLLO/modulos/trayecto/modelo/TrayectoServicio.php
-Linea Error: 331
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once()
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#2 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#3 {main}
+**************************** Error n° 1795 *****************************
+codigo Error: 1795
+Mensaje error: (PrincipalControlador) Módulo inválido: $modulo
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php
+Linea Error: 76
 Trayecto:
-		#0 /var/www/pipo/SIGESAC-DESARROLLO/modulos/trayecto/modelo/TrayectoServicio.php(331): PDOStatement->execute(Array)
-		#1 /var/www/pipo/SIGESAC-DESARROLLO/modulos/trayecto/TrayectoControlador.php(296): TrayectoServicio::obtenerTrayectoPensum('')
-		#2 /var/www/pipo/SIGESAC-DESARROLLO/modulos/trayecto/TrayectoControlador.php(66): TrayectoControlador::listarTrayectoPensum()
-		#3 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(61): TrayectoControlador::manejarRequerimiento()
-		#4 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/pipo/S...')
-		#5 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
-		#6 /var/www/pipo/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
-		#7 {main}
-**************************** Error n° 1695 *****************************
-codigo Error: 1695
-Mensaje error: SQLSTATE[42501]: Insufficient privilege: 7 ERROR:  permiso denegado a la relación t_est_cur_estudiante
-Archivo Error: /var/www/pipo/SIGESAC-DESARROLLO/modulos/estudiante/modelo/EstudianteServicio.php
-Linea Error: 554
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once()
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#2 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#3 {main}
+**************************** Error n° 1796 *****************************
+codigo Error: 1796
+Mensaje error: (PrincipalControlador) Módulo inválido: $modulo
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php
+Linea Error: 76
 Trayecto:
-		#0 /var/www/pipo/SIGESAC-DESARROLLO/modulos/estudiante/modelo/EstudianteServicio.php(554): PDOStatement->execute()
-		#1 /var/www/pipo/SIGESAC-DESARROLLO/modulos/estudiante/EstudianteControlador.php(320): EstudianteServicio::listarEstudiantesDeCurso('202')
-		#2 /var/www/pipo/SIGESAC-DESARROLLO/modulos/estudiante/EstudianteControlador.php(41): EstudianteControlador::listarEstudiantesPorCurso()
-		#3 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(21): EstudianteControlador::manejarRequerimiento()
-		#4 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/pipo/S...')
-		#5 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
-		#6 /var/www/pipo/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
-		#7 {main}
-**************************** Error n° 1696 *****************************
-codigo Error: 1696
-Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
-Archivo Error: /var/www/pipo/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
-Linea Error: 1549
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once()
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#2 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#3 {main}
+**************************** Error n° 1797 *****************************
+codigo Error: 1797
+Mensaje error: (PrincipalControlador) Módulo inválido: $modulo
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php
+Linea Error: 76
 Trayecto:
-		#0 /var/www/pipo/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1549): PDOStatement->execute(Array)
-		#1 /var/www/pipo/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(890): CursoServicio::listarCurElectivas('', '')
-		#2 /var/www/pipo/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
-		#3 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(9): CursoControlador::manejarRequerimiento()
-		#4 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/pipo/S...')
-		#5 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
-		#6 /var/www/pipo/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
-		#7 {main}
-**************************** Error n° 1697 *****************************
-codigo Error: 1697
-Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
-Archivo Error: /var/www/pipo/SIGESAC-DESARROLLO/modulos/trayecto/modelo/TrayectoServicio.php
-Linea Error: 331
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once()
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#2 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#3 {main}
+**************************** Error n° 1798 *****************************
+codigo Error: 1798
+Mensaje error: (PrincipalControlador) Módulo inválido: $modulo
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php
+Linea Error: 76
 Trayecto:
-		#0 /var/www/pipo/SIGESAC-DESARROLLO/modulos/trayecto/modelo/TrayectoServicio.php(331): PDOStatement->execute(Array)
-		#1 /var/www/pipo/SIGESAC-DESARROLLO/modulos/trayecto/TrayectoControlador.php(296): TrayectoServicio::obtenerTrayectoPensum('')
-		#2 /var/www/pipo/SIGESAC-DESARROLLO/modulos/trayecto/TrayectoControlador.php(66): TrayectoControlador::listarTrayectoPensum()
-		#3 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(61): TrayectoControlador::manejarRequerimiento()
-		#4 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/pipo/S...')
-		#5 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
-		#6 /var/www/pipo/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
-		#7 {main}
-**************************** Error n° 1698 *****************************
-codigo Error: 1698
-Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
-Archivo Error: /var/www/pipo/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
-Linea Error: 1549
-Trayecto:
-		#0 /var/www/pipo/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1549): PDOStatement->execute(Array)
-		#1 /var/www/pipo/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(890): CursoServicio::listarCurElectivas('', '')
-		#2 /var/www/pipo/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
-		#3 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(9): CursoControlador::manejarRequerimiento()
-		#4 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/pipo/S...')
-		#5 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
-		#6 /var/www/pipo/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
-		#7 {main}
-**************************** Error n° 1699 *****************************
-codigo Error: 1699
-Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
-Archivo Error: /var/www/pipo/SIGESAC-DESARROLLO/modulos/trayecto/modelo/TrayectoServicio.php
-Linea Error: 331
-Trayecto:
-		#0 /var/www/pipo/SIGESAC-DESARROLLO/modulos/trayecto/modelo/TrayectoServicio.php(331): PDOStatement->execute(Array)
-		#1 /var/www/pipo/SIGESAC-DESARROLLO/modulos/trayecto/TrayectoControlador.php(296): TrayectoServicio::obtenerTrayectoPensum('')
-		#2 /var/www/pipo/SIGESAC-DESARROLLO/modulos/trayecto/TrayectoControlador.php(66): TrayectoControlador::listarTrayectoPensum()
-		#3 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(61): TrayectoControlador::manejarRequerimiento()
-		#4 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/pipo/S...')
-		#5 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
-		#6 /var/www/pipo/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
-		#7 {main}
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once()
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#2 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#3 {main}

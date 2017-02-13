@@ -1,643 +1,122 @@
 
-**************************** Error n° 1700 *****************************
-codigo Error: 1700
-Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
-Archivo Error: /var/www/pipo/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
-Linea Error: 1549
+**************************** Error n° 1799 *****************************
+codigo Error: 1799
+Mensaje error: 'FotoControlador' La accion lol no es valida
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/foto/FotoControlador.php
+Linea Error: 28
 Trayecto:
-		#0 /var/www/pipo/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1549): PDOStatement->execute(Array)
-		#1 /var/www/pipo/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(890): CursoServicio::listarCurElectivas('', '')
-		#2 /var/www/pipo/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
-		#3 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(9): CursoControlador::manejarRequerimiento()
-		#4 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/pipo/S...')
-		#5 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
-		#6 /var/www/pipo/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
-		#7 {main}
-**************************** Error n° 1701 *****************************
-codigo Error: 1701
-Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
-Archivo Error: /var/www/pipo/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
-Linea Error: 1549
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(25): FotoControlador::manejarRequerimiento()
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#3 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#4 {main}
+**************************** Error n° 1800 *****************************
+codigo Error: 1800
+Mensaje error: Ya esta posicion posee información, se recomienda cambiar el nombre de la posición:datos
+Archivo Error: /var/www/SIGESAC-DESARROLLO/base/clases/vista/Vista.php
+Linea Error: 185
 Trayecto:
-		#0 /var/www/pipo/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1549): PDOStatement->execute(Array)
-		#1 /var/www/pipo/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(890): CursoServicio::listarCurElectivas('', '')
-		#2 /var/www/pipo/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
-		#3 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(9): CursoControlador::manejarRequerimiento()
-		#4 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/pipo/S...')
-		#5 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
-		#6 /var/www/pipo/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
-		#7 {main}
-**************************** Error n° 1702 *****************************
-codigo Error: 1702
-Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
-Archivo Error: /var/www/pipo/SIGESAC-DESARROLLO/modulos/trayecto/modelo/TrayectoServicio.php
-Linea Error: 331
-Trayecto:
-		#0 /var/www/pipo/SIGESAC-DESARROLLO/modulos/trayecto/modelo/TrayectoServicio.php(331): PDOStatement->execute(Array)
-		#1 /var/www/pipo/SIGESAC-DESARROLLO/modulos/trayecto/TrayectoControlador.php(296): TrayectoServicio::obtenerTrayectoPensum('')
-		#2 /var/www/pipo/SIGESAC-DESARROLLO/modulos/trayecto/TrayectoControlador.php(66): TrayectoControlador::listarTrayectoPensum()
-		#3 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(61): TrayectoControlador::manejarRequerimiento()
-		#4 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/pipo/S...')
-		#5 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
-		#6 /var/www/pipo/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
-		#7 {main}
-**************************** Error n° 1703 *****************************
-codigo Error: 1703
-Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
-Archivo Error: /var/www/pipo/SIGESAC-DESARROLLO/modulos/trayecto/modelo/TrayectoServicio.php
-Linea Error: 331
-Trayecto:
-		#0 /var/www/pipo/SIGESAC-DESARROLLO/modulos/trayecto/modelo/TrayectoServicio.php(331): PDOStatement->execute(Array)
-		#1 /var/www/pipo/SIGESAC-DESARROLLO/modulos/trayecto/TrayectoControlador.php(296): TrayectoServicio::obtenerTrayectoPensum('')
-		#2 /var/www/pipo/SIGESAC-DESARROLLO/modulos/trayecto/TrayectoControlador.php(66): TrayectoControlador::listarTrayectoPensum()
-		#3 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(61): TrayectoControlador::manejarRequerimiento()
-		#4 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/pipo/S...')
-		#5 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
-		#6 /var/www/pipo/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
-		#7 {main}
-**************************** Error n° 1704 *****************************
-codigo Error: 1704
-Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
-Archivo Error: /var/www/pipo/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
-Linea Error: 1549
-Trayecto:
-		#0 /var/www/pipo/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1549): PDOStatement->execute(Array)
-		#1 /var/www/pipo/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(890): CursoServicio::listarCurElectivas('', '')
-		#2 /var/www/pipo/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
-		#3 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(9): CursoControlador::manejarRequerimiento()
-		#4 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/pipo/S...')
-		#5 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
-		#6 /var/www/pipo/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
-		#7 {main}
-**************************** Error n° 1705 *****************************
-codigo Error: 1705
-Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
-Archivo Error: /var/www/pipo/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
-Linea Error: 1549
-Trayecto:
-		#0 /var/www/pipo/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1549): PDOStatement->execute(Array)
-		#1 /var/www/pipo/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(890): CursoServicio::listarCurElectivas('', '')
-		#2 /var/www/pipo/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
-		#3 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(9): CursoControlador::manejarRequerimiento()
-		#4 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/pipo/S...')
-		#5 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
-		#6 /var/www/pipo/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
-		#7 {main}
-**************************** Error n° 1706 *****************************
-codigo Error: 1706
-Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
-Archivo Error: /var/www/pipo/SIGESAC-DESARROLLO/modulos/trayecto/modelo/TrayectoServicio.php
-Linea Error: 331
-Trayecto:
-		#0 /var/www/pipo/SIGESAC-DESARROLLO/modulos/trayecto/modelo/TrayectoServicio.php(331): PDOStatement->execute(Array)
-		#1 /var/www/pipo/SIGESAC-DESARROLLO/modulos/trayecto/TrayectoControlador.php(296): TrayectoServicio::obtenerTrayectoPensum('')
-		#2 /var/www/pipo/SIGESAC-DESARROLLO/modulos/trayecto/TrayectoControlador.php(66): TrayectoControlador::listarTrayectoPensum()
-		#3 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(61): TrayectoControlador::manejarRequerimiento()
-		#4 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/pipo/S...')
-		#5 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
-		#6 /var/www/pipo/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
-		#7 {main}
-**************************** Error n° 1707 *****************************
-codigo Error: 1707
-Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
-Archivo Error: /var/www/pipo/SIGESAC-DESARROLLO/modulos/trayecto/modelo/TrayectoServicio.php
-Linea Error: 331
-Trayecto:
-		#0 /var/www/pipo/SIGESAC-DESARROLLO/modulos/trayecto/modelo/TrayectoServicio.php(331): PDOStatement->execute(Array)
-		#1 /var/www/pipo/SIGESAC-DESARROLLO/modulos/trayecto/TrayectoControlador.php(296): TrayectoServicio::obtenerTrayectoPensum('')
-		#2 /var/www/pipo/SIGESAC-DESARROLLO/modulos/trayecto/TrayectoControlador.php(66): TrayectoControlador::listarTrayectoPensum()
-		#3 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(61): TrayectoControlador::manejarRequerimiento()
-		#4 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/pipo/S...')
-		#5 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
-		#6 /var/www/pipo/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
-		#7 {main}
-**************************** Error n° 1708 *****************************
-codigo Error: 1708
-Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
-Archivo Error: /var/www/pipo/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
-Linea Error: 1549
-Trayecto:
-		#0 /var/www/pipo/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1549): PDOStatement->execute(Array)
-		#1 /var/www/pipo/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(890): CursoServicio::listarCurElectivas('', '')
-		#2 /var/www/pipo/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
-		#3 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(9): CursoControlador::manejarRequerimiento()
-		#4 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/pipo/S...')
-		#5 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
-		#6 /var/www/pipo/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
-		#7 {main}
-**************************** Error n° 1709 *****************************
-codigo Error: 1709
-Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
-Archivo Error: /var/www/pipo/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php
-Linea Error: 1549
-Trayecto:
-		#0 /var/www/pipo/SIGESAC-DESARROLLO/modulos/curso/modelo/CursoServicio.php(1549): PDOStatement->execute(Array)
-		#1 /var/www/pipo/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(890): CursoServicio::listarCurElectivas('', '')
-		#2 /var/www/pipo/SIGESAC-DESARROLLO/modulos/curso/CursoControlador.php(101): CursoControlador::listarCurElectivas()
-		#3 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(9): CursoControlador::manejarRequerimiento()
-		#4 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/pipo/S...')
-		#5 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
-		#6 /var/www/pipo/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
-		#7 {main}
-**************************** Error n° 1710 *****************************
-codigo Error: 1710
-Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
-Archivo Error: /var/www/pipo/SIGESAC-DESARROLLO/modulos/trayecto/modelo/TrayectoServicio.php
-Linea Error: 331
-Trayecto:
-		#0 /var/www/pipo/SIGESAC-DESARROLLO/modulos/trayecto/modelo/TrayectoServicio.php(331): PDOStatement->execute(Array)
-		#1 /var/www/pipo/SIGESAC-DESARROLLO/modulos/trayecto/TrayectoControlador.php(296): TrayectoServicio::obtenerTrayectoPensum('')
-		#2 /var/www/pipo/SIGESAC-DESARROLLO/modulos/trayecto/TrayectoControlador.php(66): TrayectoControlador::listarTrayectoPensum()
-		#3 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(61): TrayectoControlador::manejarRequerimiento()
-		#4 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/pipo/S...')
-		#5 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
-		#6 /var/www/pipo/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
-		#7 {main}
-**************************** Error n° 1711 *****************************
-codigo Error: 1711
-Mensaje error: SQLSTATE[23502]: Not null violation: 7 ERROR:  el valor null para la columna «nombre1» viola la restricción not null
-CONTEXT:  sentencia SQL: «insert into sis.t_persona (codigo,		cedula,			rif,
-				   nombre1,		nombre2,		apellido1,
-				   apellido2,   	sexo,			fec_nacimiento,
-				   tip_sangre,		telefono1,		telefono2,
-				   cor_personal,	cor_institucional,	direccion,
-				   discapacidad,	nacionalidad,		hijos,
-				   est_civil,		observaciones
-				)
-
-		          values (cod_persona,		p_cedula,		p_rif,
-				  p_nombre1,		p_nombre2,		p_apellido1,
-				  p_apellido2,		p_sexo,			p_fec_nacimiento,
-				  p_tip_sangre,		p_telefono1,		p_telefono2,
-				  p_cor_personal,	p_cor_institucional,	p_direccion,
-				  p_discapacidad, 	p_nacionalidad,		p_hijos,
-				  p_est_civil,		p_observaciones
-				)»
-PL/pgSQL function "f_persona_ins" line 8 at sentencia SQL
-Archivo Error: /var/www/pipo/SIGESAC-DESARROLLO/modulos/persona/modelo/PersonaServicio.php
-Linea Error: 115
-Trayecto:
-		#0 /var/www/pipo/SIGESAC-DESARROLLO/modulos/persona/modelo/PersonaServicio.php(115): PDOStatement->execute()
-		#1 /var/www/pipo/SIGESAC-DESARROLLO/modulos/persona/PersonaControlador.php(527): PersonaServicio::agregar('6656555', NULL, NULL, NULL, NULL, NULL, 'F', NULL, NULL, NULL, NULL, '(0416)4456699?')
-		#2 /var/www/pipo/SIGESAC-DESARROLLO/modulos/persona/PersonaControlador.php(73): PersonaControlador::cargaArchivoNuevoIngreso()
-		#3 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(49): PersonaControlador::manejarRequerimiento()
-		#4 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/pipo/S...')
-		#5 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
-		#6 /var/www/pipo/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
-		#7 {main}
-**************************** Error n° 1712 *****************************
-codigo Error: 1712
-Mensaje error: SQLSTATE[23505]: Unique violation: 7 ERROR:  llave duplicada viola restricción de unicidad «ca_persona_01»
-DETAIL:  Ya existe la llave (cedula)=(6656555).
-CONTEXT:  sentencia SQL: «insert into sis.t_persona (codigo,		cedula,			rif,
-				   nombre1,		nombre2,		apellido1,
-				   apellido2,   	sexo,			fec_nacimiento,
-				   tip_sangre,		telefono1,		telefono2,
-				   cor_personal,	cor_institucional,	direccion,
-				   discapacidad,	nacionalidad,		hijos,
-				   est_civil,		observaciones
-				)
-
-		          values (cod_persona,		p_cedula,		p_rif,
-				  p_nombre1,		p_nombre2,		p_apellido1,
-				  p_apellido2,		p_sexo,			p_fec_nacimiento,
-				  p_tip_sangre,		p_telefono1,		p_telefono2,
-				  p_cor_personal,	p_cor_institucional,	p_direccion,
-				  p_discapacidad, 	p_nacionalidad,		p_hijos,
-				  p_est_civil,		p_observaciones
-				)»
-PL/pgSQL function "f_persona_ins" line 8 at sentencia SQL
-Archivo Error: /var/www/pipo/SIGESAC-DESARROLLO/modulos/persona/modelo/PersonaServicio.php
-Linea Error: 115
-Trayecto:
-		#0 /var/www/pipo/SIGESAC-DESARROLLO/modulos/persona/modelo/PersonaServicio.php(115): PDOStatement->execute()
-		#1 /var/www/pipo/SIGESAC-DESARROLLO/modulos/persona/PersonaControlador.php(557): PersonaServicio::agregar('6656555', NULL, 'jose', 'antonio', 'hernandez', 'gomez', 'F', NULL, NULL, NULL, NULL, '(0416)4456699?')
-		#2 /var/www/pipo/SIGESAC-DESARROLLO/modulos/persona/PersonaControlador.php(73): PersonaControlador::cargaArchivoNuevoIngreso()
-		#3 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(49): PersonaControlador::manejarRequerimiento()
-		#4 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/pipo/S...')
-		#5 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
-		#6 /var/www/pipo/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
-		#7 {main}
-**************************** Error n° 1713 *****************************
-codigo Error: 1713
-Mensaje error: SQLSTATE[23505]: Unique violation: 7 ERROR:  llave duplicada viola restricción de unicidad «ca_persona_01»
-DETAIL:  Ya existe la llave (cedula)=(6656555).
-CONTEXT:  sentencia SQL: «insert into sis.t_persona (codigo,		cedula,			rif,
-				   nombre1,		nombre2,		apellido1,
-				   apellido2,   	sexo,			fec_nacimiento,
-				   tip_sangre,		telefono1,		telefono2,
-				   cor_personal,	cor_institucional,	direccion,
-				   discapacidad,	nacionalidad,		hijos,
-				   est_civil,		observaciones
-				)
-
-		          values (cod_persona,		p_cedula,		p_rif,
-				  p_nombre1,		p_nombre2,		p_apellido1,
-				  p_apellido2,		p_sexo,			p_fec_nacimiento,
-				  p_tip_sangre,		p_telefono1,		p_telefono2,
-				  p_cor_personal,	p_cor_institucional,	p_direccion,
-				  p_discapacidad, 	p_nacionalidad,		p_hijos,
-				  p_est_civil,		p_observaciones
-				)»
-PL/pgSQL function "f_persona_ins" line 8 at sentencia SQL
-Archivo Error: /var/www/pipo/SIGESAC-DESARROLLO/modulos/persona/modelo/PersonaServicio.php
-Linea Error: 115
-Trayecto:
-		#0 /var/www/pipo/SIGESAC-DESARROLLO/modulos/persona/modelo/PersonaServicio.php(115): PDOStatement->execute()
-		#1 /var/www/pipo/SIGESAC-DESARROLLO/modulos/persona/PersonaControlador.php(558): PersonaServicio::agregar('6656555', NULL, 'jose', 'antonio', 'hernandez', 'gomez', 'F', NULL, NULL, NULL, NULL, '(0416)4456699?', NULL, NULL, NULL, NULL, NULL, NULL, NULL)
-		#2 /var/www/pipo/SIGESAC-DESARROLLO/modulos/persona/PersonaControlador.php(73): PersonaControlador::cargaArchivoNuevoIngreso()
-		#3 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(49): PersonaControlador::manejarRequerimiento()
-		#4 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/pipo/S...')
-		#5 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
-		#6 /var/www/pipo/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
-		#7 {main}
-**************************** Error n° 1714 *****************************
-codigo Error: 1714
-Mensaje error: SQLSTATE[23505]: Unique violation: 7 ERROR:  llave duplicada viola restricción de unicidad «ca_persona_01»
-DETAIL:  Ya existe la llave (cedula)=(665655).
-CONTEXT:  sentencia SQL: «insert into sis.t_persona (codigo,		cedula,			rif,
-				   nombre1,		nombre2,		apellido1,
-				   apellido2,   	sexo,			fec_nacimiento,
-				   tip_sangre,		telefono1,		telefono2,
-				   cor_personal,	cor_institucional,	direccion,
-				   discapacidad,	nacionalidad,		hijos,
-				   est_civil,		observaciones
-				)
-
-		          values (cod_persona,		p_cedula,		p_rif,
-				  p_nombre1,		p_nombre2,		p_apellido1,
-				  p_apellido2,		p_sexo,			p_fec_nacimiento,
-				  p_tip_sangre,		p_telefono1,		p_telefono2,
-				  p_cor_personal,	p_cor_institucional,	p_direccion,
-				  p_discapacidad, 	p_nacionalidad,		p_hijos,
-				  p_est_civil,		p_observaciones
-				)»
-PL/pgSQL function "f_persona_ins" line 8 at sentencia SQL
-Archivo Error: /var/www/pipo/SIGESAC-DESARROLLO/modulos/persona/modelo/PersonaServicio.php
-Linea Error: 115
-Trayecto:
-		#0 /var/www/pipo/SIGESAC-DESARROLLO/modulos/persona/modelo/PersonaServicio.php(115): PDOStatement->execute()
-		#1 /var/www/pipo/SIGESAC-DESARROLLO/modulos/persona/PersonaControlador.php(558): PersonaServicio::agregar('665655', NULL, 'jose', 'antonio', 'hernandez', 'gomez', 'F', NULL, NULL, NULL, NULL, 'sdfsdf@fdgf.lol', NULL, NULL, NULL, NULL, NULL, NULL, NULL)
-		#2 /var/www/pipo/SIGESAC-DESARROLLO/modulos/persona/PersonaControlador.php(73): PersonaControlador::cargaArchivoNuevoIngreso()
-		#3 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(49): PersonaControlador::manejarRequerimiento()
-		#4 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/pipo/S...')
-		#5 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
-		#6 /var/www/pipo/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
-		#7 {main}
-**************************** Error n° 1715 *****************************
-codigo Error: 1715
-Mensaje error: SQLSTATE[23505]: Unique violation: 7 ERROR:  llave duplicada viola restricción de unicidad «ca_persona_01»
-DETAIL:  Ya existe la llave (cedula)=(665655).
-CONTEXT:  sentencia SQL: «insert into sis.t_persona (codigo,		cedula,			rif,
-				   nombre1,		nombre2,		apellido1,
-				   apellido2,   	sexo,			fec_nacimiento,
-				   tip_sangre,		telefono1,		telefono2,
-				   cor_personal,	cor_institucional,	direccion,
-				   discapacidad,	nacionalidad,		hijos,
-				   est_civil,		observaciones
-				)
-
-		          values (cod_persona,		p_cedula,		p_rif,
-				  p_nombre1,		p_nombre2,		p_apellido1,
-				  p_apellido2,		p_sexo,			p_fec_nacimiento,
-				  p_tip_sangre,		p_telefono1,		p_telefono2,
-				  p_cor_personal,	p_cor_institucional,	p_direccion,
-				  p_discapacidad, 	p_nacionalidad,		p_hijos,
-				  p_est_civil,		p_observaciones
-				)»
-PL/pgSQL function "f_persona_ins" line 8 at sentencia SQL
-Archivo Error: /var/www/pipo/SIGESAC-DESARROLLO/modulos/persona/modelo/PersonaServicio.php
-Linea Error: 115
-Trayecto:
-		#0 /var/www/pipo/SIGESAC-DESARROLLO/modulos/persona/modelo/PersonaServicio.php(115): PDOStatement->execute()
-		#1 /var/www/pipo/SIGESAC-DESARROLLO/modulos/persona/PersonaControlador.php(558): PersonaServicio::agregar('665655', NULL, 'jose', 'antonio', 'hernandez', 'gomez', 'F', NULL, NULL, NULL, NULL, 'sdfsdf@fdgf.lol', NULL, NULL, NULL, NULL, NULL, NULL, NULL)
-		#2 /var/www/pipo/SIGESAC-DESARROLLO/modulos/persona/PersonaControlador.php(73): PersonaControlador::cargaArchivoNuevoIngreso()
-		#3 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(49): PersonaControlador::manejarRequerimiento()
-		#4 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/pipo/S...')
-		#5 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
-		#6 /var/www/pipo/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
-		#7 {main}
-**************************** Error n° 1716 *****************************
-codigo Error: 1716
-Mensaje error: SQLSTATE[23505]: Unique violation: 7 ERROR:  llave duplicada viola restricción de unicidad «ca_persona_01»
-DETAIL:  Ya existe la llave (cedula)=(665655).
-CONTEXT:  sentencia SQL: «insert into sis.t_persona (codigo,		cedula,			rif,
-				   nombre1,		nombre2,		apellido1,
-				   apellido2,   	sexo,			fec_nacimiento,
-				   tip_sangre,		telefono1,		telefono2,
-				   cor_personal,	cor_institucional,	direccion,
-				   discapacidad,	nacionalidad,		hijos,
-				   est_civil,		observaciones
-				)
-
-		          values (cod_persona,		p_cedula,		p_rif,
-				  p_nombre1,		p_nombre2,		p_apellido1,
-				  p_apellido2,		p_sexo,			p_fec_nacimiento,
-				  p_tip_sangre,		p_telefono1,		p_telefono2,
-				  p_cor_personal,	p_cor_institucional,	p_direccion,
-				  p_discapacidad, 	p_nacionalidad,		p_hijos,
-				  p_est_civil,		p_observaciones
-				)»
-PL/pgSQL function "f_persona_ins" line 8 at sentencia SQL
-Archivo Error: /var/www/pipo/SIGESAC-DESARROLLO/modulos/persona/modelo/PersonaServicio.php
-Linea Error: 115
-Trayecto:
-		#0 /var/www/pipo/SIGESAC-DESARROLLO/modulos/persona/modelo/PersonaServicio.php(115): PDOStatement->execute()
-		#1 /var/www/pipo/SIGESAC-DESARROLLO/modulos/persona/PersonaControlador.php(558): PersonaServicio::agregar('665655', NULL, 'jose', 'antonio', 'hernandez', 'gomez', 'F', NULL, NULL, NULL, NULL, 'sdfsdf@fdgf.lol', NULL, NULL, NULL, NULL, NULL, NULL, NULL)
-		#2 /var/www/pipo/SIGESAC-DESARROLLO/modulos/persona/PersonaControlador.php(73): PersonaControlador::cargaArchivoNuevoIngreso()
-		#3 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(49): PersonaControlador::manejarRequerimiento()
-		#4 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/pipo/S...')
-		#5 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
-		#6 /var/www/pipo/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
-		#7 {main}
-**************************** Error n° 1717 *****************************
-codigo Error: 1717
-Mensaje error: SQLSTATE[23505]: Unique violation: 7 ERROR:  llave duplicada viola restricción de unicidad «ca_persona_01»
-DETAIL:  Ya existe la llave (cedula)=(665655).
-CONTEXT:  sentencia SQL: «insert into sis.t_persona (codigo,		cedula,			rif,
-				   nombre1,		nombre2,		apellido1,
-				   apellido2,   	sexo,			fec_nacimiento,
-				   tip_sangre,		telefono1,		telefono2,
-				   cor_personal,	cor_institucional,	direccion,
-				   discapacidad,	nacionalidad,		hijos,
-				   est_civil,		observaciones
-				)
-
-		          values (cod_persona,		p_cedula,		p_rif,
-				  p_nombre1,		p_nombre2,		p_apellido1,
-				  p_apellido2,		p_sexo,			p_fec_nacimiento,
-				  p_tip_sangre,		p_telefono1,		p_telefono2,
-				  p_cor_personal,	p_cor_institucional,	p_direccion,
-				  p_discapacidad, 	p_nacionalidad,		p_hijos,
-				  p_est_civil,		p_observaciones
-				)»
-PL/pgSQL function "f_persona_ins" line 8 at sentencia SQL
-Archivo Error: /var/www/pipo/SIGESAC-DESARROLLO/modulos/persona/modelo/PersonaServicio.php
-Linea Error: 115
-Trayecto:
-		#0 /var/www/pipo/SIGESAC-DESARROLLO/modulos/persona/modelo/PersonaServicio.php(115): PDOStatement->execute()
-		#1 /var/www/pipo/SIGESAC-DESARROLLO/modulos/persona/PersonaControlador.php(558): PersonaServicio::agregar('665655', NULL, 'jose', 'antonio', 'hernandez', 'gomez', 'F', NULL, NULL, NULL, NULL, 'sdfsdf@fdgf.lol', NULL, NULL, NULL, NULL, NULL, NULL, NULL)
-		#2 /var/www/pipo/SIGESAC-DESARROLLO/modulos/persona/PersonaControlador.php(73): PersonaControlador::cargaArchivoNuevoIngreso()
-		#3 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(49): PersonaControlador::manejarRequerimiento()
-		#4 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/pipo/S...')
-		#5 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
-		#6 /var/www/pipo/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
-		#7 {main}
-**************************** Error n° 1718 *****************************
-codigo Error: 1718
-Mensaje error: SQLSTATE[23505]: Unique violation: 7 ERROR:  llave duplicada viola restricción de unicidad «ca_persona_01»
-DETAIL:  Ya existe la llave (cedula)=(665655).
-CONTEXT:  sentencia SQL: «insert into sis.t_persona (codigo,		cedula,			rif,
-				   nombre1,		nombre2,		apellido1,
-				   apellido2,   	sexo,			fec_nacimiento,
-				   tip_sangre,		telefono1,		telefono2,
-				   cor_personal,	cor_institucional,	direccion,
-				   discapacidad,	nacionalidad,		hijos,
-				   est_civil,		observaciones
-				)
-
-		          values (cod_persona,		p_cedula,		p_rif,
-				  p_nombre1,		p_nombre2,		p_apellido1,
-				  p_apellido2,		p_sexo,			p_fec_nacimiento,
-				  p_tip_sangre,		p_telefono1,		p_telefono2,
-				  p_cor_personal,	p_cor_institucional,	p_direccion,
-				  p_discapacidad, 	p_nacionalidad,		p_hijos,
-				  p_est_civil,		p_observaciones
-				)»
-PL/pgSQL function "f_persona_ins" line 8 at sentencia SQL
-Archivo Error: /var/www/pipo/SIGESAC-DESARROLLO/modulos/persona/modelo/PersonaServicio.php
-Linea Error: 115
-Trayecto:
-		#0 /var/www/pipo/SIGESAC-DESARROLLO/modulos/persona/modelo/PersonaServicio.php(115): PDOStatement->execute()
-		#1 /var/www/pipo/SIGESAC-DESARROLLO/modulos/persona/PersonaControlador.php(565): PersonaServicio::agregar('665655', NULL, 'jose', 'antonio', 'hernandez', 'gomez', 'F', NULL, NULL, NULL, NULL, 'sdfsdf@fdgf.lol', NULL, NULL, NULL, NULL, NULL, NULL, NULL)
-		#2 /var/www/pipo/SIGESAC-DESARROLLO/modulos/persona/PersonaControlador.php(73): PersonaControlador::cargaArchivoNuevoIngreso()
-		#3 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(49): PersonaControlador::manejarRequerimiento()
-		#4 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/pipo/S...')
-		#5 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
-		#6 /var/www/pipo/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
-		#7 {main}
-**************************** Error n° 1719 *****************************
-codigo Error: 1719
-Mensaje error: SQLSTATE[23505]: Unique violation: 7 ERROR:  llave duplicada viola restricción de unicidad «ca_persona_01»
-DETAIL:  Ya existe la llave (cedula)=(665655).
-CONTEXT:  sentencia SQL: «insert into sis.t_persona (codigo,		cedula,			rif,
-				   nombre1,		nombre2,		apellido1,
-				   apellido2,   	sexo,			fec_nacimiento,
-				   tip_sangre,		telefono1,		telefono2,
-				   cor_personal,	cor_institucional,	direccion,
-				   discapacidad,	nacionalidad,		hijos,
-				   est_civil,		observaciones
-				)
-
-		          values (cod_persona,		p_cedula,		p_rif,
-				  p_nombre1,		p_nombre2,		p_apellido1,
-				  p_apellido2,		p_sexo,			p_fec_nacimiento,
-				  p_tip_sangre,		p_telefono1,		p_telefono2,
-				  p_cor_personal,	p_cor_institucional,	p_direccion,
-				  p_discapacidad, 	p_nacionalidad,		p_hijos,
-				  p_est_civil,		p_observaciones
-				)»
-PL/pgSQL function "f_persona_ins" line 8 at sentencia SQL
-Archivo Error: /var/www/pipo/SIGESAC-DESARROLLO/modulos/persona/modelo/PersonaServicio.php
-Linea Error: 115
-Trayecto:
-		#0 /var/www/pipo/SIGESAC-DESARROLLO/modulos/persona/modelo/PersonaServicio.php(115): PDOStatement->execute()
-		#1 /var/www/pipo/SIGESAC-DESARROLLO/modulos/persona/PersonaControlador.php(565): PersonaServicio::agregar('665655', NULL, 'jose', 'antonio', 'hernandez', 'gomez', 'F', NULL, NULL, NULL, NULL, 'sdfsdf@fdgf.lol', NULL, NULL, NULL, NULL, NULL, NULL, NULL)
-		#2 /var/www/pipo/SIGESAC-DESARROLLO/modulos/persona/PersonaControlador.php(73): PersonaControlador::cargaArchivoNuevoIngreso()
-		#3 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(49): PersonaControlador::manejarRequerimiento()
-		#4 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/pipo/S...')
-		#5 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
-		#6 /var/www/pipo/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
-		#7 {main}
-**************************** Error n° 1720 *****************************
-codigo Error: 1720
-Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
-Archivo Error: /var/www/pipo/SIGESAC-DESARROLLO/modulos/pensum/modelo/PensumServicio.php
-Linea Error: 382
-Trayecto:
-		#0 /var/www/pipo/SIGESAC-DESARROLLO/modulos/pensum/modelo/PensumServicio.php(382): PDOStatement->execute()
-		#1 /var/www/pipo/SIGESAC-DESARROLLO/modulos/pensum/PensumControlador.php(260): PensumServicio::ObtenerPensumInsituto('')
-		#2 /var/www/pipo/SIGESAC-DESARROLLO/modulos/pensum/PensumControlador.php(62): PensumControlador::buscarPorInstituto()
-		#3 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(37): PensumControlador::manejarRequerimiento()
-		#4 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/pipo/S...')
-		#5 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
-		#6 /var/www/pipo/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
-		#7 {main}
-**************************** Error n° 1721 *****************************
-codigo Error: 1721
-Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
-Archivo Error: /var/www/pipo/SIGESAC-DESARROLLO/modulos/pensum/modelo/PensumServicio.php
-Linea Error: 382
-Trayecto:
-		#0 /var/www/pipo/SIGESAC-DESARROLLO/modulos/pensum/modelo/PensumServicio.php(382): PDOStatement->execute()
-		#1 /var/www/pipo/SIGESAC-DESARROLLO/modulos/pensum/PensumControlador.php(260): PensumServicio::ObtenerPensumInsituto('')
-		#2 /var/www/pipo/SIGESAC-DESARROLLO/modulos/pensum/PensumControlador.php(62): PensumControlador::buscarPorInstituto()
-		#3 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(37): PensumControlador::manejarRequerimiento()
-		#4 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/pipo/S...')
-		#5 /var/www/pipo/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
-		#6 /var/www/pipo/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
-		#7 {main}
-**************************** Error n° 1722 *****************************
-codigo Error: 1722
-Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
-Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/pensum/modelo/PensumServicio.php
-Linea Error: 382
-Trayecto:
-		#0 /var/www/SIGESAC-DESARROLLO/modulos/pensum/modelo/PensumServicio.php(382): PDOStatement->execute()
-		#1 /var/www/SIGESAC-DESARROLLO/modulos/pensum/PensumControlador.php(260): PensumServicio::ObtenerPensumInsituto('')
-		#2 /var/www/SIGESAC-DESARROLLO/modulos/pensum/PensumControlador.php(62): PensumControlador::buscarPorInstituto()
-		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(37): PensumControlador::manejarRequerimiento()
-		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
-		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
-		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
-		#7 {main}
-**************************** Error n° 1723 *****************************
-codigo Error: 1723
-Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
-Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/pensum/modelo/PensumServicio.php
-Linea Error: 382
-Trayecto:
-		#0 /var/www/SIGESAC-DESARROLLO/modulos/pensum/modelo/PensumServicio.php(382): PDOStatement->execute()
-		#1 /var/www/SIGESAC-DESARROLLO/modulos/pensum/PensumControlador.php(260): PensumServicio::ObtenerPensumInsituto('')
-		#2 /var/www/SIGESAC-DESARROLLO/modulos/pensum/PensumControlador.php(62): PensumControlador::buscarPorInstituto()
-		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(37): PensumControlador::manejarRequerimiento()
-		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
-		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
-		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
-		#7 {main}
-**************************** Error n° 1724 *****************************
-codigo Error: 1724
-Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
-Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/pensum/modelo/PensumServicio.php
-Linea Error: 382
-Trayecto:
-		#0 /var/www/SIGESAC-DESARROLLO/modulos/pensum/modelo/PensumServicio.php(382): PDOStatement->execute()
-		#1 /var/www/SIGESAC-DESARROLLO/modulos/pensum/PensumControlador.php(260): PensumServicio::ObtenerPensumInsituto('')
-		#2 /var/www/SIGESAC-DESARROLLO/modulos/pensum/PensumControlador.php(62): PensumControlador::buscarPorInstituto()
-		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(37): PensumControlador::manejarRequerimiento()
-		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
-		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
-		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
-		#7 {main}
-**************************** Error n° 1725 *****************************
-codigo Error: 1725
-Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
-Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/pensum/modelo/PensumServicio.php
-Linea Error: 382
-Trayecto:
-		#0 /var/www/SIGESAC-DESARROLLO/modulos/pensum/modelo/PensumServicio.php(382): PDOStatement->execute()
-		#1 /var/www/SIGESAC-DESARROLLO/modulos/pensum/PensumControlador.php(260): PensumServicio::ObtenerPensumInsituto('')
-		#2 /var/www/SIGESAC-DESARROLLO/modulos/pensum/PensumControlador.php(62): PensumControlador::buscarPorInstituto()
-		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(37): PensumControlador::manejarRequerimiento()
-		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
-		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
-		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
-		#7 {main}
-**************************** Error n° 1726 *****************************
-codigo Error: 1726
-Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
-Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/pensum/modelo/PensumServicio.php
-Linea Error: 382
-Trayecto:
-		#0 /var/www/SIGESAC-DESARROLLO/modulos/pensum/modelo/PensumServicio.php(382): PDOStatement->execute()
-		#1 /var/www/SIGESAC-DESARROLLO/modulos/pensum/PensumControlador.php(260): PensumServicio::ObtenerPensumInsituto('')
-		#2 /var/www/SIGESAC-DESARROLLO/modulos/pensum/PensumControlador.php(62): PensumControlador::buscarPorInstituto()
-		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(37): PensumControlador::manejarRequerimiento()
-		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
-		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
-		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
-		#7 {main}
-**************************** Error n° 1727 *****************************
-codigo Error: 1727
-Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
-Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/pensum/modelo/PensumServicio.php
-Linea Error: 382
-Trayecto:
-		#0 /var/www/SIGESAC-DESARROLLO/modulos/pensum/modelo/PensumServicio.php(382): PDOStatement->execute()
-		#1 /var/www/SIGESAC-DESARROLLO/modulos/pensum/PensumControlador.php(260): PensumServicio::ObtenerPensumInsituto('')
-		#2 /var/www/SIGESAC-DESARROLLO/modulos/pensum/PensumControlador.php(62): PensumControlador::buscarPorInstituto()
-		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(37): PensumControlador::manejarRequerimiento()
-		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
-		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
-		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
-		#7 {main}
-**************************** Error n° 1728 *****************************
-codigo Error: 1728
-Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
-Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/pensum/modelo/PensumServicio.php
-Linea Error: 382
-Trayecto:
-		#0 /var/www/SIGESAC-DESARROLLO/modulos/pensum/modelo/PensumServicio.php(382): PDOStatement->execute()
-		#1 /var/www/SIGESAC-DESARROLLO/modulos/pensum/PensumControlador.php(260): PensumServicio::ObtenerPensumInsituto('')
-		#2 /var/www/SIGESAC-DESARROLLO/modulos/pensum/PensumControlador.php(62): PensumControlador::buscarPorInstituto()
-		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(37): PensumControlador::manejarRequerimiento()
-		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
-		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
-		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
-		#7 {main}
-**************************** Error n° 1729 *****************************
-codigo Error: 1729
-Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
-Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/pensum/modelo/PensumServicio.php
-Linea Error: 382
-Trayecto:
-		#0 /var/www/SIGESAC-DESARROLLO/modulos/pensum/modelo/PensumServicio.php(382): PDOStatement->execute()
-		#1 /var/www/SIGESAC-DESARROLLO/modulos/pensum/PensumControlador.php(260): PensumServicio::ObtenerPensumInsituto('')
-		#2 /var/www/SIGESAC-DESARROLLO/modulos/pensum/PensumControlador.php(62): PensumControlador::buscarPorInstituto()
-		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(37): PensumControlador::manejarRequerimiento()
-		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
-		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
-		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
-		#7 {main}
-**************************** Error n° 1730 *****************************
-codigo Error: 1730
-Mensaje error: SpreadsheetReader: File (/var/www/SIGESAC-DESARROLLO/temp/10-02-2017-3:06:08.) not readable
-Archivo Error: /var/www/SIGESAC-DESARROLLO/recursos/spreadsheet-reader-master/SpreadsheetReader.php
-Linea Error: 44
-Trayecto:
-		#0 /var/www/SIGESAC-DESARROLLO/modulos/persona/PersonaControlador.php(594): SpreadsheetReader->__construct('/var/www/SIGESA...')
-		#1 /var/www/SIGESAC-DESARROLLO/modulos/persona/PersonaControlador.php(73): PersonaControlador::cargaArchivoNuevoIngreso()
-		#2 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(49): PersonaControlador::manejarRequerimiento()
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/login/LoginControlador.php(91): Vista::asignarDato('datos', Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/login/LoginControlador.php(54): LoginControlador::iniciarLogin()
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(33): LoginControlador::manejarRequerimiento()
 		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
 		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
 		#5 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
 		#6 {main}
-**************************** Error n° 1731 *****************************
-codigo Error: 1731
-Mensaje error: SpreadsheetReader: File (/var/www/SIGESAC-DESARROLLO/temp/10-02-2017-3:34:01.) not readable
-Archivo Error: /var/www/SIGESAC-DESARROLLO/recursos/spreadsheet-reader-master/SpreadsheetReader.php
-Linea Error: 44
+**************************** Error n° 1801 *****************************
+codigo Error: 1801
+Mensaje error: Datos de autenticación incorrectos. Revise su usuario y password
+Archivo Error: /var/www/SIGESAC-DESARROLLO/base/clases/basededatos/Conexion.php
+Linea Error: 67
 Trayecto:
-		#0 /var/www/SIGESAC-DESARROLLO/modulos/persona/PersonaControlador.php(595): SpreadsheetReader->__construct('/var/www/SIGESA...')
-		#1 /var/www/SIGESAC-DESARROLLO/modulos/persona/PersonaControlador.php(73): PersonaControlador::cargaArchivoNuevoIngreso()
-		#2 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(49): PersonaControlador::manejarRequerimiento()
-		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
-		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
-		#5 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
-		#6 {main}
-**************************** Error n° 1732 *****************************
-codigo Error: 1732
-Mensaje error: SpreadsheetReader: File (/var/www/SIGESAC-DESARROLLO/temp/10-02-2017-3:35:17.) not readable
-Archivo Error: /var/www/SIGESAC-DESARROLLO/recursos/spreadsheet-reader-master/SpreadsheetReader.php
-Linea Error: 44
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/login/modelo/LoginServicio.php(50): Conexion::conectar()
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/login/LoginControlador.php(83): LoginServicio::obtenerLogin('admin', '132')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/login/LoginControlador.php(54): LoginControlador::iniciarLogin()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(33): LoginControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 1802 *****************************
+codigo Error: 1802
+Mensaje error: NO tienes permiso para consultar un archivo.
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/foto/modelo/FotografiaServicio.php
+Linea Error: 191
 Trayecto:
-		#0 /var/www/SIGESAC-DESARROLLO/modulos/persona/PersonaControlador.php(595): SpreadsheetReader->__construct('/var/www/SIGESA...')
-		#1 /var/www/SIGESAC-DESARROLLO/modulos/persona/PersonaControlador.php(73): PersonaControlador::cargaArchivoNuevoIngreso()
-		#2 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(49): PersonaControlador::manejarRequerimiento()
-		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
-		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
-		#5 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
-		#6 {main}
-**************************** Error n° 1733 *****************************
-codigo Error: 1733
-Mensaje error: SpreadsheetReader: File (/var/www/SIGESAC-DESARROLLO/temp/10-02-2017-3:38:35.) not readable
-Archivo Error: /var/www/SIGESAC-DESARROLLO/recursos/spreadsheet-reader-master/SpreadsheetReader.php
-Linea Error: 44
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(161): FotografiaServicio::extraerEn(NULL, NULL)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(72): PrincipalControlador::configurar()
+		#2 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#3 {main}
+**************************** Error n° 1803 *****************************
+codigo Error: 1803
+Mensaje error: SQLSTATE[42883]: Undefined function: 7 ERROR:  no existe la función aud.f_auditoria_sel(text[], text[], text[])
+LINE 1: select * from aud.f_auditoria_sel(string_to_array($1,','),
+                      ^
+HINT:  Ninguna función coincide en el nombre y tipos de argumentos. Puede ser necesario agregar conversión explícita de tipos.
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/auditoria/modelo/AuditoriaServicio.php
+Linea Error: 69
 Trayecto:
-		#0 /var/www/SIGESAC-DESARROLLO/modulos/persona/PersonaControlador.php(595): SpreadsheetReader->__construct('/var/www/SIGESA...')
-		#1 /var/www/SIGESAC-DESARROLLO/modulos/persona/PersonaControlador.php(73): PersonaControlador::cargaArchivoNuevoIngreso()
-		#2 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(49): PersonaControlador::manejarRequerimiento()
-		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
-		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
-		#5 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
-		#6 {main}
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/auditoria/modelo/AuditoriaServicio.php(69): PDOStatement->execute(Array)
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/auditoria/AuditoriaControlador.php(78): AuditoriaServicio::listar(NULL, NULL, NULL)
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/auditoria/AuditoriaControlador.php(48): AuditoriaControlador::listar()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(5): AuditoriaControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 1804 *****************************
+codigo Error: 1804
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/pensum/modelo/PensumServicio.php
+Linea Error: 382
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/pensum/modelo/PensumServicio.php(382): PDOStatement->execute()
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/pensum/PensumControlador.php(260): PensumServicio::ObtenerPensumInsituto('')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/pensum/PensumControlador.php(62): PensumControlador::buscarPorInstituto()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(37): PensumControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 1805 *****************************
+codigo Error: 1805
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/pensum/modelo/PensumServicio.php
+Linea Error: 382
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/pensum/modelo/PensumServicio.php(382): PDOStatement->execute()
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/pensum/PensumControlador.php(260): PensumServicio::ObtenerPensumInsituto('')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/pensum/PensumControlador.php(62): PensumControlador::buscarPorInstituto()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(37): PensumControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 1806 *****************************
+codigo Error: 1806
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/pensum/modelo/PensumServicio.php
+Linea Error: 382
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/pensum/modelo/PensumServicio.php(382): PDOStatement->execute()
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/pensum/PensumControlador.php(260): PensumServicio::ObtenerPensumInsituto('')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/pensum/PensumControlador.php(62): PensumControlador::buscarPorInstituto()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(37): PensumControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}
+**************************** Error n° 1807 *****************************
+codigo Error: 1807
+Mensaje error: SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  la sintaxis de entrada no es válida para integer: «»
+Archivo Error: /var/www/SIGESAC-DESARROLLO/modulos/pensum/modelo/PensumServicio.php
+Linea Error: 382
+Trayecto:
+		#0 /var/www/SIGESAC-DESARROLLO/modulos/pensum/modelo/PensumServicio.php(382): PDOStatement->execute()
+		#1 /var/www/SIGESAC-DESARROLLO/modulos/pensum/PensumControlador.php(260): PensumServicio::ObtenerPensumInsituto('')
+		#2 /var/www/SIGESAC-DESARROLLO/modulos/pensum/PensumControlador.php(62): PensumControlador::buscarPorInstituto()
+		#3 /var/www/SIGESAC-DESARROLLO/modulos/principal/Bloque.php(37): PensumControlador::manejarRequerimiento()
+		#4 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(197): require_once('/var/www/SIGESA...')
+		#5 /var/www/SIGESAC-DESARROLLO/modulos/principal/PrincipalControlador.php(73): PrincipalControlador::manejarRequerimiento()
+		#6 /var/www/SIGESAC-DESARROLLO/index.php(41): PrincipalControlador::iniciar()
+		#7 {main}

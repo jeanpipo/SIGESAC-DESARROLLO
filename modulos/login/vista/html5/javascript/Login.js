@@ -373,7 +373,10 @@ function error(data){
 			cadena+="</li>";
 
 			$(cadena).appendTo("#userD");
-			window.location.assign("index.php");
+
+			setTimeout(function(){
+				window.location.assign("index.php");
+			},1500);
 		}
 		else
 			mostrarMensaje(data.mensaje,2);

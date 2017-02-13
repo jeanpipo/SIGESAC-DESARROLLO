@@ -132,12 +132,25 @@ class FotoControlador{
 
 	public static function borrar(){
 		try{
-			$ruta=PostGet::obtenerPostGet("ruta");
+			$ruta = PostGet::obtenerPostGet("ruta");
+			$nombre = PostGet::obtenerPostGet("nombre");
 			//echo $ruta;
 			if(isset($ruta)){
 				if(file_exists($ruta))
 					unlink($ruta);
-			} 
+			}
+			elseif($nombre){
+				$a=explode("/", (__DIR__));
+				$path="";
+				$x=0;
+				$contador=count($a);
+				unset($a[$contador-1]);
+				unset($a[$contador-2]);	
+				$path=implode("/",$a)."/temp/".$nombre;
+				if(file_exists($path))
+					unlink($path);
+				Vista::asignarDato("ruta",$path);
+			}
 
 			Vista::Mostrar();
 		}

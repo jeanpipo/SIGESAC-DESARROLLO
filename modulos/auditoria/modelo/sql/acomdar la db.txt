@@ -1,0 +1,27 @@
+﻿select u.nombre, p.nombre1, p.nombre2,p.codigo,  e.cod_persona, c.codigo, sis.f_acomodarCodigo(p.codigo,c.codigo) 
+from sis.t_uni_curricular u, sis.t_curso c, sis.t_persona p, sis.t_empleado e, sis.t_uni_tra_pensum utp 
+where c.cod_uni_curricular=u.codigo  and utp.cod_uni_curricular=u.codigo and utp.cod_tipo='E' and c.cod_periodo=103
+and e.codigo=c.cod_docente and e.cod_persona=p.codigo
+
+CREATE OR REPLACE FUNCTION sis.f_acomodarCodigo(p_cod_persona integer,p_cod_curso integer)
+  RETURNS integer AS
+$BODY$
+DECLARE r_operacion integer := 0;
+BEGIN
+	UPDATE sis.t_curso
+		SET
+			cod_docente=p_cod_persona
+		WHERE
+			codigo = p_cod_curso;
+
+		IF found THEN
+			r_operacion := 1;
+		END IF;
+
+  RETURN r_operacion;
+END;
+$BODY$
+  LANGUAGE plpgsql VOLATILE
+  COST 100;
+ALTER FUNCTION sis.f_acomodarCodigo(integer, integer)
+  OWNER TO admin;

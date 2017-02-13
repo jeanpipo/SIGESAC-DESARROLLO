@@ -346,6 +346,7 @@ function verInstitutoListar(){
 */
 
 function montarSelectInstitutoPersona(data){
+
 	var cadena = "";
 	$("#selectIns").remove();
 	cadena+="<div id='selectIns'> Instituto ";
@@ -1479,10 +1480,17 @@ function succCargaArchivoNuevoIngreso(data){
 	if(data.contadorNoExite>1 || data.contadorExiste>1){
 		$("#ruta").val(data.ruta);
 		$("#btnCarga").hide();
-		$("#btnRegistrar").show();
+		if(data.contadorNoExite>1)
+			$("#btnRegistrar").show();
+		else
+			mostrarMensaje("no hay estudiantes nuevos para cargaArchivoNuevoIngreso.",2);
 		$("#limpiarFormulario").show();
-		if(data.contadorExiste>1)
+		if(data.contadorExiste>1){
 			$("#noInscritos").show();
+			if(confirm("Te recomendamos que descargues el listados de los estudiantes que deben ser registrados manualmente. \n ¿deseas descargar el listado?")){
+				pdfEstudiantesNuevoIngresoNoInscrito();
+			}
+		}
 		else
 			$("#noInscritos").hide();
 	}
@@ -1495,7 +1503,8 @@ function succCargaArchivoNuevoIngreso(data){
 
 function registrarCargaArchivoNuevoIngreso(){
 	var arr = Array("m_modulo"	,	"persona",
-					"m_accion"	,	"cargaArchivoNuevoIngreso",					
+					"m_accion"	,	"cargaArchivoNuevoIngreso",
+					"formato"	,	"html5",				
 					"instituto"	,	$("#selectInstituto").val(),
 					"pnf"		,	$("#selectPNF").val(),
 					"ruta" 		,	$("#ruta").val()
@@ -1523,6 +1532,7 @@ function selectInstituto(){
 }
 
 function succSelectInstituto(data){
+
 	var cadena = "";
 	$("#selectIns").remove();
 	cadena+="<div id='selectIns'> Instituto ";
@@ -1631,9 +1641,10 @@ function  validarCargaArchivo(){
 }
 
 
+
 function archivoExtencion (mensaje){ 
 	
-	var  extensiones_permitidas = new Array(".odt", ".txt",".csv",".xls",".doc",".ods",".xlsx",".docx"); 
+	var  extensiones_permitidas = new Array(".odt", ".txt",".csv",".xls",".doc",".ods",".docx"); 
 	var  error = ""; 
 	var  archivo=$("#archivo").val();
 	
@@ -1693,7 +1704,7 @@ function archivo(){
 	});
 }
 
-function limpiarFormularioCargaArchivo(){
+function limpiarFormularioCargaArchivo(borrarTodo){
 
 	$("#ruta").val("");
 	$("#btnCarga").show();
@@ -1702,10 +1713,12 @@ function limpiarFormularioCargaArchivo(){
 	$("#noInscritos").hide();
 	$("#tablaNo").remove();
 	$("#tabla").remove();
-	$("#selectInstituto").val("-1");
-	$("#selectPNF").val("-1");
-	$("#archivo").val("");
-	$('.selectpicker').selectpicker('refresh');
+	if(!borrarTodo){
+		$("#selectInstituto").val("-1");
+		$("#selectPNF").val("-1");
+		$("#archivo").val("");
+		$('.selectpicker').selectpicker('refresh');
+	}
 
 }
 

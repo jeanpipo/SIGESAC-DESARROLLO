@@ -24,4 +24,7 @@ ALTER FUNCTION aud.f_auditoria_sel(nombre text[])
 
 
 
+pg_dump bd_sisgesac > /var/www/SIGESAC-DESARROLLO/mamalo.sql
+
+
 
